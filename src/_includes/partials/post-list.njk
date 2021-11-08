@@ -1,0 +1,23 @@
+<div id="post-list">
+    <div class="[ wrapper ] [ flow ] ">
+        <div>
+            <ol class="[ post-list ] [ flow ]">
+                {% for item in postListItems %}
+                    <li class="[ post-list__item ] [ leading-tight measure-long ] ">
+                        <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+                        <div class="post-list__item__info">
+                            <p class="post-list__item__date">{{ item.data.date | postDate }}
+                            </p>
+                            {% for tag in item.data.tags %}
+                                {% if not(tag == 'Featured') %}
+                                    <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <p class="[ post-list__item__excerpt ]">{{ item.data.excerpt }}</p>
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
