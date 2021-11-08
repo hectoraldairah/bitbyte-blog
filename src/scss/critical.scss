@@ -1,77 +1,67 @@
-// A modified version of my "modern reset" https://github.com/hankchizljaw/modern-css-reset
+@import "reset";
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+// First up: config and functions
+@import "config";
+
+// Next: pull in gorko for design tokens
+@import "../../node_modules/gorko/gorko.scss";
+
+root {
+  --flow-space: #{get-size("600")};
 }
 
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
+html {
+  font-size: 18px;
 }
 
-/* Remove default margin */
-body,
+body {
+  display: flex;
+  flex-direction: column;
+  background: get-color("background");
+  color: get-color("text");
+  line-height: 1.5;
+  font-size: get-size("500");
+  @include apply-utility("font", "base");
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+main:focus {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
-h4,
-p,
-ul[class],
-ol[class],
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+h4 {
+  font-weight: 900;
+  @include apply-utility("font", "sans");
 }
 
-/* Set core root defaults */
-html {
-  scroll-behavior: smooth;
+a {
+  color: inherit;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+:focus {
+  outline: 2px dashed get-color("text");
+  outline-offset: 0.1rem;
 }
 
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
+::selection {
+  background: get-color("secondary");
+}
+// Scrollbar styles
+::-webkit-scrollbar {
+  height: 1rem;
+  background: get-color("shade");
 }
 
-/* A elements that don’t have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0.25rem;
 }
 
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01s !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01s !important;
-    scroll-behavior: auto !important;
-  }
+::-webkit-scrollbar-thumb {
+  border-radius: 0rem;
+  background: get-color("secondary");
 }
