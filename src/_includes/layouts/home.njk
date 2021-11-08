@@ -1,7 +1,19 @@
 {% extends "layouts/base.njk" %}
+{% set pageCriticalStyles = ['css/home.css'] %}
 {% block content %}
-    <article>
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-    </article>
+
+    <section class="intro">
+        <div class="wrapper">
+            <h1 class="intro__subtitle">Hi, I'm <a class="link" href="/blog">Héctor.</a>
+            </h1>
+            <h2 class="intro__title">{{intro.title}}</h2>
+            <div class="intro__description">
+                <p>This is just my little personal blog where you can read my experiencies
+            learning new stuff.  You can see <a class="link" href="/links">other places where you can find me.</a>
+                </p>
+                <p>Currently working at <a class="link" target="_blank" href="https://clip.mx/">{{intro.company}}.</a>
+                </p>
+            </div>
+        </div>
+    </section>
 {% endblock %}

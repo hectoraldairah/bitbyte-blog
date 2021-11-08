@@ -1,6 +1,8 @@
 ---
-title: "Hello, world"
-layout: "layouts/home.njk"
+title: "home"
+layout: "layouts/home"
+intro:
+  title: "A front-end developer that loves the web."
+  job: "Front-end Developer"
+  company: "Clip"
 ---
-
-This is pretty _rad_, right?

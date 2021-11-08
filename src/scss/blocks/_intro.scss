@@ -1,0 +1,27 @@
+.intro {
+  padding: get-size("900") 0;
+  margin: get-size("900") 0;
+
+  &__title {
+    font-size: get-size("900");
+    line-height: 1.15;
+  }
+
+  &__subtitle {
+    font-size: get-size("600");
+  }
+
+  &__description {
+    max-width: 50rem;
+    > * {
+      margin: 1rem 0;
+    }
+  }
+
+  @include media-query("md") {
+    &__title {
+      font-size: get-size("1000");
+      max-width: 40rem;
+    }
+  }
+}

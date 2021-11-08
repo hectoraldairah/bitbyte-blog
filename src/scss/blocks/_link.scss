@@ -1,0 +1,5 @@
+.link {
+  display: inline-block;
+  color: get-color("primary");
+  @include apply-utility("weight", "bold");
+}
