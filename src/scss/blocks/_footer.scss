@@ -1,0 +1,33 @@
+.site-footer {
+  margin-top: auto;
+  padding: get-size("500") 0;
+  border-top: 1px solid rgba(get-color("shade"), 0.6);
+  font-size: get-size("400");
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -#{get-size("300")};
+    margin-inline-start: -#{get-size("400")};
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: get-size("400");
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-inline-start: get-size("400");
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

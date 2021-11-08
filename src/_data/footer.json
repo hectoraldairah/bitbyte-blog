@@ -1,0 +1,25 @@
+
+{
+    "items": [
+        {
+            "url": "https://www.11ty.dev/",
+            "text": "Build with Eleventy"
+        }, 
+        {
+            "url": "https://www.twitter.com/BitByte_",
+            "text": "Twitter"
+        },
+        {
+            "url": "https://codepen.io/hectoraldairah",
+            "text": "Codepen"
+        },
+        {
+            "url": "https://github.com/hectoraldairah",
+            "text": "Github"
+        },
+        {
+            "url": "https://www.linkedin.com/in/hectoraldairaguilar",
+            "text": "LinkedIn"
+        }
+    ]
+}

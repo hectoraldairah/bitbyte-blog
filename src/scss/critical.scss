@@ -6,6 +6,12 @@
 // Next: pull in gorko for design tokens
 @import "../../node_modules/gorko/gorko.scss";
 
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/nav";
+
+@import "utilities/wrapper";
+
 root {
   --flow-space: #{get-size("600")};
 }

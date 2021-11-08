@@ -1,0 +1,21 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <nav class="site-footer__navigation" aria-label="Secondary">
+            <ul class="site-footer__navigation__inner">
+                {% for item in footer.items %}
+                    <li>
+                        <a href="{{item.url}}" rel="noopener noreferrer" target="_blank">{{item.text}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="site-footer__navigation__outer">
+                <li>
+                    <a>RSS</a>
+                </li>
+                <li>
+                    <a>Github</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
