@@ -33,7 +33,7 @@ jobs:
 
       # Install the dependencies
       - name: Install dependencies
-        run: npm run install
+        run: npm install
         
       # Build Eleventy for Production
       - name: Build 11ty
