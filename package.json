@@ -27,6 +27,8 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^4.1.0",
     "luxon": "^2.1.0",
+    "markdown-it": "^12.2.0",
+    "markdown-it-anchor": "^8.4.1",
     "sass": "^1.43.4"
   }
 }

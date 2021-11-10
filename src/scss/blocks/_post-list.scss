@@ -34,7 +34,7 @@
     @include apply-utility("weight", "bold");
 
     &:hover {
-      color: get-color("secondary");
+      color: get-color("shade");
     }
   }
 }

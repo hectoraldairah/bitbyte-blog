@@ -20,7 +20,7 @@
 
   @include media-query("md") {
     &__title {
-      font-size: get-size("1000");
+      font-size: get-size("1100");
       max-width: 40rem;
     }
   }
