@@ -1,6 +1,9 @@
 ---
 title: "Blog"
 layout: "layouts/feed.njk"
+eleventyNavigation:
+  key: blog
+  order: 1
 pagination:
   data: collections.blog
   size: 5

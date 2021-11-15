@@ -1,0 +1,24 @@
+<section class="[ feature-post ]">
+    <div class="[ wrapper ] [ feature-post__inner ] ">
+        <h3>Featured</h3>
+        <div class="feature-post__list">
+            {% for item in featuredPostsItems %}
+                <article class="featured-article">
+                    <a href="{{ item.url }}" class="[ link ] [ featured-article__title ]">
+                        {{item.data.title}}
+                    </a>
+                    <p class="featured-article__clamp">
+                        <span class="featured-article__meta">
+                            <time class="featured-article__date" datetime="{{ item.data.date | postDate }}">{{ item.data.date | postDate }}</time>
+                        ⁃   
+                       {% for tag in item.data.tags %}
+                                <a href="/tag/{{ tag | slug }}/">#{{ tag }}</a>
+                            {% endfor %}
+                        </span>
+                        {{item.data.excerpt}}
+                    </p>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -5,13 +5,17 @@
   &__title {
     font-size: get-size("900");
     line-height: 1.15;
+    @include apply-utility("weight", "regular");
+    max-width: 50rem;
   }
 
   &__subtitle {
     font-size: get-size("600");
+    color: get-color("primary");
   }
 
   &__description {
+    font-size: get-size("500");
     max-width: 50rem;
     > * {
       margin: 1rem 0;
@@ -20,8 +24,7 @@
 
   @include media-query("md") {
     &__title {
-      font-size: get-size("1100");
-      max-width: 40rem;
+      font-size: get-size("1000");
     }
   }
 }

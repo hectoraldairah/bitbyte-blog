@@ -9,4 +9,8 @@ module.exports = {
     const dateObject = new Date(value);
     return dateObject.toLocaleDateString();
   },
+
+  logger: function (value) {
+    console.log(value);
+  },
 };

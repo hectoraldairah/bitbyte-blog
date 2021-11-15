@@ -12,34 +12,6 @@
     flex-shrink: 0;
     margin-inline-end: get-size("500"); // Prevents nav bunching up to the logo
     transform: translateY(0.25rem);
-
-    h1 {
-      $steps: 50;
-      display: inline-block;
-
-      &:hover {
-        animation: cray 3s linear infinite;
-      }
-
-      @keyframes cray {
-        @for $i from 1 to $steps {
-          $per: 100% / $steps * $i;
-          $style: (normal, italic, normal, normal);
-          $decor: (none, none, line-through, underline, none, none, none);
-          $trans: (none, none, uppercase, lowercase, capitalize, none, none);
-
-          $arrayS: random(4);
-          $arrayD: random(7);
-          $arrayT: random(7);
-          $arrayC: random(4);
-          #{$per} {
-            font-style: nth($style, $arrayS);
-            text-decoration: nth($decor, $arrayD);
-            text-transform: nth($trans, $arrayT);
-          }
-        }
-      }
-    }
   }
 
   &__nav {

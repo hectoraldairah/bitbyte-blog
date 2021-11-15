@@ -1,0 +1,26 @@
+.featured-article {
+  &__clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }
+
+  &__meta {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: get-size("400");
+  }
+
+  &__title {
+    color: get-color("primary");
+    font-size: get-size("600");
+    @include apply-utility("font", "sans");
+  }
+
+  &__excerpt {
+    display: block;
+    font-size: get-size("400");
+    margin-top: get-size("300");
+  }
+}

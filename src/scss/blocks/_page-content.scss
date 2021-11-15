@@ -1,13 +1,8 @@
 .page-content {
   line-height: 1.6;
-  padding-bottom: get-size("600");
-
-  // > * {
-  //   @include apply-utility("measure", "long");
-  // }
+  padding: 0 get-size("500");
 
   blockquote {
-    border-inline-start: 1rem solid get-color("quinary");
     padding-inline-start: get-size("600");
     padding-top: get-size("600");
     padding-bottom: get-size("600");
@@ -31,7 +26,7 @@
 
   ol,
   ul {
-    padding-inline-start: get-size("800");
+    padding-inline-start: get-size("900");
   }
 
   li + li {
@@ -42,7 +37,7 @@
   // they appear more like article sections
   h2,
   h3 {
-    --flow-space: #{get-size("800")};
+    --flow-space: #{get-size("900")};
     margin-top: get-size("300");
     margin-bottom: get-size("300");
   }
