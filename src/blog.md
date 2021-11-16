@@ -3,7 +3,7 @@ title: "Blog"
 layout: "layouts/feed.njk"
 eleventyNavigation:
   key: blog
-  order: 1
+  order: 2
 pagination:
   data: collections.blog
   size: 5
