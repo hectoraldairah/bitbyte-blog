@@ -12,4 +12,5 @@ intro:
 pagination:
   data: collections.featured
   size: 4
+metaDesc: "My little space in the web."
 ---

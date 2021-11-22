@@ -36,9 +36,10 @@
     }
 
     &:hover {
+      color: get-color("primary");
       &::before {
         transform: scaleX(1);
-        background: rgba(get-color("primary"), 0.75);
+        background: rgba(get-color("primary"), 0.6);
       }
     }
 

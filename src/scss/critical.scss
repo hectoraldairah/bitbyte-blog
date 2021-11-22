@@ -6,8 +6,14 @@
 // Next: pull in gorko for design tokens
 @import "../../node_modules/gorko/gorko.scss";
 
+// Base Styles
+@import "base/animation";
+@import "base/fonts";
+@import "base/typography";
+@import "base/scrollbar";
+@import "base/focus";
+
 // Import Utilities
-@import "utilities/fonts";
 @import "utilities/wrapper";
 
 @import "blocks/header";
@@ -15,6 +21,7 @@
 @import "blocks/nav";
 @import "blocks/link";
 @import "blocks/page-header";
+@import "blocks/stack";
 
 root {
   --flow-space: #{get-size("600")};
@@ -36,42 +43,6 @@ body {
   min-height: 100vh;
 }
 
-main:focus {
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 900;
-  @include apply-utility("font", "sans");
-}
-
-a {
-  color: inherit;
-}
-
-:focus {
-  outline: 2px dashed get-color("text");
-  outline-offset: 0.1rem;
-}
-
-::selection {
-  background: get-color("secondary");
-}
-// Scrollbar styles
-::-webkit-scrollbar {
-  height: 1rem;
-  background: get-color("shade");
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  border-radius: 0.25rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0rem;
-  background: get-color("secondary");
+#main-content {
+  margin-top: get-size("600");
 }
