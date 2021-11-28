@@ -3,7 +3,7 @@ title: "Color Palette Generator"
 date: 2019-11-16
 tags: ["Tools"]
 featured: true
-excerpt: "Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat."
+description: "Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat."
 ---
 
 Lorem markdownum ait. Plaustrum gaudet: similis pulsarunt inmortalis multa cui et huic altera nil; non ingenio tormenta visa.

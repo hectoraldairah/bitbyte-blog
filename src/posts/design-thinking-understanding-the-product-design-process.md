@@ -2,7 +2,7 @@
 title: "Design Thinking & Understanding the Product Design Process"
 date: 2020-02-22
 tags: "Design Thinking"
-excerpt: "Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat."
+description: "Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat."
 ---
 
 Lorem markdownum purpura dolorem! Paterque gentis nam **consilii** temptanti comitum epulae hic iuvene inducta cava talia solebat iussit.
