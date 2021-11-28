@@ -12,6 +12,8 @@ module.exports = (config) => {
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy("./src/images/");
   config.addPassthroughCopy("./src/assets/");
+  config.addPassthroughCopy("./src/icons/");
+  config.addPassthroughCopy("./src/fonts/");
 
   // Add filters
   Object.keys(filters).forEach((filterName) => {

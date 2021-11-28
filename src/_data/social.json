@@ -3,7 +3,8 @@
     "items": [
         {
             "url": "https://www.twitter.com/BitByte_",
-            "text": "Twitter"
+            "text": "Twitter",
+            "icon": "{{../assets/icons/twitter.svg}}"
         },
         {
             "url": "https://codepen.io/hectoraldairah",
