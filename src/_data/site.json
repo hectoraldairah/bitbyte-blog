@@ -1,9 +1,10 @@
 {
     "title": "Hector Aguilar",
+    "name": "Hector Aguilar",
     "description": "Hector Aguilar is a front-end engineer that based on Mexico City",
     "lang": "en",
     "locale": "en_US",
-    "domain": "mxb.dev",
-    "url": "https://mxb.dev",
-    "repo": "https://github.com/maxboeck/mxb"
+    "domain": "bitbyte.blog",
+    "url": "https://bitbyte.blog",
+    "repo": "https://github.com/hectoraldairah/bitbyte_blog"
 }
