@@ -5,6 +5,12 @@
     font-size: get-size("900");
   }
 
+  &__summary {
+    font-size: get-size("500");
+    margin-top: get-size("500");
+    color: get-color("primary");
+  }
+
   @include media-query("md") {
     h1 {
       font-size: get-size("1100");

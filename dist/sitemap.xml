@@ -44,7 +44,7 @@
     
         
             <url>
-                <loc>https://bitbyte.blog/tag/tutorial/</loc>
+                <loc>https://bitbyte.blog/tag/typography/</loc>
                 <lastmod>2021-11-11T00:48:52.223Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
@@ -70,6 +70,14 @@
             <url>
                 <loc>https://bitbyte.blog/</loc>
                 <lastmod>2021-11-22T01:50:18.056Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://bitbyte.blog/about/gym/</loc>
+                <lastmod>2021-11-28T23:46:13.684Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
         
