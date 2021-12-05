@@ -22,7 +22,7 @@
 <meta name="twitter:site" content="@{{ author.social.twitter.name }}">
 <meta name="twitter:creator" content="@{{ author.social.twitter.name }}">
 
-<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ site.url}}{{ page.url }}">
+<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ site.url}}{{ page.url }}_{{ helpers.generateDate() | postDate }}">
 
 {% if metaDesc %}
     <meta name="description" content="{{ metaDesc }}"/>
