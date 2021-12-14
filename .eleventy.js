@@ -1,4 +1,5 @@
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginRSS = require("@11ty/eleventy-plugin-rss");
 
 const filters = require("./src/utils/filters");
 const markdown = require("./src/utils/markdown");
@@ -8,6 +9,7 @@ const CONTENT_GLOBS = { post: "./src/posts/*.md" };
 module.exports = (config) => {
   // Plugins
   config.addPlugin(pluginNavigation);
+  config.addPlugin(pluginRSS);
 
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy("./src/images/");

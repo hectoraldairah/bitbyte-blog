@@ -21,6 +21,8 @@
 
         <link rel="preload" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'"/>
 
+        <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml"/>
+
         {% include "partials/meta.njk" %}
 
         {# Add facility for pages to declare an array of stylesheet paths #}
