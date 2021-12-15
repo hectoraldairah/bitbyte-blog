@@ -2,7 +2,6 @@
 title: "10 Tips for Website Redesign in 2020"
 date: 2020-01-02
 tags: ["Tips And Tricks"]
-featured: true
 description: "Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat."
 ---
 

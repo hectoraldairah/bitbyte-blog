@@ -8,7 +8,7 @@
         <name>Hector Aldair Aguilar Hernandez</name>
     </author>
     
-        <updated>2020-04-13T00:00:00Z</updated>
+        <updated>2021-12-14T00:00:00Z</updated>
     
     <id>https://bitbyte.blog/</id>
         <entry>
@@ -54,18 +54,6 @@
             </content>
         </entry>
         <entry>
-            <title>A Font for people with dyslexia</title>
-            <link href="https://bitbyte.blog/blog/a-font-for-people-with-dyslexia/"/>
-            <updated>2020-04-09T00:00:00Z</updated>
-            <id>https://bitbyte.blog/blog/a-font-for-people-with-dyslexia/</id>
-            <content type="html">
-                <![CDATA[
-                <p>Lorem markdownum <strong>verbis</strong>, fertur <em>fas</em> poplite cervix proximus ventis et. Regia ac gestu pugnacem actis, cum <a href="https://bitbyte.blog/blog/a-font-for-people-with-dyslexia/#murmurat-veros-tepescunt">illis</a>, et ungues ante mihi placet nomina relaxant circumstantes repagula non, speratque. Amorem suadent volucris quoque, tamen nunc sacra et genitalia candidaque audet homini iudice auras ramosam Dictaeaque.</p>
-
-            ]]>
-            </content>
-        </entry>
-        <entry>
             <title>A Complete Guide to Wireframe Design</title>
             <link href="https://bitbyte.blog/blog/a-complete-guide-to-wireframe-design/"/>
             <updated>2020-04-13T00:00:00Z</updated>
@@ -73,6 +61,30 @@
             <content type="html">
                 <![CDATA[
                 <p>Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat. Cura rapta dum praepositam inhaesit, laeto sceleratus vicina utque. Annos nunc sumitur ignes ac nequit minanti.</p>
+
+            ]]>
+            </content>
+        </entry>
+        <entry>
+            <title>An original title for a first blog post</title>
+            <link href="https://bitbyte.blog/blog/an-original-title-for-a-first-blog-post/"/>
+            <updated>2021-12-14T00:00:00Z</updated>
+            <id>https://bitbyte.blog/blog/an-original-title-for-a-first-blog-post/</id>
+            <content type="html">
+                <![CDATA[
+                <p>Hello, world! This is my first post ever made on this new site.</p>
+<p>This is the place where I’m going to write about my life, my work, and my hobbies. The things that I want to save in a secure place instead of my head.</p>
+<p>Why am I making this website and not using some other tool like medium?<br />
+Well, the first reason is… I don’t know how to make a website so I’m making this one.</p>
+<p>The second reason is that I want control over the content of my posts and something very simple.<br />
+I don’t want paywalls, ads, etc. It’s just a blog, not a new NTF collection.</p>
+<p>Well, maybe I’ll add some ads in the future. <strong>That’s a bad joke</strong> please ignore it.</p>
+<p>The next post will be about how I’m making this website and the resources I’m using.</p>
+<p>But if you’re a little impatient, you can check out this <a href="https://github.com/hectoraldairah/bitbyte-blog">Github repo</a></p>
+<p>I’m using <a href="https://www.11ty.dev/">Eleventy</a> btw.</p>
+<p>Quote of the day:<br />
+You need to finish your shit before you start your next one.<br />
+- IDK</p>
 
             ]]>
             </content>

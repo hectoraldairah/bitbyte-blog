@@ -9,7 +9,6 @@
 <time datetime="{{ date | postDate }}">{{ date | postDate }}</time>
 {% if tags %}
     <div class="constrained">
-        <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
         <ul class="[ tags-list ]" aria-describedby="tags-desc">
             {% for tag in tags %}
                 <li>

@@ -2,7 +2,6 @@
 title: "Color Palette Generator"
 date: 2019-11-16
 tags: ["Tools"]
-featured: true
 description: "Placidis tamen. Amnem unda fores et nocent tellus. Ictu undis offensi nostra nempe dextra quod, illa causa expositum, dat."
 ---
 
