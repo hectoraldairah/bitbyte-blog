@@ -70,6 +70,7 @@ $gorko-config: (
     "items": (
       "base": "Nunito, Arial, sans-serif",
       "sans": "Lora, serif",
+      "terminal": "Terminal, monospace",
     ),
     "output": "standard",
     "property": "font-family",
@@ -144,7 +145,7 @@ $gorko-config: (
       "full": "100%",
       // 'half': percentage(1/2),
       // 'quarter': percentage(1/4),
-      // 'third': percentage(1/3),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      // 'third': percentage(1/3),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     ),
     "output": "responsive",
     "property": "width",

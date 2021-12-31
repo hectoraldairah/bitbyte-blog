@@ -13,9 +13,8 @@
   }
 
   &__title {
-    color: get-color("primary");
     font-size: get-size("600");
-    @include apply-utility("font", "sans");
+    @include apply-utility("font", "terminal");
   }
 
   &__excerpt {
