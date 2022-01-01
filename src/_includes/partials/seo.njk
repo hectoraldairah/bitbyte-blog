@@ -10,6 +10,7 @@
     <meta property="article:tag" content="{{ tags | join(', ')}}" >
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/social-preview-images/{{ date | previewDate }}-{{ title | slug }}-preview.jpeg">
 {% else %}
     <meta property="og:type" content="website"/>
 {% endif %}
@@ -21,8 +22,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@{{ author.social.twitter.name }}">
 <meta name="twitter:creator" content="@{{ author.social.twitter.name }}">
-
-<meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ site.url}}{{ page.url }}_{{ helpers.generateDate() | postDate }}">
 
 {% if metaDesc %}
     <meta name="description" content="{{ metaDesc }}"/>
