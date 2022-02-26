@@ -47,7 +47,6 @@ module.exports = (config) => {
     const socialPreviewImagesDir = "dist/assets/images/social-preview-images/";
     fs.readdir(socialPreviewImagesDir, (err, files) => {
       if (files.length > 0) {
-        console.log(files);
         files.forEach((filename) => {
           if (filename.endsWith(".svg")) {
             let imageUrl = socialPreviewImagesDir + filename;

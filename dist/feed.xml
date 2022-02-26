@@ -8,7 +8,7 @@
         <name>Hector Aldair Aguilar Hernandez</name>
     </author>
     
-        <updated>2022-12-14T00:00:00Z</updated>
+        <updated>2021-12-31T00:00:00Z</updated>
     
     <id>https://bitbyte.blog/</id>
         <entry>
@@ -68,29 +68,6 @@ You need to finish your shit before you start your next one.
 </ol>
 <p>That's it. I don't want to write more on this post to avoid feeling bad at the end of 2022.</p>
 <p>Happy 2022!</p>
-
-            ]]>
-            </content>
-        </entry>
-        <entry>
-            <title>Example Post</title>
-            <link href="https://bitbyte.blog/blog/example-post/"/>
-            <updated>2022-12-14T00:00:00Z</updated>
-            <id>https://bitbyte.blog/blog/example-post/</id>
-            <content type="html">
-                <![CDATA[
-                <div class="heading-wrapper h1">
-<h1 id="my-title-is-crazy">My title is crazy</h1>
-<a class="anchor" href="https://bitbyte.blog/blog/example-post/#my-title-is-crazy" aria-labelledby="my-title-is-crazy"><span hidden="">#</span></a></div>
-<p>some test</p>
-<div class="heading-wrapper h2">
-<h2 id="my-title-is-crazy-1">My title is crazy</h2>
-<a class="anchor" href="https://bitbyte.blog/blog/example-post/#my-title-is-crazy-1" aria-labelledby="my-title-is-crazy-1"><span hidden="">#</span></a></div>
-<p>Some test</p>
-<div class="heading-wrapper h3">
-<h3 id="title-3">Title 3</h3>
-<a class="anchor" href="https://bitbyte.blog/blog/example-post/#title-3" aria-labelledby="title-3"><span hidden="">#</span></a></div>
-<p>Some test</p>
 
             ]]>
             </content>

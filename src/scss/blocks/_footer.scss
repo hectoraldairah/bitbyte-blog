@@ -11,6 +11,12 @@
     align-items: center;
     margin-top: -#{get-size("300")};
     margin-inline-start: -#{get-size("400")};
+
+    &__middle {
+      display: flex;
+      gap: get-size("900");
+      align-items: center;
+    }
   }
 
   ul {
