@@ -1,5 +1,0 @@
-
-Sitemap: https://bitbyte.blog/sitemap.xml
-
-User-agent: *
-Disallow:

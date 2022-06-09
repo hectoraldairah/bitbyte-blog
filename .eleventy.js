@@ -7,7 +7,7 @@ const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const filters = require("./src/utils/filters");
 const markdown = require("./src/utils/markdown");
 
-const CONTENT_GLOBS = { post: "./src/posts/**/*.md", pixelart: "./src/pixelart/*.md" };
+const CONTENT_GLOBS = { post: "./src/posts/**/*.md", pixelart: "./src/pixelart/**/*.md" };
 
 module.exports = (config) => {
   // Plugins
