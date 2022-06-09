@@ -39,7 +39,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy-cache-assets": "^2.3.0",
-    "prettier": "^2.6.2",
-    "prettier-plugin-nunjucks": "git+ssh://git@github.com/justrhysism/prettier-plugin-nunjucks.git"
+    "prettier": "^2.6.2"
   }
 }
