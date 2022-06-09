@@ -7,7 +7,7 @@ const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const filters = require("./src/utils/filters");
 const markdown = require("./src/utils/markdown");
 
-const CONTENT_GLOBS = { post: "./src/posts/*.md" };
+const CONTENT_GLOBS = { post: "./src/posts/**/*.md", pixelart: "./src/pixelart/*.md" };
 
 module.exports = (config) => {
   // Plugins
@@ -40,6 +40,9 @@ module.exports = (config) => {
       .sort((a, b) => b.date - a.date);
   });
 
+  config.addCollection("pixelart", (collection) => {
+    return [...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart)].reverse()
+  });
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
 

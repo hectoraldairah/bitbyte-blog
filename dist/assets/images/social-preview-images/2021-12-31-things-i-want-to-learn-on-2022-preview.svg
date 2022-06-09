@@ -5,7 +5,7 @@
     <text x="250" y="150"
         font-family="Verdana"
         font-size="55">
-    Hello, out there
+   Why are you looking in my code?  
   </text>
 
     <!-- Show outline of canvas using 'rect' element -->

@@ -1,13 +1,18 @@
-{% extends "layouts/base.njk" %}
+{% extends "layouts/base.njk" %} {% block content %}
+<article class="constrained">
+    {% include "partials/page-header.njk" %}
+    <p>
+        This is my gym log section where I keep tracking (and hopefully)
+        progress on my fitness goals.
+    </p>
 
-{% block content %}
-    <article class="constrained">
-        {% include "partials/page-header.njk" %}
-        <p>This is my gym log section where I keep tracking (and hopefully) progress on my fitness goals.</p>
-
-        <section class="log-section">
-            <img class="responsive-image" src="{{'/assets/images/construction.gif' | url }}" alt="Héctor Aguilar">
-            <p>This section is... well you know it</p>
-        </section>
-    </article>
+    <section class="log-section">
+        <img
+            class="responsive-image"
+            src="{{'/assets/images/construction.gif' | url }}"
+            alt="Héctor Aguilar"
+        />
+        <p>This section is... well you know it</p>
+    </section>
+</article>
 {% endblock %}

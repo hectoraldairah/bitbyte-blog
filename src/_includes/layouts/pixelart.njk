@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+{% set pixelArtItems = pagination.items %}
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+  <article>
+  <div class="constrained">
+  {% include "partials/page-header.njk" %}
+  </div>
+  </article>
+{% endblock %}
