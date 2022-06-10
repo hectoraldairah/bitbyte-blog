@@ -9,6 +9,10 @@
         "url": "/blog/"
       },
       {
+        "text":"pixel art",
+        "url": "/pixelart"
+      },
+      {
         "text": "about",
         "url": "/about/"
       }

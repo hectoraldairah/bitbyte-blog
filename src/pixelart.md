@@ -3,7 +3,10 @@ title: 'Pixel Art'
 tag: ['pixelart', 'creative', 'drawings']
 pagination:
   data: collections.pixelart
-  size: 1
+  size: 10
+eleventyNavigation:
+  key: pixel art
+  order: 3
 layout: 'layouts/pixelart.njk'
 metaDesc: 'My pixelart drawings'
 pageHeaderSummary: 'I like the Gameboy feeling'
