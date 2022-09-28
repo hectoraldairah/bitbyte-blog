@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy",
+    "prettier:check": "prettier --check .",    "prettier:write": "prettier --write .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,14 @@
     "url": "https://github.com/hectoraldairah/bitbyte-blog/issues"
   },
   "homepage": "https://github.com/hectoraldairah/bitbyte-blog#readme",
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write"
+    ],
+    "*.{md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-img": "^1.0.0",
@@ -38,6 +48,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy-cache-assets": "^2.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "markdown-it-anchor": "^8.6.5",
     "prettier": "^2.6.2"
   }
