@@ -1,32 +1,32 @@
-@import "reset";
+@import 'reset';
 
 // First up: config and functions
-@import "config";
+@import 'config';
 
 // Next: pull in gorko for design tokens
-@import "../../node_modules/gorko/gorko.scss";
+@import '../../node_modules/gorko/gorko.scss';
 
 // Base Styles
-@import "base/animation";
-@import "base/fonts";
-@import "base/typography";
-@import "base/scrollbar";
-@import "base/focus";
-@import "base/anchor";
+@import 'base/animation';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/scrollbar';
+@import 'base/focus';
+@import 'base/anchor';
 
 // Import Utilities
-@import "utilities/wrapper";
+@import 'utilities/wrapper';
 
-// Blocks 
-@import "blocks/header";
-@import "blocks/footer";
-@import "blocks/nav";
-@import "blocks/link";
-@import "blocks/page-header";
-@import "blocks/stack";
+// Blocks
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/nav';
+@import 'blocks/link';
+@import 'blocks/page-header';
+@import 'blocks/stack';
 
-root {
-  --flow-space: #{get-size("600")};
+:root {
+  --flow-space: #{get-size('600')};
 }
 
 html {
@@ -36,15 +36,22 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background: get-color("background");
-  color: get-color("text");
+  background: get-color('background');
+  color: get-color('text');
   line-height: 1.5;
-  font-size: get-size("500");
-  @include apply-utility("font", "base");
+  font-size: get-size('500');
+  @include apply-utility('font', 'base');
   overflow-x: hidden;
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: get-size('900');
+  color: get-color('white');
+}
+
 #main-content {
-  margin-top: get-size("600");
+  margin-top: get-size('600');
 }

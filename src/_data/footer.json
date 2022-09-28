@@ -1,26 +1,25 @@
-
 {
-    "items": [
-        {
-            "url": "https://www.11ty.dev/",
-            "text": "Build with Eleventy"
-        }, 
-        {
-            "url": "https://www.twitter.com/BitByte_",
-            "text": "Twitter",
-            "icon": "{{../assets/icons/twitter.svg}}"
-        },
-        {
-            "url": "https://codepen.io/hectoraldairah",
-            "text": "Codepen"
-        },
-        {
-            "url": "https://github.com/hectoraldairah",
-            "text": "Github"
-        },
-        {
-            "url": "https://www.linkedin.com/in/hectoraldairaguilar",
-            "text": "LinkedIn"
-        }
-    ]
+  "items": [
+    {
+      "url": "https://www.11ty.dev/",
+      "text": "Build with Eleventy"
+    },
+    {
+      "url": "https://www.twitter.com/BitByte_",
+      "text": "Twitter",
+      "icon": "{{../assets/icons/twitter.svg}}"
+    },
+    {
+      "url": "https://codepen.io/hectoraldairah",
+      "text": "Codepen"
+    },
+    {
+      "url": "https://github.com/hectoraldairah",
+      "text": "Github"
+    },
+    {
+      "url": "https://www.linkedin.com/in/hectoraldairaguilar",
+      "text": "LinkedIn"
+    }
+  ]
 }

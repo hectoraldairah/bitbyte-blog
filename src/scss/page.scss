@@ -1,21 +1,22 @@
-@import "config";
+@import 'config';
 
 // // Set Gorko to output no CSS for this file
 $generate-utility-classes: false;
 
 // // Next: pull in Gorko for design tokens
-@import "../../node_modules/gorko/gorko.scss";
+@import '../../node_modules/gorko/gorko.scss';
 
 // // Pull in blocks
-@import "blocks/post-list";
-@import "blocks/tag-lists";
-@import "blocks/page-content";
+@import 'blocks/post-list';
+@import 'blocks/tag-lists';
+@import 'blocks/page-content';
 
 // // Generic styles
 
 time[datetime] {
   display: block;
-  color: get-color("primary");
-  font-size: get-size("700");
+  color: get-color('primary');
+  font-size: get-size('500');
   font-style: italic;
+  padding-bottom: 1rem;
 }

@@ -6,5 +6,4 @@ $generate-utility-classes: false;
 // // Next: pull in Gorko for design tokens
 @import '../../node_modules/gorko/gorko.scss';
 
-@import "blocks/pixelart-grid"
-
+@import 'blocks/pixelart-grid';

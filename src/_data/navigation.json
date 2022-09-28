@@ -1,20 +1,20 @@
 {
-    "items": [
-      {
-        "text": "home",
-        "url": "/"
-      },
-      {
-        "text": "blog",
-        "url": "/blog/"
-      },
-      {
-        "text":"pixel art",
-        "url": "/pixelart"
-      },
-      {
-        "text": "about",
-        "url": "/about/"
-      }
-    ]
-  }
+  "items": [
+    {
+      "text": "home",
+      "url": "/"
+    },
+    {
+      "text": "blog",
+      "url": "/blog/"
+    },
+    {
+      "text": "pixel art",
+      "url": "/pixelart"
+    },
+    {
+      "text": "about",
+      "url": "/about/"
+    }
+  ]
+}

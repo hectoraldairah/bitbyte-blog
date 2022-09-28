@@ -3,10 +3,10 @@ main:focus {
 }
 
 :focus {
-  outline: 2px dashed get-color("text");
+  outline: 2px dashed get-color('text');
   outline-offset: 0.1rem;
 }
 
 ::selection {
-  background: get-color("secondary");
+  background: get-color('secondary');
 }

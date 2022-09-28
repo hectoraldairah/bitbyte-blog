@@ -1,6 +1,6 @@
 module.exports = {
   getLinkActiveState(itemUrl, pageUrl) {
-    let response = "";
+    let response = '';
 
     if (itemUrl === pageUrl) {
       response = ' aria-current="page" data-state="active"';

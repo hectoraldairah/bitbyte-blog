@@ -1,19 +1,19 @@
 .page-header {
-  padding: get-size("900") 0;
+  padding: get-size('900') 0;
   text-align: center;
   h1 {
-    font-size: get-size("900");
+    font-size: get-size('900');
   }
 
   &__summary {
-    font-size: get-size("500");
-    margin-top: get-size("500");
-    color: get-color("primary");
+    font-size: get-size('500');
+    margin-top: get-size('500');
+    color: get-color('primary');
   }
 
-  @include media-query("md") {
+  @include media-query('md') {
     h1 {
-      font-size: get-size("1100");
+      font-size: get-size('1100');
     }
   }
 }

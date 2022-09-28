@@ -32,13 +32,13 @@
     "gulp-sass": "^4.1.0",
     "luxon": "^2.1.0",
     "markdown-it": "^12.3.0",
-    "markdown-it-anchor": "^8.4.1",
     "sass": "^1.43.4",
     "slugify": "^1.6.5",
     "speedlify-score": "^2.0.2"
   },
   "devDependencies": {
     "@11ty/eleventy-cache-assets": "^2.3.0",
+    "markdown-it-anchor": "^8.6.5",
     "prettier": "^2.6.2"
   }
 }

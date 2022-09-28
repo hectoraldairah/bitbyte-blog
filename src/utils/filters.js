@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon");
+const { DateTime } = require('luxon');
 
 module.exports = {
   postDate: function (dateObj) {
@@ -16,9 +16,9 @@ module.exports = {
 
   previewDate: function (dateObj) {
     return DateTime.fromJSDate(dateObj, {
-      zone: "utc",
+      zone: 'utc',
     })
-      .setLocale("en-US")
+      .setLocale('en-US')
       .toISODate();
   },
 };

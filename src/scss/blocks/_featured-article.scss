@@ -9,17 +9,18 @@
     display: block;
     width: 100%;
     margin-bottom: 0.5rem;
-    font-size: get-size("400");
+    font-size: get-size('400');
   }
 
   &__title {
-    font-size: get-size("600");
-    @include apply-utility("font", "terminal");
+    font-size: get-size('600');
+    color: get-color('white');
+    @include apply-utility('font', 'terminal');
   }
 
   &__excerpt {
     display: block;
-    font-size: get-size("400");
-    margin-top: get-size("300");
+    font-size: get-size('400');
+    margin-top: get-size('300');
   }
 }

@@ -1,8 +1,8 @@
 ---
-title: "Ghost Love"
+title: 'Ghost Love'
 date: 2021-12-08
-tags: ["PixelArt"]
-description: "A spooky friend"
+tags: ['PixelArt']
+description: 'A spooky friend'
 image: ghost-love.png
 dir: ghost-love
 ---
@@ -19,8 +19,7 @@ love with the retro style.
 
 As you can see on this website, I like the pixelart style. So, why not start to making it?
 
-I always think I'm not an __artsy boy__. I have zero art skills... I don't like that.
-
+I always think I'm not an **artsy boy**. I have zero art skills... I don't like that.
 
 That's why I started with pixelart. The _i love the retro style_ + _i wanna make some art that doesn't suck_
 

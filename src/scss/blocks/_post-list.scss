@@ -1,33 +1,33 @@
 .post-list {
   &__item {
-    padding-bottom: get-size("1000");
+    padding-bottom: get-size('1000');
 
     &__info {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      font-size: get-size("400");
-      color: rgba(get-color("text"), 0.68);
-      gap: get-size("500");
+      font-size: get-size('400');
+      color: rgba(get-color('text'), 0.68);
+      gap: get-size('500');
 
       a {
-        text-decoration-color: get-color("primary");
+        text-decoration-color: get-color('primary');
         padding: 0.2rem 0.4rem;
-        background-color: get-color("shade");
+        background-color: get-color('shade');
         border-radius: 10%;
       }
     }
 
     &__date {
-      padding-bottom: get-size("300") 0;
+      padding-bottom: get-size('300') 0;
     }
 
     &__excerpt {
-      padding: get-size("500") 0;
+      padding: get-size('500') 0;
     }
   }
   &__link {
-    font-size: get-size("900");
-    color: get-color("primary");
+    font-size: get-size('900');
+    color: get-color('primary');
   }
 }

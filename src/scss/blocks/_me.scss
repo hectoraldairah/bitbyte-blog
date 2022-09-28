@@ -1,13 +1,13 @@
 .about {
-  padding: get-size("900") 0;
+  padding: get-size('900') 0;
   &__section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
-    margin-top: get-size("500");
-    padding: get-size("900") 0;
+    margin-top: get-size('500');
+    padding: get-size('900') 0;
 
-    @include media-query("md") {
+    @include media-query('md') {
       grid-template-columns: repeat(2, minmax(250px, 1fr));
       gap: 5rem;
     }

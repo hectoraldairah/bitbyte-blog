@@ -1,5 +1,5 @@
 .feature-post {
-  background-color: get-color("background-alt");
+  background-color: get-color('background-alt');
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -11,11 +11,11 @@
 
   &__list {
     display: grid;
-    gap: get-size("1000");
-    margin-top: get-size("700");
+    gap: get-size('1000');
+    margin-top: get-size('700');
   }
 
-  @include media-query("md") {
+  @include media-query('md') {
     .feature-post {
       &__list {
         grid-template-columns: repeat(2, 1fr);
@@ -23,7 +23,7 @@
     }
   }
 
-  @include media-query("lg") {
+  @include media-query('lg') {
     .feature-post {
       &__inner {
         grid-template-columns: 200px 1fr;

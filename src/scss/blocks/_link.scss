@@ -1,8 +1,4 @@
 .link {
-  color: get-color("primary");
-  @include apply-utility("weight", "bold");
-}
-
-.link:hover {
-  color: get-color("shade");
+  color: get-color('white');
+  @include apply-utility('weight', 'bold');
 }

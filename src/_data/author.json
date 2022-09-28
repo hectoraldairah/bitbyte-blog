@@ -1,19 +1,19 @@
 {
-    "name": "Hector Aldair Aguilar Hernandez",
-    "email": "hectoraldair@bitbyte.com",
-    "avatar": "/assets/images/avatar2.jpg",
-    "social": {
-        "twitter": {
-            "name": "BitByte_",
-            "url": "https://twitter.com/BitByte_"
-        },
-        "github": {
-            "name": "hectoraldairah",
-            "url": "https://github.com/hectoraldairah"
-        },
-        "codepen": {
-            "name": "hectoraldairah",
-            "url": "https://codepen.io/hectoraldairah/"
-        }
+  "name": "Hector Aldair Aguilar Hernandez",
+  "email": "hectoraldair@bitbyte.com",
+  "avatar": "/assets/images/avatar2.jpg",
+  "social": {
+    "twitter": {
+      "name": "BitByte_",
+      "url": "https://twitter.com/BitByte_"
+    },
+    "github": {
+      "name": "hectoraldairah",
+      "url": "https://github.com/hectoraldairah"
+    },
+    "codepen": {
+      "name": "hectoraldairah",
+      "url": "https://codepen.io/hectoraldairah/"
     }
+  }
 }

@@ -1,7 +1,7 @@
 ---
-title: "Things I want to learn on 2022"
-tags: ["Personal"]
-description: "Some things that catch my attention and I want to learn on 2022."
+title: 'Things I want to learn on 2022'
+tags: ['Personal']
+description: 'Some things that catch my attention and I want to learn on 2022.'
 date: 2021-12-31
 featured: true
 ---
@@ -17,7 +17,7 @@ It's the end of the year, and I'm starting to think about what I want to learn i
 5. Back-end: Well, maybe this is kind of huge for me. I've been doing front-end stuff for a while and my backend skills are getting pretty bad. My experience working with [Express](https://expressjs.com/es/) and [Adonis](https://adonisjs.com/) was pretty good, but it was simple things. I don't know anything about databases too. So, yeah. Maybe I'll buy a course from [Udemy](https://www.udemy.com/) for it.
 6. CSS Art: Yes, another art stuff. All the [beautiful CSS art that is on codepen](https://codepen.io/tag/css-art) makes me want to do something similar. I'm not sure what exactly but some 3D CSS animations are on my eye.
 7. Being fluent in Esperanto and learning more about romantic languages: Duolingo and [Lernu](https://lernu.net/) are my best friends here.
-   
+
 That's it. I don't want to write more on this post to avoid feeling bad at the end of 2022.
 
 Happy 2022!

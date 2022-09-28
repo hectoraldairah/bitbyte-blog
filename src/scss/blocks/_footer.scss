@@ -1,20 +1,20 @@
 .site-footer {
   margin-top: auto;
-  padding: get-size("600") 0;
-  border-top: 1px solid rgba(get-color("shade"), 0.6);
-  font-size: get-size("400");
+  padding: get-size('600') 0;
+  border-top: 1px solid rgba(get-color('shade'), 0.6);
+  font-size: get-size('400');
 
   &__navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: -#{get-size("300")};
-    margin-inline-start: -#{get-size("400")};
+    margin-top: -#{get-size('300')};
+    margin-inline-start: -#{get-size('400')};
 
     &__middle {
       display: flex;
-      gap: get-size("900");
+      gap: get-size('900');
       align-items: center;
     }
   }
@@ -23,7 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: get-size("400");
+    gap: get-size('400');
   }
 
   li {
@@ -31,6 +31,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-inline-start: get-size("400");
+    margin-inline-start: get-size('400');
   }
 }

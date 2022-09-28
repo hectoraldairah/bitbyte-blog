@@ -14,7 +14,7 @@ h3,
 h4 {
   font-weight: 900;
   text-rendering: optimizeLegibility;
-  @include apply-utility("font", "terminal");
+  @include apply-utility('font', 'terminal');
 }
 
 p {
@@ -22,11 +22,12 @@ p {
 }
 
 a {
-  color: get-color("text");
-  @include apply-utility("font", "terminal");
-  text-decoration-color: get-color("primary");
+  color: get-color('white');
+  @include apply-utility('font', 'terminal');
+  text-decoration-color: get-color('primary');
+  transition: 0.3s;
 
   &:hover {
-    color: get-color("primary");
+    color: get-color('primary');
   }
 }
