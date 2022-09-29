@@ -23,6 +23,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('./src/icons/');
   config.addPassthroughCopy('./src/fonts/');
   config.addPassthroughCopy('./src/pixelart/');
+  config.addPassthroughCopy('./src/posts/');
 
   // Add filters
   Object.keys(filters).forEach((filterName) => {

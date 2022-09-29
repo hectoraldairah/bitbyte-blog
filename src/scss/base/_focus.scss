@@ -4,7 +4,7 @@ main:focus {
 
 :focus {
   outline: 2px dashed get-color('text');
-  outline-offset: 0.1rem;
+  outline-offset: 0.2rem;
 }
 
 ::selection {

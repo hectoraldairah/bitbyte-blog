@@ -13,8 +13,6 @@
       a {
         text-decoration-color: get-color('primary');
         padding: 0.2rem 0.4rem;
-        background-color: get-color('shade');
-        border-radius: 10%;
       }
     }
 
@@ -28,6 +26,6 @@
   }
   &__link {
     font-size: get-size('900');
-    color: get-color('primary');
+    color: get-color('white');
   }
 }

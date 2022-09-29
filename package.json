@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/hectoraldairah/bitbyte-blog#readme",
   "lint-staged": {
-    "*.{js}": [
+    "*.js": [
       "prettier --write"
     ],
-    "*.{md}": [
+    "*.md": [
       "prettier --write"
     ]
   },
