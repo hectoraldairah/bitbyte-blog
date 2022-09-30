@@ -10,7 +10,7 @@
             <div class="intro__description">
                 <p>This is just my little personal blog where you can read my experiences learning new stuff. Working with React.js and and Design Systems at <a class="link" target="_blank" href="https://clip.mx/"> @Clip.</a>
                 </p>
-                <p>Quote of the day: I'm starting to getting bored of javascript</p>
+                <p>Quote of the day: {{ helpers.getQuoteOfTheDay() | safe }}.</p>
             </div>
         </div>
     </section>
