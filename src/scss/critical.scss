@@ -26,7 +26,27 @@
 @import 'blocks/stack';
 
 :root {
+  --bg-color: #{get-color('almond')};
+  --feature-post-color: #{get-color('deep-champagne')};
+  --text-heading-color: #{get-color('metallic-seaweed')};
+  --subtitle-color: #{get-color('english-violet')};
+  --text-color: #{get-color('english-violet')};
+  --link-color: #{get-color('english-violet')};
+  --text-decoration-color: #{get-color('melon')};
+  --link-hover-color: #{get-color('begonia')};
+  --focus-color: #{get-color('melon')};
+
   --flow-space: #{get-size('600')};
+
+  --scrollbar-color: #{get-color('melon')};
+  --scrollbar-thumb-color: #{get-color('begonia')};
+
+  --block-quote-color: #{get-color('tiffany-blue')};
+  --block-quote-shadow-color: #{get-color('melon')};
+  --footer-border-color: #{get-color('tiffany-blue')};
+
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color); 
+  scrollbar-width: auto !important
 }
 
 html {
@@ -36,8 +56,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background: get-color('background');
-  color: get-color('text');
+  background: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.5;
   font-size: get-size('500');
   @include apply-utility('font', 'base');
@@ -49,9 +69,35 @@ h1,
 h2,
 h3 {
   font-weight: get-size('900');
-  color: get-color('white');
+  color: var(--text-heading-color);
 }
 
 #main-content {
   margin-top: get-size('600');
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --bg-color: #{get-color('chinese-black')};
+  --feature-post-color: #{get-color('eerie-black')};
+  --text-heading-color: #{get-color('white')};
+  --subtitle-color: #{get-color('pastel-pink')};
+  --text-color: #{get-color('light-gray')};
+  --link-color: #{get-color('white')};
+  --text-decoration-color: #{get-color('pastel-pink')};
+  --link-hover-color: #{get-color('pastel-pink')};
+  --focus-color: #{get-color('jacarta')};
+
+  --flow-space: #{get-size('600')};
+
+  --scrollbar-color: #{get-color('sugar-plum')};
+  --scrollbar-thumb-color: #{get-color('jacarta')};
+
+  --block-quote-color: #{get-color('pastel-pink')};
+  --block-quote-shadow-color: #{get-color('sugar-plum')};
+  --footer-border-color: #{get-color('pastel-pink')};
+
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color); 
+  scrollbar-width: auto !important
+  }
 }

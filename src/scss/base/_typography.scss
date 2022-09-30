@@ -22,12 +22,12 @@ p {
 }
 
 a {
-  color: get-color('white');
+  color: var(--link-color);
   @include apply-utility('font', 'terminal');
-  text-decoration-color: get-color('primary');
+  text-decoration-color: var(--text-decoration-color);
   transition: 0.3s;
 
   &:hover {
-    color: get-color('primary');
+    color: var(--link-hover-color);
   }
 }

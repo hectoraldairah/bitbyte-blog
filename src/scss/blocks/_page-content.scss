@@ -9,11 +9,11 @@
     margin-top: get-size('600');
     margin-bottom: get-size('600');
     font-style: italic;
-    border: solid 2px get-color('shade');
+    border: solid 2px var(--block-quote-color);
     padding: 20px 30px 20px 30px;
-    box-shadow: 13px 13px 0 0 get-color('secondary'),
-      15px 15px 0 0 get-color('shade'), 15px 11px 0 0 get-color('shade'),
-      11px 15px 0 0 get-color('shade');
+    box-shadow: 13px 13px 0 0 var(--block-quote-shadow-color),
+      15px 15px 0 0 var(--block-quote-shadow-color), 15px 11px 0 0 var(--block-quote-shadow-color),
+      11px 15px 0 0 var(--block-quote-shadow-color);
   }
 
   h2,

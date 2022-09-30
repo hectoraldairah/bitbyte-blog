@@ -1,7 +1,9 @@
 // Scrollbar styles
+
+
 ::-webkit-scrollbar {
   height: 1rem;
-  background: get-color('shade');
+  background: var(--scrollbar-color) 
 }
 
 ::-webkit-scrollbar-track {
@@ -11,5 +13,5 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0rem;
-  background: get-color('secondary');
+  background: var(--scrollbar-thumb-color);
 }

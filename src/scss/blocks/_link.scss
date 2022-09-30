@@ -1,4 +1,3 @@
 .link {
-  color: get-color('white');
-  @include apply-utility('weight', 'bold');
+  color: var(--link-color);
 }

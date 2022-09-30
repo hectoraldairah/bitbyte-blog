@@ -28,13 +28,20 @@ $gorko-size-scale: (
 /// You can also use them to power borders, fills or shadows, for example.
 ///
 $gorko-colors: (
-  'background': #16161a,
-  'background-alt': #1a1b21,
-  'shade': #864879,
-  'text': #d1d5db,
+  'chinese-black': #16161a,
+  'eerie-black': #1a1b21,
+  'sugar-plum': #864879,
+  'light-gray': #d1d5db,
   'white': #ffffff,
-  'secondary': #3f3351,
-  'primary': #e9a6a6,
+  'jacarta': #3f3351,
+  'pastel-pink': #e9a6a6,
+  'deep-champagne': #FFD4A3,
+  'begonia': #FF6973,
+  'melon': #FFB0A3,
+  'almond': #FFEECC,
+  'english-violet': #46425E,
+  'tiffany-blue': #00B9BE,
+  'metallic-seaweed': #15788C,
 );
 
 /// CORE CONFIG
@@ -141,7 +148,7 @@ $gorko-config: (
       'full': '100%',
       // 'half': percentage(1/2),
       // 'quarter': percentage(1/4),
-      // 'third': percentage(1/3),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      // 'third': percentage(1/3),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     ),
     'output': 'responsive',
     'property': 'width',

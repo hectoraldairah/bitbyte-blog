@@ -1,7 +1,7 @@
 .site-footer {
   margin-top: auto;
   padding: get-size('600') 0;
-  border-top: 1px solid rgba(get-color('shade'), 0.6);
+  border-top: 1px solid var(--footer-border-color);
   font-size: get-size('400');
 
   &__navigation {

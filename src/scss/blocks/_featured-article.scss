@@ -14,7 +14,8 @@
 
   &__title {
     font-size: get-size('600');
-    color: get-color('white');
+    color: var(--link-color);
+    text-decoration-color: var(--link-hover-color);
     @include apply-utility('font', 'terminal');
   }
 
