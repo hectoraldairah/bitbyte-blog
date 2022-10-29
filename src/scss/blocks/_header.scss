@@ -1,3 +1,11 @@
+@function get-color-name($color-name) {
+  @return var(--#{$color-name});
+}
+
+$red: var(--box-red);
+$green: var(--box-green);
+$blue: var(--box-blue);
+
 .site-head {
   padding: get-size('600') 0;
 
@@ -6,6 +14,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    & select {
+      background-color: transparent;
+      border: none;
+      color: var(--link-color);
+      box-shadow: rgba($red,$green,$blue,0.4) 5px 5px,
+        rgba($red,$green,$blue, 0.3) 10px 10px, rgba($red,$green,$blue,0.2) 15px 15px,
+        rgba($red,$green,$blue,0.1) 20px 20px, rgba($red,$green,$blue,0.05) 25px 25px;
+    }
   }
 
   &__brand {

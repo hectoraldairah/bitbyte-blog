@@ -1,13 +1,13 @@
 <div id="pixelart-list">
-    <div class="[ wrapper ] [ flow ]">
-      <ul class="[ pixelart-grid ]">
-          {% for item in pixelArtItems %}
-          {% set pixelArtImageUrl = ["/pixelart/", item.data.dir, "/", item.data.image] | join %}
-          <div class="[ pixelart-card ]">
-          <img src={{pixelArtImageUrl | url}}>
-          <a href="{{ item.url }}">{{item.data.title}}</a>
-          </div>
-          {% endfor %} 
-        </ul>
-    </div>
+  <div class="[ wrapper ] [ flow ]">
+    <ul class="[ pixelart-grid ]">
+      {% for item in pixelArtItems %}
+      {% set pixelArtImageUrl = ["/pixelart/", item.data.dir, "/", item.data.image] | join %}
+      <div class="[ pixelart-card ]">
+        <img src={{pixelArtImageUrl | url}}>
+        <a href="{{ item.url }}">{{item.data.title}}</a>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

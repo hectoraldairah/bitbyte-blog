@@ -1,18 +1,21 @@
 <header role="banner" class="site-head">
-    <div class="wrapper">
-        <div class="site-head__inner">
-            <a href="/" aria-label="bitbyte - home" class="site-head__brand">
-                {% include "partials/bitbyte-logo.svg" %}
-            </a>
-            <nav class="[ nav ] [ site-head__nav ]" aria-label="Primary">
-                <ul class="nav__list">
-                    {% for item in collections.all | eleventyNavigation %}
-                        <li>
-                            <a href="{{item.url}}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{item.title}}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
+  <div class="wrapper">
+    <div class="site-head__inner">
+      <select name="themes" id="themes" onchange="changeTheme()">
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+        <option value="autum">autum</option>
+        <option value="ink">ink</option>
+      </select>
+      <nav class="[ nav ] [ site-head__nav ]" aria-label="Primary">
+        <ul class="nav__list">
+          {% for item in collections.all | eleventyNavigation %}
+          <li>
+            <a href="{{item.url}}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{item.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
+  </div>
 </header>

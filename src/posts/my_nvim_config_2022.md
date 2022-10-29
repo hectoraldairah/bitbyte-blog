@@ -84,3 +84,5 @@ If you wanna see all my nvim config you can check my repo
 It's not that fancy so maybe you can understand everything there.
 
 Well, that it! I know for sure that this plugins list will be changing over time but I will stay with the philosphy of less is more
+
+> Some question

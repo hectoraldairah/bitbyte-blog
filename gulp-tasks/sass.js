@@ -1,5 +1,6 @@
 const { dest, src } = require('gulp');
 const cleanCSS = require('gulp-clean-css');
+const postCSS = require('gulp-postcss');
 const sassProcessor = require('gulp-sass');
 
 // We want to be using canonical Sass, rather than node-sass
@@ -40,13 +41,11 @@ const sass = () => {
   return src('./src/scss/*.scss')
     .pipe(sassProcessor().on('error', sassProcessor.logError))
     .pipe(
-      cleanCSS(
-        isProduction
-          ? {
-              level: 2,
-            }
-          : {}
-      )
+      postCSS([
+        require('postcss-custom-properties'),
+        require('postcss-color-hexa'),
+        require('cssnano'),
+      ])
     )
     .pipe(dest(calculateOutput, { sourceMaps: !isProduction }));
 };

@@ -45,8 +45,13 @@
   --block-quote-shadow-color: #{get-color('melon')};
   --footer-border-color: #{get-color('tiffany-blue')};
 
-  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color); 
-  scrollbar-width: auto !important
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
+  scrollbar-width: auto !important;
+
+  --select-box-color: #{get-color("melon")};
+  --box-red: 255;
+  --box-green: 105;
+  --box-blue: 115;
 }
 
 html {
@@ -60,7 +65,6 @@ body {
   color: var(--text-color);
   line-height: 1.5;
   font-size: get-size('500');
-  @include apply-utility('font', 'base');
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -76,8 +80,67 @@ h3 {
   margin-top: get-size('600');
 }
 
-@media (prefers-color-scheme: dark) {
-:root {
+html[data-theme='autum'] {
+  --bg-color: #{get-color('flavescent')};
+  --feature-post-color: #{get-color('yellow-orange')};
+  --text-heading-color: #{get-color('chestnut')};
+  --subtitle-color: #{get-color('yellow-orange')};
+  --text-color: #{get-color('onyx')};
+  --link-color: #{get-color('van-dyke-brown')};
+  --text-decoration-color: #{get-color('chestnut')};
+  --link-hover-color: #{get-color('bronze')};
+  --focus-color: #{get-color('yellow-orange')};
+
+  --flow-space: #{get-size('600')};
+
+  --scrollbar-color: #{get-color('bronze')};
+  --scrollbar-thumb-color: #{get-color('van-dyke-brown')};
+
+  --block-quote-color: #{get-color('yellow-orange')};
+  --block-quote-shadow-color: #{get-color('chestnut')};
+  --footer-border-color: #{get-color('yellow-orange')};
+
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
+  scrollbar-width: auto !important;
+  --select-box-color: #{get-color('melon')};
+
+  --box-red: 151;
+  --box-green: 83;
+  --box-blue: 48;
+
+}
+
+html[data-theme='ink'] {
+  --bg-color: #{get-color('eggshell')};
+  --feature-post-color: #{get-color('eggshell')};
+  --text-heading-color: #{get-color('black-coral')};
+  --subtitle-color: #{get-color('cadet-gray')};
+  --text-color: #{get-color('dark-gunmetal')};
+  --link-color: #{get-color('cadet-gray')};
+  --text-decoration-color: #{get-color('black-olive')};
+  --link-hover-color: #{get-color('black-olive')};
+  --focus-color: #{get-color('cadet-gray')};
+
+  --flow-space: #{get-size('600')};
+
+  --scrollbar-color: #{get-color('eggshell')};
+  --scrollbar-thumb-color: #{get-color('black-olive')};
+
+  --block-quote-color: #{get-color('black-olive')};
+  --block-quote-shadow-color: #{get-color('black-coral')};
+  --footer-border-color: #{get-color('cadet-gray')};
+
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
+  scrollbar-width: auto !important;
+  --select-box-color: #{get-color('melon')};
+
+  --box-red: 65;
+  --box-green: 58;
+  --box-blue: 66;
+
+}
+
+html[data-theme='dark'] {
   --bg-color: #{get-color('chinese-black')};
   --feature-post-color: #{get-color('eerie-black')};
   --text-heading-color: #{get-color('white')};
@@ -97,7 +160,12 @@ h3 {
   --block-quote-shadow-color: #{get-color('sugar-plum')};
   --footer-border-color: #{get-color('pastel-pink')};
 
-  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color); 
-  scrollbar-width: auto !important
-  }
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
+  scrollbar-width: auto !important;
+  --select-box-color: #{get-color('melon')};
+
+  --box-red: 233;
+  --box-green: 166;
+  --box-blue: 166;
+
 }

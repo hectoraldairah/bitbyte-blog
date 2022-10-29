@@ -26,4 +26,7 @@ module.exports = {
     const randomQuote = Math.floor(Math.random() * (quotes.length - 1) + 1);
     return quotes[randomQuote];
   },
+  getThemeValue: function (theme) {
+    console.log(theme);
+  },
 };

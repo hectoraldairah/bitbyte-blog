@@ -16,6 +16,7 @@
     /* Safari, Android, iOS */
       url('../../assets/fonts/nunito-v16-latin-regular.svg#Nunito')
       format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* nunito-italic - latin */
@@ -35,6 +36,7 @@
       format('truetype'),
     /* Safari, Android, iOS */
       url('../../assets/fonts/nunito-v16-latin-italic.svg#Nunito') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* nunito-600 - latin */
@@ -54,6 +56,7 @@
       format('truetype'),
     /* Safari, Android, iOS */
       url('../../assets/fonts/nunito-v16-latin-600.svg#Nunito') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* nunito-regular - latin */
@@ -74,6 +77,7 @@
     /* Safari, Android, iOS */
       url('../../assets/fonts/nunito-v16-latin-regular.svg#Nunito')
       format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* nunito-italic - latin */
@@ -93,6 +97,7 @@
       format('truetype'),
     /* Safari, Android, iOS */
       url('../../assets/fonts/nunito-v16-latin-italic.svg#Nunito') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* nunito-600 - latin */
@@ -112,6 +117,7 @@
       format('truetype'),
     /* Safari, Android, iOS */
       url('../../assets/fonts/nunito-v16-latin-600.svg#Nunito') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 @font-face {
@@ -126,4 +132,5 @@
       format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

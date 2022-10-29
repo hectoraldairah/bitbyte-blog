@@ -1,6 +1,6 @@
 {% set assetHash = global.random() %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme='dark'>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,5 +56,24 @@
             {% block content %}{% endblock %}
         </main>
         {% include "partials/footer.njk" %}
+
+    <script>
+    function changeTheme() {
+      const themeSelector = document.querySelector("#themes");
+      const themeValue = themeSelector.options[themeSelector.selectedIndex].value;
+      
+      localStorage.setItem('theme', themeValue);
+      document.documentElement.setAttribute('data-theme', themeValue);
+    }
+  </script>
+  <script>
+    const themeSelector = document.querySelector("#themes");
+    const storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+    if (storedTheme) {
+      document.documentElement.setAttribute('data-theme', storedTheme)
+      themeSelector.value = storedTheme;
+    }
+  </script>
     </body>
 </html>
