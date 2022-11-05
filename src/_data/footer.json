@@ -5,6 +5,11 @@
       "text": "Build with Eleventy"
     },
     {
+      "url": "https://hostux.social/@bitbyte",
+      "text": "Mastodon",
+      "rel": "me"
+    },
+    {
       "url": "https://www.twitter.com/BitByte_",
       "text": "Twitter",
       "icon": "{{../assets/icons/twitter.svg}}"
