@@ -8,7 +8,6 @@
 
 // Base Styles
 @import 'base/animation';
-@import 'base/fonts';
 @import 'base/typography';
 @import 'base/scrollbar';
 @import 'base/focus';
@@ -167,5 +166,27 @@ html[data-theme='dark'] {
   --box-red: 233;
   --box-green: 166;
   --box-blue: 166;
+}
 
+html[data-theme='teal'] {
+  --bg-color: #f0fffc;
+  --feature-post-color: #f0fffc;
+  --text-heading-color: teal;
+  --subtitle-color: teal;
+  --text-color: teal;
+  --link-color: teal;
+  --text-decoration-color: teal;
+  --link-hover-color: teal;
+  --focus-color: #fcfbd3;
+  --scrollbar-color: teal;
+  --scrollbar-thumb-color: #f0fffc;
+  --block-quote-color: teal;
+  --block-quote-shadow-color: teal;
+  --footer-border-color: teal;
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
+  scrollbar-width: auto !important;
+  --select-box-color: teal;
+  --box-red: 0;
+  --box-green: 128;
+  --box-blue: 128;
 }
