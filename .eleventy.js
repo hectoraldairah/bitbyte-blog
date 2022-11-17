@@ -62,28 +62,6 @@ module.exports = (config) => {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
 
-  config.on('afterBuild', () => {
-    const socialPreviewImagesDir = 'dist/assets/images/social-preview-images/';
-    fs.readdir(socialPreviewImagesDir, (err, files) => {
-      if (files.length > 0) {
-        files.forEach((filename) => {
-          if (filename.endsWith('.svg')) {
-            let imageUrl = socialPreviewImagesDir + filename;
-            pluginImage(imageUrl, {
-              formats: ['jpeg'],
-              outputDir: './' + socialPreviewImagesDir,
-              filenameFormat: function (id, src, width, format, options) {
-                let outputFilename = filename.substring(0, filename.length - 4);
-
-                return `${outputFilename}.${format}`;
-              },
-            });
-          }
-        });
-      }
-    });
-  });
-
   return {
     dir: {
       input: 'src',

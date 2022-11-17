@@ -1,10 +1,3 @@
-@function get-color-name($color-name) {
-  @return var(--#{$color-name});
-}
-
-$red: var(--box-red);
-$green: var(--box-green);
-$blue: var(--box-blue);
 
 .site-head {
   padding: get-size('600') 0;
@@ -14,13 +7,27 @@ $blue: var(--box-blue);
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    & select {
-      background-color: transparent;
-      border: none;
-      color: var(--link-color);
-      box-shadow: rgba($red,$green,$blue,0.4) 5px 5px,
-        rgba($red,$green,$blue, 0.3) 10px 10px, rgba($red,$green,$blue,0.2) 15px 15px,
-        rgba($red,$green,$blue,0.1) 20px 20px, rgba($red,$green,$blue,0.05) 25px 25px;
+    gap: 1rem;
+
+    &__themes ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+      }
+      
+      li span {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        cursor: pointer;
+      }
     }
   }
 
@@ -33,4 +40,24 @@ $blue: var(--box-blue);
   &__nav {
     padding: get-size('300') 0;
   }
+}
+
+.almond {
+  background-color: #{get-color("deep-champagne")};
+}
+
+.chinese-black {
+  background-color: #{get-color("eerie-black")};
+}
+  
+.flavescent {
+  background-color: #{get-color("yellow-orange")};
+}
+
+.eggshell {
+  background-color: #{get-color("cadet-gray")}
+}
+
+.teal {
+    background-color: teal;
 }

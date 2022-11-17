@@ -1,0 +1,24 @@
+{
+  "item": [
+    {
+      "name": "light",
+      "color": "almond"
+    },
+    {
+      "name": "dark",
+      "color": "chinese-black"
+    },
+    {
+      "name": "autum",
+      "color": "flavescent"
+    },
+    {
+      "name": "ink",
+      "color": "eggshell"
+    },
+    {
+      "name": "teal",
+      "color": "teal"
+    }
+  ]
+}

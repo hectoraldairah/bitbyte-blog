@@ -58,13 +58,14 @@
         {% include "partials/footer.njk" %}
 
     <script>
-    function changeTheme() {
-      const themeSelector = document.querySelector("#themes");
-      const themeValue = themeSelector.options[themeSelector.selectedIndex].value;
-      
-      localStorage.setItem('theme', themeValue);
-      document.documentElement.setAttribute('data-theme', themeValue);
-    }
+    const themeSelector = document.querySelector("#themes").addEventListener("click", (e) => {
+      if(e.target && e.target.nodeName == "SPAN") {
+        const themeValue = e.target.id;
+        localStorage.setItem('theme', themeValue);
+        document.documentElement.setAttribute('data-theme', themeValue);
+      }
+
+    })
   </script>
   <script>
     const themeSelector = document.querySelector("#themes");
