@@ -1,12 +1,13 @@
 <header role="banner" class="site-head">
   <div class="wrapper">
     <div class="site-head__inner">
-      <select name="themes" id="themes" onchange="changeTheme()">
-        <option value="light">light</option>
-        <option value="dark">dark</option>
-        <option value="autum">autum</option>
-        <option value="ink">ink</option>
-      </select>
+      <div class="site-head__inner__themes">
+        <ul id="themes">
+          {% for item in themes.item %}
+          <li><span id="{{ item.name }}" class="[ circle {{ item.color }} ]"></span></li>
+          {% endfor %}
+        </ul>
+      </div>
       <nav class="[ nav ] [ site-head__nav ]" aria-label="Primary">
         <ul class="nav__list">
           {% for item in collections.all | eleventyNavigation %}
