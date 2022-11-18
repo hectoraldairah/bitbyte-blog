@@ -27,6 +27,9 @@
     ],
     "*.md": [
       "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
     ]
   },
   "dependencies": {

@@ -47,7 +47,7 @@
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
   scrollbar-width: auto !important;
 
-  --select-box-color: #{get-color("melon")};
+  --select-box-color: #{get-color('melon')};
   --box-red: 255;
   --box-green: 105;
   --box-blue: 115;
@@ -106,7 +106,6 @@ html[data-theme='autum'] {
   --box-red: 151;
   --box-green: 83;
   --box-blue: 48;
-
 }
 
 html[data-theme='ink'] {
@@ -136,7 +135,6 @@ html[data-theme='ink'] {
   --box-red: 65;
   --box-green: 58;
   --box-blue: 66;
-
 }
 
 html[data-theme='dark'] {

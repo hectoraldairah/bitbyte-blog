@@ -1,4 +1,3 @@
-
 .site-head {
   padding: get-size('600') 0;
 
@@ -20,7 +19,7 @@
         display: flex;
         align-items: center;
       }
-      
+
       li span {
         display: inline-block;
         width: 28px;
@@ -43,21 +42,21 @@
 }
 
 .almond {
-  background-color: #{get-color("deep-champagne")};
+  background-color: #{get-color('deep-champagne')};
 }
 
 .chinese-black {
-  background-color: #{get-color("eerie-black")};
+  background-color: #{get-color('eerie-black')};
 }
-  
+
 .flavescent {
-  background-color: #{get-color("yellow-orange")};
+  background-color: #{get-color('yellow-orange')};
 }
 
 .eggshell {
-  background-color: #{get-color("cadet-gray")}
+  background-color: #{get-color('cadet-gray')};
 }
 
 .teal {
-    background-color: teal;
+  background-color: teal;
 }
