@@ -6,8 +6,7 @@
   "scripts": {
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy",
-    "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write .",
+    "format": "prettier --write .",
     "prepare": "husky install"
   },
   "repository": {
