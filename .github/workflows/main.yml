@@ -33,7 +33,17 @@ jobs:
 
       # Install the dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      # Prettier for CI
+      - name: Prettier for CI
+        run: npm run format
+
+      # Commit Changes
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply formatting changes
+          branch: ${{ github.head_ref }}
 
       # Build Eleventy for Production
       - name: Build 11ty
