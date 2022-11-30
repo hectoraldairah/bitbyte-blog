@@ -24,30 +24,26 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
 
       # Setup Node with a version to run gulp and sass correctly
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '18.12.1'
 
       # Install the dependencies
       - name: Install dependencies
-        run: rm -rf node_modules
-      - name: remove package
-        run: rm package-lock.json
-      - name: install dependecies
-        run: npm i
-      # Prettier for CI
+        run: npm ci
+        
+      # Check for Prettier 
       - name: Prettier for CI
-        run: npm run format
+        run: npm run prettier:check
 
-      # Commit Changes
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Apply formatting changes
-          branch: ${{ github.head_ref }}
+      # Check for Eslint
+      - name: Eslint
+        run: npm run eslint
 
       # Build Eleventy for Production
       - name: Build 11ty

@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy",
-    "format": "prettier --write ."
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "eslint": "npx eslint ."
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,8 @@
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/is-land": "^2.0.3",
     "cssnano": "^5.1.14",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "markdown-it-anchor": "^8.6.5",

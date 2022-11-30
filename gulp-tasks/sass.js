@@ -1,12 +1,11 @@
 const { dest, src } = require('gulp');
-const cleanCSS = require('gulp-clean-css');
 const postCSS = require('gulp-postcss');
 const sassProcessor = require('gulp-sass')(require('sass'));
 
-
 // Flags whether we compress the output etc
-const isProduction = process.env.NODE_ENV === 'production';
 
+/* eslint-disable no-eval */
+const isProduction = process.env.NODE_ENV === 'production'; // eslint-disable-line no-eval
 // An array of outputs that should be sent over to includes
 const criticalStyles = [
   'critical.scss',
@@ -38,13 +37,7 @@ const calculateOutput = ({ history }) => {
 const sass = () => {
   return src('./src/scss/*.scss')
     .pipe(sassProcessor().on('error', sassProcessor.logError))
-    .pipe(
-      postCSS([
-        require('postcss-custom-properties'),
-        require('postcss-color-hexa'),
-        require('cssnano'),
-      ])
-    )
+    .pipe(postCSS([require('postcss-custom-properties'), require('cssnano')]))
     .pipe(dest(calculateOutput, { sourceMaps: !isProduction }));
 };
 

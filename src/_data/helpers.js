@@ -1,12 +1,11 @@
 const quotes = [
-  "I'm tired of JavaScript",
+  'Tired of Javascript',
   'Write simple CSS is hard',
   'Elixir should be more mainstream',
   'Nobody wants a ton of JS in their site',
   'Pixel-art is one of the best art styles',
   'JSX is ok',
   'Vue.js should be the number one',
-  "I don't like Next.js",
 ];
 
 module.exports = {
