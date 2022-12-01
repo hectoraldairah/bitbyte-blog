@@ -2,10 +2,9 @@ const { dest, src } = require('gulp');
 const postCSS = require('gulp-postcss');
 const sassProcessor = require('gulp-sass')(require('sass'));
 
-// Flags whether we compress the output etc
-
 /* eslint-disable */
-const isProduction = process.env.NODE_ENV === 'production'; 
+const isProduction = process.env.NODE_ENV === 'production';
+
 // An array of outputs that should be sent over to includes
 const criticalStyles = [
   'critical.scss',
