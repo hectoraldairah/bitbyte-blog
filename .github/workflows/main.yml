@@ -36,8 +36,8 @@ jobs:
       # Install the dependencies
       - name: Install dependencies
         run: npm ci
-        
-      # Check for Prettier 
+
+      # Check for Prettier
       - name: Prettier for CI
         run: npm run prettier:check
 
