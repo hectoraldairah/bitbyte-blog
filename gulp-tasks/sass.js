@@ -4,8 +4,8 @@ const sassProcessor = require('gulp-sass')(require('sass'));
 
 // Flags whether we compress the output etc
 
-/* eslint-disable no-eval */
-const isProduction = process.env.NODE_ENV === 'production'; // eslint-disable-line no-eval
+/* eslint-disable */
+const isProduction = process.env.NODE_ENV === 'production'; 
 // An array of outputs that should be sent over to includes
 const criticalStyles = [
   'critical.scss',
