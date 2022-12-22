@@ -3,10 +3,12 @@
     <ul class="[ pixelart-grid ]">
       {% for item in pixelArtItems %}
       {% set pixelArtImageUrl = ["/pixelart/", item.data.dir, "/", item.data.image] | join %}
-      <div class="[ pixelart-card ]">
-        <img src={{pixelArtImageUrl | url}}>
+      <li class="[ pixelart-list ]">
+      <article class="[ pixelart-card ]">
+      {% image pixelArtImageUrl, "alt text" %}
         <a href="{{ item.url }}">{{item.data.title}}</a>
-      </div>
+      </article>
+      </li>
       {% endfor %}
     </ul>
   </div>

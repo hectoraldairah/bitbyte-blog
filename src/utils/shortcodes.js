@@ -1,0 +1,58 @@
+//
+//
+// const imageShortcode = async (
+//
+//   src,
+//   alt,
+//   dir,
+//   className = undefined,
+//   widths = [400, 800, 1280],
+//   formats = ['webp', 'jpeg'],
+//   sizes = '100vw'
+// ) => {
+//
+//   console.log(src)
+//
+// };
+//
+//
+//
+//
+//
+const Image = require('@11ty/eleventy-img');
+
+module.exports = {
+  image: async function (
+    src,
+    alt,
+    dir,
+    className,
+    widths = [400, 800, 1280],
+    formats = ['webp', 'png'],
+    sizes = '100vw',
+  ) {
+
+    const normal = `src/${src}`;
+    console.log(normal, 'drecttion');
+
+    const imageMetadata = await Image(normal, {
+      widths: [...widths, null],
+      formats: [...formats, null],
+      urlPath: '/assets/images',
+      outputDir: 'dist/assets/images/',
+    });
+
+    const imageAttributes = {
+      alt,
+      sizes,
+      loading: 'lazy',
+      decoding: 'async',
+    };
+
+    const result = Image.generateHTML(imageMetadata, imageAttributes);
+
+    console.log(result);
+
+    return result;
+  },
+};

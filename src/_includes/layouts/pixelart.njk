@@ -6,9 +6,11 @@
 
 {% block content %}
   <article>
-    <div class="constrained">
+    <section class="constrained">
       {% include "partials/page-header.njk" %}
+      </section>
+      <section>
       {% include "partials/pixelart-list.njk" %}
-    </div>
+      </section>
   </article>
 {% endblock %}

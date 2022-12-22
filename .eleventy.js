@@ -6,6 +6,7 @@ const pluginRSS = require('@11ty/eleventy-plugin-rss');
 
 const filters = require('./src/utils/filters');
 const markdown = require('./src/utils/markdown');
+const shortcodes = require('./src/utils/shortcodes');
 
 const CONTENT_GLOBS = {
   post: './src/posts/**/*.md',
@@ -28,6 +29,11 @@ module.exports = (config) => {
   // Add filters
   Object.keys(filters).forEach((filterName) => {
     config.addFilter(filterName, filters[filterName]);
+  });
+
+  // Add shortcodes
+  Object.keys(shortcodes).forEach((shortCodeName) => {
+    config.addNunjucksAsyncShortcode(shortCodeName, shortcodes[shortCodeName]);
   });
 
   // Markdown Passing
