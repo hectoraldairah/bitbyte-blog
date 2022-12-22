@@ -32,14 +32,14 @@ module.exports = {
     sizes = '100vw',
   ) {
 
-    const normal = `src/${src}`;
+    const normal = `../${src}`;
     console.log(normal, 'drecttion');
 
     const imageMetadata = await Image(normal, {
       widths: [...widths, null],
       formats: [...formats, null],
       urlPath: '/assets/images',
-      outputDir: 'dist/assets/images/',
+      outputDir: 'dist/images/',
     });
 
     const imageAttributes = {
