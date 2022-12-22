@@ -33,7 +33,6 @@ module.exports = {
   ) {
 
     const normal = `../${src}`;
-    console.log(normal, 'drecttion');
 
     const imageMetadata = await Image(normal, {
       widths: [...widths, null],
@@ -51,7 +50,6 @@ module.exports = {
 
     const result = Image.generateHTML(imageMetadata, imageAttributes);
 
-    console.log(result);
 
     return result;
   },
