@@ -29,9 +29,8 @@ module.exports = {
     className,
     widths = [400, 800, 1280],
     formats = ['webp', 'png'],
-    sizes = '100vw',
+    sizes = '100vw'
   ) {
-
     const normal = `../${src}`;
 
     const imageMetadata = await Image(normal, {
@@ -49,7 +48,6 @@ module.exports = {
     };
 
     const result = Image.generateHTML(imageMetadata, imageAttributes);
-
 
     return result;
   },
