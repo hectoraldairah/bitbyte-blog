@@ -18,7 +18,7 @@ module.exports = {
       widths: [...widths, null],
       formats: [...formats, null],
       urlPath: '/assets/images',
-      outputDir: 'dist/images/',
+      outputDir: 'dist/assets/images/',
     });
 
     const imageAttributes = {
@@ -28,6 +28,7 @@ module.exports = {
       decoding: 'async',
     };
 
-    return Image.generateHTML(imageMetadata, imageAttributes);
+    const result = Image.generateHTML(imageMetadata, imageAttributes);
+    return result;
   },
 };
