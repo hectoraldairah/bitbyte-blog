@@ -17,5 +17,4 @@ This is my first composition, its like a Mario's Ghost but witk a pink ink. This
 
 I think it's pretty good just for my first (real) attemp.
 
-
 ![Strawberry Ghost](ice-cream-ghost.png)

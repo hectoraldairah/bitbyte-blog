@@ -3,7 +3,7 @@ const fs = require('fs');
 const pluginImage = require('@11ty/eleventy-img');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const pluginRSS = require('@11ty/eleventy-plugin-rss');
-const pluginSyntax = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginSyntax = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 const filters = require('./src/utils/filters');
 const markdown = require('./src/utils/markdown');
