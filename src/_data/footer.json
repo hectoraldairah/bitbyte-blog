@@ -3,30 +3,6 @@
     {
       "url": "https://www.11ty.dev/",
       "text": "Build with Eleventy"
-    },
-    {
-      "url": "https://hostux.social/@bitbyte",
-      "text": "Mastodon",
-      "rel": "me"
-    },
-    {
-      "url": "https://www.twitter.com/BitByte_",
-      "text": "Twitter",
-      "rel": "me"
-    },
-    {
-      "url": "https://codepen.io/hectoraldairah",
-      "text": "Codepen"
-    },
-    {
-      "url": "https://github.com/hectoraldairah",
-      "text": "Github",
-      "rel": "me"
-    },
-    {
-      "url": "https://www.linkedin.com/in/hectoraldairaguilar",
-      "text": "LinkedIn",
-      "rel": "me"
     }
   ]
 }

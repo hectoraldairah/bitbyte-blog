@@ -1,9 +1,14 @@
 {
   "items": [
     {
+      "url": "https://hostux.social/@bitbyte",
+      "text": "Mastodon",
+      "rel": "me"
+    },
+    {
       "url": "https://www.twitter.com/BitByte_",
       "text": "Twitter",
-      "icon": "{{../assets/icons/twitter.svg}}"
+      "rel": "me"
     },
     {
       "url": "https://codepen.io/hectoraldairah",
@@ -11,11 +16,13 @@
     },
     {
       "url": "https://github.com/hectoraldairah",
-      "text": "Github"
+      "text": "Github",
+      "rel": "me"
     },
     {
       "url": "https://www.linkedin.com/in/hectoraldairaguilar",
-      "text": "LinkedIn"
+      "text": "LinkedIn",
+      "rel": "me"
     }
   ]
 }

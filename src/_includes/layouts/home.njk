@@ -1,18 +1,22 @@
-{% extends "layouts/base.njk" %}
-{% set pageCriticalStyles = ['css/home.css'] %}
-{% set featuredPostsItems = pagination.items %}
+{% extends "layouts/base.njk" %} {% set pageCriticalStyles = ['css/home.css'] %}
+{% set featuredPostsItems = pagination.items %} {% block content %}
 
-{% block content %}
-    <section class="[ fade-in ] [ intro ]">
-        <div class="wrapper">
-            <h1 class="intro__subtitle">Howdy, I'm Hector.</h1>
-            <h2 class="intro__title">{{intro.title}}</h2>
-            <div class="intro__description">
-                <p>This is just my little personal blog where you can read my experiences learning new stuff. Working with React.js and and Design Systems at <a class="link" target="_blank" href="https://clip.mx/"> @Clip.</a>
-                </p>
-                <p>Quote of the day: {{ helpers.getQuoteOfTheDay() | safe }}.</p>
-            </div>
-        </div>
-    </section>
-    {% include "partials/featured-posts.njk" %}
-{% endblock %}
+<section class="[ fade-in ] [ intro ]">
+  <div class="wrapper">
+    <h1 class="intro__title">Hi, I'm Héctor Aguilar.</h1>
+    <div class="intro__description">
+      <p>A front-end developer that ♥️ the web.</p>
+      <p>
+        This is just my little personal blog where you can read my experiences
+        learning new stuff. Working with React.js and and Design Systems at
+        <a class="link" target="_blank" href="https://clip.mx/"> @Clip.</a>
+      </p>
+      <ul class="intro__description__social">
+        {% for item in social.items%}
+          <li><a href={{item.url}} rel="me">{{item.text}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% include "partials/featured-posts.njk" %} {% endblock %}

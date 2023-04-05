@@ -1,24 +1,26 @@
 .intro {
-  padding: get-size('900') 0;
-  margin: get-size('900') 0;
+  padding: get-size('700') 0;
+  margin: get-size('700') 0;
 
   &__title {
     font-size: get-size('900');
     line-height: 1.15;
-    @include apply-utility('weight', 'regular');
     max-width: 50rem;
-  }
-
-  &__subtitle {
-    font-size: get-size('600');
-    color: var(--subtitle-color);
+    @include apply-utility('weight', 'regular');
   }
 
   &__description {
-    font-size: get-size('500');
-    max-width: 50rem;
+    font-size: get-size('600');
+    max-width: 60rem;
     > * {
       margin: 1rem 0;
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: get-size('400')
     }
   }
 

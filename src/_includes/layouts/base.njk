@@ -56,24 +56,5 @@
             {% block content %}{% endblock %}
         </main>
         {% include "partials/footer.njk" %}
-
-    <script>
-    const themeSelector = document.querySelector("#themes").addEventListener("click", (e) => {
-      if(e.target && e.target.nodeName == "SPAN") {
-        const themeValue = e.target.id;
-        localStorage.setItem('theme', themeValue);
-        document.documentElement.setAttribute('data-theme', themeValue);
-      }
-
-    })
-  </script>
-  <script>
-    const storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    console.log({storedTheme})
-
-    if (storedTheme) {
-      document.documentElement.setAttribute('data-theme', storedTheme)
-    }
-  </script>
     </body>
 </html>

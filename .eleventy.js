@@ -3,6 +3,7 @@ const fs = require('fs');
 const pluginImage = require('@11ty/eleventy-img');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const pluginRSS = require('@11ty/eleventy-plugin-rss');
+const pluginSyntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const filters = require('./src/utils/filters');
 const markdown = require('./src/utils/markdown');
@@ -17,6 +18,7 @@ module.exports = (config) => {
   // Plugins
   config.addPlugin(pluginNavigation);
   config.addPlugin(pluginRSS);
+  config.addPlugin(pluginSyntax);
 
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/images/');
