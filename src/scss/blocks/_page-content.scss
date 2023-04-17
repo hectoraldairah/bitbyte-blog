@@ -17,6 +17,7 @@
       11px 15px 0 0 var(--block-quote-shadow-color);
   }
 
+
   h2,
   h3,
   h4,
@@ -25,12 +26,16 @@
     position: relative;
   }
 
+  h1 {
+    font-size: get-size("700")
+  }
+
   h2 {
-    font-size: get-size('700');
+    font-size: get-size('600');
   }
 
   h3 {
-    font-size: get-size('600');
+    font-size: get-size('500');
   }
 
   ol,

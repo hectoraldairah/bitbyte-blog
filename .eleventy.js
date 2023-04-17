@@ -43,13 +43,15 @@ module.exports = (config) => {
 
   // Returns a collection of blog posts in reverse date order
   config.addCollection('blog', (collection) => {
-    return [...collection.getFilteredByGlob(CONTENT_GLOBS.post)].reverse();
+    return [...collection.getFilteredByGlob(CONTENT_GLOBS.post)]
+      .filter((item) => !item.data.development)
+      .reverse();
   });
 
   config.addCollection('featured', (collection) => {
     return collection
       .getFilteredByGlob(CONTENT_GLOBS.post)
-      .filter((item) => item.data.featured)
+      .filter((item) => item.data.featured && !item.data.development)
       .sort((a, b) => b.date - a.date);
   });
 
