@@ -1,5 +1,5 @@
 ---
-title: 'The lie always present in web-dev'  
+title: 'The lie always present in web-dev'
 tags: ['micro']
 description: "I don't belive you"
 date: 2023-04-13
