@@ -1,34 +1,35 @@
 const Image = require('@11ty/eleventy-img');
+const path = require('path');
 
 module.exports = {
   image: async function (
     src,
     alt,
-    dir,
-    className,
+    className = undefined,
     widths = [400, 800, 1280],
-    formats = ['webp', 'png'],
     sizes = '100vw'
   ) {
-    const normal = `src${src}`;
+    if (alt === undefined) {
+      throw new Error('Missing atl prop for image', src);
+    }
 
-    console.log(normal, 'noooormal');
-
-    const imageMetadata = await Image(normal, {
-      widths: [...widths, null],
-      formats: [...formats, null],
+    const options = {
+      widths,
+      formats: ['webp', 'jpeg'],
       urlPath: '/assets/images',
       outputDir: 'dist/assets/images/',
-    });
+    };
 
     const imageAttributes = {
       alt,
       sizes,
+      class: className,
       loading: 'lazy',
       decoding: 'async',
     };
 
-    const result = Image.generateHTML(imageMetadata, imageAttributes);
-    return result;
+    const metadata = await Image(src, options);
+
+    return Image.generateHTML(metadata, imageAttributes);
   },
 };
