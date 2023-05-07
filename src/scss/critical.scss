@@ -66,6 +66,7 @@ body {
   font-size: get-size('500');
   overflow-x: hidden;
   min-height: 100vh;
+  font-family: system-ui, sans-serif;
 }
 
 h1,
@@ -78,6 +79,7 @@ h3 {
 pre {
   font-size: 0.825rem !important;
 }
+
 #main-content {
   margin-top: get-size('600');
 }
