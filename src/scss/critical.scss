@@ -27,17 +27,17 @@
 @import 'themes/prism-laserwave';
 
 :root {
-  --bg-color: #{get-color('Crust')};
+  --bg-color: #{get-color('Base')};
 
   --text-color: #{get-color('Text')};
 
   --feature-post-color: #{get-color('Mantle')};
-  --text-heading-color: #{get-color('Teal')};
+  --text-heading-color: #{get-color('Lavander')};
 
   --link-color: #{get-color('Text')};
-  --text-decoration-color: #{get-color('Teal')};
+  --text-decoration-color: #{get-color('Flamingo')};
 
-  --link-hover-color: #{get-color('Teal')};
+  --link-hover-color: #{get-color('Flamingo')};
   --focus-color: #{get-color('Surface1')};
 
   --flow-space: #{get-size('600')};
@@ -45,9 +45,9 @@
   --scrollbar-color: #{get-color('Surface2')};
   --scrollbar-thumb-color: #{get-color('Mantle')};
 
-  --block-quote-color: #{get-color('Teal')};
-  --block-quote-shadow-color: #{get-color('Teal')};
-  --footer-border-color: #{get-color('Teal')};
+  --block-quote-color: #{get-color('Lavander')};
+  --block-quote-shadow-color: #{get-color('Lavander')};
+  --footer-border-color: #{get-color('Lavander')};
 
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
   scrollbar-width: auto !important;

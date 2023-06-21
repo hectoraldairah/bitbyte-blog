@@ -2,10 +2,11 @@
   <div class="[ wrapper ] [ flow ]">
     <ul class="[ pixelart-grid ]">
       {% for item in pixelArtItems %}
-      {% set pixelArtImageUrl = ["/pixelart/", item.data.dir, "/", item.data.image] | join %}
+      {% set pixelArtImageUrl = [ "src/pixelart/", item.data.dir, "/", item.data.image] | join %}
+      {% set imageAlt = item.data.title %}
       <li class="[ pixelart-list ]">
       <article class="[ pixelart-card ]">
-      {% image pixelArtImageUrl, "alt text" %}
+          {% image pixelArtImageUrl, imageAlt %}
         <a href="{{ item.url }}">{{item.data.title}}</a>
       </article>
       </li>
