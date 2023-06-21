@@ -1,4 +1,4 @@
-const Image = require("@11ty/eleventy-img");
+const Image = require('@11ty/eleventy-img');
 
 module.exports = {
   image: async function (
@@ -6,25 +6,25 @@ module.exports = {
     alt,
     className = undefined,
     widths = [400, 800, 1280],
-    sizes = "100vw",
+    sizes = '100vw'
   ) {
     if (alt === undefined) {
-      throw new Error("Missing atl prop for image", src);
+      throw new Error('Missing atl prop for image', src);
     }
 
     const options = {
       widths,
-      formats: ["webp", "jpeg"],
-      urlPath: "/assets/images",
-      outputDir: "dist/assets/images/",
+      formats: ['webp', 'jpeg'],
+      urlPath: '/assets/images',
+      outputDir: 'dist/assets/images/',
     };
 
     const imageAttributes = {
       alt,
       sizes,
       class: className,
-      loading: "lazy",
-      decoding: "async",
+      loading: 'lazy',
+      decoding: 'async',
     };
 
     const metadata = await Image(src, options);
@@ -36,25 +36,25 @@ module.exports = {
     alt,
     className = undefined,
     widths = [400, 800, 1280],
-    sizes = "100vw",
+    sizes = '100vw'
   ) {
     if (alt === undefined) {
-      throw new Error("Missing atl prop for image", src);
+      throw new Error('Missing atl prop for image', src);
     }
 
     const options = {
       widths,
-      formats: ["webp", "jpeg"],
-      urlPath: "/pixelart/**/",
-      outputDir: "dist/pixelart/**/",
+      formats: ['webp', 'jpeg'],
+      urlPath: '/pixelart/**/',
+      outputDir: 'dist/pixelart/**/',
     };
 
     const imageAttributes = {
       alt,
       sizes,
       class: className,
-      loading: "lazy",
-      decoding: "async",
+      loading: 'lazy',
+      decoding: 'async',
     };
 
     const metadata = await Image(src, options);
