@@ -1,8 +1,16 @@
-.wrapper {
+.loose {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 70rem;
+  padding: 0 1.33rem;
+}
+
+.wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80ch;
   padding: 0 1.33rem;
 }
 

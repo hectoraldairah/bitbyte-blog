@@ -15,6 +15,7 @@
 
 // Import Utilities
 @import 'utilities/wrapper';
+@import 'utilities/colors';
 
 // Blocks
 @import 'blocks/header';
@@ -32,7 +33,7 @@
   --text-color: #{get-color('Text')};
 
   --feature-post-color: #{get-color('Mantle')};
-  --text-heading-color: #{get-color('Lavander')};
+  --text-heading-color: #{get-color('Lavender')};
 
   --link-color: #{get-color('Text')};
   --text-decoration-color: #{get-color('Flamingo')};
@@ -45,9 +46,9 @@
   --scrollbar-color: #{get-color('Surface2')};
   --scrollbar-thumb-color: #{get-color('Mantle')};
 
-  --block-quote-color: #{get-color('Lavander')};
-  --block-quote-shadow-color: #{get-color('Lavander')};
-  --footer-border-color: #{get-color('Lavander')};
+  --block-quote-color: #{get-color('Lavender')};
+  --block-quote-shadow-color: #{get-color('Lavender')};
+  --footer-border-color: #{get-color('Lavender')};
 
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
   scrollbar-width: auto !important;

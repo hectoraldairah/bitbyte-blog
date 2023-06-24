@@ -1,37 +1,21 @@
 .feature-post {
-  background-color: var(--feature-post-color);
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
 
-  &__inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  &__title {
+    font-size: get-size('700');
   }
 
   &__list {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: get-size('1000');
     margin-top: get-size('700');
   }
 
-  @include media-query('md') {
-    .feature-post {
-      &__list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
-
-  @include media-query('lg') {
-    .feature-post {
-      &__inner {
-        grid-template-columns: 200px 1fr;
-      }
-
-      &__list {
-        margin-top: 0;
-      }
-    }
+  &__more {
+    display: inline-block;
+    margin-top: 3rem;
   }
 }

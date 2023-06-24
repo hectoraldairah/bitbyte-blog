@@ -1,4 +1,5 @@
 .featured-article {
+  width: 100%;
   &__clamp {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -9,13 +10,21 @@
     display: block;
     width: 100%;
     margin-bottom: 0.5rem;
-    font-size: get-size('400');
+    font-size: get-size('500');
+
+    &__tags {
+      color: #{get-color('Lavender')};
+      text-decoration-color: #{get-color('Lavender')};
+      &:hover {
+        color: #{get-color('Lavender')};
+      }
+    }
   }
 
   &__title {
-    font-size: get-size('600');
-    color: var(--link-color);
-    text-decoration-color: var(--link-hover-color);
+    font-size: get-size('700');
+    color: #{get-color('Rosewater')};
+    text-decoration-color: #{get-color('Rosewater')};
     @include apply-utility('font', 'terminal');
   }
 
