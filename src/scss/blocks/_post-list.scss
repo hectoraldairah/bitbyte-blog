@@ -1,28 +1,29 @@
 .post-list {
   &__item {
-    padding-bottom: get-size('1000');
+    padding: get-size('600') 0;
+
+    &__link {
+      font-size: get-size('700');
+    }
 
     &__info {
       display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      font-size: get-size('400');
-      gap: get-size('500');
 
-      a {
-        padding: 0.2rem 0.4rem;
+      &__tags {
+        display: flex;
+        height: 100%;
+        gap: 1rem;
+
+        li {
+          a {
+            color: var(--text-heading-color);
+            &:hover {
+              color: var(--bg-color);
+              background-color: var(--text-heading-color);
+            }
+          }
+        }
       }
     }
-
-    &__date {
-      padding-bottom: get-size('300') 0;
-    }
-
-    &__excerpt {
-      padding: get-size('500') 0;
-    }
-  }
-  &__link {
-    font-size: get-size('900');
   }
 }

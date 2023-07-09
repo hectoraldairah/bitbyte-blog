@@ -1,15 +1,14 @@
 .feature-post {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding-top: get-size('700');
+  padding-bottom: get-size('500');
 
   &__title {
-    font-size: get-size('700');
+    font-size: get-size('600');
   }
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: get-size('1000');
     margin-top: get-size('700');
   }

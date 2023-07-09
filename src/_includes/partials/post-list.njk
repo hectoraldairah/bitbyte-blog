@@ -1,23 +1,33 @@
-<div id="post-list">
-    <div class="[ wrapper ] [ flow ] ">
-        <div>
-            <ol class="[ post-list ] [ flow ]">
-                {% for item in postListItems %}
-                    <li class="[ post-list__item ] [ leading-tight measure-long ] ">
-                        <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
-                        <div class="post-list__item__info">
-                            <p class="post-list__item__date">{{ item.data.date | postDate }}
-                            </p>
-                            {% for tag in item.data.tags %}
-                                {% if not(tag == 'Featured') %}
-                                    <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                        <p class="[ post-list__item__excerpt ]">{{ item.data.description }}</p>
-                    </li>
-                {% endfor %}
-            </ol>
-        </div>
+<section id="post-list">
+  <div class="[ wrapper ]">
+    <div>
+      <ol class="[ post-list ] [ flow ]">
+        {% for item in postListItems %}
+        <li class="[ post-list__item ] [ leading-tight measure-long ]">
+          <a href="{{ item.url }}" class="post-list__item__link"
+            >{{ item.data.title }}</a
+          >
+          <span class="post-list__item__info">
+            <time datetime="{{ item.date.date | postDate }}"
+              >{{ item.data.date | postDate }}</time
+            >
+            <span>&nbsp;::&nbsp;</span>
+            <ul class="post-list__item__info__tags">
+              {% for tag in item.data.tags %} {% if not(tag == 'Featured') %}
+              <li>
+                <a href="/tag/{{ tag | slug }}/"
+                  >#{{ tag | title | replace(' ', '') }}</a
+                >
+              </li>
+              {% endif %} {% endfor %}
+            </ul>
+          </span>
+          <p class="[ post-list__item__excerpt ]">
+            {{ item.data.description }}
+          </p>
+        </li>
+        {% endfor %}
+      </ol>
     </div>
-</div>
+  </div>
+</section>
