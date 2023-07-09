@@ -24,10 +24,17 @@ p {
 a {
   color: var(--link-color);
   @include apply-utility('font', 'terminal');
-  text-decoration-color: var(--text-decoration-color);
   transition: 0.3s;
 
   &:hover {
-    color: var(--link-hover-color);
+    color: var(--bg-color);
+    background-color: var(--link-hover-color);
+  }
+
+  &::before {
+    content: "{"
+  }
+  &::after{
+    content: "}"
   }
 }

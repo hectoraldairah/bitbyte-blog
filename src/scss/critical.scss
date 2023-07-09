@@ -21,7 +21,6 @@
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/nav';
-@import 'blocks/link';
 @import 'blocks/page-header';
 @import 'blocks/stack';
 
@@ -35,7 +34,7 @@
   --feature-post-color: #{get-color('Mantle')};
   --text-heading-color: #{get-color('Lavender')};
 
-  --link-color: #{get-color('Text')};
+  --link-color: #{get-color('Rosewater')};
   --text-decoration-color: #{get-color('Flamingo')};
 
   --link-hover-color: #{get-color('Flamingo')};
@@ -55,7 +54,7 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 body {
@@ -67,7 +66,6 @@ body {
   font-size: get-size('500');
   overflow-x: hidden;
   min-height: 100vh;
-  font-family: system-ui, sans-serif;
 }
 
 h1,
@@ -82,5 +80,6 @@ pre {
 }
 
 #main-content {
-  margin-top: get-size('600');
+  display: grid;
+  grid-template-columns: 10rem 80ch;
 }

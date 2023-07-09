@@ -51,9 +51,11 @@
 
     </head>
     <body>
-        {% include "partials/site-head.njk" %}
-        <main tabindex="-1" id="main-content">
+        <main tabindex="-1" id="main-content" class="loose">
+            {% include "partials/site-head.njk" %}
+            <section class="wrapper">
             {% block content %}{% endblock %}
+            </section>
         </main>
         {% include "partials/footer.njk" %}
     </body>

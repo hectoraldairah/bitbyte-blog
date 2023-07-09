@@ -1,7 +1,7 @@
 {% extends "layouts/base.njk" %} {% set pageCriticalStyles = ['css/home.css'] %}
 {% set postItems = pagination.items %} {% block content %}
 
-<section class="[ fade-in ] [ intro ]">
+<section class="[ intro ]">
   <div class="wrapper">
     <h1 class="[ intro__title ] [ Blue ]">Hi, I'm Héctor Aguilar.</h1>
     <div class="intro__description">
@@ -9,7 +9,7 @@
       <p>
         This is just my little personal blog where you can read my experiences
         learning new stuff. Rigth now, working at 
-        <a class="link" target="_blank" href="https://clip.mx/"> @Clip.</a>
+        <a target="_blank" href="https://clip.mx/">Clip</a>
       </p>
       <ul class="intro__description__social">
         {% for item in social.items%}

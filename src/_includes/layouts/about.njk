@@ -1,13 +1,16 @@
 {% extends "layouts/base.njk" %} {% set pageCriticalStyles = ['css/about.css']
 %} {% block content %}
-<header class="wrapper">
-  <h1>{{greet}}</h1>
-</header>
-<section class="[about]">
+<section class="about">
   <div class="wrapper">
     <div class="about__section">
+      <div class="about__section__image">
+        {% image "src/assets/images/canvas.png", "photo of my tabby cat",
+        "responsive-image" %}
+      </div>
+
       <div class="[ stack ] [ about__section__description ]">
         <div class="stack">
+          <h2>{{greet}}</h2>
           <p>
             My name is Héctor Aldair Aguilar. I'm a front-end developer who
             enjoys making websites. I love the web with all its weirdness. This
@@ -53,9 +56,6 @@
             {% endfor %}
           </ul>
         </div>
-      </div>
-      <div class="about__section__image">
-        {% image "src/assets/images/canvas.png", "photo of my tabby cat", "responsive-image" %}
       </div>
     </div>
   </div>
