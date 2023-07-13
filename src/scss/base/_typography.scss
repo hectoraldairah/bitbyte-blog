@@ -31,9 +31,9 @@ a {
   }
 
   &::before {
-    content: "{"
+    content: '{';
   }
-  &::after{
-    content: "}"
+  &::after {
+    content: '}';
   }
 }
