@@ -3,8 +3,11 @@
   margin: get-size('500') 0;
 
   h1 {
-    font-size: get-size('1000');
+    font-size: get-size('800');
     font-weight: 400;
+    @include media-query('md') {
+      font-size: get-size('1000');
+    }
   }
 
   &__summary {
