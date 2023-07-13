@@ -4,21 +4,11 @@
 
 {% set pageHeaderTitle = title %}
 
+
 {% set pageHeaderSummary %}
 <div style="margin-top: -1rem; margin-bottom: 1rem">{{description}}</div>
-{% if tags %}
-    <div class="constrained">
-        <ul class="[ tags-list ]" aria-describedby="tags-desc">
-            {% for tag in tags %}
-                <li>
-                    <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-{% endif %}
+<time style="font-size: 1rem;" datetime="{{ date | postDate }}">{{ date | postDate }}</time>
 {% endset %}
-
 
 {% block content %}
   {% include "partials/page-header.njk" %}

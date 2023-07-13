@@ -16,7 +16,7 @@
               {% for tag in item.data.tags %} {% if not(tag == 'Featured') %}
               <li>
                 <a href="/tag/{{ tag | slug }}/"
-                  >#{{ tag | title | replace(' ', '') }}</a
+                  >{{ tag | title | replace(' ', '') }}</a
                 >
               </li>
               {% endif %} {% endfor %}

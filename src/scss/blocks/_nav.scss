@@ -4,12 +4,20 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
+
+    @include media-query('md') {
+      flex-direction: column;
+      gap: 0;
+    }
 
     > * {
       padding-top: get-size('300');
-      padding-inline-start: get-size('400');
+      @include media-query('md') {
+        padding-inline-start: get-size('400');
+      }
     }
   }
 

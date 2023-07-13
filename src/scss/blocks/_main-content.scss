@@ -1,0 +1,8 @@
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include media-query("md") {
+    grid-template-columns: 10rem 80ch;
+  }
+}

@@ -1,6 +1,11 @@
 .page-content {
   line-height: 1.6;
-  padding: 0 get-size('500');
+  padding: get-size('500') 0;
+  margin: get-size('500') 0;
+
+  &__post-title {
+    font-size: get-size('900') !important;
+  }
 
   blockquote {
     padding-inline-start: get-size('600');

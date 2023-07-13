@@ -18,6 +18,7 @@
 @import 'utilities/colors';
 
 // Blocks
+@import 'blocks/main-content';
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/nav';
@@ -77,9 +78,4 @@ h3 {
 
 pre {
   font-size: 0.825rem !important;
-}
-
-#main-content {
-  display: grid;
-  grid-template-columns: 10rem 80ch;
 }
