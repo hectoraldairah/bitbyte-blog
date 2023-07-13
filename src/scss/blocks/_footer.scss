@@ -1,37 +1,32 @@
 .site-footer {
-  margin-top: get-size('900');
+  margin-top: get-size('1000');
   padding: get-size('700') 0;
-  border-top: 1px solid var(--footer-border-color);
+  border-top: 1px solid #{get-color('Surface1')};
   font-size: get-size('400');
 
   &__navigation {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -#{get-size('300')};
-    margin-inline-start: -#{get-size('400')};
+    flex-direction: row;
+    justify-content: center;
 
-    &__middle {
+    &__inner {
+      width: 100%;
       display: flex;
-      gap: get-size('900');
-      align-items: center;
-      margin: 1rem 0 1rem 1rem;
+      flex-direction: column;
+      gap: 0.8rem;
+      text-align: center;
+
+      li {
+        img {
+          display: inline-block;
+          text-align: center;
+        }
+      }
+
+      @include media-query('md') {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: get-size('400');
-  }
-
-  li {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-inline-start: get-size('400');
   }
 }

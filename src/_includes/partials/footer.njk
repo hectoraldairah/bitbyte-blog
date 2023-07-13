@@ -1,30 +1,43 @@
-<footer class="site-footer">
-  <div class="wrapper">
-    <nav class="site-footer__navigation" aria-label="Secondary">
-      <ul class="site-footer__navigation__inner">
-        {% for item in footer.items %}
-        {% set relLink = item.rel %}
-        <li>
-          {% if relLink %}
-          <a href="{{item.url}}" rel="me" target="_blank">{{item.text}}</a>
-          {% else %}
-          <a href="{{item.url}}" rel="noopener noreferrer" target="_blank">{{item.text}}</a>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-      <div class="site-footer__navigation__middle">
-        <img width="88" height="31" src="{{'/assets/images/cyberrot.gif' | url }}" alt="Website ping whink whink" />
-        <img width="88" height="31" src="{{'/assets/images/digitalme.gif' | url }}" alt="Website ping whink whink" />
-      </div>
-      <ul class="site-footer__navigation__outer">
-        <li>
-          <a href="/feed.xml">RSS</a>
-        </li>
-        <li>
-          <a href="https://github.com/hectoraldairah/bitbyte-blog" rel="noopener noreferrer">Edit this site</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<footer class="[ site-footer ] [ loose ]">
+  <nav class="site-footer__navigation" aria-label="Secondary">
+    <ul class="site-footer__navigation__inner">
+      {% for item in footer.items %} {% set relLink = item.rel %}
+      <li>
+        {% if relLink %}
+        <a href="{{item.url}}" rel="me" target="_blank">{{item.text}}</a>
+        {% else %}
+        <a href="{{item.url}}" rel="noopener noreferrer" target="_blank"
+          >{{item.text}}</a
+        >
+        {% endif %}
+      </li>
+      {% endfor %}
+      <li>
+        <img
+          width="88"
+          height="31"
+          src="{{'/assets/images/cyberrot.gif' | url }}"
+          alt="Website ping whink whink"
+        />
+      </li>
+      <li>
+        <img
+          width="88"
+          height="31"
+          src="{{'/assets/images/digitalme.gif' | url }}"
+          alt="Website ping whink whink"
+        />
+      </li>
+      <li>
+        <a href="/feed.xml">RSS</a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/hectoraldairah/bitbyte-blog"
+          rel="noopener noreferrer"
+          >Edit this site</a
+        >
+      </li>
+    </ul>
+  </nav>
 </footer>
