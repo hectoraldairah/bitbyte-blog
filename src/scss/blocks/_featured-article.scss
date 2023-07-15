@@ -9,6 +9,7 @@
     display: block;
     width: 100%;
     margin-bottom: 0.5rem;
+    font-size: get-size("400");
 
     &__tags {
       color: var(--text-heading-color);
@@ -20,7 +21,7 @@
   }
 
   &__title {
-    font-size: get-size('600');
+    font-size: get-size('500');
     color: #{get-color('Rosewater')};
     text-decoration-color: #{get-color('Rosewater')};
     @include apply-utility('font', 'terminal');
@@ -29,6 +30,5 @@
   &__excerpt {
     display: block;
     font-size: get-size('400');
-    margin-top: get-size('300');
   }
 }

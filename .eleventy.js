@@ -11,6 +11,7 @@ const shortcodes = require('./src/utils/shortcodes');
 const CONTENT_GLOBS = {
   post: './src/posts/**/*.md',
   pixelart: './src/pixelart/**/*.md',
+  books: './src/books/**/*.md',
 };
 
 module.exports = (config) => {
@@ -26,6 +27,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('./src/fonts/');
   config.addPassthroughCopy('./src/pixelart/');
   config.addPassthroughCopy('./src/posts/');
+  config.addPassthroughCopy('./src/books/');
 
   // Add filters
   Object.keys(filters).forEach((filterName) => {
@@ -56,6 +58,10 @@ module.exports = (config) => {
 
   config.addCollection('pixelart', (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart)].reverse();
+  });
+
+  config.addCollection('books', (collection) => {
+    return [...collection.getFilteredByGlob(CONTENT_GLOBS.books)].reverse();
   });
 
   config.addCollection('publish', (collection) => {

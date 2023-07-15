@@ -5,12 +5,23 @@
   h1 {
     font-size: get-size('800');
     font-weight: 400;
-    @include media-query('md') {
-      font-size: get-size('1000');
-    }
+    line-height: 1.0;
+    text-indent: -.15rem;
   }
 
   &__summary {
     font-size: get-size('500');
+
+    time {
+      &::after {
+        content: "::";
+        margin-left: 1rem;
+      }
+    }
+
+    &__meta {
+      display: flex;
+      gap: 1rem;
+    }
   }
 }

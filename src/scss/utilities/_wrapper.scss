@@ -5,7 +5,7 @@
   max-width: 50ch;
 
   @include media-query('md') {
-    max-width: 100ch;
+    max-width: 150ch;
   }
 }
 
@@ -14,13 +14,11 @@
   max-width: 32ch;
 
   @include media-query('md') {
-    max-width: 60ch;
+    max-width: 70ch;
   }
 }
 
 .constrained {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 45rem;
+  max-width: 50ch;
 }

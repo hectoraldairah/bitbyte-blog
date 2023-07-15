@@ -8,7 +8,7 @@
     @include apply-utility('weight', 'regular');
 
     @include media-query('md') {
-      font-size: get-size('1000');
+      font-size: get-size('900');
     }
   }
 

@@ -4,6 +4,6 @@
   padding: 0 20px;
 
   @include media-query('md') {
-    grid-template-columns: 10rem 80ch;
+    grid-template-columns: 8rem 80ch;
   }
 }

@@ -1,0 +1,11 @@
+<section>
+  <div class="wrapper">
+    <ol class="[ books-list ] [ flow ]">
+      {% for book in books %}
+      <li>
+        <a href="{{ item.url }}">{{ book.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

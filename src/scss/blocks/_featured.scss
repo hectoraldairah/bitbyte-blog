@@ -1,5 +1,5 @@
 .feature-post {
-  padding-top: get-size('700');
+  padding-top: get-size('500');
   padding-bottom: get-size('500');
 
   &__title {
@@ -9,7 +9,7 @@
   &__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: get-size('1000');
+    gap: get-size('700');
     margin-top: get-size('700');
   }
 

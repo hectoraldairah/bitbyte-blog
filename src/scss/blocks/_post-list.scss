@@ -1,13 +1,18 @@
 .post-list {
   &__item {
-    padding: get-size('600') 0;
+    padding: get-size('400') 0;
 
     &__link {
-      font-size: get-size('700');
+      font-size: get-size('500');
     }
 
     &__info {
       display: flex;
+      font-size: get-size('400');
+
+      &__excerpt {
+        margin-top: -0.5rem;
+      }
 
       &__tags {
         display: flex;

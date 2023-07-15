@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}  
+{% set pageCriticalStyles = ['css/page.css'] %}
+{% set pageHeaderTitle = title %} 
+{% set books = pagination.items %}
+
+{% block content %} 
+<article class="constrained">
+  {% include "partials/page-header.njk" %}
+  {% include "partials/books-list.njk" %}
+  <div class="[ page-content ]">{{ content | safe }}</div>
+</article>
+{% endblock %}

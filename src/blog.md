@@ -12,4 +12,5 @@ paginationNextText: 'Older posts'
 paginationAnchor: '#post-list'
 permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
 metaDesc: 'My thoughts are on the web now.'
+pageHeaderSummary: 'Simple things'
 ---

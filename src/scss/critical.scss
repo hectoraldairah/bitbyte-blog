@@ -55,23 +55,26 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.5;
-  font-size: get-size('500');
   overflow-x: hidden;
   min-height: 100vh;
+  font-family: ui-serif, serif;
+  font-size: get-size("500");
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-weight: get-size('900');
   color: var(--text-heading-color);
 }
