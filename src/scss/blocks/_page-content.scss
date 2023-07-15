@@ -1,4 +1,5 @@
 .page-content {
+  font-size: get-size('400') !important;
 
   &__post-title {
     font-size: get-size('900') !important;
@@ -11,10 +12,10 @@
       5px 5px 0 0 var(--block-quote-shadow-color),
       5px 5px 0 0 var(--block-quote-shadow-color),
       5px 5px 0 0 var(--block-quote-shadow-color);
-      p {
-        margin: 1rem;
-        text-align: center;
-      }
+    p {
+      margin: 1rem;
+      text-align: center;
+    }
   }
 
   h2,
@@ -26,7 +27,6 @@
     font-weight: normal;
     text-indent: -3px;
   }
-
 
   h2 {
     font-size: get-size('700');
@@ -68,6 +68,13 @@
 
   .header-anchor {
     visibility: hidden;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: get-size('400');
+    padding: 0.2rem 0;
+    background-color: #{get-color('Crust')};
   }
 
   @media screen and (hover: hover) {

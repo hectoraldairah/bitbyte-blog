@@ -14,6 +14,14 @@ module.exports = {
     console.log(value);
   },
 
+  stars: function (rating) {
+    console.log(rating, 'rating');
+    return ['☆', '☆', '☆', '☆', '☆']
+      .map((item, idx) => (idx + 1 <= rating ? '★' : item))
+      .toString()
+      .replaceAll(',', ' ');
+  },
+
   previewDate: function (dateObj) {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc',

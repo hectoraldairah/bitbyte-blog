@@ -2,6 +2,22 @@
 {% set pageCriticalStyles = ['css/page.css'] %}
 {% set pageHeaderTitle = title %} 
 {% set books = pagination.items %}
+{% set title = pageHeaderSummary %}
+
+{% set pageHeaderSummary %}
+{{ title }}
+{% if description %}
+<p>{{ description }} </p>
+{% endif %}
+{% if writter %}
+<p style="font-size: 1rem;"> - {{writter}}</p>
+{% endif %}
+{% if date %}
+<time class="no_dots" datetime="{{ date | postDate }}">{{ date | postDate }}</time>
+{% endif %}
+{% endset %}
+
+
 
 {% block content %} 
 <article class="constrained">

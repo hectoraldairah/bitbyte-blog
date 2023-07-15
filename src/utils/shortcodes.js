@@ -5,11 +5,16 @@ module.exports = {
     src,
     alt,
     className = undefined,
+    caption = false,
     widths = [400, 800, 1280],
     sizes = '100vw'
   ) {
     if (alt === undefined) {
       throw new Error('Missing atl prop for image', src);
+    }
+
+    function figure(html, caption, width) {
+      return `<figure>${html}<figcaption style="width: ${width}px">${caption}</figcaption></figure>`;
     }
 
     const options = {
@@ -29,7 +34,15 @@ module.exports = {
 
     const metadata = await Image(src, options);
 
-    return Image.generateHTML(metadata, imageAttributes);
+    const generated = Image.generateHTML(metadata, imageAttributes);
+
+    const figWidth = metadata.webp[0].width;
+
+    if (caption) {
+      return figure(generated, caption, figWidth);
+    }
+
+    return generated;
   },
   pixelArtImage: async function (
     src,

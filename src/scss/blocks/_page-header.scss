@@ -5,8 +5,8 @@
   h1 {
     font-size: get-size('800');
     font-weight: 400;
-    line-height: 1.0;
-    text-indent: -.15rem;
+    line-height: 1;
+    text-indent: -0.15rem;
   }
 
   &__summary {
@@ -14,7 +14,7 @@
 
     time {
       &::after {
-        content: "::";
+        content: '::';
         margin-left: 1rem;
       }
     }

@@ -6,8 +6,12 @@
 
 
 {% set pageHeaderSummary %}
+{% if description %}
 <div>{{description}}</div>
+{% endif %}
+{% if date %}
 <time style="font-size: 1rem;" datetime="{{ date | postDate }}">{{ date | postDate }}</time>
+{% endif %}
 {% endset %}
 
 {% block content %}

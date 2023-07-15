@@ -10,6 +10,7 @@ $generate-utility-classes: false;
 @import 'blocks/post-list';
 @import 'blocks/tag-lists';
 @import 'blocks/page-content';
+@import 'blocks/books-list';
 
 // // Generic styles
 
@@ -18,4 +19,11 @@ time[datetime] {
   font-size: get-size('400');
   font-style: italic;
   padding-bottom: 1rem;
+}
+
+.no_dots {
+  margin-top: 1rem;
+  &::after {
+    display: none;
+  }
 }

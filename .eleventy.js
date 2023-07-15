@@ -37,6 +37,7 @@ module.exports = (config) => {
   // Add shortcodes
   Object.keys(shortcodes).forEach((shortCodeName) => {
     config.addNunjucksAsyncShortcode(shortCodeName, shortcodes[shortCodeName]);
+    config.addLiquidShortcode(shortCodeName, shortcodes[shortCodeName]);
   });
 
   // Markdown Passing
