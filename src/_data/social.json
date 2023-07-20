@@ -1,11 +1,6 @@
 {
   "items": [
     {
-      "url": "https://hostux.social/@bitbyte",
-      "text": "Mastodon",
-      "rel": "me"
-    },
-    {
       "url": "https://codepen.io/hectoraldairah",
       "text": "Codepen"
     },
