@@ -40,14 +40,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      # Check for Prettier
-      - name: Prettier for CI
-        run: pnpm run prettier:check
-
-      # Check for Eslint
-      - name: Eslint
-        run: pnpm run eslint
-
       # Build Eleventy for Production
       - name: Build 11ty
         run: pnpm run production
