@@ -1,11 +1,12 @@
 ---
 Topic: Go
 type: blog
-publish: "false"
 Language: english
-featured: "true"
-decription: The beginning of a new journey
-title: Learning Go, a new adventure
+featured: true
+decription: 'The beginning of a new journey'
+title: 'Learning Go, a new adventure'
+date: 2024-01-07
+tags: ['Go']
 ---
 # Why Go?
 
