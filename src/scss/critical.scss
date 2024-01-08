@@ -32,13 +32,13 @@
 
   --text-color: #{get-color('Text')};
 
-  --feature-post-color: #{get-color('Mantle')};
-  --text-heading-color: #{get-color('Lavender')};
+  --feature-post-color: #{get-color('Red')};
+  --text-heading-color: #{get-color('Green')};
 
-  --link-color: #{get-color('Rosewater')};
-  --text-decoration-color: #{get-color('Flamingo')};
+  --link-color: #{get-color('Blue')};
+  --text-decoration-color: #{get-color('Blue')};
 
-  --link-hover-color: #{get-color('Flamingo')};
+  --link-hover-color: #{get-color('Blue')};
   --focus-color: #{get-color('Surface1')};
 
   --flow-space: #{get-size('600')};
@@ -46,8 +46,8 @@
   --scrollbar-color: #{get-color('Surface2')};
   --scrollbar-thumb-color: #{get-color('Mantle')};
 
-  --block-quote-color: #{get-color('Lavender')};
-  --block-quote-shadow-color: #{get-color('Lavender')};
+  --block-quote-color: #{get-color('Text')};
+  --block-quote-shadow-color: #{get-color('Text')};
   --footer-border-color: #{get-color('Lavender')};
 
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
@@ -70,7 +70,10 @@ body {
   font-size: get-size('500');
 }
 
-h1,
+h1 {
+  color: var(--text-color);
+}
+
 h2,
 h3,
 h4,

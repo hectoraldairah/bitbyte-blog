@@ -6,16 +6,17 @@
   }
 
   blockquote {
-    font-style: italic;
-    border: solid 2px var(--block-quote-color);
-    box-shadow: 5px 5px 0 0 var(--block-quote-shadow-color),
-      5px 5px 0 0 var(--block-quote-shadow-color),
-      5px 5px 0 0 var(--block-quote-shadow-color),
-      5px 5px 0 0 var(--block-quote-shadow-color);
+    text-align: left;
+    border-left: solid 2px var(--link-hover-color);
+    background-color: #{get-color('Crust')};
     p {
-      margin: 1rem;
-      text-align: center;
+      padding-left: 0.8rem;
+      font-size: 0.9rem
     }
+  }
+
+  h1 {
+    color: var(--feature-post-color);
   }
 
   h2,
@@ -75,6 +76,12 @@
     font-size: get-size('400');
     padding: 0.2rem 0;
     background-color: #{get-color('Crust')};
+  }
+
+  li {
+    &::marker {
+      color: var(--feature-post-color);
+    }
   }
 
   @media screen and (hover: hover) {

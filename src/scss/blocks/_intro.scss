@@ -5,6 +5,7 @@
   &__title {
     font-size: get-size('900');
     line-height: 1.15;
+    color: #{get-color('Text')};
     @include apply-utility('weight', 'regular');
 
     @include media-query('md') {
