@@ -1,13 +1,41 @@
 .site-footer {
   margin-top: get-size('1000');
   padding: get-size('700') 0;
-  border-top: 1px solid #{get-color('Surface1')};
   font-size: get-size('400');
+
+  &__socials {
+    border-bottom: 1px solid #{get-color('Surface1')};
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      li {
+        list-style-type: none;
+        a {
+          &::before,
+          &::after {
+            content: none;
+          }
+
+          .icon {
+            display: block;
+            max-width: 30px;
+            max-height: 30px;
+            object-fit: fill;
+
+          }
+
+        }
+      }
+    }
+  }
 
   &__navigation {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 1rem;
 
     &__inner {
       width: 100%;

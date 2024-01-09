@@ -1,4 +1,15 @@
 <footer class="[ site-footer ] [ loose ]">
+  <div class="site-footer__socials">
+   <ul>
+   {% for item in social.items%}
+   <li>
+    <a target="_blank" rel="{{item.rel}}" href="{{item.url}}" class="site-footer__socials__image">
+    {% image "src/assets/icons/" + item.svg, item.text, "icon" %}
+    </a>
+   </li>
+   {% endfor %}
+   </ul>
+  </div>
   <nav class="site-footer__navigation" aria-label="Secondary">
     <ul class="site-footer__navigation__inner">
       {% for item in footer.items %} {% set relLink = item.rel %}

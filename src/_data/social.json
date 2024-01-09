@@ -2,17 +2,21 @@
   "items": [
     {
       "url": "https://codepen.io/hectoraldairah",
-      "text": "Codepen"
+      "text": "Codepen",
+      "svg": "codepen.png",
+      "rel": "me"
     },
     {
       "url": "https://github.com/hectoraldairah",
       "text": "Github",
-      "rel": "me"
+      "rel": "me",
+      "svg": "github.png"
     },
     {
       "url": "https://www.linkedin.com/in/hectoraldairaguilar",
       "text": "LinkedIn",
-      "rel": "me"
+      "rel": "me",
+      "svg": "linkedin.png"
     }
   ]
 }
