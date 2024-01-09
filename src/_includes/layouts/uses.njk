@@ -1,0 +1,22 @@
+{% extends "layouts/base.njk" %}  
+{% set pageCriticalStyles = ['css/page.css'] %}
+{% set pageHeaderTitle = title %} 
+{% set title = pageHeaderSummary %}
+
+{% set pageHeaderSummary %}
+{{ title }}
+{% if description %}
+<p>{{ description }} </p>
+{% endif %}
+{% if writter %}
+<p style="font-size: 1rem;"> - {{writter}}</p>
+{% endif %}
+{% if date %}
+<time class="no_dots" datetime="{{ date | postDate }}">{{ date | postDate }}</time>
+{% endif %}
+{% endset %}
+
+{% block content %}
+  {% include "partials/page-header.njk" %}
+  <div class="[ page-content ]">{{ content | safe }}</div>
+{% endblock%}
