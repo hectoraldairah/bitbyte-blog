@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/books.njk",
+  "permalink": "/books/{{ title | slug }}/index.html"
+}
