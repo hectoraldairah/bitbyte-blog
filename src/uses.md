@@ -37,15 +37,21 @@ pageHeaderSummary: 'Check my daily tools!'
 ### Package Managment
 * [fnm](https://github.com/Schniz/fnm) for Node version managment.
 * [pyenv](https://github.com/pyenv/pyenv) for Python version managment.
-* Homebrew for macOs package managment.
+* [homebrew](https://brew.sh/) for macOs package managment.
 
 ### Shell
 * [zsh](https://www.zsh.org/) for shell.
 * [oh-my-zsh](https://ohmyz.sh/) for shell improvement.
 * [exa](https://github.com/ogham/exa) for `ls` replacement.
+* [zellij](https://zellij.dev/) for terminal workspace 
 
 ### Desktop Environment
 * [Yabai](https://github.com/koekeishiya/yabai) for making a i3 style in macos.
 * [Sketchybar](https://github.com/FelixKratz/SketchyBar) for rasing macos a little bit.
 * [Catppuccin](https://github.com/catppuccin/catppuccin) theme for everthing.
+
+## Gaming
+* [OpenEmu](https://openemu.org/) for retro Gaming.
+* [AetherSX2](https://aethersx2.net/) for ps2 emulation. 
+
 

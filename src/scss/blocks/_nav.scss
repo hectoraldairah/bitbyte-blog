@@ -26,22 +26,22 @@
     display: block;
     text-decoration: none;
     padding: 0.2rem;
-    color: var(--text-color);
     font-weight: normal;
+    color: #{get-color('Text')};
 
     &::after,
     &::before {
       display: none;
     }
 
-    &:hover {
-      color: var(--bg-color);
+    &:hover{ 
+      color: #{get-color('Base')};
     }
 
     &[data-state='active'],
     &[data-state='page'] {
-      background: var(--link-hover-color);
-      color: var(--bg-color);
+      background: #{get-color('Rosewater')};
+      color: #{get-color('Base')};
     }
   }
 }

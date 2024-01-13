@@ -2,7 +2,7 @@
 
 ::-webkit-scrollbar {
   height: 1rem;
-  background: var(--scrollbar-color);
+  background: #{get-color('Base')} 
 }
 
 ::-webkit-scrollbar-track {
@@ -12,5 +12,5 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0rem;
-  background: var(--scrollbar-thumb-color);
+  background:  #{get-color('Lavender')}
 }

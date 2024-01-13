@@ -1,24 +1,17 @@
-.loose {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50ch;
-
-  @include media-query('md') {
-    max-width: 150ch;
-  }
-}
-
 .wrapper {
   position: relative;
-  max-width: 32ch;
-
-  @include media-query('md') {
-    max-width: 70ch;
-  }
+  max-width: 60ch;
+  text-wrap: pretty;
 }
 
 .constrained {
   position: relative;
-  max-width: 50ch;
+  max-width: 70ch;
+}
+
+.loose {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50ch;
 }

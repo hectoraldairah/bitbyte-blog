@@ -21,19 +21,13 @@ p {
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
+  color: #{get-color('Rosewater')};
+  text-decoration: underline;
 
   &:hover {
-    color: var(--bg-color);
-    background-color: var(--link-hover-color);
-  }
-
-  &::before {
-    content: '[[';
-  }
-  &::after {
-    content: ']]';
+    background-color: #{get-color('Rosewater')};
+    color: #{get-color('Base')}
   }
 }

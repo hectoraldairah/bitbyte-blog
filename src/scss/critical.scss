@@ -7,7 +7,6 @@
 @import '../../node_modules/gorko/gorko.scss';
 
 // Base Styles
-@import 'base/animation';
 @import 'base/typography';
 @import 'base/scrollbar';
 @import 'base/focus';
@@ -15,7 +14,6 @@
 
 // Import Utilities
 @import 'utilities/wrapper';
-@import 'utilities/colors';
 
 // Blocks
 @import 'blocks/main-content';
@@ -27,59 +25,32 @@
 
 @import 'themes/prism-laserwave';
 
-:root {
-  --bg-color: #{get-color('Base')};
-
-  --text-color: #{get-color('Text')};
-
-  --feature-post-color: #{get-color('Red')};
-  --text-heading-color: #{get-color('Green')};
-
-  --link-color: #{get-color('Blue')};
-  --text-decoration-color: #{get-color('Blue')};
-
-  --link-hover-color: #{get-color('Blue')};
-  --focus-color: #{get-color('Surface1')};
-
-  --flow-space: #{get-size('600')};
-
-  --scrollbar-color: #{get-color('Surface2')};
-  --scrollbar-thumb-color: #{get-color('Mantle')};
-
-  --block-quote-color: #{get-color('Text')};
-  --block-quote-shadow-color: #{get-color('Text')};
-  --footer-border-color: #{get-color('Lavender')};
-
-  scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
-  scrollbar-width: auto !important;
-}
-
 html {
   font-size: 20px;
 }
 
 body {
-  position: relative;
   display: flex;
   flex-direction: column;
-  background: var(--bg-color);
-  color: var(--text-color);
+  background-color: #{get-color('Base')};
+  color: #{get-color('Text')};
   overflow-x: hidden;
   min-height: 100vh;
   font-family: ui-serif, serif;
-  font-size: get-size('500');
 }
 
 h1 {
-  color: var(--text-color);
+  color: #{get-color('Text')} 
 }
 
-h2,
+h2 {
+  color: #{get-color('Teal')}
+}
+
 h3,
 h4,
 h5 {
-  font-weight: get-size('900');
-  color: var(--text-heading-color);
+  color: #{get-color('Green')};
 }
 
 pre {

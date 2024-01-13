@@ -21,10 +21,10 @@
 
         li {
           a {
-            color: var(--text-heading-color);
+            color: #{get-color('Teal')};
             &:hover {
-              color: var(--bg-color);
-              background-color: var(--text-heading-color);
+              color: #{get-color('Base')};
+              background-color: #{get-color('Teal')};
             }
           }
         }

@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const pluginRSS = require('@11ty/eleventy-plugin-rss');
 const pluginSyntax = require('@11ty/eleventy-plugin-syntaxhighlight');
