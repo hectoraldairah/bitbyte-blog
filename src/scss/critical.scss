@@ -11,6 +11,7 @@
 @import 'base/scrollbar';
 @import 'base/focus';
 @import 'base/anchor';
+@import 'base/fonts';
 
 // Import Utilities
 @import 'utilities/wrapper';
@@ -36,7 +37,7 @@ body {
   color: #{get-color('Text')};
   overflow-x: hidden;
   min-height: 100vh;
-  font-family: ui-serif, serif;
+  font-family: 'Terminal', ui-serif, serif; 
 }
 
 h1 {
