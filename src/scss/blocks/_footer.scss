@@ -1,18 +1,23 @@
 .site-footer {
-  margin-top: get-size('1000');
-  padding: get-size('700') 0;
-  font-size: get-size('400');
+  grid-area: footer;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top : 3px solid #{get-color('Surface1')};
 
   &__socials {
-    border-bottom: 1px solid #{get-color('Surface1')};
     ul {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 1rem;
+
       li {
         list-style-type: none;
+
         a {
+
           &::before,
           &::after {
             content: none;

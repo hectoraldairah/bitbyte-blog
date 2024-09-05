@@ -1,9 +1,7 @@
 .main-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-area: content;
+  overflow-y: scroll;
 
   @include media-query('md') {
-    grid-template-columns: 8rem 80ch;
   }
 }

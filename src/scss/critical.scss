@@ -27,31 +27,52 @@
 @import 'themes/prism-laserwave';
 
 html {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
   font-size: 20px;
+  background:
+    radial-gradient(calc(1.28*100px + 37.5px/2) at left 50% bottom calc(-.8*100px), #f1ece0 calc(100% - 37.5px), #bcdeda calc(101% - 37.5px) 100%, #0000 101%) calc(2*100px) calc(-1*calc(1.5*100px + 37.5px)),
+    radial-gradient(calc(1.28*100px + 37.5px/2) at left 50% bottom calc(-.8*100px), #f1ece0 calc(100% - 37.5px), #bcdeda calc(101% - 37.5px) 100%, #0000 101%) calc(-1*100px) calc(calc(1.5*100px + 37.5px)/-2),
+    radial-gradient(calc(1.28*100px + 37.5px/2) at left 50% top calc(-.8*100px), #f1ece0 calc(100% - 37.5px), #bcdeda calc(101% - 37.5px) 100%, #0000 101%) 0 calc(1.5*100px + 37.5px),
+    radial-gradient(calc(1.28*100px + 37.5px/2) at left 50% top calc(-.8*100px), #f1ece0 calc(100% - 37.5px), #bcdeda calc(101% - 37.5px) 100%, #0000 101%) 100px calc(calc(1.5*100px + 37.5px)/ 2),
+    linear-gradient(#f1ece0 50%, #f1ece0 0);
+  background-size: calc(4*100px) calc(1.5*100px + 37.5px);
+  font-family: 'Terminal', ui-serif, serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: #{get-color('Base')};
-  color: #{get-color('Text')};
-  overflow-x: hidden;
-  min-height: 100vh;
-  font-family: 'Terminal', ui-serif, serif; 
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
 }
 
-h1 {
-  color: #{get-color('Text')} 
-}
-
-h2 {
-  color: #{get-color('Teal')}
-}
-
-h3,
-h4,
-h5 {
-  color: #{get-color('Green')};
+.after-body {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 1fr 80px;
+  grid-template-areas:
+    "sidebar content"
+    "sidebar footer";
+  width: 80vw;
+  flex-basis: clamp(300px, 90vh, 1100px);
+  outline: 3px solid #{get-color('Crust')};
+  background-color: #{get-color('Rosewater')};
+  color: #{get-color('Crust')};
+  overflow: hidden;
+  box-shadow: 10px 10px #{get-color('Crust')};
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 pre {

@@ -1,6 +1,6 @@
 .site-head {
-  padding: get-size('300') 0;
-  margin-top: 10px;
+  border-right: 3px solid black;
+  grid-area: sidebar;
 
   &__inner {
     display: flex;

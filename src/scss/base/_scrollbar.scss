@@ -1,8 +1,11 @@
 // Scrollbar styles
 
 ::-webkit-scrollbar {
-  height: 1rem;
-  background: #{get-color('Base')} 
+  background-image: radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#000000 0.5px, transparent 0.5px);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  background-color: #f1ece0;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -12,5 +15,5 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0rem;
-  background:  #{get-color('Lavender')}
+  background: #{get-color('Crust')};
 }
