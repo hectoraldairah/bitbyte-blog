@@ -53,6 +53,8 @@
     <body>
       <div class="after-body">
         {% include "partials/site-head.njk" %}
+        {% include "partials/site-title.njk" %}
+        {% include "partials/site-info.njk" %}
         <main tabindex="-1" id="main-content" class="[ main-content ]">
             <section class="content">
             {% block content %}{% endblock %}

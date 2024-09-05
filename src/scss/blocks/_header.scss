@@ -1,5 +1,5 @@
 .site-head {
-  border-right: 3px solid black;
+  border-right: 2px solid black;
   grid-area: sidebar;
 
   &__inner {
@@ -8,36 +8,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-
-    &__themes ul {
-      display: flex;
-      gap: 1rem;
-      justify-content: space-between;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      li {
-        display: flex;
-        align-items: center;
-      }
-
-      li span {
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        border-radius: 100%;
-        cursor: pointer;
-      }
-    }
-  }
-
-  &__brand {
-    flex-shrink: 0;
-    margin-inline-end: get-size('500'); // Prevents nav bunching up to the logo
-    transform: translateY(0.25rem);
   }
 
   &__nav {
     padding: get-size('300') 0;
+    position: relative;
   }
 }

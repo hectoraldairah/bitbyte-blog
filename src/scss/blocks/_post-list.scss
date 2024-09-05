@@ -21,10 +21,10 @@
 
         li {
           a {
-            color: #{get-color('Teal')};
+            color: #{get-color('Red')};
             &:hover {
-              color: #{get-color('Base')};
-              background-color: #{get-color('Teal')};
+              color: #{get-color('Blue')};
+              background-color: #{get-color('Red')};
             }
           }
         }

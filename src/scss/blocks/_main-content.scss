@@ -1,6 +1,7 @@
 .main-content {
   grid-area: content;
-  overflow-y: scroll;
+  overflow-y: auto;
+  padding: 1rem;
 
   @include media-query('md') {
   }
