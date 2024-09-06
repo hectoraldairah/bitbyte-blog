@@ -23,11 +23,11 @@ p {
 a {
   transition: 0.3s;
   cursor: pointer;
-  color: #{get-color('Red')};
+  color: #{get-color('Rosewater')};
   text-decoration: underline;
 
   &:hover {
-    background-color: #{get-color('Red')};
-    color: #{get-color("Blue")};
+    background-color: #{get-color('Rosewater')};
+    color: #{get-color('Base')}
   }
 }

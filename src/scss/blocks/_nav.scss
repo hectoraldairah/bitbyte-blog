@@ -27,7 +27,7 @@
     text-decoration: none;
     padding: 0.2rem;
     font-weight: normal;
-    color: #{get-color('Red')};
+    color: #{get-color('Text')};
 
     &::after,
     &::before {
@@ -35,13 +35,13 @@
     }
 
     &:hover{ 
-      color: #{get-color('Blue')};
+      color: #{get-color('Crust')};
     }
 
     &[data-state='active'],
     &[data-state='page'] {
-      background: #{get-color('Red')};
-      color: #{get-color('Blue')};
+      background: #{get-color('Rosewater')};
+      color: #{get-color('Crust')};
     }
   }
 }

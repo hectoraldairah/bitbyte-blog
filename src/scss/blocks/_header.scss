@@ -1,5 +1,5 @@
 .site-head {
-  border-right: 2px solid black;
+  border-right: 1px solid #{get-color('Text')};
   grid-area: sidebar;
 
   &__inner {

@@ -62,13 +62,13 @@ body {
     "sidebar footer";
   width: 80vw;
   flex-basis: clamp(300px, 100vh, 1200px);
-  background-color: #{get-color('Rosewater')};
-  box-shadow: 10px 10px #{get-color('Red')};
+  background-color: #{get-color('Base')};
+  box-shadow: 10px 10px #{get-color('Rosewater')};
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  color: #{get-color('Blue')};
+  color: #{get-color('Text')};
   overflow: hidden;
-  outline: 2px solid #{get-color("Blue")};
+  outline: 2px solid #{get-color("Rosewater")};
 }
 
 .site-title {
@@ -76,7 +76,6 @@ body {
   align-items: center;
   justify-content: center;
   grid-area: title;
-  border-bottom: 2px solid black;
   background-image: url("../assets/images/dit.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,8 +105,7 @@ body {
   align-items: center;
   justify-content: center;
   grid-area: info;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
+  border-bottom: 1px solid #{get-color('Text')};
 }
 
 pre {
