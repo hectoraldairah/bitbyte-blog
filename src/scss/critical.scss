@@ -54,7 +54,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 150px 1fr;
-  grid-template-rows: 50px 50px 1fr 80px;
+  grid-template-rows: 50px 80px 1fr 80px;
   grid-template-areas:
     "title title"
     "actions info"
@@ -103,11 +103,23 @@ body {
 .site-info {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
   grid-area: info;
-  border-bottom: 1px solid #{get-color('Text')};
+  padding: 1rem;
+  outline: 1px solid #{get-color('Text')};
+  .summary {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    gap: 1rem;
+  }
 }
 
 pre {
   font-size: 0.825rem !important;
 }
+

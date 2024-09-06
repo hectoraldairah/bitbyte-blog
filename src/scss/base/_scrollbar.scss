@@ -1,8 +1,7 @@
 // Scrollbar styles
 
 ::-webkit-scrollbar {
-  background-image: url("../assets/images/dit.png");
-  background-repeat: no-repeat;
+  background-color: #{get-color('Blue')};
 }
 
 ::-webkit-scrollbar-track {
@@ -11,6 +10,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 0rem;
-  background: #{get-color('Crust')};
+  border-radius: 5px;
+  background: #{get-color('Overlay1')};
 }

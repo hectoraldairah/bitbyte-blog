@@ -1,24 +1,8 @@
-{% set pageHeaderTitle = title %}
-{% set pageHeaderSummary %}
 {% extends "layouts/base.njk" %} 
+{% set pageHeaderTitle = title %}
 {% set pageCriticalStyles = ['css/page.css'] %}
 
-<p style="margin-top: 0rem">{{description}}</p>
-<div class="[ page-header__summary__meta ]">
-<time style="font-size: 1rem" datetime="{{ date | postDate }}"
-  >{{ date | postDate }}</time
->
-{% if tags %}
-<ul class="[ tags-list ]" aria-describedby="tags-desc">
-  {% for tag in tags %}
-  <li>
-    <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-  </li>
-  {% endfor %}
-</ul>
-</div>
-{% endif %} {% endset %} {% block content %} {% include
-"partials/page-header.njk" %}
+{% block content %} 
 <article class="constrained">
   <div class="[ page-content ]">{{ content | safe }}</div>
 </article>

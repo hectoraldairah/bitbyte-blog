@@ -1,3 +1,19 @@
+{%set summary = pageHeaderSummary %}
 <div role="banner" class="site-info">
-  <div>{{title}}</div>
+<div>
+  <h3>{{title}}</h3>
+  {% if summary %}<p>{{summary | safe }}</p>{% endif%}
+  {% if description %} <h4>{{description}} {%if date%} ::  <time style="font-size: 14px" datetime="{{date | postDate }}">{{ date | postDate }}</time></h4> {%endif%} {% endif %}
+  </div>
+
+
+{% if tags %}
+<ul class="[ tag-list ]" aria-describedby="tags-desc">
+  {% for tag in tags %}
+  <li>
+    <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
 </div>

@@ -4,18 +4,10 @@
   }
 
   &__summary {
-    font-size: get-size('500');
-
-    time {
-      &::after {
-        content: '::';
-        margin-left: 1rem;
-      }
-    }
-
     &__meta {
       display: flex;
-      gap: 1rem;
+      flex-direction: row;
+      align-items: baseline;
     }
   }
 }

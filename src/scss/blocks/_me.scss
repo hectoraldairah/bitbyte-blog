@@ -3,8 +3,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20rem 1fr;
-    margin-top: get-size('500');
-    padding: get-size('900') 0;
 
     &__description {
       margin-top: get-size('600');

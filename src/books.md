@@ -7,5 +7,5 @@ eleventyNavigation:
   key: books
   order: 4
 layout: 'layouts/books.njk'
-pageHeaderSummary: 'Read for the mind and soul'
+pageHeaderSummary: 'For the mind and sould'
 ---

@@ -8,6 +8,5 @@ eleventyNavigation:
   key: pixel art
   order: 3
 layout: 'layouts/pixelart.njk'
-metaDesc: 'My pixelart drawings'
-pageHeaderSummary: 'I like the Gameboy feeling'
+pageHeaderSummary: 'Old enough to be retro'
 ---

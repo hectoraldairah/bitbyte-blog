@@ -1,21 +1,8 @@
 {% extends "layouts/base.njk" %}
-
 {% set pageCriticalStyles = ['css/page.css'] %}
-
 {% set pageHeaderTitle = title %}
 
-
-{% set pageHeaderSummary %}
-{% if description %}
-<div>{{description}}</div>
-{% endif %}
-{% if date %}
-<time style="font-size: 1rem;" datetime="{{ date | postDate }}">{{ date | postDate }}</time>
-{% endif %}
-{% endset %}
-
 {% block content %}
-  {% include "partials/page-header.njk" %}
   <article class="constrained">
     <div class="[ page-content ]">
         {{content | safe }}

@@ -1,10 +1,10 @@
 ---
-title: 'about'
+title: 'About'
 layout: 'layouts/about.njk'
 eleventyNavigation:
   key: about
   order: 5
 permalink: /about/
 metaDesc: 'About Hector Aldair Aguilar'
-greet: 'A little bit about me'
+pageHeaderSummary: 'We know each other?'
 ---

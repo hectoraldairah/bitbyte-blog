@@ -1,17 +1,10 @@
 {% extends "layouts/base.njk" %}
 {% set pageCriticalStyles = ['css/pixelart-gallery.css']%}
 {% set pixelArtItems = pagination.items %}
-{% set pageHeaderTitle = title %}
-{% set pixelArtItems = pagination.items %}
 {% set showTags = false %}
 
 {% block content %}
   <article>
-    <section class="constrained">
-      {% include "partials/page-header.njk" %}
-      </section>
-      <section>
       {% include "partials/pixelart-list.njk" %}
-      </section>
   </article>
 {% endblock %}
