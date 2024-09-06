@@ -51,6 +51,8 @@
 
     </head>
     <body>
+
+      <audio id="clickSound" src="../../assets/sounds/Beep 99630.mp3" preload="auto"></audio>
       <div class="after-body">
         {% include "partials/site-head.njk" %}
         {% include "partials/site-title.njk" %}
@@ -63,4 +65,18 @@
         {% include "partials/footer.njk" %}
       </div>
     </body>
+    <script defer>
+document.addEventListener('DOMContentLoaded', (event) => {
+
+  const focusSound = new Audio('../../assets/sounds/Beep 99630.mp3');
+  focusSound.preload = 'auto';
+
+ const playFocusSound = () => {
+    focusSound.play();
+  };
+  document.addEventListener('focus', (event) => {
+    playFocusSound();
+  }, true);
+});
+    </script>
 </html>
