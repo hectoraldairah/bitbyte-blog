@@ -36,10 +36,10 @@ html {
   font-size: 20px;
   background-color: #424266;
   background-image: url("../assets/images/ditther.png");
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
+  background-size: 150vw 150vh;
+  background-repeat: repeat;
   font-family: 'Terminal', ui-serif, serif;
-  animation: moveBackground 10s linear infinite;
+  animation: moveBackground 20s linear infinite;
 }
 
 @keyframes moveBackground {
@@ -47,7 +47,7 @@ html {
     background-position: 0 0;
   }
   100% {
-    background-position: 0 100vh;
+    background-position: -100vw 100vh;
   }
 }
 
@@ -134,3 +134,6 @@ pre {
   font-size: 0.825rem !important;
 }
 
+.shadow {
+  box-shadow: 10px 10px #{get-color("Text")};
+}

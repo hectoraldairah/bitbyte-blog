@@ -9,6 +9,9 @@
     text-align: left;
     border-left: solid 2px var(--link-hover-color);
     background-color: #{get-color('Crust')};
+    box-shadow: 5px 5px #{get-color("Text")};
+    color: #{get-color("Rosewater")};
+
     p {
       padding-left: 0.8rem;
       font-size: 0.9rem
@@ -69,6 +72,10 @@
 
   .header-anchor {
     visibility: hidden;
+  }
+
+  img {
+    box-shadow: 10px 10px #{get-color("Text")};
   }
 
   figcaption {
