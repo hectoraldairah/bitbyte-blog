@@ -1,28 +1,6 @@
 <footer class="[ site-footer ]">
-  <div class="site-footer__socials">
-   <ul>
-   {% for item in social.items%}
-   <li>
-    <a target="_blank" rel="{{item.rel}}" href="{{item.url}}" class="site-footer__socials__image">
-    {% image "src/assets/icons/" + item.svg, item.text, "icon" %}
-    </a>
-   </li>
-   {% endfor %}
-   </ul>
-  </div>
-  <nav class="site-footer__navigation" aria-label="Secondary">
+ <nav class="site-footer__navigation" aria-label="Secondary">
     <ul class="site-footer__navigation__inner">
-      {% for item in footer.items %} {% set relLink = item.rel %}
-      <li>
-        {% if relLink %}
-        <a href="{{item.url}}" rel="me" target="_blank">{{item.text}}</a>
-        {% else %}
-        <a href="{{item.url}}" rel="noopener noreferrer" target="_blank"
-          >{{item.text}}</a
-        >
-        {% endif %}
-      </li>
-      {% endfor %}
       <li>
         <img
           width="88"

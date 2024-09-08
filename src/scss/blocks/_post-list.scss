@@ -21,10 +21,9 @@
 
         li {
           a {
-            color: #{get-color('Red')};
+            color: #{get-color('Rosewater')};
             &:hover {
-              color: #{get-color('Blue')};
-              background-color: #{get-color('Red')};
+              color: #{get-color('Crust')};
             }
           }
         }

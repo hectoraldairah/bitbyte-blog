@@ -1,17 +1,14 @@
 .site-head {
-  border-right: 1px solid #{get-color('Text')};
   grid-area: sidebar;
+  border-right: 1px solid #{get-color('Text')};
+  border-left: 1px solid #{get-color('Text')};
+  padding: 0 0.5rem;
 
-  &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+  @include media-query("md") {
+    border-left:none; 
   }
 
-  &__nav {
-    padding: get-size('300') 0;
-    position: relative;
+  &__inner {
+    height: 100%;
   }
 }

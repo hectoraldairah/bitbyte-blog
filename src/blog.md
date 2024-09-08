@@ -11,5 +11,5 @@ paginationPrevText: 'Newer posts'
 paginationNextText: 'Older posts'
 paginationAnchor: '#post-list'
 permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
-pageHeaderSummary: 'I write nonsense things'
+pageHeaderSummary: 'I write simple things'
 ---

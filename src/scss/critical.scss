@@ -39,13 +39,15 @@ html {
   background-size: 150vw 150vh;
   background-repeat: repeat;
   font-family: 'Terminal', ui-serif, serif;
-  animation: moveBackground 20s linear infinite;
+  animation: moveBackground 30s linear infinite;
+  cursor: url('../assets/icons/cursor.png') 4 12, auto;
 }
 
 @keyframes moveBackground {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: -100vw 100vh;
   }
@@ -64,26 +66,40 @@ body {
 .after-body {
   position: relative;
   display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-template-rows: 50px 80px 1fr 80px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 70px minmax(80px, auto) 1fr 100px;
   grid-template-areas:
-    "title title"
-    "actions info"
-    "sidebar content"
-    "sidebar footer";
-  width: 80vw;
+    "title"
+    "sidebar"
+    "info"
+    "content"
+    "footer";
+  width: 100vw;
   flex-basis: clamp(300px, 100vh, 1200px);
   background-color: #{get-color('Base')};
-  box-shadow: 10px 10px #{get-color('Rosewater')};
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   color: #{get-color('Text')};
   overflow: hidden;
   outline: 2px solid #{get-color("Rosewater")};
+
+  @include media-query('md') {
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 80px 1fr 80px;
+    grid-template-areas:
+      "title title"
+      "actions info"
+      "sidebar content"
+      "sidebar footer";
+    width: 80vw;
+    flex-basis: clamp(300px, 100vh, 1200px);
+    box-shadow: 10px 10px #{get-color('Rosewater')};
+  }
 }
 
 .site-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   grid-area: title;
@@ -113,13 +129,21 @@ body {
 
 .site-info {
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
   grid-area: info;
   padding: 1rem;
   outline: 1px solid #{get-color('Text')};
+  border-right: 1px solid #{get-color('Text')};
+  border-left: 1px solid #{get-color('Text')};
+
+  @include media-query("md") {
+    border: none;
+
+  }
+
   .summary {
     display: flex;
     flex-grow: 1;

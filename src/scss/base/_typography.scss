@@ -22,9 +22,9 @@ p {
 
 a {
   transition: 0.3s;
-  cursor: pointer;
   color: #{get-color('Rosewater')};
   text-decoration: underline;
+  cursor: url('../../assets/icons/pointer.png') 4 12, pointer;
 
   &:hover {
     background-color: #{get-color('Rosewater')};
