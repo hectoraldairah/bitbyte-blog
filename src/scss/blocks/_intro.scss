@@ -88,3 +88,13 @@
 .u-photo {
   display: none;
 }
+
+.ring {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  img {
+    max-width: 200px;
+    max-height: 100px;
+  }
+}
