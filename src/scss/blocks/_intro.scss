@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: flex-start;
   margin-top: -2rem;
+  flex-direction: row;
   ul {
     display:  flex;
     flex-direction: row;
@@ -55,12 +56,28 @@
     list-style-type: none;
     margin-left: -1rem;
   }
+
 }
 
 .outsiders {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
+
+  @include media-query("md") {
+    flex-direction: row;
+  }
+
+  iframe {
+    width: 100%;
+
+    @include media-query("md") {
+      width: 30vw;
+    }
+  }
+
 
   div {
     margin: 0 auto;
