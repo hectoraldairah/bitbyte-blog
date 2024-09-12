@@ -41,3 +41,18 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -2rem;
+  ul {
+    display:  flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    list-style-type: none;
+    margin-left: -1rem;
+  }
+}
