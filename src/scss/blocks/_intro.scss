@@ -56,3 +56,14 @@
     margin-left: -1rem;
   }
 }
+
+.outsiders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    margin: 0 auto;
+    
+  }
+}
