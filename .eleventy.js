@@ -1,15 +1,15 @@
-const pluginNavigation = require('@11ty/eleventy-navigation');
-const pluginRSS = require('@11ty/eleventy-plugin-rss');
-const pluginSyntax = require('@11ty/eleventy-plugin-syntaxhighlight');
+const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginRSS = require("@11ty/eleventy-plugin-rss");
+const pluginSyntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const filters = require('./src/utils/filters');
-const markdown = require('./src/utils/markdown');
-const shortcodes = require('./src/utils/shortcodes');
+const filters = require("./src/utils/filters");
+const markdown = require("./src/utils/markdown");
+const shortcodes = require("./src/utils/shortcodes");
 
 const CONTENT_GLOBS = {
-  post: './src/posts/**/*.md',
-  pixelart: './src/pixelart/**/*.md',
-  books: './src/books/**/*.md',
+  post: "./src/posts/**/*.md",
+  pixelart: "./src/pixelart/**/*.md",
+  books: "./src/books/**/*.md",
 };
 
 module.exports = (config) => {
@@ -19,13 +19,13 @@ module.exports = (config) => {
   config.addPlugin(pluginSyntax);
 
   // Set directories to pass through to the dist folder
-  config.addPassthroughCopy('./src/images/');
-  config.addPassthroughCopy('./src/assets/');
-  config.addPassthroughCopy('./src/icons/');
-  config.addPassthroughCopy('./src/fonts/');
-  config.addPassthroughCopy('./src/pixelart/');
-  config.addPassthroughCopy('./src/posts/');
-  config.addPassthroughCopy('./src/books/');
+  config.addPassthroughCopy("./src/images/");
+  config.addPassthroughCopy("./src/assets/");
+  config.addPassthroughCopy("./src/icons/");
+  config.addPassthroughCopy("./src/fonts/");
+  config.addPassthroughCopy("./src/pixelart/");
+  config.addPassthroughCopy("./src/posts/");
+  config.addPassthroughCopy("./src/books/");
 
   // Add filters
   Object.keys(filters).forEach((filterName) => {
@@ -39,31 +39,31 @@ module.exports = (config) => {
   });
 
   // Markdown Passing
-  config.setLibrary('md', markdown);
+  config.setLibrary("md", markdown);
 
   // Returns a collection of blog posts in reverse date order
-  config.addCollection('blog', (collection) => {
+  config.addCollection("blog", (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.post)]
       .filter((item) => !item.data.development)
       .reverse();
   });
 
-  config.addCollection('featured', (collection) => {
+  config.addCollection("featured", (collection) => {
     return collection
       .getFilteredByGlob(CONTENT_GLOBS.post)
       .filter((item) => item.data.featured && !item.data.development)
       .sort((a, b) => b.date - a.date);
   });
 
-  config.addCollection('pixelart', (collection) => {
+  config.addCollection("pixelart", (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart)].reverse();
   });
 
-  config.addCollection('books', (collection) => {
+  config.addCollection("books", (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.books)].reverse();
   });
 
-  config.addCollection('publish', (collection) => {
+  config.addCollection("publish", (collection) => {
     const pixelart = [
       ...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart),
     ].reverse();
@@ -73,13 +73,17 @@ module.exports = (config) => {
     return [...pixelart, ...blog].reverse();
   });
 
+  config.addCollection("log", (collection) => {
+    return [...collection.items.filter((item) => item.data.gym)];
+  });
+
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
 
   return {
     dir: {
-      input: 'src',
-      output: 'dist',
+      input: "src",
+      output: "dist",
     },
   };
 };

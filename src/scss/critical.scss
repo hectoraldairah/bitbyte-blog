@@ -161,3 +161,46 @@ pre {
 .shadow {
   box-shadow: 10px 10px #{get-color("Text")};
 }
+
+.gym-log {
+  li {
+    padding: 0 .5rem;
+  }
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin: .5rem 0;
+  font-size: .9rem;
+}
+
+caption,
+th,
+td {
+  padding: 0.5rem;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+th {
+  background-color: #{get-color("Rosewater")};
+  color: black;
+}
+
+td {
+  border: 1px solid #{get-color("Text")};
+  text-align: center;
+}
+
+.warmup {
+  color: #{get-color('Brid')}
+}
+
+.failure {
+  color: #{get-color('Red')}
+}
