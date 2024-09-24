@@ -36,6 +36,9 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
+      - name: Remove lock File
+        run: rm pnpm-lock.yaml
+
       # Install dependencies using pnpm
       - name: Install dependencies
         run: pnpm install
