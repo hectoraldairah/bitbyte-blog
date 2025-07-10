@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-pageHeaderSummary: 'Read for the mind and soul'
+pageHeaderSummary: 'sweet home'
 layout: 'layouts/home'
 eleventyNavigation:
   key: home
