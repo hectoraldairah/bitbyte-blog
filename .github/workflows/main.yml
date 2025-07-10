@@ -38,7 +38,7 @@ jobs:
         run: rm pnpm-lock.yaml
 
       - name: Remove node lockfile
-        run: rm package.lock.json
+        run: rm package-lock.json
 
       - name: Remove node modules
         run: rm -rf node_modules
