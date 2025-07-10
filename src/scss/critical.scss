@@ -38,7 +38,7 @@ html {
   background-image: url("../assets/images/ditther.png");
   background-size: 150vw 150vh;
   background-repeat: repeat;
-  font-family: 'Terminal', ui-serif, serif;
+  font-family: 'Terminal', 'Courier New', Courier, monospace;
   animation: moveBackground 30s linear infinite;
   cursor: url('../assets/icons/cursor.png') 4 12, auto;
 }
@@ -56,7 +56,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   width: 100vw;
