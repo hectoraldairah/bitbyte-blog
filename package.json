@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp && concurrently \"gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy",
+    "start": "gulp && concurrently \"gulp watch\" \"eleventy --serve\"",
+    "production": "NODE_ENV=production gulp && NODE_ENV=production eleventy",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check .",
     "eslint": "npx eslint ."
@@ -29,7 +29,7 @@
     "concurrently": "^6.3.0",
     "dotenv": "^16.4.5",
     "gorko": "^0.8.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-clean-css": "^4.3.0",
     "luxon": "^2.1.0",
     "markdown-it": "^12.3.0",

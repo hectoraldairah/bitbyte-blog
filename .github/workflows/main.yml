@@ -1,4 +1,5 @@
 # This is a basic workflow to help you get started with Actions
+# jjjjjjjjjjjjjjj
 
 name: ⚡ deploy website
 
@@ -33,19 +34,22 @@ jobs:
         with:
           node-version: '20.10.0'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
       - name: Remove lock File
         run: rm pnpm-lock.yaml
 
+      - name: Remove node lockfile
+        run: rm package.lock.json
+
+      - name: Remove node modules
+        run: rm -rf node_modules
+
       # Install dependencies using pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       # Build Eleventy for Production
       - name: Build 11ty
-        run: pnpm run production
+        run: npm run production
 
       # Deploy to Netifly branch
       - name: Deploy to Netifly Branch
