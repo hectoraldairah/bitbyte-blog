@@ -91,7 +91,8 @@ body {
       "actions info"
       "sidebar content"
       "sidebar footer";
-    width: 80vw;
+    width: 100ch;
+    height: 100ch;
     flex-basis: clamp(300px, 100vh, 1200px);
     box-shadow: 10px 10px #{get-color('Rosewater')};
   }
