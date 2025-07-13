@@ -4,8 +4,8 @@
   border-left: 1px solid #{get-color('Text')};
   padding: 0 0.5rem;
 
-  @include media-query("md") {
-    border-left:none;
+  @include media-query('md') {
+    border-left: none;
   }
 
   &__inner {

@@ -35,11 +35,10 @@ html {
   align-items: center;
   font-size: 20px;
   background-color: #424266;
-  background-image: url("../assets/images/ditther.png");
-  background-size: 150vw 150vh;
-  background-repeat: repeat;
-  font-family: 'Terminal', 'Courier New', Courier, monospace;
-  animation: moveBackground 30s linear infinite;
+  background-image: url('../assets/images/bg-sample.png');
+  background-repeat: repeat-x;
+  background-size: 100vw 100vh;
+  font-family: 'Terminal', 'Times New Roman', Times, serif;
   cursor: url('../assets/icons/cursor.png') 4 12, auto;
 }
 
@@ -65,29 +64,29 @@ body {
 .after-body {
   position: relative;
   display: grid;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 70px minmax(80px, auto) 1fr 100px;
   grid-template-areas:
-    "sidebar"
-    "info"
-    "content"
-    "footer";
+    'sidebar'
+    'info'
+    'content'
+    'footer';
   background-color: #{get-color('Base')};
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   color: #{get-color('Text')};
-  outline: 2px solid #{get-color("Rosewater")};
+  outline: 2px solid #{get-color('Rosewater')};
 
   @include media-query('md') {
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 80px 1fr 80px;
+    grid-template-rows: 80px 1fr 50px;
     grid-template-areas:
-      "sidebar info"
-      "sidebar content"
-      "sidebar footer";
-    width: 100ch;
+      'sidebar info'
+      'sidebar content'
+      'sidebar footer';
+    width: 80ch;
     height: 100ch;
     box-shadow: 10px 10px #{get-color('Rosewater')};
   }
@@ -95,36 +94,19 @@ body {
 
 .page-header {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
-  width: 100ch;
-  margin: .5rem 0;
-  border-radius: 5px;
+  margin: 0.5rem 0;
+  background-color: #{get-color('Base')};
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 
   h2 {
     font-size: 3rem;
-    &:hover {
-      animation: fontChange 0.5s infinite;
-    }
   }
 
   img {
     display: inline-block;
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@keyframes fontChange {
-  0% {
-    text-transform: lowercase;
-    text-decoration-thickness: 1px;
-  }
-
-  100% {
-    text-transform: uppercase;
-    text-decoration-thickness: 4px;
+    width: 80px;
   }
 }
 
@@ -140,9 +122,8 @@ body {
   border-right: 1px solid #{get-color('Text')};
   border-left: 1px solid #{get-color('Text')};
 
-  @include media-query("md") {
+  @include media-query('md') {
     border: none;
-
   }
 
   .summary {
@@ -160,12 +141,12 @@ pre {
 }
 
 .shadow {
-  box-shadow: 10px 10px #{get-color("Text")};
+  box-shadow: 10px 10px #{get-color('Text')};
 }
 
 .gym-log {
   li {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -173,8 +154,8 @@ table {
   width: 80%;
   border-collapse: collapse;
   font-size: 1rem;
-  margin: .5rem 0;
-  font-size: .9rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
 }
 
 caption,
@@ -189,19 +170,19 @@ th {
 }
 
 th {
-  background-color: #{get-color("Rosewater")};
+  background-color: #{get-color('Rosewater')};
   color: black;
 }
 
 td {
-  border: 1px solid #{get-color("Text")};
+  border: 1px solid #{get-color('Text')};
   text-align: center;
 }
 
 .warmup {
-  color: #{get-color('Brid')}
+  color: #{get-color('Brid')};
 }
 
 .failure {
-  color: #{get-color('Red')}
+  color: #{get-color('Red')};
 }

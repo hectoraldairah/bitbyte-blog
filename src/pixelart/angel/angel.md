@@ -15,6 +15,3 @@ Pico8 looks interesting...
 ![An biblical accurate angel... or somethign like that](angel.png)
 
 This was made with [Asprite](https://www.aseprite.org/) as always.
-
-
-

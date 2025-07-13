@@ -1,8 +1,8 @@
 ---
 title: 'Gym Log'
 eleventyNavigation:
-    key: "gym log"
-    order: 6
+  key: 'gym log'
+  order: 6
 layout: 'layouts/log.njk'
 pageHeaderSummary: 'Do you even lift, bruh?'
 showList: true

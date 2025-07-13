@@ -15,18 +15,9 @@ $generate-utility-classes: false;
 // // Generic styles
 
 html {
-  background-image: url("../../assets/images/ditther.png");
   cursor: url('../../assets/icons/cursor.png') 4 12, auto;
-}
-
-.site-title {
-  background-image: url("../../assets/images/dit.png");
-}
-
-.no_dots {
-  margin-top: 1rem;
-
-  &::after {
-    display: none;
-  }
+  background-color: #424266;
+  background-image: url('../../assets/images/bg-sample.png');
+  background-repeat: repeat-x;
+  background-size: 100vw 100vh;
 }
