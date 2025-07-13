@@ -1,4 +1,0 @@
-{
-  "layout": "layouts/pixelart-post.njk",
-  "permalink": "/pixelart/{{ title | slug }}/index.html"
-}
