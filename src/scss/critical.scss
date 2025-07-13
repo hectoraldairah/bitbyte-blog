@@ -40,7 +40,6 @@ html {
   background-size: 100vw 100vh;
   font-family: 'Terminal', 'Times New Roman', Times, serif;
   cursor: url('../assets/icons/cursor.png') 4 12, auto;
-  overflow-x: hidden;
 }
 
 @keyframes moveBackground {
@@ -88,7 +87,7 @@ body {
       'sidebar content'
       'sidebar footer';
     width: 80ch;
-    height: calc(100vh - 25ch);
+    height: calc(100vh - calc(100vh - 80ch));
     box-shadow: 10px 10px #{get-color('Rosewater')};
   }
 }
