@@ -44,7 +44,7 @@ jobs:
         run: rm -rf node_modules
 
       - name: Remove dist
-        rm: rmf -rf dist
+        run: rm -rf dist
 
       # Install dependencies using pnpm
       - name: Install dependencies
