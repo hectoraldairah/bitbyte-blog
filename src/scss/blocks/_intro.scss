@@ -83,15 +83,13 @@
 }
 
 .ring {
+  position: absolute;
+  bottom: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   gap: 1rem;
-  margin: 2rem;
-
-  img {
-    max-width: 100px;
-    max-height: 50px;
-  }
+  font-size: 16px;
 }
 
 audio {

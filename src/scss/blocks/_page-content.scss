@@ -74,10 +74,6 @@
     visibility: hidden;
   }
 
-  img {
-    box-shadow: 10px 10px #{get-color('Text')};
-  }
-
   figcaption {
     text-align: center;
     font-size: get-size('400');

@@ -5,13 +5,8 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 
-    @include media-query('md') {
-      flex-direction: column;
-      gap: 0;
-    }
-
     > * {
-      padding-top: get-size('300');
+      padding-top: get-size('100');
       @include media-query('md') {
         width: 6vw;
       }

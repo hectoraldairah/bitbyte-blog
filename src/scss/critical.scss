@@ -15,6 +15,7 @@
 
 // Import Utilities
 @import 'utilities/wrapper';
+@import 'utilities/pixel-border';
 
 // Blocks
 @import 'blocks/main-content';
@@ -27,28 +28,18 @@
 @import 'themes/prism-laserwave';
 
 html {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   margin: 0;
   padding: 0;
-  align-items: center;
-  font-size: 20px;
+  font-size: 14px;
   background-color: #424266;
   background-image: url('../assets/images/bg-sample.png');
   background-repeat: repeat-x;
   background-size: 100vw 100vh;
   font-family: 'Terminal', 'Times New Roman', Times, serif;
   cursor: url('../assets/icons/cursor.png') 4 12, auto;
-}
 
-@keyframes moveBackground {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: -100vw 100vh;
+  @include media-query('md') {
+    font-size: 20px;
   }
 }
 
@@ -61,33 +52,31 @@ body {
   width: 100vw;
 }
 
-.after-body {
-  position: relative;
+.layout {
   display: grid;
-  height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px minmax(80px, auto) 1fr 100px;
+  padding: 1rem;
+  grid-template-rows: 100px 80px 1fr 150px;
+  gap: 0;
   grid-template-areas:
-    'sidebar'
-    'info'
+    'navigation'
+    'header'
     'content'
-    'footer';
-  background-color: #{get-color('Base')};
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  color: #{get-color('Text')};
-  outline: 2px solid #{get-color('Rosewater')};
+    'footer ';
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 
   @include media-query('md') {
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 80px 1fr 50px;
-    grid-template-areas:
-      'sidebar info'
-      'sidebar content'
-      'sidebar footer';
+    grid-template-rows: 60px 1fr 50px;
+    gap: 2em 1em;
     width: 80ch;
-    height: calc(100% - 18ch);
-    box-shadow: 10px 10px #{get-color('Rosewater')};
+    height: calc(100vh - 25ch);
+    grid-template-areas:
+      'navigation header'
+      'navigation content'
+      'footer footer';
   }
 }
 
@@ -110,20 +99,15 @@ body {
 }
 
 .site-info {
+  grid-area: header;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
-  grid-area: info;
-  padding: 1rem;
-  outline: 1px solid #{get-color('Text')};
-  border-right: 1px solid #{get-color('Text')};
-  border-left: 1px solid #{get-color('Text')};
-
-  @include media-query('md') {
-    border: none;
-  }
+  padding: 0 1rem;
+  background-color: #{get-color('Base')};
+  color: #{get-color('Text')};
+  height: fit-content;
 
   .summary {
     display: flex;
@@ -137,16 +121,6 @@ body {
 
 pre {
   font-size: 0.825rem !important;
-}
-
-.shadow {
-  box-shadow: 10px 10px #{get-color('Text')};
-}
-
-.gym-log {
-  li {
-    padding: 0 0.5rem;
-  }
 }
 
 table {

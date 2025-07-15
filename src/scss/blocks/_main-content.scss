@@ -1,5 +1,14 @@
 .main-content {
   grid-area: content;
-  overflow-y: auto;
   padding: 1rem;
+  background-color: #{get-color('Base')};
+  color: #{get-color('Text')};
+
+  @include media-query('md') {
+    overflow-y: auto;
+  }
+
+  .content {
+    height: 100%;
+  }
 }

@@ -1,14 +1,8 @@
 .site-head {
-  grid-area: sidebar;
-  border-right: 1px solid #{get-color('Text')};
-  border-left: 1px solid #{get-color('Text')};
+  grid-area: navigation;
   padding: 0 0.5rem;
-
-  @include media-query('md') {
-    border-left: none;
-  }
-
-  &__inner {
-    height: 100%;
-  }
+  background-color: #{get-color('Base')};
+  height: fit-content;
+  color: #{get-color('Text')};
+  height: fit-content;
 }
