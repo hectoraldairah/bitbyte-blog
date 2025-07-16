@@ -8,11 +8,15 @@
   justify-content: center;
 
   &__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
     background-color: #{get-color('Base')};
+
+    .scrolling {
+      animation: marquee 2s linear infinite alternate;
+      display: inline-block;
+      padding-right: 10px;
+    }
 
     img {
       display: inline-block;
@@ -28,5 +32,15 @@
     align-items: center;
     justify-content: center;
     background-color: #{get-color('Base')};
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }
