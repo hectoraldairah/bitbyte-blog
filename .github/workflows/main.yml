@@ -34,9 +34,6 @@ jobs:
         with:
           node-version: '20.10.0'
 
-      - name: Remove lock File
-        run: rm pnpm-lock.yaml
-
       - name: Remove node lockfile
         run: rm package-lock.json
 
