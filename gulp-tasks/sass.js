@@ -35,7 +35,11 @@ const calculateOutput = ({ history }) => {
 
 const sass = () => {
   return src('./src/scss/*.scss')
-    .pipe(sassProcessor().on('error', sassProcessor.logError))
+    .pipe(sassProcessor().on('error', function(err) {
+      console.warn('SASS Warning:', err.messageFormatted);
+      this.emit('end');
+    })
+    )
     .pipe(postCSS([require('postcss-custom-properties'), require('cssnano')]))
     .pipe(dest(calculateOutput, { sourceMaps: !isProduction }));
 };
