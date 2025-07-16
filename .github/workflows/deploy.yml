@@ -1,5 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-# jjjjjjjjjjjjjjj
 
 name: ⚡ deploy website
 
@@ -24,24 +23,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
 
       # Setup Node with a version to run gulp and sass correctly
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: '18.18.2'
-
-      - name: Remove node lockfile
-        run: rm package-lock.json
-
-      - name: Remove node modules
-        run: rm -rf node_modules
-
-      - name: Remove dist
-        run: rm -rf dist
+          node-version: '20.10.0'
 
       # Install dependencies using pnpm
       - name: Install dependencies
@@ -53,9 +43,11 @@ jobs:
 
       # Deploy to Netifly branch
       - name: Deploy to Netifly Branch
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: nwtgck/actions-netlify@v2.0
         with:
-          target_branch: netifly
-          build_dir: dist
+          build_dir: ./dist
+          production-deploy: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
