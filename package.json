@@ -36,6 +36,7 @@
     "postcss-color-hexa": "^1.2.4",
     "prismjs": "^1.29.0",
     "sass": "^1.43.4",
+    "sharp": "^0.34.3",
     "slugify": "^1.6.5",
     "speedlify-score": "^2.0.2"
   },
