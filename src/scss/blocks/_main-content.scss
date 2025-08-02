@@ -1,14 +1,25 @@
 .main-content {
   grid-area: content;
-  padding: 1rem;
   background-color: #{get-color('Base')};
   color: #{get-color('Text')};
 
-  @include media-query('md') {
-    overflow-y: auto;
+  .title-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #b4befe;
+    background-image: url("../../assets/images/dit.png");
+    background-repeat: no-repeat;
+    font-size: 1.5rem;
+    color: #{get-color('Base')};
+
+    .title,
+    .summary {
+      margin-left: 1rem;
+    }
   }
 
   .content {
-    height: 100%;
+    padding: 1rem;
+
   }
 }

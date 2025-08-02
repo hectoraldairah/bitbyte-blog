@@ -1,0 +1,38 @@
+.site-nav {
+  grid-area: navigation;
+  background-color: #{get-color('Base')};
+  color: #{get-color('Text')};
+  height: auto;
+  align-self: start;
+  top: 0;
+  position: sticky;
+
+  .nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+
+    a {
+      background-color: none;
+      position: relative;
+      display: block;
+      text-decoration: underline;
+
+      &::after {
+        display: inline-block;
+        content: "/"
+      }
+
+      color: #{get-color('Rosewater')};
+
+      &:hover {
+        background-color: #{get-color('Base')};
+      }
+    }
+  }
+}

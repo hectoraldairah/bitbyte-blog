@@ -1,0 +1,10 @@
+.topbar {
+  grid-area: topbar;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #{get-color("Mauve")};
+  padding: 1rem;
+  height: 30px;
+}

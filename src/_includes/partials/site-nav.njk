@@ -1,0 +1,23 @@
+<aside class="[ site-nav pixelBorder--2 ]">
+  <nav class="[ nav ]" aria-label="Primary">
+    <ul class="nav__list">
+      {% for item in collections.all | eleventyNavigation %}
+      <li>
+        <a
+          href="{{item.url}}"
+          {{
+          helpers.getLinkActiveState(item.url,
+          page.url)
+          |
+          safe
+          }}
+          >{{item.title}}</a
+        >
+      </li>
+      {% endfor %}
+      <li>
+        <a href="../../assets/files/resume.pdf" target="_blank">resume</a>
+      </li>
+    </ul>
+  </nav>
+</aside>

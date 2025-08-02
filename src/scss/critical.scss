@@ -18,11 +18,11 @@
 @import 'utilities/pixel-border';
 
 // Blocks
-@import 'blocks/main-content';
+@import 'blocks/topbar';
 @import 'blocks/header';
+@import 'blocks/site-nav';
+@import 'blocks/main-content';
 @import 'blocks/footer';
-@import 'blocks/nav';
-@import 'blocks/page-header';
 @import 'blocks/stack';
 
 @import 'themes/prism-laserwave';
@@ -30,132 +30,81 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  background-color: #424266;
-  background-image: url('../assets/images/bg-sample.png');
-  background-repeat: repeat-x;
-  background-size: 100vw 100vh;
-  font-family: 'Terminal', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-family: "FreePixel";
   cursor: url('../assets/icons/cursor.png') 4 12, auto;
-
-  @include media-query('md') {
-    font-size: 20px;
-  }
+  background-image: url('../assets/images/bg-sample.png');
+  background-repeat: repeat;
+  background-size: 100vw 100vh;
+  background-color: #{get-color("Crust")};
+  background-attachment: fixed;
+  background-blend-mode: luminosity;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .layout {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem;
-  grid-template-rows: 100px 80px 1fr 150px;
-  gap: 0;
-  grid-template-areas:
-    'navigation'
-    'header'
-    'content'
-    'footer ';
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-
-  @include media-query('md') {
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 60px 1fr 50px;
-    gap: 2em 1em;
-    width: 80ch;
-    height: calc(100vh - 25ch);
-    grid-template-areas:
-      'navigation header'
-      'navigation content'
-      'footer footer';
-  }
-}
-
-.page-header {
-  display: flex;
   gap: 1rem;
-  margin: 1rem 0;
-  background-color: #{get-color('Base')};
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  img {
-    display: inline-block;
-    width: 80px;
-  }
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "topbar topbar"
+    "header header"
+    "content navigation"
+    "footer footer";
 }
 
-.site-info {
-  grid-area: header;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 1rem;
-  background-color: #{get-color('Base')};
-  color: #{get-color('Text')};
-  height: fit-content;
-
-  .summary {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 13px;
-    gap: 1rem;
-  }
+.ascii {
+  font-family: monospace, "Courier New", Courier;
+  white-space: pre;
+  font-size: 5px;
+  /* ajusta según se vea mejor */
+  line-height: 1;
+  color: white;
+  /* opcional: estilo tipo terminal */
+  /* opcional */
+  padding: 1rem;
+  overflow-x: auto;
+  background-attachment: fixed;
 }
 
-pre {
-  font-size: 0.825rem !important;
+body {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-table {
-  width: 80%;
-  border-collapse: collapse;
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
+.layout {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "topbar topbar"
+    "header header"
+    "content navigation"
+    "footer footer";
 }
 
-caption,
-th,
-td {
-  padding: 0.5rem;
-}
+.ascii {
+  font-family: monospace, "Courier New", Courier;
+  white-space: pre;
+  font-size: 10px;
+  /* ajusta según se vea mejor */
+  line-height: 0.9;
+  color: #{get-color("Text")};
+  /* opcional: estilo tipo terminal */
+  /* opcional */
 
-caption,
-th {
-  text-align: left;
-}
-
-th {
-  background-color: #{get-color('Rosewater')};
-  color: black;
-}
-
-td {
-  border: 1px solid #{get-color('Text')};
-  text-align: center;
-}
-
-.warmup {
-  color: #{get-color('Brid')};
-}
-
-.failure {
-  color: #{get-color('Red')};
+  padding: 1rem;
+  overflow-x: auto;
 }

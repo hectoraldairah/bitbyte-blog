@@ -1,44 +1,43 @@
-@mixin pixelBorder($backgroundColor, $borderColor, $borderWidth: 2px) {
+@mixin pixelBorder($bg, $light, $dark, $size: 2px) {
+  $outline: darken($dark, 20%); // contorno más oscuro
+  background-color: $bg;
+
   box-shadow:
-    // Background Color
-    0 (-$borderWidth * 3) 0 (-$borderWidth) $backgroundColor,
-    0 ($borderWidth * 3) 0 (-$borderWidth) $backgroundColor,
-    0 (-$borderWidth * 6) 0 (-$borderWidth * 2) $backgroundColor,
-    0 ($borderWidth * 6) 0 (-$borderWidth * 2) $backgroundColor,
-    0 (-$borderWidth * 9) 0 (-$borderWidth * 4) $backgroundColor,
-    0 ($borderWidth * 9) 0 (-$borderWidth * 4) $backgroundColor,
-    0 (-$borderWidth * 12) 0 (-$borderWidth * 6) $backgroundColor,
-    0 ($borderWidth * 12) 0 (-$borderWidth * 6) $backgroundColor,
-    // Border
-    (-$borderWidth) 0 0 0 $borderColor,
-    ($borderWidth) 0 0 0 $borderColor, 0 (-$borderWidth * 2) 0 0 $borderColor,
-    0 ($borderWidth * 2) 0 0 $borderColor,
-    0 (-$borderWidth * 5) 0 (-$borderWidth) $borderColor,
-    0 ($borderWidth * 5) 0 (-$borderWidth) $borderColor,
-    0 (-$borderWidth * 7) 0 (-$borderWidth * 2) $borderColor,
-    0 ($borderWidth * 7) 0 (-$borderWidth * 2) $borderColor,
-    0 (-$borderWidth * 10) 0 (-$borderWidth * 4) $borderColor,
-    0 ($borderWidth * 10) 0 (-$borderWidth * 4) $borderColor,
-    0 (-$borderWidth * 13) 0 (-$borderWidth * 6) $borderColor,
-    0 ($borderWidth * 13) 0 (-$borderWidth * 6) $borderColor;
+    // Luz (arriba e izquierda)
+    -#{$size} -#{$size} 0 0 $light,
+     0        -#{$size} 0 0 $light,
+    -#{$size}  0        0 0 $light,
+
+    // Sombra (derecha y abajo)
+     #{$size}  0        0 0 $dark,
+     0         #{$size} 0 0 $dark,
+     #{$size}  #{$size} 0 0 $dark,
+
+    // Contorno exterior (más oscuro)
+    -#{$size * 2} -#{$size * 2} 0 0 $outline,
+     #{$size * 2} -#{$size * 2} 0 0 $outline,
+    -#{$size * 2}  #{$size * 2} 0 0 $outline,
+     #{$size * 2}  #{$size * 2} 0 0 $outline;
 }
 
 .pixelBorder {
+  display: inline-block;
+  padding: 1rem;
   transform: translateZ(0); // Safari fix
 
   &--2 {
-    @include pixelBorder(#1e1e2e, #f4c8a5, 2px);
+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 2px);
   }
 
   &--4 {
-    @include pixelBorder(#1e1e2e, #f4c8a5, 4px);
+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 4px);
   }
 
   &--6 {
-    @include pixelBorder(#1e1e2e, #f4c8a5, 6px);
+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 6px);
   }
 
   &--10 {
-    @include pixelBorder(#1e1e2e, #f4c8a5, 10px);
+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 10px);
   }
 }

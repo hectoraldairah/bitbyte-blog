@@ -16,8 +16,10 @@ $generate-utility-classes: false;
 
 html {
   cursor: url('../../assets/icons/cursor.png') 4 12, auto;
-  background-color: #424266;
+  background-color: #{get-color("Crust")};
   background-image: url('../../assets/images/bg-sample.png');
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-blend-mode: luminosity;
 }

@@ -1,46 +1,24 @@
 .site-footer {
   grid-area: footer;
+  display: flex;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 2rem;
+  background-color: #{get-color('Base')};
+  flex-direction: column;
+  margin-top: 1rem;
   align-items: center;
   justify-content: center;
-
-  &__buttons {
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: #{get-color('Base')};
-
-    .scrolling {
-      animation: marquee 2s linear infinite alternate;
-      display: inline-block;
-      padding-right: 10px;
-    }
-
-    img {
-      display: inline-block;
-      margin-right: 1rem;
-      width: 81px;
-      height: 31px;
-    }
-  }
 
   &__links {
     display: flex;
     gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    background-color: #{get-color('Base')};
-  }
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
+    align-content: center;
+    align-items: center
   }
 
-  to {
-    transform: translateX(-100%);
+  &__webring {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    align-items: center
   }
 }
