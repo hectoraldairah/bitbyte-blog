@@ -27,6 +27,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('./src/posts/');
   config.addPassthroughCopy('./src/books/');
   config.addPassthroughCopy('./src/js/');
+  config.addPassthroughCopy("src/_redirects");
 
   // Add filters
   Object.keys(filters).forEach((filterName) => {

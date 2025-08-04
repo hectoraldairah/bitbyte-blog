@@ -1,0 +1,137 @@
+{% set assetHash = global.random() %}
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <style>
+      {% include "css/notfound.css" %}
+    </style>
+
+    <link
+      rel="preload"
+      href="/assets/fonts/FreePixel.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="{{'/assets/favicon/apple-icon-57x57.png' | url}}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="{{'/assets/favicon/apple-icon-60x60.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="{{'/assets/favicon/apple-icon-72x72.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="{{'/assets/favicon/apple-icon-76x76.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="{{'/assets/favicon/apple-icon-114x114.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="{{'/assets/favicon/apple-icon-120x120.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="{{'/assets/favicon/apple-icon-144x144.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="{{'/assets/favicon/apple-icon-152x152.png' | url }}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{'/assets/favicon/apple-icon-180x180.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="{{'/assets/favicon/android-icon-192x192.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{'/assets/favicon/favicon-32x32.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="{{'/assets/favicon/favicon-96x96.png' | url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{'/assets/favicon/favicon-16x16.png' | url }}"
+    />
+    <link rel="manifest" href="{{'/assets/favicon/manifest.json' | url }} " />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="{{'/assets/favicon/ms-icon-144x144.png' | url }}"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    {# Add facility for pages to delare an array of critical styles #} {% if
+    pageCriticalStyles %} {% for item in pageCriticalStyles %}
+    <style>
+      {% include item %}
+    </style>
+    {% endfor %} {% endif %}
+
+    <link
+      rel="preload"
+      media="print"
+      href="/fonts/fonts.css?{{ assetHash }}"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="{{ site.url }}/feed.xml"
+    />
+
+    {% include "partials/meta.njk" %} {# Add facility for pages to declare an
+    array of stylesheet paths #} {% if pageStylesheets %} {% for item in
+    pageStylesheets %}
+    <link
+      rel="stylesheet"
+      media="print"
+      href="{{ item }}?{{ assetHash }}"
+      onload="this.media='all'"
+    />
+    {% endfor %} {% endif %}
+  </head>
+  <body>
+    <main>
+
+<section class="content">
+        {% image "src/assets/images/face.png", "photo of me", "responsive-image" %}
+  {{ content | safe }}
+</section>
+      </main>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@import 'base/fonts';
+
+html {
+  background-color: black;
+  color: white;
+  font-family: FreePixel;
+  font-size: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.responsive-image {
+  height: 200px;
+  object-fit: contain;
+}

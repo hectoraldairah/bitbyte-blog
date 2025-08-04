@@ -7,6 +7,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 // An array of outputs that should be sent over to includes
 const criticalStyles = [
+  'notfound.scss',
   'critical.scss',
   'home.scss',
   'page.scss',
