@@ -75,7 +75,7 @@ module.exports = {
       urlPath: '/pixelart/**/',
       outputDir: 'dist/pixelart/**/',
       defaultAttributes: {
-        loading: 'lazy',
+        loading: 'eager',
         decoding: 'async',
       },
     };

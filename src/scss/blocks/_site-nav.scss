@@ -4,17 +4,31 @@
   color: #{get-color('Text')};
   height: auto;
   align-self: start;
-  top: 0;
-  position: sticky;
+
+
+  @include media-query("md") {
+    top: 0;
+    position: sticky;
+    z-index: 10;
+  }
+
 
   .nav {
     &__list {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-left: 1rem;
       margin-top: 1rem;
+      margin-bottom: 1rem;
+
+
+      @include media-query("md") {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
     }
 
     a {

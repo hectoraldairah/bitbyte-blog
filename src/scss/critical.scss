@@ -41,10 +41,12 @@ html {
   background-blend-mode: luminosity;
 }
 
+
 body {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+  padding: 1rem;
 }
 
 .layout {
@@ -52,59 +54,37 @@ body {
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 200px;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
   grid-template-areas:
-    "topbar topbar"
-    "header header"
-    "content navigation"
-    "footer footer";
+    "topbar"
+    "header"
+    "navigation"
+    "content"
+    "footer";
+
+  @include media-query("md") {
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "topbar topbar"
+      "header header"
+      "content navigation"
+      "footer footer";
+  }
 }
 
 .ascii {
   font-family: monospace, "Courier New", Courier;
   white-space: pre;
-  font-size: 5px;
-  /* ajusta según se vea mejor */
+  font-size: 3px;
   line-height: 1;
   color: white;
-  /* opcional: estilo tipo terminal */
-  /* opcional */
   padding: 1rem;
-  overflow-x: auto;
+  overflow-x: hidden;
   background-attachment: fixed;
-}
 
-body {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.layout {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 200px;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "topbar topbar"
-    "header header"
-    "content navigation"
-    "footer footer";
-}
-
-.ascii {
-  font-family: monospace, "Courier New", Courier;
-  white-space: pre;
-  font-size: 10px;
-  /* ajusta según se vea mejor */
-  line-height: 0.9;
-  color: #{get-color("Text")};
-  /* opcional: estilo tipo terminal */
-  /* opcional */
-
-  padding: 1rem;
-  overflow-x: auto;
+  @include media-query("md") {
+    font-size: 5px;
+  }
 }
