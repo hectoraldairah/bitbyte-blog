@@ -1,16 +1,19 @@
 .main-content {
   grid-area: content;
-  background-color: #{get-color('Base')};
-  color: #{get-color('Text')};
+  background-color: var(--color-space);
+  color: var(--color-text);
 
   .title-content {
     display: flex;
     flex-direction: column;
-    background-color: #b4befe;
-    background-image: url("../../assets/images/dit.png");
+    background-color: var(--color-title-content-bg);
     background-repeat: no-repeat;
     font-size: 1.5rem;
-    color: #{get-color('Base')};
+    color: var(--color-title-content);
+    border-bottom: 2px solid var(--title-content-border-color);
+    padding-bottom: .5rem;
+    margin-top: 5px;
+
 
     .title,
     .summary {

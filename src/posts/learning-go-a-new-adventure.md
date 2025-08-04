@@ -7,6 +7,10 @@ description: 'The beginning of a new journey'
 title: 'Learning Go, a new adventure'
 date: 2024-01-07
 tags: ['Go']
+eleventyNavigation:
+  key: 'Learning Go, a new adventure'
+  parent: blog
+  date: 2024-01-07
 ---
 
 # Why Go?

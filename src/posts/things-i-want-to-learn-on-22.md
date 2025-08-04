@@ -4,6 +4,10 @@ tags: ['Personal']
 description: 'Some things that catch my attention and I want to learn on 2022.'
 date: 2021-12-31
 featured: true
+eleventyNavigation:
+  key: 'Things I want to learn on 2022'
+  parent: blog
+  date: 2021-12-31
 ---
 
 It's the end of the year, and I'm starting to think about what I want to learn in 2022.

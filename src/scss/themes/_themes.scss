@@ -1,0 +1,64 @@
+[data-theme="default"] {
+  --color-bg: #{get-color('Crust')};
+  --color-space: #{get-color('Base')};
+  --color-text: #{get-color('Text')};
+  --color-links: #{get-color('Rosewater')};
+  --color-topbar: #{get-color("Mauve")};
+  --color-header: white;
+  --color-title-content-bg: #{get-color('Base')};
+  --title-content-border-color: #{get-color("Rosewater")};
+}
+
+[data-theme="gameboy"] {
+  --color-bg: #{get-color('Verdant')};
+  --color-space: #{get-color('Deep-Teal')};
+  --color-text: #{get-color('Sandstone')};
+  --color-links: #{get-color('Sandstone')};
+  --color-topbar: #{get-color("Sandstone")};
+  --color-header: #{get-color('Sandstone')};
+  --color-blockquote: #{get-color('Verdant')};
+  --color-blockquote-bg: #{get-color('Midnight')};
+  --title-content-border-color: #{get-color("Sandstone")};
+  --color-title-content-bg: #{get-color('Deep-Teal')};
+  --title-content-border-color: #{get-color("Sandstone")};
+}
+
+[data-theme='gameboy'] img {
+  filter: sepia(0.4) brightness(1.05) hue-rotate(30deg) saturate(1.2);
+}
+
+[data-theme="sadness"] {
+  --color-bg: #{get-color('Inkstone')};
+  --color-space: #{get-color('Steel-Blue')};
+  --color-text: #{get-color('Snow')};
+  --color-links: #{get-color('Lavender-Mist')};
+  --color-topbar: #{get-color("Cornflower")};
+  --color-header: #{get-color('Snow')};
+  --color-blockquote: #{get-color('Snow')};
+  --color-blockquote-bg: #{get-color('Inkstone')};
+  --color-title-content-bg: #{get-color('Steel-Blue')};
+  --title-content-border-color: #{get-color("Lavender-Mist")};
+}
+
+[data-theme="sadness"] img {
+  filter: brightness(0.8) contrast(1.2) hue-rotate(210deg);
+}
+
+[data-theme="grue"] {
+  --color-bg: #{get-color('Slate-Mist')};
+  --color-space: #{get-color('Fog')};
+  --color-text: #{get-color('Void')};
+  --color-links: #{get-color('Ash-Blue')};
+  --color-topbar: #{get-color("Fog")};
+  --color-header: #{get-color('Ash-Blue')};
+  --color-blockquote: #{get-color('Void')};
+  --color-blockquote-bg: #{get-color('Slate-Mist')};
+  --color-title-content: #{get-color('Ash-Blue')};
+  --color-title-content-bg: #{get-color('Fog')};
+  --title-content-border-color: #{get-color("Ash-Blue")};
+}
+
+[data-theme="grue"] img {
+
+  filter: grayscale(0.9) contrast(1.2) brightness(0.95);
+}

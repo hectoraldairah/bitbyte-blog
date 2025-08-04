@@ -4,6 +4,10 @@ date: 2022-08-06
 description: A collection of plugins that I use for nvim
 featured: true
 tags: ['nvim', 'tools', 'programming']
+eleventyNavigation:
+  key: 'My nvim config'
+  parent: blog
+  date: 2022-08-06
 ---
 
 I've been using the vim/nvim ecosystem for more than a year and I just love it.

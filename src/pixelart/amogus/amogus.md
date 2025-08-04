@@ -5,6 +5,10 @@ tags: ['PixelArt']
 description: 'The amonGUS potion for the dark web'
 image: amogus.png
 dir: amogus
+eleventyNavigation:
+  key: 'Amogus'
+  parent: pixel art
+  date: 2024-01-07
 ---
 
 Just a little friend that remains me the pandemic after-work nights

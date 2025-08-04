@@ -25,7 +25,7 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    background-color: #{get-color('Crust')};
+    background-color: var(--color-bg);
     &:hover {
       color: inherit;
     }

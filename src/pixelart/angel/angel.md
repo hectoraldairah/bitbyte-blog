@@ -5,6 +5,10 @@ tags: ['PixelArt']
 description: "Don't be afraid"
 image: angel.png
 dir: angel
+eleventyNavigation:
+  key: 'Angel'
+  parent: pixel art
+  date: 2024-01-07
 ---
 
 Having nightmares with biblical accurate angels and this comes out

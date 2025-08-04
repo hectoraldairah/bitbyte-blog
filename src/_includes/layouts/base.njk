@@ -1,6 +1,6 @@
 {% set assetHash = global.random() %}
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="default">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -147,5 +147,22 @@
       </main>
       {% include "partials/footer.njk" %}
     </div>
+    <script type="text/javascript" defer>
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+      }
+
+      const select = document.getElementById('theme-input');
+
+      if (select) {
+        select.value = currentTheme || 'default';
+      }
+      select.addEventListener('change', (event) => {
+        const theme = event.target.value;
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      });
+    </script>
   </body>
 </html>

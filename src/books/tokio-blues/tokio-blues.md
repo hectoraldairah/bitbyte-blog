@@ -4,6 +4,10 @@ description: Norwegian Wood
 writter: Haruki Murakami
 rating: 3
 date: 2023-07-15
+eleventyNavigation:
+  key: 'Tokio Blues'
+  parent: books
+  date: 2023-07-15
 ---
 
 This is my first time reading Haruki Murakami. I've heard a lot of good things about this book so I give it a try.

@@ -2,7 +2,7 @@
   grid-area: footer;
   display: flex;
   width: 100%;
-  background-color: #{get-color('Base')};
+  background-color: var(--color-space);
   flex-direction: column;
   margin-top: 1rem;
   align-items: center;

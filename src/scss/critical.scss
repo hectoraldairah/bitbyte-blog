@@ -21,22 +21,24 @@
 @import 'blocks/topbar';
 @import 'blocks/header';
 @import 'blocks/site-nav';
+@import 'blocks/theme-picker';
 @import 'blocks/main-content';
 @import 'blocks/footer';
 @import 'blocks/stack';
 
 @import 'themes/prism-laserwave';
+@import "themes/themes";
+
 
 html {
   margin: 0;
   padding: 0;
   font-size: 18px;
   font-family: "FreePixel";
-  cursor: url('../assets/icons/cursor.png') 4 12, auto;
   background-image: url('../assets/images/bg-sample.png');
   background-repeat: repeat;
   background-size: 100vw 100vh;
-  background-color: #{get-color("Crust")};
+  background-color: var(--color-bg);
   background-attachment: fixed;
   background-blend-mode: luminosity;
 }
@@ -47,6 +49,14 @@ body {
   margin: 0;
   margin-bottom: 20px;
   padding: 1rem;
+}
+
+html,
+body {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .layout {
@@ -77,14 +87,13 @@ body {
 .ascii {
   font-family: monospace, "Courier New", Courier;
   white-space: pre;
-  font-size: 3px;
-  line-height: 1;
-  color: white;
-  padding: 1rem;
+  font-size: 5px;
+  line-height: 1.1;
+  color: var(--color-header);
+  padding: 2rem;
   overflow-x: hidden;
-  background-attachment: fixed;
 
   @include media-query("md") {
-    font-size: 5px;
+    font-size: 8px;
   }
 }

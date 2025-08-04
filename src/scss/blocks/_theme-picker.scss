@@ -1,0 +1,15 @@
+.theme-picker {
+  background-color: var(--color-space);
+  color: var(--color-text);
+  padding: .5rem 0;
+
+  &__label {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__select {
+    margin-left: 1rem;
+  }
+
+}

@@ -5,6 +5,10 @@ tags: ['PixelArt']
 description: 'A spooky friend'
 image: ghost-love.png
 dir: ghost-love
+eleventyNavigation:
+  key: 'Ghost Love'
+  parent: pixel art
+  date: 2021-12-08
 ---
 
 Pixelart is my favorite style for videogames. Why?

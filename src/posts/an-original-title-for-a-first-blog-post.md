@@ -4,6 +4,10 @@ date: 2021-12-14
 tags: ['Personal']
 featured: true
 description: 'My first post in my cozzy web place.'
+eleventyNavigation:
+  key: 'First blog post'
+  parent: blog
+  date: 2021-12-14
 ---
 
 Hello, world! This is my first post ever made on this new site.

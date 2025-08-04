@@ -30,7 +30,6 @@
     "dotenv": "^16.4.5",
     "gorko": "^0.8.0",
     "gulp": "^5.0.1",
-    "gulp-clean-css": "^4.3.0",
     "luxon": "^2.1.0",
     "markdown-it": "^12.3.0",
     "postcss-color-hexa": "^1.2.4",

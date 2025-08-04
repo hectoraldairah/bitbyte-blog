@@ -77,6 +77,10 @@ module.exports = (config) => {
     return [...collection.items.filter((item) => item.data.gym)];
   });
 
+  config.addCollection('navItems', (collection) => {
+    return collection.getAll().filter(item => item.data.eleventyNavigation)
+  })
+
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
 

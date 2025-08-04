@@ -21,9 +21,9 @@
 
         li {
           a {
-            color: #{get-color('Rosewater')};
+            color: var(--color-links);
             &:hover {
-              color: #{get-color('Crust')};
+              color: var(--color-bg);
             }
           }
         }

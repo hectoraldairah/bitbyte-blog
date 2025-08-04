@@ -8,9 +8,9 @@
   blockquote {
     text-align: left;
     border-left: solid 2px var(--link-hover-color);
-    background-color: #{get-color('Crust')};
-    box-shadow: 5px 5px #{get-color('Text')};
-    color: #{get-color('Rosewater')};
+    background-color: var(--color-blockquote-bg);
+    box-shadow: 5px 5px var(--color-text);
+    color: var(--color-blockquote);
 
     p {
       padding-left: 0.8rem;
@@ -78,7 +78,7 @@
     text-align: center;
     font-size: get-size('400');
     padding: 0.2rem 0;
-    background-color: #{get-color('Crust')};
+    background-color: var(--color-bg);
   }
 
   li {

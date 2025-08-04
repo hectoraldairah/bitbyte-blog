@@ -4,6 +4,10 @@ tags: ['micro']
 description: "I don't belive you"
 date: 2023-04-13
 featured: false
+eleventyNavigation:
+  key: 'The lie always present in web-dev'
+  parent: blog
+  date: 2023-04-13
 ---
 
 Have you ever seen this legend in a lot of websites? It's ALWAYS in the footer of a web page.

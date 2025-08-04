@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  background-color: #{get-color("Mauve")};
+  background-color: var(--color-topbar);
   padding: 1rem;
   height: 30px;
 }

@@ -30,32 +30,28 @@ $gorko-size-scale: (
 ///
 $gorko-colors: (
   'Rosewater': '#f4c8a5',
-  'Flamingo': '#f2cdcd',
-  'Brid': '#EDCDBB',
-  'Pink': '#f5c2e7',
   'Mauve': '#cba6f7',
-  'Red': '#eb455c',
-  'Maroon': '#eba0ac',
-  'Peach': '#fab387',
-  'Yellow': '#f9e2af',
-  'Green': '#a6e3a1',
-  'Teal': '#94e2d5',
-  'Sky': '#89dceb',
-  'Sapphire': '#74c7ec',
-  'Blue': '#354059',
-  'Lavender': '#b4befe',
   'Text': '#CAD3F5',
-  'Subtext1': '#bac2de',
-  'Subtext0': '#a6adc8',
-  'Overlay2': '#9399b2',
-  'Overlay1': '#7f849c',
-  'Overlay0': '#6c7086',
-  'Surface2': '#585b70',
-  'Surface1': '#45475a',
-  'Surface0': '#313244',
   'Base': '#1e1e2e',
-  'Mantle': '#181825',
   'Crust': '#11111b',
+
+  'Sandstone': '#d1cb95',
+  'Verdant': '#40985e',
+  'Pine': '#1a644e',
+  'Deep-Teal': '#04373b',
+  'Midnight': '#0a1a2f',
+
+  'Inkstone': '#2e364d',
+  'Steel-Blue': '#425d87',
+  'Cornflower': '#7d95de',
+  'Lavender-Mist': '#ddc8f9',
+  'Snow': '#fbfef9',
+
+  'Void': '#0e0c1f',
+  'Graphite': '#2f323e',
+  'Ash-Blue': '#4d5964',
+  'Slate-Mist': '#748380',
+  'Fog': '#b8c7bf',
 );
 
 /// CORE CONFIG
@@ -63,19 +59,15 @@ $gorko-colors: (
 /// to enabling/disabling pre-built components/utilities.
 ///
 $gorko-config: (
-  'bg': (
-    'items': $gorko-colors,
+  'bg': ('items': $gorko-colors,
     'output': 'standard',
     'property': 'background',
   ),
-  'color': (
-    'items': $gorko-colors,
+  'color': ('items': $gorko-colors,
     'output': 'standard',
     'property': 'color',
   ),
-  'box': (
-    'items': (
-      'block': 'block',
+  'box': ('items': ('block': 'block',
       'flex': 'flex',
       'hide': 'none',
       'show': 'inherit',
@@ -83,57 +75,45 @@ $gorko-config: (
     'output': 'responsive',
     'property': 'display',
   ),
-  'font': (
-    'items': (
-      'base': 'sans-serif',
+  'font': ('items': ('base': 'sans-serif',
       'terminal': 'serif',
     ),
     'output': 'standard',
     'property': 'font-family',
   ),
-  'gap-top': (
-    'items': $gorko-size-scale,
+  'gap-top': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'margin-top',
   ),
-  'gap-right': (
-    'items': $gorko-size-scale,
+  'gap-right': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'margin-right',
   ),
-  'gap-bottom': (
-    'items': $gorko-size-scale,
+  'gap-bottom': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'margin-bottom',
   ),
-  'gap-left': (
-    'items': $gorko-size-scale,
+  'gap-left': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'margin-left',
   ),
-  'pad-top': (
-    'items': $gorko-size-scale,
+  'pad-top': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'padding-top',
   ),
-  'pad-right': (
-    'items': $gorko-size-scale,
+  'pad-right': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'padding-right',
   ),
-  'pad-bottom': (
-    'items': $gorko-size-scale,
+  'pad-bottom': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'padding-bottom',
   ),
-  'pad-left': (
-    'items': $gorko-size-scale,
+  'pad-left': ('items': $gorko-size-scale,
     'output': 'standard',
     'property': 'padding-left',
   ),
-  'stack': (
-    'items': (
-      '300': 0,
+  'stack': ('items': ('300': 0,
       '400': 10,
       '500': 20,
       '600': 30,
@@ -142,29 +122,23 @@ $gorko-config: (
     'output': 'standard',
     'property': 'z-index',
   ),
-  'text': (
-    'items': $gorko-size-scale,
+  'text': ('items': $gorko-size-scale,
     'output': 'responsive',
     'property': 'font-size',
   ),
-  'weight': (
-    'items': (
-      'light': '300',
+  'weight': ('items': ('light': '300',
       'regular': '400',
       'bold': '700',
     ),
     'output': 'standard',
     'property': 'font-weight',
   ),
-  'width': (
-    'items': (
-      'full': '100%',
+  'width': ('items': ('full': '100%',
     ),
     'output': 'responsive',
     'property': 'width',
   ),
-  'breakpoints': (
-    'sm': '(min-width: 36em)',
+  'breakpoints': ('sm': '(min-width: 36em)',
     'md': '(min-width: 48em)',
     'lg': '(min-width: 62em)',
   ),
