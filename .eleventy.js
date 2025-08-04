@@ -26,6 +26,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('./src/pixelart/');
   config.addPassthroughCopy('./src/posts/');
   config.addPassthroughCopy('./src/books/');
+  config.addPassthroughCopy('./src/js/');
 
   // Add filters
   Object.keys(filters).forEach((filterName) => {

@@ -8,7 +8,9 @@
     "production": "NODE_ENV=production gulp && NODE_ENV=production eleventy",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "eslint": "npx eslint ."
+    "eslint": "npx eslint .",
+    "build:js": "esbuild src/js/sketch.js --bundle --outfile=src/assets/js/sketch.bundle.js --minify",
+    "build:r3f": "esbuild src/js/r3f.jsx --bundle --outfile=src/assets/js/r3f.bundle.js --minify --loader:.js=jsx"
   },
   "repository": {
     "type": "git",
@@ -26,18 +28,23 @@
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@netlify/functions": "^2.8.1",
+    "@react-three/fiber": "^9.3.0",
     "concurrently": "^6.3.0",
     "dotenv": "^16.4.5",
     "gorko": "^0.8.0",
     "gulp": "^5.0.1",
     "luxon": "^2.1.0",
     "markdown-it": "^12.3.0",
+    "p5": "^2.0.3",
     "postcss-color-hexa": "^1.2.4",
     "prismjs": "^1.29.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "sass": "^1.43.4",
     "sharp": "^0.34.3",
     "slugify": "^1.6.5",
-    "speedlify-score": "^2.0.2"
+    "speedlify-score": "^2.0.2",
+    "three": "^0.179.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -46,6 +53,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@11ty/is-land": "^2.0.3",
     "cssnano": "^5.1.14",
+    "esbuild": "^0.25.8",
     "eslint": "^8.28.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
