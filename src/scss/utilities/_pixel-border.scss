@@ -26,7 +26,7 @@
   transform: translateZ(0); // Safari fix
 
   &--2 {
-    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 2px);
+    @include pixelBorder(var(--color-links), var(--color-links), var(--color-links), 2px);
   }
 
   &--4 {
