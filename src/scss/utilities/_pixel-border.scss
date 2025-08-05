@@ -1,43 +1,29 @@
-@mixin pixelBorder($bg, $light, $dark, $size: 2px) {
-  $outline: darken($dark, 20%); // contorno más oscuro
-  background-color: $bg;
+@mixin pixelBorder($dark, $size: 2px) {
+  $outline: var(--color-links-outline);
+  background-color: var(--color-links);
 
-  box-shadow:
-    // Luz (arriba e izquierda)
-    -#{$size} -#{$size} 0 0 $light,
-     0        -#{$size} 0 0 $light,
-    -#{$size}  0        0 0 $light,
+  box-shadow: // Luz (arriba e izquierda)
+  -#{$size} -#{$size} 0 0 var(--color-links),
+  0 -#{$size} 0 0 var(--color-links),
+  -#{$size} 0 0 0 var(--color-links),
 
-    // Sombra (derecha y abajo)
-     #{$size}  0        0 0 $dark,
-     0         #{$size} 0 0 $dark,
-     #{$size}  #{$size} 0 0 $dark,
+  // Sombra (derecha y abajo)
+  #{$size} 0 0 0 var(--color-links-dark),
+  0 #{$size} 0 0 var(--color-links-dark),
+  #{$size} #{$size} 0 0 var(--color-links-dark),
 
-    // Contorno exterior (más oscuro)
-    -#{$size * 2} -#{$size * 2} 0 0 $outline,
-     #{$size * 2} -#{$size * 2} 0 0 $outline,
-    -#{$size * 2}  #{$size * 2} 0 0 $outline,
-     #{$size * 2}  #{$size * 2} 0 0 $outline;
+  // Contorno exterior (más oscuro)
+  -#{$size * 2} -#{$size * 2} 0 0 $outline,
+  #{$size * 2} -#{$size * 2} 0 0 $outline,
+  -#{$size * 2} #{$size * 2} 0 0 $outline,
+  #{$size * 2} #{$size * 2} 0 0 $outline;
 }
 
-.pixelBorder {
+.pixelBorder--2 {
   display: inline-block;
-  padding: 1rem;
-  transform: translateZ(0); // Safari fix
+  transform: translateZ(0);
+  color: var(--color-links);
 
-  &--2 {
-    @include pixelBorder(var(--color-links), var(--color-links), var(--color-links), 2px);
-  }
+  @include pixelBorder(#ac7d75, 2px);
 
-  &--4 {
-    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 4px);
-  }
-
-  &--6 {
-    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 6px);
-  }
-
-  &--10 {
-    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 10px);
-  }
 }

@@ -1,22 +1,50 @@
+@import 'reset';
+
+@import 'config';
+
+@import '../../node_modules/gorko/gorko.scss';
+
+
 @import 'base/fonts';
 
 html {
   background-color: black;
   color: white;
   font-family: FreePixel;
-  font-size: 24px;
+  font-size: 14px;
+
+  @include media-query("md") {
+    font-size: 24px;
+  }
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   margin-top: 10rem;
 }
 
 .responsive-image {
-  height: 200px;
+  margin-bottom: 1rem;
+  height: 150px;
   object-fit: contain;
+
+  @include media-query("md") {
+    height: 200px;
+  }
+}
+
+audio {
+  margin-top: 1rem;
+}
+
+a {
+  color: red;
+}
+
+pre {
+  font-size: 4px;
 }

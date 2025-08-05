@@ -7,6 +7,11 @@
   --color-header: white;
   --color-title-content-bg: #{get-color('Base')};
   --title-content-border-color: #{get-color("Rosewater")};
+  --color-links-dark: #{darken(get-color('Rosewater'), 10%)};
+  --color-links-outline: #{darken(get-color('Rosewater'), 50%)};
+  --color-blockquote: #{get-color('Mauve')};
+  --color-blockquote-bg: #{get-color('Crust')};
+
 }
 
 [data-theme="gameboy"] {
@@ -14,6 +19,8 @@
   --color-space: #{get-color('Deep-Teal')};
   --color-text: #{get-color('Sandstone')};
   --color-links: #{get-color('Sandstone')};
+  --color-links-dark: #{darken(get-color('Sandstone'), 10%)};
+  --color-links-outline: #{darken(get-color('Sandstone'), 50%)};
   --color-topbar: #{get-color("Sandstone")};
   --color-header: #{get-color('Sandstone')};
   --color-blockquote: #{get-color('Verdant')};
@@ -32,6 +39,8 @@
   --color-space: #{get-color('Steel-Blue')};
   --color-text: #{get-color('Snow')};
   --color-links: #{get-color('Lavender-Mist')};
+  --color-links-dark: #{darken(get-color('Lavender-Mist'), 10%)};
+  --color-links-outline: #{darken(get-color('Lavender-Mist'), 50%)};
   --color-topbar: #{get-color("Cornflower")};
   --color-header: #{get-color('Snow')};
   --color-blockquote: #{get-color('Snow')};
@@ -49,6 +58,8 @@
   --color-space: #{get-color('Fog')};
   --color-text: #{get-color('Void')};
   --color-links: #{get-color('Ash-Blue')};
+  --color-links-dark: #{darken(get-color('Ash-Blue'), 15%)};
+  --color-links-outline: #{darken(get-color('Fog'), 5%)};
   --color-topbar: #{get-color("Fog")};
   --color-header: #{get-color('Ash-Blue')};
   --color-blockquote: #{get-color('Void')};
@@ -59,6 +70,5 @@
 }
 
 [data-theme="grue"] img {
-
   filter: grayscale(0.9) contrast(1.2) brightness(0.95);
 }
