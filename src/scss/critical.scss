@@ -87,14 +87,13 @@ body {
 
 .ascii {
   font-family: monospace, "Courier New", Courier;
-  white-space: pre;
-  font-size: 5px;
-  line-height: 1.1;
+  font-size: 8px;
+  line-height: 1;
   color: var(--color-header);
   padding: 2rem;
   overflow-x: hidden;
 
   @include media-query("md") {
-    font-size: 8px;
+    font-size: 12px;
   }
 }

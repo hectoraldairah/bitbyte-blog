@@ -22,7 +22,7 @@
   --color-links-dark: #{darken(get-color('Sandstone'), 10%)};
   --color-links-outline: #{darken(get-color('Sandstone'), 50%)};
   --color-topbar: #{get-color("Sandstone")};
-  --color-header: #{get-color('Sandstone')};
+  --color-header: #{get-color('Midnight')};
   --color-blockquote: #{get-color('Verdant')};
   --color-blockquote-bg: #{get-color('Midnight')};
   --title-content-border-color: #{get-color("Sandstone")};
@@ -61,7 +61,7 @@
   --color-links-dark: #{darken(get-color('Ash-Blue'), 15%)};
   --color-links-outline: #{darken(get-color('Fog'), 5%)};
   --color-topbar: #{get-color("Fog")};
-  --color-header: #{get-color('Ash-Blue')};
+  --color-header: #{get-color('Fog')};
   --color-blockquote: #{get-color('Void')};
   --color-blockquote-bg: #{get-color('Slate-Mist')};
   --color-title-content: #{get-color('Ash-Blue')};
