@@ -15,19 +15,19 @@
 }
 
 [data-theme="gameboy"] {
-  --color-bg: #{get-color('Verdant')};
-  --color-space: #{get-color('Deep-Teal')};
-  --color-text: #{get-color('Sandstone')};
-  --color-links: #{get-color('Sandstone')};
-  --color-links-dark: #{darken(get-color('Sandstone'), 10%)};
-  --color-links-outline: #{darken(get-color('Sandstone'), 50%)};
+  --color-bg: #{get-color('Deep-Teal')};
+  --color-space: #{get-color('Sandstone')};
+  --color-text: #{get-color('Midnight')};
+  --color-links: #{get-color('Midnight')};
+  --color-links-dark: #{darken(get-color('Verdant'), 10%)};
+  --color-links-outline: #{darken(get-color('Verdant'), 50%)};
   --color-topbar: #{get-color("Sandstone")};
-  --color-header: #{get-color('Midnight')};
+  --color-header: #{get-color('Sandstone')};
   --color-blockquote: #{get-color('Verdant')};
   --color-blockquote-bg: #{get-color('Midnight')};
   --title-content-border-color: #{get-color("Sandstone")};
-  --color-title-content-bg: #{get-color('Deep-Teal')};
-  --title-content-border-color: #{get-color("Sandstone")};
+  --color-title-content-bg: #{get-color('Sandstone')};
+  --title-content-border-color: #{get-color("Midnight")};
 }
 
 [data-theme='gameboy'] img {
