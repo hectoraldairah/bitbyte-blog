@@ -42,6 +42,7 @@ html {
   background-attachment: fixed;
   background-blend-mode: luminosity;
   overflow-x: hidden;
+  image-rendering: pixelated;
 }
 
 
@@ -96,4 +97,8 @@ body {
   @include media-query("md") {
     font-size: 12px;
   }
+}
+
+img {
+  image-rendering: pixelated;
 }
