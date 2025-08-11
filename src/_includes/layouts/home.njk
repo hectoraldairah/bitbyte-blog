@@ -4,34 +4,45 @@
 <section class="[ intro ]">
   <div class="constrained">
     <div class="intro__description">
-      <p>Hi, I'm Héctor, a Software Engineer with passion for web development.</p>
       <p>
-        Welcome to my website, a personal place where you can read my experiences
-        while I learn new stuff. I'm currently learning Go, Elixir, and how to be a better Front-End dev.</p>
+        Hi, I'm Héctor, a Software Engineer with passion for web development.
+      </p>
+      <p>
+        Welcome to my website, a personal place where you can read my
+        experiences while I learn new stuff. I'm currently learning Go, Elixir,
+        and how to be a better Front-End dev.
+      </p>
       <p>
         Right now, working at
         <a target="_blank" href="https://www.openbank.mx/">Openbank</a>.
       </p>
-   </div>
+    </div>
   </div>
 </section>
 
-
 <section class="[ socials ]">
   <p>Socials:</p>
+
   <ul>
-    <li><a href="https://github.com/hectoraldairah" rel="me">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/hectoraldairaguilar" rel="me">LinkedIn</a></li>
-    <li><a href="https://codepen.io/hectoraldairah" rel="me">Codepen</a></li>
+    {% for item in social.items %}
+    <li>
+      <a href="{{item.url}}" class="link" target="__blank" rel="noreferrer">{{item.text}}</a>
+    </li>
+    {% endfor %}
   </ul>
 </section>
-<br/>
+<br />
 <section>
   <h4>What am I listening to now?</h4>
-  <h5> Playing:  <a href="https://soundcloud.com/officialuntitledmp3">newjeans supershy but it's frutiger aero - untitled.mp3</a></h5>
-<audio controls>
-  <source src="../../assets/sounds/supershyfrutaero.mp3" type="audio/mpeg">
-  Tu navegador no soporta el elemento de audio.
-</audio>
+  <h5>
+    Playing:
+    <a href="https://soundcloud.com/officialuntitledmp3"
+      >newjeans supershy but it's frutiger aero - untitled.mp3</a
+    >
+  </h5>
+  <audio controls>
+    <source src="../../assets/sounds/supershyfrutaero.mp3" type="audio/mpeg" />
+    Tu navegador no soporta el elemento de audio.
+  </audio>
 </section>
 {% endblock %}

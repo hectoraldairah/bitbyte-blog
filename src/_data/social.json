@@ -17,6 +17,12 @@
       "text": "LinkedIn",
       "rel": "me",
       "svg": "linkedin.png"
+    },
+    {
+      "url": "https://indieweb.social/home",
+      "text": "Mastodon",
+      "rel": "me"
     }
+
   ]
 }
