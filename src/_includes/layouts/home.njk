@@ -26,7 +26,9 @@
   <ul>
     {% for item in social.items %}
     <li>
-      <a href="{{item.url}}" class="link" target="__blank" rel="noreferrer">{{item.text}}</a>
+      <a href="{{item.url}}" class="link" target="__blank" rel="noreferrer"
+        >{{item.text}}</a
+      >
     </li>
     {% endfor %}
   </ul>
@@ -44,5 +46,11 @@
     <source src="../../assets/sounds/supershyfrutaero.mp3" type="audio/mpeg" />
     Tu navegador no soporta el elemento de audio.
   </audio>
+</section>
+<section>
+  <div>
+    Number of visitors:
+    <div id="stats"></div>
+  </div>
 </section>
 {% endblock %}

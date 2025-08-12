@@ -10,6 +10,12 @@
       {% include "css/critical.css" %}
     </style>
 
+    <script
+      data-goatcounter="https://bitbyte.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
+
     <link
       rel="preload"
       href="/assets/fonts/FreePixel.ttf"
@@ -137,7 +143,7 @@
         {% set pageHeaderTitle = title %} {% set summary = pageHeaderSummary %}
         {% if pageHeaderTitle %}
         <div class="title-content">
-           <h5 class="title">{{title | safe }}</h5>
+          <h5 class="title">{{title | safe }}</h5>
           {% if summary %}
           <h6 class="summary">{{summary | safe }}</h6>
           {% endif%}
@@ -147,6 +153,7 @@
       </main>
       {% include "partials/footer.njk" %}
     </div>
+
     <script type="text/javascript" defer>
       const currentTheme = localStorage.getItem('theme');
       if (currentTheme) {
@@ -163,6 +170,24 @@
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
       });
+    </script>
+    <script>
+      let r = new XMLHttpRequest();
+      r.addEventListener('load', function () {
+        document.querySelector('#stats').innerText = JSON.parse(
+          this.responseText
+        ).count;
+      });
+
+      let path = window.goatcounter.get_data()['p'];
+
+      r.open(
+        'GET',
+        'https://bitbyte.goatcounter.com/counter/' +
+          encodeURIComponent(path) +
+          '.json'
+      );
+      r.send();
     </script>
   </body>
 </html>
