@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectoraldairah/bitbyte-blog.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectoraldairah/bitbyte-blog/issues"
+  },
+  "homepage": "https://bitbyte.blog",
   "scripts": {
     "start": "gulp && concurrently \"gulp watch\" \"eleventy --serve\"",
     "production": "NODE_ENV=production gulp && NODE_ENV=production eleventy",
@@ -12,17 +24,6 @@
     "build:js": "esbuild src/js/sketch.js --bundle --outfile=src/assets/js/sketch.bundle.js --minify",
     "build:r3f": "esbuild src/js/r3f.jsx --bundle --outfile=src/assets/js/r3f.bundle.js --minify --loader:.js=jsx"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hectoraldairah/bitbyte-blog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hectoraldairah/bitbyte-blog/issues"
-  },
-  "homepage": "https://github.com/hectoraldairah/bitbyte-blog#readme",
   "dependencies": {
     "@11ty/eleventy-img": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
@@ -31,6 +32,7 @@
     "@react-three/fiber": "^9.3.0",
     "concurrently": "^6.3.0",
     "dotenv": "^16.4.5",
+    "eleventy-plugin-metagen": "^1.8.3",
     "gorko": "^0.8.0",
     "gulp": "^5.0.1",
     "luxon": "^2.1.0",
@@ -47,12 +49,14 @@
     "three": "^0.179.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@11ty/eleventy-upgrade-help": "^3.0.1",
     "@11ty/is-land": "^2.0.3",
     "cssnano": "^5.1.14",
+    "eleventy-plugin-og-image": "^4.2.0",
     "esbuild": "^0.25.8",
     "eslint": "^8.28.0",
     "gulp-postcss": "^9.0.1",

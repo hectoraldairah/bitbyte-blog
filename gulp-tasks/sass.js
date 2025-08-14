@@ -1,11 +1,14 @@
-const { dest, src } = require('gulp');
-const postCSS = require('gulp-postcss');
-const sassProcessor = require('gulp-sass')(require('sass'));
+import { src, dest } from 'gulp';
+import postCSS from 'gulp-postcss';
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass';
+import postcssCustomProperties from 'postcss-custom-properties';
+import cssnano from 'cssnano';
 
-/* eslint-disable */
+const sassProcessor = gulpSass(dartSass);
+
 const isProduction = process.env.NODE_ENV === 'production';
 
-// An array of outputs that should be sent over to includes
 const criticalStyles = [
   'notfound.scss',
   'critical.scss',
@@ -15,34 +18,31 @@ const criticalStyles = [
   'pixelart-gallery.scss',
 ];
 
-// Takes the arguments passed by `dest` and determines where the output file goes
 const calculateOutput = ({ history }) => {
-  // By default, we want a CSS file in our dist directory, so the
-  // HTML can grab it with a <link />
-  let response = './dist/css';
+  let outDir = './dist/css';
 
-  // Get everything after the last slash
   const sourceFileName = /[^/]*$/.exec(history[0])[0];
 
-  // If this is critical CSS though, we want it to go
-  // to the _includes directory, so nunjucks can include it
-  // directly in a <style>
   if (criticalStyles.includes(sourceFileName)) {
-    response = './src/_includes/css';
+    outDir = './src/_includes/css';
   }
 
-  return response;
+  return outDir;
 };
 
-const sass = () => {
-  return src('./src/scss/*.scss')
-    .pipe(sassProcessor().on('error', function(err) {
-      console.warn('SASS Warning:', err.messageFormatted);
-      this.emit('end');
-    })
+export default function sass() {
+  return src('./src/scss/*.scss', { sourcemaps: !isProduction })
+    .pipe(
+      sassProcessor().on('error', function(err) {
+        console.warn('SASS Warning:', err.messageFormatted);
+        this.emit('end');
+      })
     )
-    .pipe(postCSS([require('postcss-custom-properties'), require('cssnano')]))
-    .pipe(dest(calculateOutput, { sourceMaps: !isProduction }));
-};
-
-module.exports = sass;
+    .pipe(
+      postCSS([
+        postcssCustomProperties(),
+        cssnano(),
+      ])
+    )
+    .pipe(dest(calculateOutput, { sourcemaps: !isProduction }));
+}

@@ -1,32 +1,35 @@
-{%- set isPost = layout == 'layouts/post.njk' -%}
+{%- set isPost = (layout == 'layouts/post.njk') -%}
 
-{# Open Graph #}
-<meta property="og:title" content="{{ title }}"/>
-<meta property="og:description" content="{{ description or metaDesc }}"/>
-{% if isPost %}
-    <meta property="og:type" content="article"/>
-    <meta property="article:published_time" content="{{ date | postDate }}" >
-    <meta property="article:author" content="{{ author.name }}" >
-    <meta property="article:tag" content="{{ tags | join(', ')}}" >
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:locale" content="{{ site.locale }}">
-    <meta property="og:image" content="{{ site.url }}/assets/images/social-preview-images/{{ date | previewDate }}-{{ title | slug }}-preview.jpeg">
-{% else %}
-    <meta property="og:type" content="website"/>
-{% endif %}
+{%- if isPost -%}
+  <meta property="og:type" content="article"/>
+{%- else -%}
+  <meta property="og:type" content="website"/>
+{%- endif -%}
 
-<meta name="author" content="{{ author.name }}">
+{%- set metaTitle = title or site.title -%}
+{%- set metaDesc  = description or site.description -%}
+{%- set metaURL   = site.url ~ page.url -%}
 
-{# Twitter Card #}
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{ author.social.twitter.name }}">
-<meta name="twitter:creator" content="@{{ author.social.twitter.name }}">
+{%- set ogTpl = "_includes/og-image.og.njk" -%}
 
-{% if metaDesc %}
-    <meta name="description" content="{{ metaDesc }}"/>
-    <meta name="twitter:description" content="{{ metaDesc }}"/>
-    <meta property="og:description" content="{{ metaDesc }}"/>
-{% endif %}
+{% metagen
+  title=metaTitle,
+  desc=metaDesc,
+  url=metaURL,
+  img_alt=metaTitle,
+  twitter_card_type='summary_large_image',
+  name=site.name,
+  generator='eleventy',
+  comments=true
+%}
 
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% setAsync "ogRel" -%}
+  {% ogImage ogTpl, { title: metaTitle, site: site } %}
+{%- endsetAsync %}
+
+{%- set ogRel = ogRel | trim -%}
+{%- set imageURL = site.url + ogRel %}
+
+<!-- DEBUG ogRel: [{{ ogRel | dump }}] -->
+<!-- DEBUG ogTpl: {{ ogTpl }} -->
+<meta property="og:image" content="{{imageURL}}">

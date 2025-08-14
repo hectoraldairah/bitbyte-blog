@@ -1,95 +1,88 @@
-const Image = require('@11ty/eleventy-img');
-const path = require('path');
+import Image from '@11ty/eleventy-img';
+import path from 'node:path';
 
-module.exports = {
-  image: async function (
-    src,
+export async function image(
+  src,
+  alt,
+  className = undefined,
+  caption = false,
+  widths = [400, 800, 1280],
+  sizes = '100vw'
+) {
+  if (alt === undefined) {
+    throw new Error('Missing alt prop for image: ' + src);
+  }
+
+  function figure(html, caption, width) {
+    return `<figure>${html}<figcaption style="width: ${width}px">${caption}</figcaption></figure>`;
+  }
+
+  const ext = path.extname(src).toLowerCase();
+
+  // Passthrough para GIF animados (no reencode)
+  if (ext === '.gif') {
+    const cleanedSrc = src.replace(/^src/, '');
+    const imgTag = `<img src="${cleanedSrc}" alt="${alt}"${
+      className ? ` class="${className}"` : ''
+    } loading="eager" decoding="async">`;
+    return caption ? figure(imgTag, caption, 0) : imgTag;
+  }
+
+  const options = {
+    widths,
+    formats: ['webp', 'jpeg'],
+    urlPath: '/assets/images',
+    outputDir: 'dist/assets/images/',
+  };
+
+  const imageAttributes = {
     alt,
-    className = undefined,
-    caption = false,
-    widths = [400, 800, 1280],
-    sizes = '100vw'
-  ) {
-    if (alt === undefined) {
-      throw new Error('Missing atl prop for image', src);
-    }
+    sizes,
+    class: className,
+    loading: 'eager',
+    decoding: 'async',
+  };
 
-    function figure(html, caption, width) {
-      return `<figure>${html}<figcaption style="width: ${width}px">${caption}</figcaption></figure>`;
-    }
+  const metadata = await Image(src, options);
+  const generated = Image.generateHTML(metadata, imageAttributes);
 
-    const ext = path.extname(src).toLowerCase();
+  // Ancho mayor del conjunto webp (si no hay webp, intenta con jpeg)
+  const webpSet = metadata.webp?.length ? metadata.webp : metadata.jpeg;
+  const figWidth = webpSet[webpSet.length - 1].width;
 
-    if (ext === '.gif') {
-      const cleanedSrc = src.replace(/^src/, '');
-      const imgTag = `<img src="${cleanedSrc}" alt="${alt}"${
-        className ? ` class="${className}"` : ''
-      } loading="eager" decoding="async">`;
-      if (caption) {
-        return figure(imgTag, caption, 0);
-      }
-      return imgTag;
-    }
+  return caption ? figure(generated, caption, figWidth) : generated;
+}
 
-    const options = {
-      widths,
-      formats: ['webp', 'jpeg'],
-      urlPath: '/assets/images',
-      outputDir: 'dist/assets/images/',
-    };
+export async function pixelArtImage(
+  src,
+  alt,
+  className = undefined,
+  widths = [400, 800, 1280],
+  sizes = '100vw'
+) {
+  if (alt === undefined) {
+    throw new Error('Missing alt prop for image: ' + src);
+  }
 
-    const imageAttributes = {
-      alt,
-      sizes,
-      class: className,
+  const options = {
+    widths,
+    formats: ['webp', 'jpeg', 'svg'], // mantiene tu set original
+    urlPath: '/pixelart/**/',          // si te da problemas, usa un path fijo como '/pixelart'
+    outputDir: 'dist/pixelart/**/',    // idem: normalmente debe ser una carpeta, no un patrón
+    defaultAttributes: {
       loading: 'eager',
       decoding: 'async',
-    };
+    },
+  };
 
-    const metadata = await Image(src, options);
-
-    const generated = Image.generateHTML(metadata, imageAttributes);
-
-    const figWidth = metadata.webp[0].width;
-
-    if (caption) {
-      return figure(generated, caption, figWidth);
-    }
-
-    return generated;
-  },
-  pixelArtImage: async function (
-    src,
+  const imageAttributes = {
     alt,
-    className = undefined,
-    widths = [400, 800, 1280],
-    sizes = '100vw'
-  ) {
-    if (alt === undefined) {
-      throw new Error('Missing alt prop for image', src);
-    }
+    sizes,
+    class: className,
+    loading: 'lazy',
+    decoding: 'async',
+  };
 
-    const options = {
-      widths,
-      formats: ['webp', 'jpeg', 'svg'],
-      urlPath: '/pixelart/**/',
-      outputDir: 'dist/pixelart/**/',
-      defaultAttributes: {
-        loading: 'eager',
-        decoding: 'async',
-      },
-    };
-
-    const imageAttributes = {
-      alt,
-      sizes,
-      class: className,
-      loading: 'lazy',
-      decoding: 'async',
-    };
-
-    const metadata = await Image(src, options);
-
-    return Image.generateHTML(metadata, imageAttributes);
-  },
-};
+  const metadata = await Image(src, options);
+  return Image.generateHTML(metadata, imageAttributes);
+}

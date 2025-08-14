@@ -1,10 +1,13 @@
-const pluginNavigation = require('@11ty/eleventy-navigation');
-const pluginRSS = require('@11ty/eleventy-plugin-rss');
-const pluginSyntax = require('@11ty/eleventy-plugin-syntaxhighlight');
+import fs from "node:fs";
+import pluginNavigation from '@11ty/eleventy-navigation';
+import pluginRSS from '@11ty/eleventy-plugin-rss';
+import pluginSyntax from '@11ty/eleventy-plugin-syntaxhighlight';
+import metagen from 'eleventy-plugin-metagen';
+import EleventyPluginOgImage from "eleventy-plugin-og-image";
 
-const filters = require('./src/utils/filters');
-const markdown = require('./src/utils/markdown');
-const shortcodes = require('./src/utils/shortcodes');
+import * as filters from './src/utils/filters.js';
+import markdown from './src/utils/markdown.js';
+import * as shortcodes from './src/utils/shortcodes.js';
 
 const CONTENT_GLOBS = {
   post: './src/posts/**/*.md',
@@ -12,84 +15,99 @@ const CONTENT_GLOBS = {
   books: './src/books/**/*.md',
 };
 
-module.exports = (config) => {
+/** @param { import('@11ty/eleventy/src/UserConfig').default } eleventyConfig */
+export default async function(eleventyConfig) {
   // Plugins
-  config.addPlugin(pluginNavigation);
-  config.addPlugin(pluginRSS);
-  config.addPlugin(pluginSyntax);
-
-  // Set directories to pass through to the dist folder
-  config.addPassthroughCopy('./src/images/');
-  config.addPassthroughCopy('./src/assets/');
-  config.addPassthroughCopy('./src/icons/');
-  config.addPassthroughCopy('./src/fonts/');
-  config.addPassthroughCopy('./src/pixelart/');
-  config.addPassthroughCopy('./src/posts/');
-  config.addPassthroughCopy('./src/books/');
-  config.addPassthroughCopy('./src/js/');
-  config.addPassthroughCopy("src/_redirects");
-
-  // Add filters
-  Object.keys(filters).forEach((filterName) => {
-    config.addFilter(filterName, filters[filterName]);
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginRSS);
+  eleventyConfig.addPlugin(pluginSyntax);
+  eleventyConfig.addPlugin(metagen);
+  eleventyConfig.addPlugin(EleventyPluginOgImage, {
+    async shortcodeOutput(ogImage) {
+      return ogImage.outputUrl();
+    },
+    satoriOptions: {
+      width: 1200,
+      height: 630,
+      fonts: [
+        {
+          name: "PixelFree",
+          data: fs.readFileSync("./src/assets/fonts/FreePixel.ttf"),
+          weight: 400,
+          style: "normal",
+        },
+      ]
+    },
+    outputDir: "assets/og-images",
+    outputFileExtension: "png",
+    urlPath: "/assets/og-images",
+    previewMode: "auto"
   });
 
-  // Add shortcodes
-  Object.keys(shortcodes).forEach((shortCodeName) => {
-    config.addNunjucksAsyncShortcode(shortCodeName, shortcodes[shortCodeName]);
-    config.addLiquidShortcode(shortCodeName, shortcodes[shortCodeName]);
-  });
+  // Passthrough
+  eleventyConfig.addPassthroughCopy('./src/images/');
+  eleventyConfig.addPassthroughCopy('./src/assets/');
+  eleventyConfig.addPassthroughCopy('./src/icons/');
+  eleventyConfig.addPassthroughCopy('./src/fonts/');
+  eleventyConfig.addPassthroughCopy('./src/pixelart/');
+  eleventyConfig.addPassthroughCopy('./src/posts/');
+  eleventyConfig.addPassthroughCopy('./src/books/');
+  eleventyConfig.addPassthroughCopy('./src/js/');
+  eleventyConfig.addPassthroughCopy('src/_redirects');
 
-  // Markdown Passing
-  config.setLibrary('md', markdown);
+  // Filters
+  for (const [name, fn] of Object.entries(filters)) {
+    eleventyConfig.addFilter(name, fn);
+  }
 
-  // Returns a collection of blog posts in reverse date order
-  config.addCollection('blog', (collection) => {
+  // Shortcodes (Nunjucks async + Liquid)
+  for (const [name, fn] of Object.entries(shortcodes)) {
+    eleventyConfig.addNunjucksAsyncShortcode(name, fn);
+    eleventyConfig.addLiquidShortcode(name, fn);
+  }
+
+  // Markdown
+  eleventyConfig.setLibrary('md', markdown);
+
+  // Collections
+  eleventyConfig.addCollection('blog', (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.post)]
       .filter((item) => !item.data.development)
       .reverse();
   });
 
-  config.addCollection('featured', (collection) => {
+  eleventyConfig.addCollection('featured', (collection) => {
     return collection
       .getFilteredByGlob(CONTENT_GLOBS.post)
       .filter((item) => item.data.featured && !item.data.development)
       .sort((a, b) => b.date - a.date);
   });
 
-  config.addCollection('pixelart', (collection) => {
+  eleventyConfig.addCollection('pixelart', (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart)].reverse();
   });
 
-  config.addCollection('books', (collection) => {
+  eleventyConfig.addCollection('books', (collection) => {
     return [...collection.getFilteredByGlob(CONTENT_GLOBS.books)].reverse();
   });
 
-  config.addCollection('publish', (collection) => {
-    const pixelart = [
-      ...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart),
-    ].reverse();
-    const blog = [
-      ...collection.getFilteredByGlob(CONTENT_GLOBS.post),
-    ].reverse();
+  eleventyConfig.addCollection('publish', (collection) => {
+    const pixelart = [...collection.getFilteredByGlob(CONTENT_GLOBS.pixelart)].reverse();
+    const blog = [...collection.getFilteredByGlob(CONTENT_GLOBS.post)].reverse();
     return [...pixelart, ...blog].reverse();
   });
 
-  config.addCollection('log', (collection) => {
+  eleventyConfig.addCollection('log', (collection) => {
     return [...collection.items.filter((item) => item.data.gym)];
   });
 
-  config.addCollection('navItems', (collection) => {
-    return collection.getAll().filter(item => item.data.eleventyNavigation)
-  })
+  eleventyConfig.addCollection('navItems', (collection) => {
+    return collection.getAll().filter(item => item.data.eleventyNavigation);
+  });
 
-  // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
-  config.setUseGitIgnore(false);
+  eleventyConfig.setUseGitIgnore(false);
 
   return {
-    dir: {
-      input: 'src',
-      output: 'dist',
-    },
+    dir: { input: 'src', output: 'dist' },
   };
-};
+}

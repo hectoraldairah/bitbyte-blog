@@ -8,24 +8,23 @@ const quotes = [
   'Vue.js should be the number one',
 ];
 
-module.exports = {
-  getLinkActiveState(itemUrl, pageUrl) {
-    let response = '';
+export function getLinkActiveState(itemUrl, pageUrl) {
+  let response = '';
+  if (itemUrl === pageUrl) {
+    response = ' aria-current="page" data-state="active"';
+  }
+  return response;
+}
 
-    if (itemUrl === pageUrl) {
-      response = ' aria-current="page" data-state="active"';
-    }
-    return response;
-  },
-  generateDate: function () {
-    const dateObj = new Date();
-    return dateObj;
-  },
-  getQuoteOfTheDay: function () {
-    const randomQuote = Math.floor(Math.random() * (quotes.length - 1) + 1);
-    return quotes[randomQuote];
-  },
-  getThemeValue: function (theme) {
-    console.log(theme);
-  },
-};
+export function generateDate() {
+  return new Date();
+}
+
+export function getQuoteOfTheDay() {
+  const randomQuote = Math.floor(Math.random() * quotes.length);
+  return quotes[randomQuote];
+}
+
+export function getThemeValue(theme) {
+  console.log(theme);
+}
