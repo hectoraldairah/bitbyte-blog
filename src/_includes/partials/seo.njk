@@ -24,7 +24,7 @@
 %}
 
 {% setAsync "ogRel" -%}
-  {% ogImage ogTpl, { title: metaTitle, site: site } %}
+  {% ogImage ogTpl, { title: metaTitle, site: site, description: metaDesc } %}
 {%- endsetAsync %}
 
 {%- set ogRel = ogRel | trim -%}
