@@ -134,12 +134,28 @@
         id="main-content"
         class="[ main-content pixelBorder--2 ]"
       >
-        {% set pageHeaderTitle = title %} {% set summary = pageHeaderSummary %}
-        {% if pageHeaderTitle %}
-        <div class="title-content">
-          <h5 class="title">{{title | safe }}</h5>
-          {% if summary %}
-          <h6 class="summary">{{summary | safe }}</h6>
+        {% set pageHeaderTitle = title %} {% set summary = pageHeaderSummary or
+        description %} {% if pageHeaderTitle %}
+        <div
+          class="[ main-content__page-header ]"
+          data-layout="{{ 'row' if date else 'column'}}"
+        >
+          <div class="[ main-content__page-header__info ]">
+            <h5 class="[ main-content__page-header__info__title ]">
+              {{title | safe }}
+            </h5>
+            {% if summary %}
+            <h6 class="[ main-content__page-header__info__summary ]">
+              {{summary | safe }}
+            </h6>
+            {% endif%}
+          </div>
+          {% if date %}
+          <time
+            class="[ main-content__page-header__date ]"
+            datetime="{{date | postDate }}"
+            >:: {{ date | postDate }} ::</time
+          >
           {% endif%}
         </div>
         {% endif%}
@@ -157,5 +173,22 @@
       async
       src="//gc.zgo.at/count.js"
     ></script>
+    <script type="text/javascript" defer>
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+      }
+
+      const select = document.getElementById('theme-input');
+
+      if (select) {
+        select.value = currentTheme || 'default';
+      }
+      select.addEventListener('change', (event) => {
+        const theme = event.target.value;
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      });
+    </script>
   </body>
 </html>

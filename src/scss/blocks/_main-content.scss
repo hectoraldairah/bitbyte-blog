@@ -3,22 +3,51 @@
   background-color: var(--color-space);
   color: var(--color-text);
 
-  .title-content {
+  &__page-header {
     display: flex;
     flex-direction: column;
     background-color: var(--color-title-content-bg);
-    background-repeat: no-repeat;
-    font-size: 1.5rem;
     color: var(--color-title-content);
     border-bottom: 2px solid var(--title-content-border-color);
+    margin-top: 10px;
+    padding: 0.7rem;
+
+    &[data-layout="row"] {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      &__title {
+        font-size: 1.2rem;
+      }
+      &__summary {
+        font-size: 1rem;
+      }
+
+    }
+  }
+
+  .title-content {
+    font-size: 1.5rem;
     padding-bottom: .5rem;
     margin-top: 10px;
     width: 100%;
 
-
     .title,
     .summary {
       margin-left: 1rem;
+    }
+
+    &[data-layout="row"] {
+      .title-date {
+        font-size: 1rem;
+        margin-right: .5rem;
+      }
     }
   }
 
@@ -27,4 +56,3 @@
 
   }
 }
-

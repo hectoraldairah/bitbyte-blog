@@ -16,7 +16,7 @@
   },
   "homepage": "https://bitbyte.blog",
   "scripts": {
-    "start": "gulp && concurrently \"gulp watch\" \"eleventy --serve\"",
+    "start": "gulp && concurrently \"gulp watcher\" \"eleventy --serve\"",
     "production": "NODE_ENV=production gulp && NODE_ENV=production eleventy",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check .",
