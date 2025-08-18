@@ -1,8 +1,22 @@
 import EleventyFetch from "@11ty/eleventy-fetch";
 
-export default async function() {
+export default async function () {
   const url = "https://status.cafe/users/_bitbyte_/status.json";
-  const data = await EleventyFetch(url, { duration: "1d", type: "json" });
+  try {
+    const data = await EleventyFetch(url, {
+      duration: "1d",
+      type: "json",
+    });
 
-  return JSON.parse(data);
-};
+    console.log(data)
+
+    if (data && typeof data === "object" && "author" in data) return data;
+
+    if (typeof data === "string") return JSON.parse(data);
+
+    return {};
+  } catch (err) {
+    console.error("status data error:", err);
+    return err;
+  }
+}
