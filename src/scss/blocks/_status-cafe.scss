@@ -1,0 +1,14 @@
+.status-cafe {
+  background-color: var(--color-space);
+  color: var(--color-text);
+  padding: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 0.5rem;
+
+  &__username {
+    display: flex;
+    gap: 10px;
+  }
+}

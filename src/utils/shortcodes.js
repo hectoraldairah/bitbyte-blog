@@ -1,5 +1,6 @@
 import Image from '@11ty/eleventy-img';
 import path from 'node:path';
+import EleventyFetch from "@11ty/eleventy-fetch";
 
 export async function image(
   src,
@@ -22,9 +23,8 @@ export async function image(
   // Passthrough para GIF animados (no reencode)
   if (ext === '.gif') {
     const cleanedSrc = src.replace(/^src/, '');
-    const imgTag = `<img src="${cleanedSrc}" alt="${alt}"${
-      className ? ` class="${className}"` : ''
-    } loading="eager" decoding="async">`;
+    const imgTag = `<img src="${cleanedSrc}" alt="${alt}"${className ? ` class="${className}"` : ''
+      } loading="eager" decoding="async">`;
     return caption ? figure(imgTag, caption, 0) : imgTag;
   }
 
