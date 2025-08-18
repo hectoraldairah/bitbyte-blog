@@ -4,11 +4,9 @@ export default async function () {
   const url = "https://status.cafe/users/_bitbyte_/status.json";
   try {
     const data = await EleventyFetch(url, {
-      duration: "1d",
+      duration: "30m",
       type: "json",
     });
-
-    console.log(data)
 
     if (data && typeof data === "object" && "author" in data) return data;
 

@@ -3,6 +3,7 @@
   --color-space: #{get-color('Base')};
   --color-text: #{get-color('Text')};
   --color-links: #{get-color('Rosewater')};
+  --color-links-visited: #{get-color('Mauve')};
   --color-topbar: #{get-color("Mauve")};
   --color-header: white;
   --color-title-content-bg: #{get-color('Base')};
@@ -19,6 +20,7 @@
   --color-space: #{get-color('Sandstone')};
   --color-text: #{get-color('Midnight')};
   --color-links: #{get-color('Midnight')};
+  --color-links-visited: #{get-color('Deep-Teal')};
   --color-links-dark: #{darken(get-color('Verdant'), 10%)};
   --color-links-outline: #{darken(get-color('Verdant'), 50%)};
   --color-topbar: #{get-color("Sandstone")};
@@ -39,6 +41,7 @@
   --color-space: #{get-color('Steel-Blue')};
   --color-text: #{get-color('Snow')};
   --color-links: #{get-color('Lavender-Mist')};
+  --color-links-visited: #{get-color('Lavender-Mist')};
   --color-links-dark: #{darken(get-color('Lavender-Mist'), 10%)};
   --color-links-outline: #{darken(get-color('Lavender-Mist'), 50%)};
   --color-topbar: #{get-color("Cornflower")};
@@ -58,6 +61,7 @@
   --color-space: #{get-color('Fog')};
   --color-text: #{get-color('Void')};
   --color-links: #{get-color('Ash-Blue')};
+  --color-links-visited: #{get-color('Ash-Blue')};
   --color-links-dark: #{darken(get-color('Ash-Blue'), 15%)};
   --color-links-outline: #{darken(get-color('Fog'), 5%)};
   --color-topbar: #{get-color("Fog")};
