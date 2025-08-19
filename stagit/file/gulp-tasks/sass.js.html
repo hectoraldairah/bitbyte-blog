@@ -16,55 +16,62 @@
 <a href="../../log.html">Log</a> | <a href="../../files.html">Files</a> | <a href="../../refs.html">Refs</a> | <a href="../../file/LICENSE.html">LICENSE</a></td></tr></table>
 <hr/>
 <div id="content">
-<p> sass.js (1138B)</p><hr/><pre id="blob">
+<p> sass.js (1419B)</p><hr/><pre id="blob">
 <a href="#l1" class="line" id="l1">      1</a> import { src, dest } from &#39;gulp&#39;;
 <a href="#l2" class="line" id="l2">      2</a> import postCSS from &#39;gulp-postcss&#39;;
 <a href="#l3" class="line" id="l3">      3</a> import gulpSass from &#39;gulp-sass&#39;;
 <a href="#l4" class="line" id="l4">      4</a> import dartSass from &#39;sass&#39;;
 <a href="#l5" class="line" id="l5">      5</a> import postcssCustomProperties from &#39;postcss-custom-properties&#39;;
 <a href="#l6" class="line" id="l6">      6</a> import cssnano from &#39;cssnano&#39;;
-<a href="#l7" class="line" id="l7">      7</a> 
-<a href="#l8" class="line" id="l8">      8</a> const sassProcessor = gulpSass(dartSass);
-<a href="#l9" class="line" id="l9">      9</a> 
-<a href="#l10" class="line" id="l10">     10</a> const isProduction = process.env.NODE_ENV === &#39;production&#39;;
-<a href="#l11" class="line" id="l11">     11</a> 
-<a href="#l12" class="line" id="l12">     12</a> const criticalStyles = [
-<a href="#l13" class="line" id="l13">     13</a>   &#39;notfound.scss&#39;,
-<a href="#l14" class="line" id="l14">     14</a>   &#39;critical.scss&#39;,
-<a href="#l15" class="line" id="l15">     15</a>   &#39;home.scss&#39;,
-<a href="#l16" class="line" id="l16">     16</a>   &#39;page.scss&#39;,
-<a href="#l17" class="line" id="l17">     17</a>   &#39;about.scss&#39;,
-<a href="#l18" class="line" id="l18">     18</a>   &#39;pixelart-gallery.scss&#39;,
-<a href="#l19" class="line" id="l19">     19</a> ];
-<a href="#l20" class="line" id="l20">     20</a> 
-<a href="#l21" class="line" id="l21">     21</a> const calculateOutput = ({ history }) =&gt; {
-<a href="#l22" class="line" id="l22">     22</a>   let outDir = &#39;./dist/css&#39;;
-<a href="#l23" class="line" id="l23">     23</a> 
-<a href="#l24" class="line" id="l24">     24</a>   const sourceFileName = /[^/]*$/.exec(history[0])[0];
-<a href="#l25" class="line" id="l25">     25</a> 
-<a href="#l26" class="line" id="l26">     26</a>   if (criticalStyles.includes(sourceFileName)) {
-<a href="#l27" class="line" id="l27">     27</a>     outDir = &#39;./src/_includes/css&#39;;
-<a href="#l28" class="line" id="l28">     28</a>   }
-<a href="#l29" class="line" id="l29">     29</a> 
-<a href="#l30" class="line" id="l30">     30</a>   return outDir;
-<a href="#l31" class="line" id="l31">     31</a> };
-<a href="#l32" class="line" id="l32">     32</a> 
-<a href="#l33" class="line" id="l33">     33</a> export default function sass() {
-<a href="#l34" class="line" id="l34">     34</a>   return src(&#39;./src/scss/*.scss&#39;, { sourcemaps: !isProduction })
-<a href="#l35" class="line" id="l35">     35</a>     .pipe(
-<a href="#l36" class="line" id="l36">     36</a>       sassProcessor().on(&#39;error&#39;, function(err) {
-<a href="#l37" class="line" id="l37">     37</a>         console.warn(&#39;SASS Warning:&#39;, err.messageFormatted);
-<a href="#l38" class="line" id="l38">     38</a>         this.emit(&#39;end&#39;);
-<a href="#l39" class="line" id="l39">     39</a>       })
-<a href="#l40" class="line" id="l40">     40</a>     )
-<a href="#l41" class="line" id="l41">     41</a>     .pipe(
-<a href="#l42" class="line" id="l42">     42</a>       postCSS([
-<a href="#l43" class="line" id="l43">     43</a>         postcssCustomProperties(),
-<a href="#l44" class="line" id="l44">     44</a>         cssnano(),
-<a href="#l45" class="line" id="l45">     45</a>       ])
-<a href="#l46" class="line" id="l46">     46</a>     )
-<a href="#l47" class="line" id="l47">     47</a>     .pipe(dest(calculateOutput, { sourcemaps: !isProduction }));
-<a href="#l48" class="line" id="l48">     48</a> }
+<a href="#l7" class="line" id="l7">      7</a> import replace from &#39;gulp-replace&#39;;
+<a href="#l8" class="line" id="l8">      8</a> 
+<a href="#l9" class="line" id="l9">      9</a> const sassProcessor = gulpSass(dartSass);
+<a href="#l10" class="line" id="l10">     10</a> 
+<a href="#l11" class="line" id="l11">     11</a> const isProduction = process.env.NODE_ENV === &#39;production&#39;;
+<a href="#l12" class="line" id="l12">     12</a> 
+<a href="#l13" class="line" id="l13">     13</a> const criticalStyles = [
+<a href="#l14" class="line" id="l14">     14</a>   &#39;notfound.scss&#39;,
+<a href="#l15" class="line" id="l15">     15</a>   &#39;critical.scss&#39;,
+<a href="#l16" class="line" id="l16">     16</a>   &#39;home.scss&#39;,
+<a href="#l17" class="line" id="l17">     17</a>   &#39;page.scss&#39;,
+<a href="#l18" class="line" id="l18">     18</a>   &#39;about.scss&#39;,
+<a href="#l19" class="line" id="l19">     19</a>   &#39;pixelart-gallery.scss&#39;,
+<a href="#l20" class="line" id="l20">     20</a> ];
+<a href="#l21" class="line" id="l21">     21</a> 
+<a href="#l22" class="line" id="l22">     22</a> const calculateOutput = ({ history }) =&gt; {
+<a href="#l23" class="line" id="l23">     23</a>   let outDir = &#39;./dist/css&#39;;
+<a href="#l24" class="line" id="l24">     24</a> 
+<a href="#l25" class="line" id="l25">     25</a>   const sourceFileName = /[^/]*$/.exec(history[0])[0];
+<a href="#l26" class="line" id="l26">     26</a> 
+<a href="#l27" class="line" id="l27">     27</a>   if (criticalStyles.includes(sourceFileName)) {
+<a href="#l28" class="line" id="l28">     28</a>     outDir = &#39;./src/_includes/css&#39;;
+<a href="#l29" class="line" id="l29">     29</a>   }
+<a href="#l30" class="line" id="l30">     30</a> 
+<a href="#l31" class="line" id="l31">     31</a>   return outDir;
+<a href="#l32" class="line" id="l32">     32</a> };
+<a href="#l33" class="line" id="l33">     33</a> 
+<a href="#l34" class="line" id="l34">     34</a> export default function sass() {
+<a href="#l35" class="line" id="l35">     35</a>   return src(&#39;./src/scss/*.scss&#39;, { sourcemaps: !isProduction })
+<a href="#l36" class="line" id="l36">     36</a>     .pipe(
+<a href="#l37" class="line" id="l37">     37</a>       sassProcessor().on(&#39;error&#39;, function(err) {
+<a href="#l38" class="line" id="l38">     38</a>         console.warn(&#39;SASS Warning:&#39;, err.messageFormatted);
+<a href="#l39" class="line" id="l39">     39</a>         this.emit(&#39;end&#39;);
+<a href="#l40" class="line" id="l40">     40</a>       })
+<a href="#l41" class="line" id="l41">     41</a>     )
+<a href="#l42" class="line" id="l42">     42</a>     .pipe(
+<a href="#l43" class="line" id="l43">     43</a>       postCSS([
+<a href="#l44" class="line" id="l44">     44</a>         postcssCustomProperties(),
+<a href="#l45" class="line" id="l45">     45</a>         cssnano(),
+<a href="#l46" class="line" id="l46">     46</a>       ])
+<a href="#l47" class="line" id="l47">     47</a>     )
+<a href="#l48" class="line" id="l48">     48</a>     .pipe(dest(calculateOutput, { sourcemaps: !isProduction }));
+<a href="#l49" class="line" id="l49">     49</a> }
+<a href="#l50" class="line" id="l50">     50</a> 
+<a href="#l51" class="line" id="l51">     51</a> export function injectStagitCSS() {
+<a href="#l52" class="line" id="l52">     52</a>   return src(&#39;dist/stagit/**/*.html&#39;)
+<a href="#l53" class="line" id="l53">     53</a>     .pipe(replace(&#39;&lt;/head&gt;&#39;, &#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://bitbyte.blog/scss/stagit/styles.css&quot; /&gt;\n&lt;/head&gt;&#39;))
+<a href="#l54" class="line" id="l54">     54</a>     .pipe(dest(&#39;dist/stagit/&#39;));
+<a href="#l55" class="line" id="l55">     55</a> }
 </pre>
 </div>
 </body>

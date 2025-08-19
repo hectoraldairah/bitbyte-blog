@@ -4,6 +4,44 @@
 <subtitle>Unnamed repository; edit this file &#39;description&#39; to name the repository.
 </subtitle>
 <entry>
+<id>8f960714d3b42e16ae1e07defc68b32ab3166ea7</id>
+<published>2025-08-19T22:18:36Z</published>
+<updated>2025-08-19T22:18:36Z</updated>
+<title>Use server styles</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/8f960714d3b42e16ae1e07defc68b32ab3166ea7.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 8f960714d3b42e16ae1e07defc68b32ab3166ea7
+parent 329f8c3110caa7804952a805997bfa369623f9c5
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 19 Aug 2025 16:18:36 -0600
+
+Use server styles
+
+</content>
+</entry>
+<entry>
+<id>329f8c3110caa7804952a805997bfa369623f9c5</id>
+<published>2025-08-19T21:51:28Z</published>
+<updated>2025-08-19T21:51:28Z</updated>
+<title>Move stagit commits</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/329f8c3110caa7804952a805997bfa369623f9c5.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 329f8c3110caa7804952a805997bfa369623f9c5
+parent 0a1818c089d35d97a41012c15f7872190ad2ce1e
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 19 Aug 2025 15:51:28 -0600
+
+Move stagit commits
+
+</content>
+</entry>
+<entry>
 <id>0a1818c089d35d97a41012c15f7872190ad2ce1e</id>
 <published>2025-08-19T19:02:09Z</published>
 <updated>2025-08-19T19:02:09Z</updated>
@@ -1862,44 +1900,6 @@ Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
 Date:   Sat, 15 Jul 2023 17:19:56 -0600
 
 add books section
-
-</content>
-</entry>
-<entry>
-<id>8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4</id>
-<published>2023-07-15T00:39:35Z</published>
-<updated>2023-07-15T00:39:35Z</updated>
-<title>fixed layout and less font size</title>
-<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4.html" />
-<author>
-<name>hectoraldairah</name>
-<email>hectoraldairah@protonmail.com</email>
-</author>
-<content>commit 8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4
-parent 67dc0433cd4001ef7a968bd8274c66f58c7ab3eb
-Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
-Date:   Fri, 14 Jul 2023 18:39:35 -0600
-
-fixed layout and less font size
-
-</content>
-</entry>
-<entry>
-<id>67dc0433cd4001ef7a968bd8274c66f58c7ab3eb</id>
-<published>2023-07-13T21:40:56Z</published>
-<updated>2023-07-13T21:40:56Z</updated>
-<title>remove navigations</title>
-<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/67dc0433cd4001ef7a968bd8274c66f58c7ab3eb.html" />
-<author>
-<name>hectoraldairah</name>
-<email>hectoraldairah@protonmail.com</email>
-</author>
-<content>commit 67dc0433cd4001ef7a968bd8274c66f58c7ab3eb
-parent 40a45a4b654b4cd96c228c9036ff57dc0eb53a4b
-Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
-Date:   Thu, 13 Jul 2023 15:40:56 -0600
-
-remove navigations
 
 </content>
 </entry>

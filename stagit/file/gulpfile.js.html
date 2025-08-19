@@ -16,19 +16,26 @@
 <a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
 <hr/>
 <div id="content">
-<p> gulpfile.js (367B)</p><hr/><pre id="blob">
-<a href="#l1" class="line" id="l1">      1</a> import { parallel, watch } from &#39;gulp&#39;;
+<p> gulpfile.js (749B)</p><hr/><pre id="blob">
+<a href="#l1" class="line" id="l1">      1</a> import { series, watch } from &#39;gulp&#39;;
 <a href="#l2" class="line" id="l2">      2</a> import sass from &#39;./gulp-tasks/sass.js&#39;;
-<a href="#l3" class="line" id="l3">      3</a> 
-<a href="#l4" class="line" id="l4">      4</a> // Watcher: no ejecutar al iniciar, solo en cambios
-<a href="#l5" class="line" id="l5">      5</a> export const watcher = () =&gt;
-<a href="#l6" class="line" id="l6">      6</a>   watch(&#39;./src/scss/**/*.scss&#39;, { ignoreInitial: true }, sass);
-<a href="#l7" class="line" id="l7">      7</a> 
-<a href="#l8" class="line" id="l8">      8</a> // Tarea por defecto
-<a href="#l9" class="line" id="l9">      9</a> export default parallel(sass);
-<a href="#l10" class="line" id="l10">     10</a> 
-<a href="#l11" class="line" id="l11">     11</a> // Exporta la tarea individual si la quieres correr como `gulp sass`
-<a href="#l12" class="line" id="l12">     12</a> export { sass };
+<a href="#l3" class="line" id="l3">      3</a> import { injectStagitCSS } from &#39;./gulp-tasks/sass.js&#39;;
+<a href="#l4" class="line" id="l4">      4</a> 
+<a href="#l5" class="line" id="l5">      5</a> // Watcher: no ejecutar al iniciar, solo en cambios
+<a href="#l6" class="line" id="l6">      6</a> export const watcher = () =&gt;
+<a href="#l7" class="line" id="l7">      7</a>   watch(&#39;./src/scss/**/*.scss&#39;, { ignoreInitial: true }, sass);
+<a href="#l8" class="line" id="l8">      8</a> 
+<a href="#l9" class="line" id="l9">      9</a> // Build task that runs sass first, then injects stagit CSS
+<a href="#l10" class="line" id="l10">     10</a> export const build = series(sass, injectStagitCSS);
+<a href="#l11" class="line" id="l11">     11</a> 
+<a href="#l12" class="line" id="l12">     12</a> // Tarea por defecto - now includes stagit CSS injection
+<a href="#l13" class="line" id="l13">     13</a> export default sass;
+<a href="#l14" class="line" id="l14">     14</a> 
+<a href="#l15" class="line" id="l15">     15</a> // Exporta las tareas individuales si las quieres correr como `gulp sass` o `gulp injectStagitCSS`
+<a href="#l16" class="line" id="l16">     16</a> export { sass, injectStagitCSS };
+<a href="#l17" class="line" id="l17">     17</a> 
+<a href="#l18" class="line" id="l18">     18</a> // Alternative: if you want to run both tasks in parallel instead of series
+<a href="#l19" class="line" id="l19">     19</a> // export const buildParallel = parallel(sass, injectStagitCSS);
 </pre>
 </div>
 </body>

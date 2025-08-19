@@ -1,5 +1,4 @@
 import fs from "node:fs";
-import path from "node:path";
 import pluginNavigation from '@11ty/eleventy-navigation';
 import pluginRSS from '@11ty/eleventy-plugin-rss';
 import pluginSyntax from '@11ty/eleventy-plugin-syntaxhighlight';
@@ -58,7 +57,6 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/scss/stagit');
   eleventyConfig.addPassthroughCopy({ "stagit": "stagit" });
 
-
   // Filters
   for (const [name, fn] of Object.entries(filters)) {
     eleventyConfig.addFilter(name, fn);
@@ -107,24 +105,6 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addCollection('navItems', (collection) => {
     return collection.getAll().filter(item => item.data.eleventyNavigation);
-  });
-
-  eleventyConfig.addTransform("inject-stagit-css", function(content, outputPath) {
-    //
-    console.log('Transform checking:', outputPath);
-    if (outputPath && outputPath.includes('stagit') && outputPath.endsWith('.html')) {
-
-      console.log('Processing stagit file:', outputPath);
-      // Inject CSS link before closing </head> tag
-      const cssInjection = '<link rel="stylesheet" type="text/css" href="https://bitbyte.blog/scss/stagit/styles.css" />\n</head>';
-
-      const newContent = content.replace('</head>', cssInjection);
-
-      console.log('CSS injected into:', outputPath);
-      return newContent;
-
-    }
-    return content;
   });
 
   eleventyConfig.setUseGitIgnore(false);
