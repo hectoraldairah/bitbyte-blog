@@ -1,6 +1,6 @@
 [build]
 # Install stagit from source and run the complete build process
-  command = """
+command = """
     echo "Building libgit2 from source..." &&
     cd /tmp &&
     curl -L https://github.com/libgit2/libgit2/archive/v1.7.1.tar.gz | tar xz &&
@@ -20,10 +20,15 @@
     cp stagit $HOME/bin/ &&
     export PATH=$HOME/bin:$PATH &&
     cd $OLDPWD &&
+    echo "Checking git repository..." &&
+    ls -a &&
+    pwd &&
+    git status &&
+    git log --oneline -n 5 &&
     echo "Generating stagit files..." &&
     mkdir -p stagit &&
     cd stagit &&
-    LD_LIBRARY_PATH=$HOME/local/lib $HOME/bin/stagit -l 100 .. &&
+    LD_LIBRARY_PATH=$HOME/local/lib $HOME/bin/stagit -l 100 $OLDPWD &&
     cd .. &&
     echo "Running production build..." &&
     npm run production
