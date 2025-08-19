@@ -1,14 +1,21 @@
 [build]
 # Install stagit from source and run the complete build process
   command = """
-    echo "Installing libgit2 dependencies..." &&
-    apt-get update &&
-    apt-get install -y libgit2-dev &&
-    echo "Installing stagit from source..." &&
+    echo "Building libgit2 from source..." &&
+    cd /tmp &&
+    curl -L https://github.com/libgit2/libgit2/archive/v1.7.1.tar.gz | tar xz &&
+    cd libgit2-1.7.1 &&
+    mkdir build && cd build &&
+    cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local &&
+    make -j4 &&
+    make install &&
+    export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig:$PKG_CONFIG_PATH &&
+    export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH &&
+    echo "Building stagit from source..." &&
     cd /tmp &&
     git clone git://git.codemadness.org/stagit &&
     cd stagit &&
-    make &&
+    CFLAGS="-I$HOME/local/include" LDFLAGS="-L$HOME/local/lib" make &&
     mkdir -p $HOME/bin &&
     cp stagit $HOME/bin/ &&
     export PATH=$HOME/bin:$PATH &&
@@ -16,7 +23,7 @@
     echo "Generating stagit files..." &&
     mkdir -p stagit &&
     cd stagit &&
-    $HOME/bin/stagit -l 100 .. &&
+    LD_LIBRARY_PATH=$HOME/local/lib $HOME/bin/stagit -l 100 .. &&
     cd .. &&
     echo "Running production build..." &&
     npm run production
