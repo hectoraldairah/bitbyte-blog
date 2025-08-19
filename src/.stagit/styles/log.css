@@ -1,0 +1,107 @@
+/* Catppuccin Mocha Color Palette */
+:root {
+  --ctp-rosewater: #f5e0dc;
+  --ctp-mauve: #cba6f7;
+  --ctp-text: #cdd6f4;
+  --ctp-base: #1e1e2e;
+  --ctp-crust: #11111b;
+}
+
+@font-face {
+  font-family: 'FreePixel';
+  src: url('../../assets/fonts/FreePixel.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Base styles */
+body {
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
+  font-family: 'FreePixel', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--ctp-rosewater);
+}
+
+a:visited {
+  color: var(--ctp-mauve);
+}
+
+h1 {
+  color: var(--ctp-mauve);
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(203, 166, 247, 0.3);
+}
+
+.desc {
+  color: var(--ctp-rosewater);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+table {
+  width: 100%;
+}
+
+table:first-child a {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--ctp-text);
+  margin: 30px 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ctp-base);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ctp-mauve);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ctp-rosewater);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--ctp-mauve);
+  color: var(--ctp-base);
+}
+
+/* Focus states for accessibility */
+a:focus {
+  outline: 2px solid var(--ctp-mauve);
+  outline-offset: 2px;
+}
+
+#content {
+  background-color: var(--ctp-crust);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(203, 166, 247, 0.2);
+  overflow-x: auto;
+}

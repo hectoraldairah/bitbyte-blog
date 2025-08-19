@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Update icons for pointer - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/02acfab7431a3825438c5bc9af3c0f83d3de8676.html">02acfab7431a3825438c5bc9af3c0f83d3de8676</a>
+<b>parent</b> <a href="../commit/a80e285aff51e4625002e8cc601ea009e4638edb.html">a80e285aff51e4625002e8cc601ea009e4638edb</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Sat,  7 Sep 2024 20:52:59 -0600
+
+Update icons for pointer
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">src/_includes/css/critical.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">src/_includes/css/home.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h2">src/_includes/css/page.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h3">src/_includes/layouts/base.njk</a></td><td> | </td><td class="num">6</td><td><span class="i">++++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h4">src/_includes/layouts/home.njk</a></td><td> | </td><td class="num">8</td><td><span class="i">+++++++</span><span class="d">-</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h5">src/_includes/partials/footer.njk</a></td><td> | </td><td class="num">24</td><td><span class="i">+</span><span class="d">-----------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h6">src/_includes/partials/site-head.njk</a></td><td> | </td><td class="num">2</td><td><span class="i"></span><span class="d">--</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h7">src/assets/icons/cursor.png</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h8">src/assets/icons/pointer.png</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h9">src/assets/sounds/theme.mp3</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h10">src/blog.md</a></td><td> | </td><td class="num">2</td><td><span class="i">+</span><span class="d">-</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h11">src/scss/base/_typography.scss</a></td><td> | </td><td class="num">2</td><td><span class="i">+</span><span class="d">-</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h12">src/scss/blocks/_footer.scss</a></td><td> | </td><td class="num">52</td><td><span class="i">++++++++++</span><span class="d">------------------------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h13">src/scss/blocks/_header.scss</a></td><td> | </td><td class="num">17</td><td><span class="i">+++++++</span><span class="d">----------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h14">src/scss/blocks/_intro.scss</a></td><td> | </td><td class="num">6</td><td><span class="i">++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h15">src/scss/blocks/_main-content.scss</a></td><td> | </td><td class="num">5</td><td><span class="i">+</span><span class="d">----</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h16">src/scss/blocks/_nav.scss</a></td><td> | </td><td class="num">8</td><td><span class="i">+++</span><span class="d">-----</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h17">src/scss/blocks/_post-list.scss</a></td><td> | </td><td class="num">5</td><td><span class="i">++</span><span class="d">---</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h18">src/scss/critical.scss</a></td><td> | </td><td class="num">46</td><td><span class="i">+++++++++++++++++++++++++++++++++++</span><span class="d">-----------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h19">src/scss/page.scss</a></td><td> | </td><td class="num">1</td><td><span class="i">+</span><span class="d"></span></td></tr>
+</table></pre><pre>20 files changed, 85 insertions(+), 111 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a> b/<a href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -1 +1 @@
+</a><a href="#h0-0-0" id="h0-0-0" class="d">-*,:after,:before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{line-height:1.5;min-height:100vh;text-rendering:optimizeSpeed}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important}}.bg-Rosewater{background:#f4c8a5}.bg-Flamingo{background:#f2cdcd}.bg-Brid{background:#edcdbb}.bg-Pink{background:#f5c2e7}.bg-Mauve{background:#cba6f7}.bg-Red{background:#eb455c}.bg-Maroon{background:#eba0ac}.bg-Peach{background:#fab387}.bg-Yellow{background:#f9e2af}.bg-Green{background:#a6e3a1}.bg-Teal{background:#94e2d5}.bg-Sky{background:#89dceb}.bg-Sapphire{background:#74c7ec}.bg-Blue{background:#354059}.bg-Lavender{background:#b4befe}.bg-Text{background:#cad3f5}.bg-Subtext1{background:#bac2de}.bg-Subtext0{background:#a6adc8}.bg-Overlay2{background:#9399b2}.bg-Overlay1{background:#7f849c}.bg-Overlay0{background:#6c7086}.bg-Surface2{background:#585b70}.bg-Surface1{background:#45475a}.bg-Surface0{background:#313244}.bg-Base{background:#1e1e2e}.bg-Mantle{background:#181825}.bg-Crust{background:#11111b}.color-Rosewater{color:#f4c8a5}.color-Flamingo{color:#f2cdcd}.color-Brid{color:#edcdbb}.color-Pink{color:#f5c2e7}.color-Mauve{color:#cba6f7}.color-Red{color:#eb455c}.color-Maroon{color:#eba0ac}.color-Peach{color:#fab387}.color-Yellow{color:#f9e2af}.color-Green{color:#a6e3a1}.color-Teal{color:#94e2d5}.color-Sky{color:#89dceb}.color-Sapphire{color:#74c7ec}.color-Blue{color:#354059}.color-Lavender{color:#b4befe}.color-Text{color:#cad3f5}.color-Subtext1{color:#bac2de}.color-Subtext0{color:#a6adc8}.color-Overlay2{color:#9399b2}.color-Overlay1{color:#7f849c}.color-Overlay0{color:#6c7086}.color-Surface2{color:#585b70}.color-Surface1{color:#45475a}.color-Surface0{color:#313244}.color-Base{color:#1e1e2e}.color-Mantle{color:#181825}.color-Crust{color:#11111b}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:sans-serif}.font-terminal{font-family:serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.2rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-800{margin-top:2.5rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.2rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-800{margin-right:2.5rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.2rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-800{margin-bottom:2.5rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.2rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-800{margin-left:2.5rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.2rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-800{padding-top:2.5rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.2rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-800{padding-right:2.5rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.2rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-800{padding-bottom:2.5rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.2rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-800{padding-left:2.5rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.2rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-800{font-size:2.5rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.2rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-800{font-size:2.5rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.2rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-800{font-size:2.5rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.2rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-800{font-size:2.5rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}h1,h2,h3,h4,h5,h6{line-height:1.2;margin:0}h1,h2,h3,h4{font-weight:900;text-rendering:optimizeLegibility}p{line-height:1.5}a{color:#f4c8a5;cursor:pointer;text-decoration:underline;transition:.3s}a:hover{background-color:#f4c8a5;color:#1e1e2e}::-webkit-scrollbar{background-color:#354059}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{background:#7f849c;border-radius:5px}main:focus{outline:none}:focus{outline:2px dashed #94e2d5;outline-offset:.2rem}::selection{background:#45475a}.anchor hidden{display:block}@font-face{font-family:Terminal;font-style:normal;font-weight:400;src:url(../../assets/fonts/terminal-grotesque-webfont.eot);src:url(../../assets/fonts/terminal-grotesque-webfont.eot?#iefix) format(&quot;embedded-opentype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff2) format(&quot;woff2&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff) format(&quot;woff&quot;),url(../../assets/fonts/terminal-grotesque-webfont.ttf) format(&quot;truetype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.svg#terminal_grotesqueregular) format(&quot;svg&quot;)}.wrapper{text-wrap:pretty;max-width:55ch;position:relative}.constrained{max-width:60ch;position:relative}.loose{margin-left:auto;margin-right:auto;min-width:50ch;position:relative}.main-content{grid-area:content;overflow-y:auto;padding:2rem 1rem}.site-head{border-right:1px solid #cad3f5;grid-area:sidebar}.site-head__inner{align-items:center;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}.site-head__nav{padding:.8rem 0;position:relative}.site-footer{border-top:1px solid #cad3f5;bottom:0;grid-area:footer;height:80px;position:absolute;width:100%}.site-footer__socials ul{align-items:center;display:flex;gap:1rem;justify-content:center}.site-footer__socials ul li{list-style-type:none}.site-footer__socials ul li a:after,.site-footer__socials ul li a:before{content:none}.site-footer__socials ul li a .icon{display:block;max-height:30px;max-width:30px;object-fit:fill}.site-footer__navigation{display:flex;flex-direction:row;justify-content:center;padding-top:1rem}.site-footer__navigation__inner{display:flex;flex-direction:column;gap:.8rem;text-align:center;width:100%}.site-footer__navigation__inner li img{display:inline-block;text-align:center}@media (min-width:48em){.site-footer__navigation__inner{flex-direction:row;justify-content:space-between}}.nav{font-weight:600;line-height:1}.nav__list{display:flex;flex-direction:row;flex-wrap:wrap;gap:1rem}@media (min-width:48em){.nav__list{flex-direction:column;gap:0}}.nav__list&gt;*{padding-top:.8rem}@media (min-width:48em){.nav__list&gt;*{padding-inline-start:1rem}}.nav a{color:#cad3f5;display:block;font-weight:400;padding:.2rem;position:relative;text-decoration:none}.nav a:after,.nav a:before{display:none}.nav a:hover{color:#11111b}.nav a[data-state=active],.nav a[data-state=page]{background:#f4c8a5;color:#11111b}.page-header h1{font-size:1.5rem}.page-header__summary__meta{align-items:baseline;display:flex;flex-direction:row}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack&gt;*{margin-bottom:0;margin-top:0}.stack&gt;*+*{margin-top:1.5rem;margin-top:var(--space,1.5rem)}code[class*=language-],pre[class*=language-]{background:#181825;color:#cad3f5;direction:ltr;font-family:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace;font-size:14px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.375;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre&gt;code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#f38ba8;text-shadow:none}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#f38ba8;text-shadow:none}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)&gt;code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog,.token.punctuation{color:#9399b2}.token.namespace{opacity:.7}.token.number,.token.operator,.token.tag{color:#f38ba8}.token.function,.token.property{color:#f5c2e7}.token.atrule-id,.token.selector,.token.tag-id{color:#b4befe}.token.attr-name,code.language-javascript{color:#fab387}.language-css .token.string,.language-scss .token.string,.style .token.string,.token.atrule,.token.attr-value,.token.boolean,.token.control,.token.directive,.token.entity,.token.keyword,.token.placeholder,.token.regex,.token.statement,.token.string,.token.unit,.token.url,.token.variable,code.language-css,code.language-scss{color:#f9e2af}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #b4befe;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#fab387}.token.entity{cursor:help}pre&gt;code.highlight{outline:.4em solid #cad3f5;outline-offset:.4em}.line-numbers.line-numbers .line-numbers-rows{border-right-color:#313244}.line-numbers .line-numbers-rows&gt;span:before{color:#45475a}.line-highlight.line-highlight{background:rgba(243,139,168,.2);background:-webkit-linear-gradient(left,rgba(243,139,168,.2) 70%,rgba(243,139,168,0));background:linear-gradient(90deg,rgba(243,139,168,.2) 70%,rgba(243,139,168,0))}html{align-items:center;animation:moveBackground 20s linear infinite;background-color:#424266;background-image:url(../assets/images/ditther.png);background-repeat:repeat;background-size:150vw 150vh;display:flex;flex-direction:column;font-family:Terminal,ui-serif,serif;font-size:20px;margin:0;padding:0;width:100%}@keyframes moveBackground{0%{background-position:0 0}to{background-position:-100vw 100vh}}body{align-items:center;display:flex;flex-direction:column;height:100%;justify-content:center;overflow-y:hidden;width:100%}.after-body{background-color:#1e1e2e;border-top-left-radius:5px;border-top-right-radius:5px;box-shadow:10px 10px #f4c8a5;color:#cad3f5;display:grid;flex-basis:clamp(300px,100vh,1200px);grid-template-areas:&quot;title title&quot; &quot;actions info&quot; &quot;sidebar content&quot; &quot;sidebar footer&quot;;grid-template-columns:150px 1fr;grid-template-rows:50px 80px 1fr 80px;outline:2px solid #f4c8a5;overflow:hidden;position:relative;width:80vw}.site-title{align-items:center;background-image:url(../assets/images/dit.png);background-repeat:no-repeat;background-size:cover;display:flex;grid-area:title;justify-content:center}.site-title&gt;div{color:#000;cursor:pointer}.site-title&gt;div:hover{animation:fontChange 1s infinite}@keyframes fontChange{0%{text-transform:lowercase}to{text-transform:uppercase}}.site-info{flex-direction:row;grid-area:info;justify-content:space-between;outline:1px solid #cad3f5;padding:1rem}.site-info,.site-info .summary{align-items:center;display:flex;gap:1rem}.site-info .summary{flex-grow:1;font-size:13px;justify-content:flex-start}pre{font-size:.825rem!important}.shadow{box-shadow:10px 10px #cad3f5}
+</a><a href="#h0-0-1" id="h0-0-1" class="d">-\ No newline at end of file
+</a><a href="#h0-0-2" id="h0-0-2" class="i">+*,:after,:before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{line-height:1.5;min-height:100vh;text-rendering:optimizeSpeed}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important}}.bg-Rosewater{background:#f4c8a5}.bg-Flamingo{background:#f2cdcd}.bg-Brid{background:#edcdbb}.bg-Pink{background:#f5c2e7}.bg-Mauve{background:#cba6f7}.bg-Red{background:#eb455c}.bg-Maroon{background:#eba0ac}.bg-Peach{background:#fab387}.bg-Yellow{background:#f9e2af}.bg-Green{background:#a6e3a1}.bg-Teal{background:#94e2d5}.bg-Sky{background:#89dceb}.bg-Sapphire{background:#74c7ec}.bg-Blue{background:#354059}.bg-Lavender{background:#b4befe}.bg-Text{background:#cad3f5}.bg-Subtext1{background:#bac2de}.bg-Subtext0{background:#a6adc8}.bg-Overlay2{background:#9399b2}.bg-Overlay1{background:#7f849c}.bg-Overlay0{background:#6c7086}.bg-Surface2{background:#585b70}.bg-Surface1{background:#45475a}.bg-Surface0{background:#313244}.bg-Base{background:#1e1e2e}.bg-Mantle{background:#181825}.bg-Crust{background:#11111b}.color-Rosewater{color:#f4c8a5}.color-Flamingo{color:#f2cdcd}.color-Brid{color:#edcdbb}.color-Pink{color:#f5c2e7}.color-Mauve{color:#cba6f7}.color-Red{color:#eb455c}.color-Maroon{color:#eba0ac}.color-Peach{color:#fab387}.color-Yellow{color:#f9e2af}.color-Green{color:#a6e3a1}.color-Teal{color:#94e2d5}.color-Sky{color:#89dceb}.color-Sapphire{color:#74c7ec}.color-Blue{color:#354059}.color-Lavender{color:#b4befe}.color-Text{color:#cad3f5}.color-Subtext1{color:#bac2de}.color-Subtext0{color:#a6adc8}.color-Overlay2{color:#9399b2}.color-Overlay1{color:#7f849c}.color-Overlay0{color:#6c7086}.color-Surface2{color:#585b70}.color-Surface1{color:#45475a}.color-Surface0{color:#313244}.color-Base{color:#1e1e2e}.color-Mantle{color:#181825}.color-Crust{color:#11111b}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:sans-serif}.font-terminal{font-family:serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.2rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-800{margin-top:2.5rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.2rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-800{margin-right:2.5rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.2rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-800{margin-bottom:2.5rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.2rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-800{margin-left:2.5rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.2rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-800{padding-top:2.5rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.2rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-800{padding-right:2.5rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.2rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-800{padding-bottom:2.5rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.2rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-800{padding-left:2.5rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.2rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-800{font-size:2.5rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.2rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-800{font-size:2.5rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.2rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-800{font-size:2.5rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.2rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-800{font-size:2.5rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}h1,h2,h3,h4,h5,h6{line-height:1.2;margin:0}h1,h2,h3,h4{font-weight:900;text-rendering:optimizeLegibility}p{line-height:1.5}a{color:#f4c8a5;cursor:url(../../assets/icons/pointer.png) 4 12,pointer;text-decoration:underline;transition:.3s}a:hover{background-color:#f4c8a5;color:#1e1e2e}::-webkit-scrollbar{background-color:#354059}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{background:#7f849c;border-radius:5px}main:focus{outline:none}:focus{outline:2px dashed #94e2d5;outline-offset:.2rem}::selection{background:#45475a}.anchor hidden{display:block}@font-face{font-family:Terminal;font-style:normal;font-weight:400;src:url(../../assets/fonts/terminal-grotesque-webfont.eot);src:url(../../assets/fonts/terminal-grotesque-webfont.eot?#iefix) format(&quot;embedded-opentype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff2) format(&quot;woff2&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff) format(&quot;woff&quot;),url(../../assets/fonts/terminal-grotesque-webfont.ttf) format(&quot;truetype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.svg#terminal_grotesqueregular) format(&quot;svg&quot;)}.wrapper{text-wrap:pretty;max-width:55ch;position:relative}.constrained{max-width:60ch;position:relative}.loose{margin-left:auto;margin-right:auto;min-width:50ch;position:relative}.main-content{grid-area:content;overflow-y:auto;padding:1rem}.site-head{border-left:1px solid #cad3f5;border-right:1px solid #cad3f5;grid-area:sidebar;padding:0 .5rem}@media (min-width:48em){.site-head{border-left:none}}.site-head__inner{height:100%}.site-footer{align-items:center;border-top:1px solid #cad3f5;display:flex;grid-area:footer;height:100px;justify-content:center;position:absolute;width:100%}.site-footer__navigation{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center}.site-footer__navigation__inner{display:flex;flex-direction:row;gap:1rem;justify-content:space-between;width:100%}.site-footer__navigation__inner li img{display:inline-block;text-align:center}.nav__list{display:flex;flex-direction:row;flex-wrap:wrap;gap:.5rem}@media (min-width:48em){.nav__list{flex-direction:column;gap:0}}.nav__list&gt;*{padding-top:.8rem}@media (min-width:48em){.nav__list&gt;*{width:6vw}}.nav a{color:#cad3f5;display:block;font-weight:400;padding:.2rem;position:relative;text-decoration:none}.nav a:after,.nav a:before{display:none}.nav a:hover{background-color:#f4c8a5;color:#11111b}.nav a[data-state=active],.nav a[data-state=page]{background:#f4c8a5;color:#11111b}.page-header h1{font-size:1.5rem}.page-header__summary__meta{align-items:baseline;display:flex;flex-direction:row}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack&gt;*{margin-bottom:0;margin-top:0}.stack&gt;*+*{margin-top:1.5rem;margin-top:var(--space,1.5rem)}code[class*=language-],pre[class*=language-]{background:#181825;color:#cad3f5;direction:ltr;font-family:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace;font-size:14px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.375;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre&gt;code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#f38ba8;text-shadow:none}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#f38ba8;text-shadow:none}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)&gt;code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog,.token.punctuation{color:#9399b2}.token.namespace{opacity:.7}.token.number,.token.operator,.token.tag{color:#f38ba8}.token.function,.token.property{color:#f5c2e7}.token.atrule-id,.token.selector,.token.tag-id{color:#b4befe}.token.attr-name,code.language-javascript{color:#fab387}.language-css .token.string,.language-scss .token.string,.style .token.string,.token.atrule,.token.attr-value,.token.boolean,.token.control,.token.directive,.token.entity,.token.keyword,.token.placeholder,.token.regex,.token.statement,.token.string,.token.unit,.token.url,.token.variable,code.language-css,code.language-scss{color:#f9e2af}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #b4befe;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#fab387}.token.entity{cursor:help}pre&gt;code.highlight{outline:.4em solid #cad3f5;outline-offset:.4em}.line-numbers.line-numbers .line-numbers-rows{border-right-color:#313244}.line-numbers .line-numbers-rows&gt;span:before{color:#45475a}.line-highlight.line-highlight{background:rgba(243,139,168,.2);background:-webkit-linear-gradient(left,rgba(243,139,168,.2) 70%,rgba(243,139,168,0));background:linear-gradient(90deg,rgba(243,139,168,.2) 70%,rgba(243,139,168,0))}html{align-items:center;animation:moveBackground 30s linear infinite;background-color:#424266;background-image:url(../assets/images/ditther.png);background-repeat:repeat;background-size:150vw 150vh;cursor:url(../assets/icons/cursor.png) 4 12,auto;display:flex;flex-direction:column;font-family:Terminal,ui-serif,serif;font-size:20px;margin:0;padding:0;width:100%}@keyframes moveBackground{0%{background-position:0 0}to{background-position:-100vw 100vh}}body{align-items:center;display:flex;flex-direction:column;height:100%;justify-content:center;overflow-y:hidden;width:100%}.after-body{background-color:#1e1e2e;border-top-left-radius:5px;border-top-right-radius:5px;color:#cad3f5;display:grid;flex-basis:clamp(300px,100vh,1200px);grid-template-areas:&quot;title&quot; &quot;sidebar&quot; &quot;info&quot; &quot;content&quot; &quot;footer&quot;;grid-template-columns:1fr;grid-template-rows:30px 70px minmax(80px,auto) 1fr 100px;outline:2px solid #f4c8a5;overflow:hidden;position:relative;width:100vw}@media (min-width:48em){.after-body{box-shadow:10px 10px #f4c8a5;flex-basis:clamp(300px,100vh,1200px);grid-template-areas:&quot;title title&quot; &quot;actions info&quot; &quot;sidebar content&quot; &quot;sidebar footer&quot;;grid-template-columns:150px 1fr;grid-template-rows:50px 80px 1fr 80px;width:80vw}}.site-title{align-items:center;background-image:url(../assets/images/dit.png);background-repeat:no-repeat;background-size:cover;display:flex;flex-direction:column;grid-area:title;justify-content:center}.site-title&gt;div{color:#000;cursor:pointer}.site-title&gt;div:hover{animation:fontChange 1s infinite}@keyframes fontChange{0%{text-transform:lowercase}to{text-transform:uppercase}}.site-info{align-items:flex-start;border-left:1px solid #cad3f5;border-right:1px solid #cad3f5;display:flex;flex-direction:column;gap:1rem;grid-area:info;justify-content:space-between;outline:1px solid #cad3f5;padding:1rem}@media (min-width:48em){.site-info{border:none}}.site-info .summary{align-items:center;display:flex;flex-grow:1;font-size:13px;gap:1rem;justify-content:flex-start}pre{font-size:.825rem!important}.shadow{box-shadow:10px 10px #cad3f5}
+</a><a href="#h0-0-3" id="h0-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h1" href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a> b/<a href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -1 +1 @@
+</a><a href="#h1-0-0" id="h1-0-0" class="d">-.intro{margin:1.2rem 0;padding:1.2rem 0}.intro__title{font-size:3rem;font-weight:400;line-height:1.15}.intro__title .favicon{display:inline-block;max-height:50px;max-width:50px;object-fit:cover}@media (min-width:48em){.intro__title{font-size:3rem}}.intro__description{max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;flex-wrap:wrap;font-size:1.2rem;gap:1rem}.feature-post{padding-bottom:1.2rem;padding-top:1.2rem}.feature-post__title{color:#eb455c;font-size:1.6rem}.feature-post__list{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:var(--text-heading-color)}.featured-article__meta__tags:hover{background-color:var(--text-heading-color);color:var(--bg-color)}.featured-article__title{color:#354059;font-family:serif;font-size:1.2rem;text-decoration-color:#354059}.featured-article__excerpt{display:block;font-size:1rem}
+</a><a href="#h1-0-1" id="h1-0-1" class="d">-\ No newline at end of file
+</a><a href="#h1-0-2" id="h1-0-2" class="i">+.intro{margin:1.2rem 0;padding:1.2rem 0}.intro__title{font-size:3rem;font-weight:400;line-height:1.15}.intro__title .favicon{display:inline-block;max-height:50px;max-width:50px;object-fit:cover}@media (min-width:48em){.intro__title{font-size:3rem}}.intro__description{max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;flex-wrap:wrap;font-size:1.2rem;gap:1rem}.cool-stuff{display:flex;flex-direction:column;flex-wrap:wrap}.feature-post{padding-bottom:1.2rem;padding-top:1.2rem}.feature-post__title{color:#eb455c;font-size:1.6rem}.feature-post__list{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:var(--text-heading-color)}.featured-article__meta__tags:hover{background-color:var(--text-heading-color);color:var(--bg-color)}.featured-article__title{color:#354059;font-family:serif;font-size:1.2rem;text-decoration-color:#354059}.featured-article__excerpt{display:block;font-size:1rem}
+</a><a href="#h1-0-3" id="h1-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h2" href="../file/src/_includes/css/page.css.html">src/_includes/css/page.css</a> b/<a href="../file/src/_includes/css/page.css.html">src/_includes/css/page.css</a></b>
+<a href="#h2-0" id="h2-0" class="h">@@ -1 +1 @@
+</a><a href="#h2-0-0" id="h2-0-0" class="d">-.post-list__item{padding:1rem 0}.post-list__item__link{font-size:1.2rem}.post-list__item__info{display:flex;font-size:1rem}.post-list__item__info__excerpt{margin-top:-.5rem}.post-list__item__info__tags{display:flex;gap:.5rem;height:100%}.post-list__item__info__tags li a{color:#eb455c}.post-list__item__info__tags li a:hover{background-color:#eb455c;color:#354059}.tag-list{display:flex;flex-direction:row;gap:.5rem;list-style-type:none}.page-content{font-size:1rem!important}.page-content__post-title{font-size:3rem!important}.page-content blockquote{background-color:#11111b;border-left:2px solid var(--link-hover-color);box-shadow:5px 5px #cad3f5;color:#f4c8a5;text-align:left}.page-content blockquote p{font-size:.9rem;padding-left:.8rem}.page-content h1{color:var(--feature-post-color)}.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6{font-weight:400;position:relative;text-indent:-3px}.page-content h2{font-size:2rem}.page-content h3{font-size:1.2rem}.page-content ol,.page-content ul{padding-inline-start:3rem}.page-content li+li{margin-top:.8rem}.page-content h2,.page-content h3{--flow-space:3rem;margin-bottom:.8rem;margin-top:.8rem}.page-content h2+*,.page-content h3+*{--flow-space:0.8rem}.page-content p{line-height:1.5;margin-bottom:1.2rem;margin-top:1.2rem}.page-content .header-anchor{visibility:hidden}.page-content img{box-shadow:10px 10px #cad3f5}.page-content figcaption{background-color:#11111b;font-size:1rem;padding:.2rem 0;text-align:center}.page-content li::marker{color:var(--feature-post-color)}@media screen and (hover:hover){.page-content h2:focus .header-anchor,.page-content h2:hover .header-anchor,.page-content h3:focus .header-anchor,.page-content h3:hover .header-anchor,.page-content h4:focus .header-anchor,.page-content h4:hover .header-anchor,.page-content h5:focus .header-anchor,.page-content h5:hover .header-anchor,.page-content h6:focus .header-anchor,.page-content h6:hover .header-anchor{visibility:visible}}.screen-reader-only{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.books-list{flex-wrap:wrap}.books-list,.books-list__item{display:flex;flex-direction:column}.books-list__item p{font-size:1rem}html{background-image:url(../../assets/images/ditther.png)}.site-title{background-image:url(../../assets/images/dit.png)}.no_dots{margin-top:1rem}.no_dots:after{display:none}
+</a><a href="#h2-0-1" id="h2-0-1" class="d">-\ No newline at end of file
+</a><a href="#h2-0-2" id="h2-0-2" class="i">+.post-list__item{padding:1rem 0}.post-list__item__link{font-size:1.2rem}.post-list__item__info{display:flex;font-size:1rem}.post-list__item__info__excerpt{margin-top:-.5rem}.post-list__item__info__tags{display:flex;gap:.5rem;height:100%}.post-list__item__info__tags li a{color:#f4c8a5}.post-list__item__info__tags li a:hover{color:#11111b}.tag-list{display:flex;flex-direction:row;gap:.5rem;list-style-type:none}.page-content{font-size:1rem!important}.page-content__post-title{font-size:3rem!important}.page-content blockquote{background-color:#11111b;border-left:2px solid var(--link-hover-color);box-shadow:5px 5px #cad3f5;color:#f4c8a5;text-align:left}.page-content blockquote p{font-size:.9rem;padding-left:.8rem}.page-content h1{color:var(--feature-post-color)}.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6{font-weight:400;position:relative;text-indent:-3px}.page-content h2{font-size:2rem}.page-content h3{font-size:1.2rem}.page-content ol,.page-content ul{padding-inline-start:3rem}.page-content li+li{margin-top:.8rem}.page-content h2,.page-content h3{--flow-space:3rem;margin-bottom:.8rem;margin-top:.8rem}.page-content h2+*,.page-content h3+*{--flow-space:0.8rem}.page-content p{line-height:1.5;margin-bottom:1.2rem;margin-top:1.2rem}.page-content .header-anchor{visibility:hidden}.page-content img{box-shadow:10px 10px #cad3f5}.page-content figcaption{background-color:#11111b;font-size:1rem;padding:.2rem 0;text-align:center}.page-content li::marker{color:var(--feature-post-color)}@media screen and (hover:hover){.page-content h2:focus .header-anchor,.page-content h2:hover .header-anchor,.page-content h3:focus .header-anchor,.page-content h3:hover .header-anchor,.page-content h4:focus .header-anchor,.page-content h4:hover .header-anchor,.page-content h5:focus .header-anchor,.page-content h5:hover .header-anchor,.page-content h6:focus .header-anchor,.page-content h6:hover .header-anchor{visibility:visible}}.screen-reader-only{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.books-list{flex-wrap:wrap}.books-list,.books-list__item{display:flex;flex-direction:column}.books-list__item p{font-size:1rem}html{background-image:url(../../assets/images/ditther.png);cursor:url(../../assets/icons/cursor.png) 4 12,auto}.site-title{background-image:url(../../assets/images/dit.png)}.no_dots{margin-top:1rem}.no_dots:after{display:none}
+</a><a href="#h2-0-3" id="h2-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h3" href="../file/src/_includes/layouts/base.njk.html">src/_includes/layouts/base.njk</a> b/<a href="../file/src/_includes/layouts/base.njk.html">src/_includes/layouts/base.njk</a></b>
+<a href="#h3-0" id="h3-0" class="h">@@ -52,7 +52,9 @@
+</a>     &lt;/head&gt;
+     &lt;body&gt;
+
+<a href="#h3-0-3" id="h3-0-3" class="d">-      &lt;audio id=&quot;clickSound&quot; src=&quot;../../assets/sounds/Beep 99630.mp3&quot; preload=&quot;auto&quot;&gt;&lt;/audio&gt;
+</a><a href="#h3-0-4" id="h3-0-4" class="i">+      &lt;audio id=&quot;clickSound&quot; preload=&quot;auto&quot;&gt;
+</a><a href="#h3-0-5" id="h3-0-5" class="i">+        &lt;source src=&quot;../../assets/sounds/Beep 99630.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+</a><a href="#h3-0-6" id="h3-0-6" class="i">+      &lt;/audio&gt;
+</a>       &lt;div class=&quot;after-body&quot;&gt;
+         {% include &quot;partials/site-head.njk&quot; %}
+         {% include &quot;partials/site-title.njk&quot; %}
+<a href="#h3-1" id="h3-1" class="h">@@ -65,7 +67,7 @@
+</a>         {% include &quot;partials/footer.njk&quot; %}
+       &lt;/div&gt;
+     &lt;/body&gt;
+<a href="#h3-1-3" id="h3-1-3" class="d">-    &lt;script defer&gt;
+</a><a href="#h3-1-4" id="h3-1-4" class="i">+   &lt;script defer&gt;
+</a> document.addEventListener(&#39;DOMContentLoaded&#39;, (event) =&gt; {
+
+   const focusSound = new Audio(&#39;../../assets/sounds/Beep 99630.mp3&#39;);
+<b>diff --git a/<a id="h4" href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a> b/<a href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a></b>
+<a href="#h4-0" id="h4-0" class="h">@@ -17,6 +17,12 @@
+</a>   &lt;/div&gt;
+ &lt;/section&gt;
+ &lt;section&gt;
+<a href="#h4-0-3" id="h4-0-3" class="d">-&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; whoami &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Hector Aldair Aguilar&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;bitbyte&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;website&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;https://bitbyte.blog&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;ocuppation&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Software Enginner at Clip&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;languages&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Javascript&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Typescript&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;HTML&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;CSS&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Python&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;frameworks&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;React&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Vue&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Next.js&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;interest&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Web Development&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Open Source&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Linguistics&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Gym&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;learning&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Go&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Elixir&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Rust&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Esperanton&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;
+</a><a href="#h4-0-4" id="h4-0-4" class="i">+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; whoami &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Hector Aldair Aguilar&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;bitbyte&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;website&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;https://bitbyte.blog&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;ocuppation&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Software Enginner at Clip&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;languages&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Javascript&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Typescript&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;HTML&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;CSS&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Python&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Golang&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;frameworks&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;React&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Vue&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Next.js&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;interest&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Web Development&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Open Source&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Linguistics&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Gym&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;br&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;learning&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Go&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Elixir&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Rust&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;Esperanton&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;
+</a><a href="#h4-0-5" id="h4-0-5" class="i">+&lt;/section&gt;
+</a><a href="#h4-0-6" id="h4-0-6" class="i">+&lt;br/&gt;
+</a><a href="#h4-0-7" id="h4-0-7" class="i">+&lt;section&gt;
+</a><a href="#h4-0-8" id="h4-0-8" class="i">+  &lt;h4&gt;What am I listening to now?&lt;/h4&gt;
+</a><a href="#h4-0-9" id="h4-0-9" class="i">+  &lt;br /&gt;
+</a><a href="#h4-0-10" id="h4-0-10" class="i">+&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0wLnD2gyI5NMbfShUeqNul?utm_source=generator&amp;theme=0&quot; width=&quot;40%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
+</a> &lt;/section&gt;
+ {% endblock %}
+<b>diff --git a/<a id="h5" href="../file/src/_includes/partials/footer.njk.html">src/_includes/partials/footer.njk</a> b/<a href="../file/src/_includes/partials/footer.njk.html">src/_includes/partials/footer.njk</a></b>
+<a href="#h5-0" id="h5-0" class="h">@@ -1,28 +1,6 @@
+</a> &lt;footer class=&quot;[ site-footer ]&quot;&gt;
+<a href="#h5-0-1" id="h5-0-1" class="d">-  &lt;div class=&quot;site-footer__socials&quot;&gt;
+</a><a href="#h5-0-2" id="h5-0-2" class="d">-   &lt;ul&gt;
+</a><a href="#h5-0-3" id="h5-0-3" class="d">-   {% for item in social.items%}
+</a><a href="#h5-0-4" id="h5-0-4" class="d">-   &lt;li&gt;
+</a><a href="#h5-0-5" id="h5-0-5" class="d">-    &lt;a target=&quot;_blank&quot; rel=&quot;{{item.rel}}&quot; href=&quot;{{item.url}}&quot; class=&quot;site-footer__socials__image&quot;&gt;
+</a><a href="#h5-0-6" id="h5-0-6" class="d">-    {% image &quot;src/assets/icons/&quot; + item.svg, item.text, &quot;icon&quot; %}
+</a><a href="#h5-0-7" id="h5-0-7" class="d">-    &lt;/a&gt;
+</a><a href="#h5-0-8" id="h5-0-8" class="d">-   &lt;/li&gt;
+</a><a href="#h5-0-9" id="h5-0-9" class="d">-   {% endfor %}
+</a><a href="#h5-0-10" id="h5-0-10" class="d">-   &lt;/ul&gt;
+</a><a href="#h5-0-11" id="h5-0-11" class="d">-  &lt;/div&gt;
+</a><a href="#h5-0-12" id="h5-0-12" class="d">-  &lt;nav class=&quot;site-footer__navigation&quot; aria-label=&quot;Secondary&quot;&gt;
+</a><a href="#h5-0-13" id="h5-0-13" class="i">+ &lt;nav class=&quot;site-footer__navigation&quot; aria-label=&quot;Secondary&quot;&gt;
+</a>     &lt;ul class=&quot;site-footer__navigation__inner&quot;&gt;
+<a href="#h5-0-15" id="h5-0-15" class="d">-      {% for item in footer.items %} {% set relLink = item.rel %}
+</a><a href="#h5-0-16" id="h5-0-16" class="d">-      &lt;li&gt;
+</a><a href="#h5-0-17" id="h5-0-17" class="d">-        {% if relLink %}
+</a><a href="#h5-0-18" id="h5-0-18" class="d">-        &lt;a href=&quot;{{item.url}}&quot; rel=&quot;me&quot; target=&quot;_blank&quot;&gt;{{item.text}}&lt;/a&gt;
+</a><a href="#h5-0-19" id="h5-0-19" class="d">-        {% else %}
+</a><a href="#h5-0-20" id="h5-0-20" class="d">-        &lt;a href=&quot;{{item.url}}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;
+</a><a href="#h5-0-21" id="h5-0-21" class="d">-          &gt;{{item.text}}&lt;/a
+</a><a href="#h5-0-22" id="h5-0-22" class="d">-        &gt;
+</a><a href="#h5-0-23" id="h5-0-23" class="d">-        {% endif %}
+</a><a href="#h5-0-24" id="h5-0-24" class="d">-      &lt;/li&gt;
+</a><a href="#h5-0-25" id="h5-0-25" class="d">-      {% endfor %}
+</a>       &lt;li&gt;
+         &lt;img
+           width=&quot;88&quot;
+<b>diff --git a/<a id="h6" href="../file/src/_includes/partials/site-head.njk.html">src/_includes/partials/site-head.njk</a> b/<a href="../file/src/_includes/partials/site-head.njk.html">src/_includes/partials/site-head.njk</a></b>
+<a href="#h6-0" id="h6-0" class="h">@@ -1,5 +1,4 @@
+</a> &lt;header role=&quot;banner&quot; class=&quot;site-head&quot;&gt;
+<a href="#h6-0-1" id="h6-0-1" class="d">-  &lt;div class=&quot;wrapper&quot;&gt;
+</a>     &lt;div class=&quot;site-head__inner&quot;&gt;
+       &lt;nav class=&quot;[ nav ] [ site-head__nav ]&quot; aria-label=&quot;Primary&quot;&gt;
+         &lt;ul class=&quot;nav__list&quot;&gt;
+<a href="#h6-1" id="h6-1" class="h">@@ -11,5 +10,4 @@
+</a>         &lt;/ul&gt;
+       &lt;/nav&gt;
+     &lt;/div&gt;
+<a href="#h6-1-3" id="h6-1-3" class="d">-  &lt;/div&gt;
+</a> &lt;/header&gt;
+<b>diff --git a/<a id="h7" href="../file/src/assets/icons/cursor.png.html">src/assets/icons/cursor.png</a> b/<a href="../file/src/assets/icons/cursor.png.html">src/assets/icons/cursor.png</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h8" href="../file/src/assets/icons/pointer.png.html">src/assets/icons/pointer.png</a> b/<a href="../file/src/assets/icons/pointer.png.html">src/assets/icons/pointer.png</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h9" href="../file/src/assets/sounds/theme.mp3.html">src/assets/sounds/theme.mp3</a> b/<a href="../file/src/assets/sounds/theme.mp3.html">src/assets/sounds/theme.mp3</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h10" href="../file/src/blog.md.html">src/blog.md</a> b/<a href="../file/src/blog.md.html">src/blog.md</a></b>
+<a href="#h10-0" id="h10-0" class="h">@@ -11,5 +11,5 @@ paginationPrevText: &#39;Newer posts&#39;
+</a> paginationNextText: &#39;Older posts&#39;
+ paginationAnchor: &#39;#post-list&#39;
+ permalink: &#39;blog{% if pagination.pageNumber &gt; 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html&#39;
+<a href="#h10-0-3" id="h10-0-3" class="d">-pageHeaderSummary: &#39;I write nonsense things&#39;
+</a><a href="#h10-0-4" id="h10-0-4" class="i">+pageHeaderSummary: &#39;I write simple things&#39;
+</a> ---
+<b>diff --git a/<a id="h11" href="../file/src/scss/base/_typography.scss.html">src/scss/base/_typography.scss</a> b/<a href="../file/src/scss/base/_typography.scss.html">src/scss/base/_typography.scss</a></b>
+<a href="#h11-0" id="h11-0" class="h">@@ -22,9 +22,9 @@ p {
+</a>
+ a {
+   transition: 0.3s;
+<a href="#h11-0-3" id="h11-0-3" class="d">-  cursor: pointer;
+</a>   color: #{get-color(&#39;Rosewater&#39;)};
+   text-decoration: underline;
+<a href="#h11-0-6" id="h11-0-6" class="i">+  cursor: url(&#39;../../assets/icons/pointer.png&#39;) 4 12, pointer;
+</a>
+   &amp;:hover {
+     background-color: #{get-color(&#39;Rosewater&#39;)};
+<b>diff --git a/<a id="h12" href="../file/src/scss/blocks/_footer.scss.html">src/scss/blocks/_footer.scss</a> b/<a href="../file/src/scss/blocks/_footer.scss.html">src/scss/blocks/_footer.scss</a></b>
+<a href="#h12-0" id="h12-0" class="h">@@ -1,53 +1,26 @@
+</a> .site-footer {
+   grid-area: footer;
+<a href="#h12-0-2" id="h12-0-2" class="d">-  height: 80px;
+</a><a href="#h12-0-3" id="h12-0-3" class="d">-  width: 100%;
+</a>   position: absolute;
+<a href="#h12-0-5" id="h12-0-5" class="d">-  bottom: 0;
+</a><a href="#h12-0-6" id="h12-0-6" class="i">+  width: 100%;
+</a><a href="#h12-0-7" id="h12-0-7" class="i">+  height: 100px;
+</a>   border-top : 1px solid #{get-color(&#39;Text&#39;)};
+<a href="#h12-0-9" id="h12-0-9" class="i">+  display: flex;
+</a><a href="#h12-0-10" id="h12-0-10" class="i">+  align-items: center;
+</a><a href="#h12-0-11" id="h12-0-11" class="i">+  justify-content: center;
+</a>
+<a href="#h12-0-13" id="h12-0-13" class="d">-  &amp;__socials {
+</a><a href="#h12-0-14" id="h12-0-14" class="d">-    ul {
+</a><a href="#h12-0-15" id="h12-0-15" class="d">-      display: flex;
+</a><a href="#h12-0-16" id="h12-0-16" class="d">-      align-items: center;
+</a><a href="#h12-0-17" id="h12-0-17" class="d">-      justify-content: center;
+</a><a href="#h12-0-18" id="h12-0-18" class="d">-      gap: 1rem;
+</a><a href="#h12-0-19" id="h12-0-19" class="d">-
+</a><a href="#h12-0-20" id="h12-0-20" class="d">-      li {
+</a><a href="#h12-0-21" id="h12-0-21" class="d">-        list-style-type: none;
+</a><a href="#h12-0-22" id="h12-0-22" class="d">-
+</a><a href="#h12-0-23" id="h12-0-23" class="d">-        a {
+</a><a href="#h12-0-24" id="h12-0-24" class="d">-
+</a><a href="#h12-0-25" id="h12-0-25" class="d">-          &amp;::before,
+</a><a href="#h12-0-26" id="h12-0-26" class="d">-          &amp;::after {
+</a><a href="#h12-0-27" id="h12-0-27" class="d">-            content: none;
+</a><a href="#h12-0-28" id="h12-0-28" class="d">-          }
+</a><a href="#h12-0-29" id="h12-0-29" class="d">-
+</a><a href="#h12-0-30" id="h12-0-30" class="d">-          .icon {
+</a><a href="#h12-0-31" id="h12-0-31" class="d">-            display: block;
+</a><a href="#h12-0-32" id="h12-0-32" class="d">-            max-width: 30px;
+</a><a href="#h12-0-33" id="h12-0-33" class="d">-            max-height: 30px;
+</a><a href="#h12-0-34" id="h12-0-34" class="d">-            object-fit: fill;
+</a><a href="#h12-0-35" id="h12-0-35" class="d">-
+</a><a href="#h12-0-36" id="h12-0-36" class="d">-          }
+</a><a href="#h12-0-37" id="h12-0-37" class="d">-
+</a><a href="#h12-0-38" id="h12-0-38" class="d">-        }
+</a><a href="#h12-0-39" id="h12-0-39" class="d">-      }
+</a><a href="#h12-0-40" id="h12-0-40" class="d">-    }
+</a><a href="#h12-0-41" id="h12-0-41" class="d">-  }
+</a>
+   &amp;__navigation {
+     display: flex;
+     flex-direction: row;
+<a href="#h12-0-46" id="h12-0-46" class="i">+    flex-wrap: wrap;
+</a>     justify-content: center;
+<a href="#h12-0-48" id="h12-0-48" class="d">-    padding-top: 1rem;
+</a>
+     &amp;__inner {
+<a href="#h12-0-51" id="h12-0-51" class="d">-      width: 100%;
+</a>       display: flex;
+<a href="#h12-0-53" id="h12-0-53" class="d">-      flex-direction: column;
+</a><a href="#h12-0-54" id="h12-0-54" class="d">-      gap: 0.8rem;
+</a><a href="#h12-0-55" id="h12-0-55" class="d">-      text-align: center;
+</a><a href="#h12-0-56" id="h12-0-56" class="i">+      flex-direction: row;
+</a><a href="#h12-0-57" id="h12-0-57" class="i">+      justify-content: space-between;
+</a><a href="#h12-0-58" id="h12-0-58" class="i">+      width: 100%;
+</a><a href="#h12-0-59" id="h12-0-59" class="i">+      gap: 1rem;
+</a>
+       li {
+         img {
+<a href="#h12-1" id="h12-1" class="h">@@ -55,11 +28,6 @@
+</a>           text-align: center;
+         }
+       }
+<a href="#h12-1-3" id="h12-1-3" class="d">-
+</a><a href="#h12-1-4" id="h12-1-4" class="d">-      @include media-query(&#39;md&#39;) {
+</a><a href="#h12-1-5" id="h12-1-5" class="d">-        flex-direction: row;
+</a><a href="#h12-1-6" id="h12-1-6" class="d">-        justify-content: space-between;
+</a><a href="#h12-1-7" id="h12-1-7" class="d">-      }
+</a>     }
+   }
+ }
+<b>diff --git a/<a id="h13" href="../file/src/scss/blocks/_header.scss.html">src/scss/blocks/_header.scss</a> b/<a href="../file/src/scss/blocks/_header.scss.html">src/scss/blocks/_header.scss</a></b>
+<a href="#h13-0" id="h13-0" class="h">@@ -1,17 +1,14 @@
+</a> .site-head {
+<a href="#h13-0-1" id="h13-0-1" class="d">-  border-right: 1px solid #{get-color(&#39;Text&#39;)};
+</a>   grid-area: sidebar;
+<a href="#h13-0-3" id="h13-0-3" class="i">+  border-right: 1px solid #{get-color(&#39;Text&#39;)};
+</a><a href="#h13-0-4" id="h13-0-4" class="i">+  border-left: 1px solid #{get-color(&#39;Text&#39;)};
+</a><a href="#h13-0-5" id="h13-0-5" class="i">+  padding: 0 0.5rem;
+</a>
+<a href="#h13-0-7" id="h13-0-7" class="d">-  &amp;__inner {
+</a><a href="#h13-0-8" id="h13-0-8" class="d">-    display: flex;
+</a><a href="#h13-0-9" id="h13-0-9" class="d">-    flex-wrap: wrap;
+</a><a href="#h13-0-10" id="h13-0-10" class="d">-    justify-content: space-between;
+</a><a href="#h13-0-11" id="h13-0-11" class="d">-    align-items: center;
+</a><a href="#h13-0-12" id="h13-0-12" class="d">-    gap: 1rem;
+</a><a href="#h13-0-13" id="h13-0-13" class="i">+  @include media-query(&quot;md&quot;) {
+</a><a href="#h13-0-14" id="h13-0-14" class="i">+    border-left:none;
+</a>   }
+
+<a href="#h13-0-17" id="h13-0-17" class="d">-  &amp;__nav {
+</a><a href="#h13-0-18" id="h13-0-18" class="d">-    padding: get-size(&#39;300&#39;) 0;
+</a><a href="#h13-0-19" id="h13-0-19" class="d">-    position: relative;
+</a><a href="#h13-0-20" id="h13-0-20" class="i">+  &amp;__inner {
+</a><a href="#h13-0-21" id="h13-0-21" class="i">+    height: 100%;
+</a>   }
+ }
+<b>diff --git a/<a id="h14" href="../file/src/scss/blocks/_intro.scss.html">src/scss/blocks/_intro.scss</a> b/<a href="../file/src/scss/blocks/_intro.scss.html">src/scss/blocks/_intro.scss</a></b>
+<a href="#h14-0" id="h14-0" class="h">@@ -35,3 +35,9 @@
+</a>     }
+   }
+ }
+<a href="#h14-0-3" id="h14-0-3" class="i">+
+</a><a href="#h14-0-4" id="h14-0-4" class="i">+.cool-stuff {
+</a><a href="#h14-0-5" id="h14-0-5" class="i">+  display: flex;
+</a><a href="#h14-0-6" id="h14-0-6" class="i">+  flex-direction: column;
+</a><a href="#h14-0-7" id="h14-0-7" class="i">+  flex-wrap: wrap;
+</a><a href="#h14-0-8" id="h14-0-8" class="i">+}
+</a><b>diff --git a/<a id="h15" href="../file/src/scss/blocks/_main-content.scss.html">src/scss/blocks/_main-content.scss</a> b/<a href="../file/src/scss/blocks/_main-content.scss.html">src/scss/blocks/_main-content.scss</a></b>
+<a href="#h15-0" id="h15-0" class="h">@@ -1,8 +1,5 @@
+</a> .main-content {
+   grid-area: content;
+   overflow-y: auto;
+<a href="#h15-0-3" id="h15-0-3" class="d">-  padding: 2rem 1rem;
+</a><a href="#h15-0-4" id="h15-0-4" class="d">-
+</a><a href="#h15-0-5" id="h15-0-5" class="d">-  @include media-query(&#39;md&#39;) {
+</a><a href="#h15-0-6" id="h15-0-6" class="d">-  }
+</a><a href="#h15-0-7" id="h15-0-7" class="i">+  padding: 1rem;
+</a> }
+<b>diff --git a/<a id="h16" href="../file/src/scss/blocks/_nav.scss.html">src/scss/blocks/_nav.scss</a> b/<a href="../file/src/scss/blocks/_nav.scss.html">src/scss/blocks/_nav.scss</a></b>
+<a href="#h16-0" id="h16-0" class="h">@@ -1,12 +1,9 @@
+</a> .nav {
+<a href="#h16-0-1" id="h16-0-1" class="d">-  line-height: 1;
+</a><a href="#h16-0-2" id="h16-0-2" class="d">-  font-weight: 600;
+</a><a href="#h16-0-3" id="h16-0-3" class="d">-
+</a>   &amp;__list {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+<a href="#h16-0-8" id="h16-0-8" class="d">-    gap: 1rem;
+</a><a href="#h16-0-9" id="h16-0-9" class="i">+    gap: 0.5rem;
+</a>
+     @include media-query(&#39;md&#39;) {
+       flex-direction: column;
+<a href="#h16-1" id="h16-1" class="h">@@ -16,7 +13,7 @@
+</a>     &gt; * {
+       padding-top: get-size(&#39;300&#39;);
+       @include media-query(&#39;md&#39;) {
+<a href="#h16-1-3" id="h16-1-3" class="d">-        padding-inline-start: get-size(&#39;400&#39;);
+</a><a href="#h16-1-4" id="h16-1-4" class="i">+        width: 6vw;
+</a>       }
+     }
+   }
+<a href="#h16-2" id="h16-2" class="h">@@ -36,6 +33,7 @@
+</a>
+     &amp;:hover{
+       color: #{get-color(&#39;Crust&#39;)};
+<a href="#h16-2-3" id="h16-2-3" class="i">+      background-color: #{get-color(&#39;Rosewater&#39;)};
+</a>     }
+
+     &amp;[data-state=&#39;active&#39;],
+<b>diff --git a/<a id="h17" href="../file/src/scss/blocks/_post-list.scss.html">src/scss/blocks/_post-list.scss</a> b/<a href="../file/src/scss/blocks/_post-list.scss.html">src/scss/blocks/_post-list.scss</a></b>
+<a href="#h17-0" id="h17-0" class="h">@@ -21,10 +21,9 @@
+</a>
+         li {
+           a {
+<a href="#h17-0-3" id="h17-0-3" class="d">-            color: #{get-color(&#39;Red&#39;)};
+</a><a href="#h17-0-4" id="h17-0-4" class="i">+            color: #{get-color(&#39;Rosewater&#39;)};
+</a>             &amp;:hover {
+<a href="#h17-0-6" id="h17-0-6" class="d">-              color: #{get-color(&#39;Blue&#39;)};
+</a><a href="#h17-0-7" id="h17-0-7" class="d">-              background-color: #{get-color(&#39;Red&#39;)};
+</a><a href="#h17-0-8" id="h17-0-8" class="i">+              color: #{get-color(&#39;Crust&#39;)};
+</a>             }
+           }
+         }
+<b>diff --git a/<a id="h18" href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a> b/<a href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a></b>
+<a href="#h18-0" id="h18-0" class="h">@@ -39,13 +39,15 @@ html {
+</a>   background-size: 150vw 150vh;
+   background-repeat: repeat;
+   font-family: &#39;Terminal&#39;, ui-serif, serif;
+<a href="#h18-0-3" id="h18-0-3" class="d">-  animation: moveBackground 20s linear infinite;
+</a><a href="#h18-0-4" id="h18-0-4" class="i">+  animation: moveBackground 30s linear infinite;
+</a><a href="#h18-0-5" id="h18-0-5" class="i">+  cursor: url(&#39;../assets/icons/cursor.png&#39;) 4 12, auto;
+</a> }
+
+ @keyframes moveBackground {
+   0% {
+     background-position: 0 0;
+   }
+<a href="#h18-0-12" id="h18-0-12" class="i">+
+</a>   100% {
+     background-position: -100vw 100vh;
+   }
+<a href="#h18-1" id="h18-1" class="h">@@ -64,26 +66,40 @@ body {
+</a> .after-body {
+   position: relative;
+   display: grid;
+<a href="#h18-1-3" id="h18-1-3" class="d">-  grid-template-columns: 150px 1fr;
+</a><a href="#h18-1-4" id="h18-1-4" class="d">-  grid-template-rows: 50px 80px 1fr 80px;
+</a><a href="#h18-1-5" id="h18-1-5" class="i">+  grid-template-columns: 1fr;
+</a><a href="#h18-1-6" id="h18-1-6" class="i">+  grid-template-rows: 30px 70px minmax(80px, auto) 1fr 100px;
+</a>   grid-template-areas:
+<a href="#h18-1-8" id="h18-1-8" class="d">-    &quot;title title&quot;
+</a><a href="#h18-1-9" id="h18-1-9" class="d">-    &quot;actions info&quot;
+</a><a href="#h18-1-10" id="h18-1-10" class="d">-    &quot;sidebar content&quot;
+</a><a href="#h18-1-11" id="h18-1-11" class="d">-    &quot;sidebar footer&quot;;
+</a><a href="#h18-1-12" id="h18-1-12" class="d">-  width: 80vw;
+</a><a href="#h18-1-13" id="h18-1-13" class="i">+    &quot;title&quot;
+</a><a href="#h18-1-14" id="h18-1-14" class="i">+    &quot;sidebar&quot;
+</a><a href="#h18-1-15" id="h18-1-15" class="i">+    &quot;info&quot;
+</a><a href="#h18-1-16" id="h18-1-16" class="i">+    &quot;content&quot;
+</a><a href="#h18-1-17" id="h18-1-17" class="i">+    &quot;footer&quot;;
+</a><a href="#h18-1-18" id="h18-1-18" class="i">+  width: 100vw;
+</a>   flex-basis: clamp(300px, 100vh, 1200px);
+   background-color: #{get-color(&#39;Base&#39;)};
+<a href="#h18-1-21" id="h18-1-21" class="d">-  box-shadow: 10px 10px #{get-color(&#39;Rosewater&#39;)};
+</a>   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+   color: #{get-color(&#39;Text&#39;)};
+   overflow: hidden;
+   outline: 2px solid #{get-color(&quot;Rosewater&quot;)};
+<a href="#h18-1-27" id="h18-1-27" class="i">+
+</a><a href="#h18-1-28" id="h18-1-28" class="i">+  @include media-query(&#39;md&#39;) {
+</a><a href="#h18-1-29" id="h18-1-29" class="i">+    grid-template-columns: 150px 1fr;
+</a><a href="#h18-1-30" id="h18-1-30" class="i">+    grid-template-rows: 50px 80px 1fr 80px;
+</a><a href="#h18-1-31" id="h18-1-31" class="i">+    grid-template-areas:
+</a><a href="#h18-1-32" id="h18-1-32" class="i">+      &quot;title title&quot;
+</a><a href="#h18-1-33" id="h18-1-33" class="i">+      &quot;actions info&quot;
+</a><a href="#h18-1-34" id="h18-1-34" class="i">+      &quot;sidebar content&quot;
+</a><a href="#h18-1-35" id="h18-1-35" class="i">+      &quot;sidebar footer&quot;;
+</a><a href="#h18-1-36" id="h18-1-36" class="i">+    width: 80vw;
+</a><a href="#h18-1-37" id="h18-1-37" class="i">+    flex-basis: clamp(300px, 100vh, 1200px);
+</a><a href="#h18-1-38" id="h18-1-38" class="i">+    box-shadow: 10px 10px #{get-color(&#39;Rosewater&#39;)};
+</a><a href="#h18-1-39" id="h18-1-39" class="i">+  }
+</a> }
+
+ .site-title {
+   display: flex;
+<a href="#h18-1-44" id="h18-1-44" class="i">+  flex-direction: column;
+</a>   align-items: center;
+   justify-content: center;
+   grid-area: title;
+<a href="#h18-2" id="h18-2" class="h">@@ -113,13 +129,21 @@ body {
+</a>
+ .site-info {
+   display: flex;
+<a href="#h18-2-3" id="h18-2-3" class="d">-  align-items: center;
+</a><a href="#h18-2-4" id="h18-2-4" class="d">-  flex-direction: row;
+</a><a href="#h18-2-5" id="h18-2-5" class="i">+  flex-direction: column;
+</a><a href="#h18-2-6" id="h18-2-6" class="i">+  align-items: flex-start;
+</a>   justify-content: space-between;
+   gap: 1rem;
+   grid-area: info;
+   padding: 1rem;
+   outline: 1px solid #{get-color(&#39;Text&#39;)};
+<a href="#h18-2-12" id="h18-2-12" class="i">+  border-right: 1px solid #{get-color(&#39;Text&#39;)};
+</a><a href="#h18-2-13" id="h18-2-13" class="i">+  border-left: 1px solid #{get-color(&#39;Text&#39;)};
+</a><a href="#h18-2-14" id="h18-2-14" class="i">+
+</a><a href="#h18-2-15" id="h18-2-15" class="i">+  @include media-query(&quot;md&quot;) {
+</a><a href="#h18-2-16" id="h18-2-16" class="i">+    border: none;
+</a><a href="#h18-2-17" id="h18-2-17" class="i">+
+</a><a href="#h18-2-18" id="h18-2-18" class="i">+  }
+</a><a href="#h18-2-19" id="h18-2-19" class="i">+
+</a>   .summary {
+     display: flex;
+     flex-grow: 1;
+<b>diff --git a/<a id="h19" href="../file/src/scss/page.scss.html">src/scss/page.scss</a> b/<a href="../file/src/scss/page.scss.html">src/scss/page.scss</a></b>
+<a href="#h19-0" id="h19-0" class="h">@@ -16,6 +16,7 @@ $generate-utility-classes: false;
+</a>
+ html {
+   background-image: url(&quot;../../assets/images/ditther.png&quot;);
+<a href="#h19-0-3" id="h19-0-3" class="i">+  cursor: url(&#39;../../assets/icons/cursor.png&#39;) 4 12, auto;
+</a> }
+
+ .site-title {
+</pre>
+</div>
+</body>
+</html>

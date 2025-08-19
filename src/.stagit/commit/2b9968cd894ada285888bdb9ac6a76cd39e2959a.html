@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>New layout - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/2b9968cd894ada285888bdb9ac6a76cd39e2959a.html">2b9968cd894ada285888bdb9ac6a76cd39e2959a</a>
+<b>parent</b> <a href="../commit/75223d710ec83bff3ed4bcd9785ab6c36d6a00d4.html">75223d710ec83bff3ed4bcd9785ab6c36d6a00d4</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Fri,  1 Aug 2025 21:15:18 -0600
+
+New layout
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">src/.DS_Store</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">src/_includes/css/critical.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h2">src/_includes/css/home.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h3">src/_includes/css/page.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h4">src/_includes/layouts/base.njk</a></td><td> | </td><td class="num">203</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d">------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h5">src/_includes/layouts/home.njk</a></td><td> | </td><td class="num">9</td><td><span class="i"></span><span class="d">---------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h6">src/_includes/partials/footer.njk</a></td><td> | </td><td class="num">61</td><td><span class="i">+++++++</span><span class="d">------------------------------------------------------</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h7">src/_includes/partials/header.njk</a></td><td> | </td><td class="num">18</td><td><span class="i">++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="D">D</td><td><a href="#h8">src/_includes/partials/page-header.njk</a></td><td> | </td><td class="num">2</td><td><span class="i"></span><span class="d">--</span></td></tr>
+<tr><td class="D">D</td><td><a href="#h9">src/_includes/partials/site-head.njk</a></td><td> | </td><td class="num">14</td><td><span class="i"></span><span class="d">--------------</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h10">src/_includes/partials/site-nav.njk</a></td><td> | </td><td class="num">23</td><td><span class="i">+++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="D">D</td><td><a href="#h11">src/_includes/partials/site-title.njk</a></td><td> | </td><td class="num">7</td><td><span class="i"></span><span class="d">-------</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h12">src/_includes/partials/topbar.njk</a></td><td> | </td><td class="num">3</td><td><span class="i">+++</span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h13">src/assets/fonts/FreePixel.ttf</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h14">src/assets/fonts/GohuFont-Bold.ttf</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h15">src/assets/fonts/GohuFont-Medium.ttf</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h16">src/assets/images/ditherbg.png</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h17">src/scss/base/_fonts.scss</a></td><td> | </td><td class="num">6</td><td><span class="i">++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h18">src/scss/blocks/_footer.scss</a></td><td> | </td><td class="num">44</td><td><span class="i">+++++++++++</span><span class="d">---------------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h19">src/scss/blocks/_header.scss</a></td><td> | </td><td class="num">24</td><td><span class="i">++++++++++++++++++</span><span class="d">------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h20">src/scss/blocks/_intro.scss</a></td><td> | </td><td class="num">38</td><td><span class="i"></span><span class="d">--------------------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h21">src/scss/blocks/_main-content.scss</a></td><td> | </td><td class="num">19</td><td><span class="i">+++++++++++++++</span><span class="d">----</span></td></tr>
+<tr><td class="D">D</td><td><a href="#h22">src/scss/blocks/_nav.scss</a></td><td> | </td><td class="num">40</td><td><span class="i"></span><span class="d">----------------------------------------</span></td></tr>
+<tr><td class="D">D</td><td><a href="#h23">src/scss/blocks/_page-header.scss</a></td><td> | </td><td class="num">13</td><td><span class="i"></span><span class="d">-------------</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h24">src/scss/blocks/_site-nav.scss</a></td><td> | </td><td class="num">38</td><td><span class="i">++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h25">src/scss/blocks/_topbar.scss</a></td><td> | </td><td class="num">10</td><td><span class="i">++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h26">src/scss/critical.scss</a></td><td> | </td><td class="num">173</td><td><span class="i">++++++++++++++++++++++++++++</span><span class="d">---------------------------------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h27">src/scss/page.scss</a></td><td> | </td><td class="num">6</td><td><span class="i">++++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h28">src/scss/utilities/_pixel-border.scss</a></td><td> | </td><td class="num">51</td><td><span class="i">+++++++++++++++++++++++++</span><span class="d">--------------------------</span></td></tr>
+</table></pre><pre>29 files changed, 388 insertions(+), 426 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/.DS_Store.html">src/.DS_Store</a> b/<a href="../file/src/.DS_Store.html">src/.DS_Store</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h1" href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a> b/<a href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -1 +1 @@
+</a><a href="#h1-0-0" id="h1-0-0" class="d">-*,:after,:before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{line-height:1.5;min-height:100vh;text-rendering:optimizeSpeed}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important}}.bg-Rosewater{background:#f4c8a5}.bg-Flamingo{background:#f2cdcd}.bg-Brid{background:#edcdbb}.bg-Pink{background:#f5c2e7}.bg-Mauve{background:#cba6f7}.bg-Red{background:#eb455c}.bg-Maroon{background:#eba0ac}.bg-Peach{background:#fab387}.bg-Yellow{background:#f9e2af}.bg-Green{background:#a6e3a1}.bg-Teal{background:#94e2d5}.bg-Sky{background:#89dceb}.bg-Sapphire{background:#74c7ec}.bg-Blue{background:#354059}.bg-Lavender{background:#b4befe}.bg-Text{background:#cad3f5}.bg-Subtext1{background:#bac2de}.bg-Subtext0{background:#a6adc8}.bg-Overlay2{background:#9399b2}.bg-Overlay1{background:#7f849c}.bg-Overlay0{background:#6c7086}.bg-Surface2{background:#585b70}.bg-Surface1{background:#45475a}.bg-Surface0{background:#313244}.bg-Base{background:#1e1e2e}.bg-Mantle{background:#181825}.bg-Crust{background:#11111b}.color-Rosewater{color:#f4c8a5}.color-Flamingo{color:#f2cdcd}.color-Brid{color:#edcdbb}.color-Pink{color:#f5c2e7}.color-Mauve{color:#cba6f7}.color-Red{color:#eb455c}.color-Maroon{color:#eba0ac}.color-Peach{color:#fab387}.color-Yellow{color:#f9e2af}.color-Green{color:#a6e3a1}.color-Teal{color:#94e2d5}.color-Sky{color:#89dceb}.color-Sapphire{color:#74c7ec}.color-Blue{color:#354059}.color-Lavender{color:#b4befe}.color-Text{color:#cad3f5}.color-Subtext1{color:#bac2de}.color-Subtext0{color:#a6adc8}.color-Overlay2{color:#9399b2}.color-Overlay1{color:#7f849c}.color-Overlay0{color:#6c7086}.color-Surface2{color:#585b70}.color-Surface1{color:#45475a}.color-Surface0{color:#313244}.color-Base{color:#1e1e2e}.color-Mantle{color:#181825}.color-Crust{color:#11111b}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:sans-serif}.font-terminal{font-family:serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.2rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-800{margin-top:2.5rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.2rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-800{margin-right:2.5rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.2rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-800{margin-bottom:2.5rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.2rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-800{margin-left:2.5rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.2rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-800{padding-top:2.5rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.2rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-800{padding-right:2.5rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.2rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-800{padding-bottom:2.5rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.2rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-800{padding-left:2.5rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.2rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-800{font-size:2.5rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.2rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-800{font-size:2.5rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.2rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-800{font-size:2.5rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.2rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-800{font-size:2.5rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}h1,h2,h3,h4,h5,h6{line-height:1.2;margin:0}h1,h2,h3,h4{font-weight:900;text-rendering:optimizeLegibility}p{line-height:1.5}a{color:#f4c8a5;cursor:url(../../assets/icons/pointer.png) 4 12,pointer;text-decoration:underline;transition:.3s}a:hover{background-color:#f4c8a5;color:#1e1e2e}::-webkit-scrollbar{background-color:#354059}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{background:#7f849c;border-radius:5px}main:focus{outline:none}:focus{outline:2px dashed #94e2d5;outline-offset:.2rem}::selection{background:#45475a}.anchor hidden{display:block}@font-face{font-family:Terminal;font-style:normal;font-weight:400;src:url(../../assets/fonts/terminal-grotesque-webfont.eot);src:url(../../assets/fonts/terminal-grotesque-webfont.eot?#iefix) format(&quot;embedded-opentype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff2) format(&quot;woff2&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff) format(&quot;woff&quot;),url(../../assets/fonts/terminal-grotesque-webfont.ttf) format(&quot;truetype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.svg#terminal_grotesqueregular) format(&quot;svg&quot;)}.wrapper{text-wrap:pretty;max-width:55ch;position:relative}.constrained{max-width:60ch;position:relative}.loose{margin-left:auto;margin-right:auto;min-width:50ch;position:relative}.pixelBorder{transform:translateZ(0)}.pixelBorder--2{box-shadow:0 -6px 0 -2px #1e1e2e,0 6px 0 -2px #1e1e2e,0 -12px 0 -4px #1e1e2e,0 12px 0 -4px #1e1e2e,0 -18px 0 -8px #1e1e2e,0 18px 0 -8px #1e1e2e,0 -24px 0 -12px #1e1e2e,0 24px 0 -12px #1e1e2e,-2px 0 0 0 #f4c8a5,2px 0 0 0 #f4c8a5,0 -4px 0 0 #f4c8a5,0 4px 0 0 #f4c8a5,0 -10px 0 -2px #f4c8a5,0 10px 0 -2px #f4c8a5,0 -14px 0 -4px #f4c8a5,0 14px 0 -4px #f4c8a5,0 -20px 0 -8px #f4c8a5,0 20px 0 -8px #f4c8a5,0 -26px 0 -12px #f4c8a5,0 26px 0 -12px #f4c8a5}.pixelBorder--4{box-shadow:0 -12px 0 -4px #1e1e2e,0 12px 0 -4px #1e1e2e,0 -24px 0 -8px #1e1e2e,0 24px 0 -8px #1e1e2e,0 -36px 0 -16px #1e1e2e,0 36px 0 -16px #1e1e2e,0 -48px 0 -24px #1e1e2e,0 48px 0 -24px #1e1e2e,-4px 0 0 0 #f4c8a5,4px 0 0 0 #f4c8a5,0 -8px 0 0 #f4c8a5,0 8px 0 0 #f4c8a5,0 -20px 0 -4px #f4c8a5,0 20px 0 -4px #f4c8a5,0 -28px 0 -8px #f4c8a5,0 28px 0 -8px #f4c8a5,0 -40px 0 -16px #f4c8a5,0 40px 0 -16px #f4c8a5,0 -52px 0 -24px #f4c8a5,0 52px 0 -24px #f4c8a5}.pixelBorder--6{box-shadow:0 -18px 0 -6px #1e1e2e,0 18px 0 -6px #1e1e2e,0 -36px 0 -12px #1e1e2e,0 36px 0 -12px #1e1e2e,0 -54px 0 -24px #1e1e2e,0 54px 0 -24px #1e1e2e,0 -72px 0 -36px #1e1e2e,0 72px 0 -36px #1e1e2e,-6px 0 0 0 #f4c8a5,6px 0 0 0 #f4c8a5,0 -12px 0 0 #f4c8a5,0 12px 0 0 #f4c8a5,0 -30px 0 -6px #f4c8a5,0 30px 0 -6px #f4c8a5,0 -42px 0 -12px #f4c8a5,0 42px 0 -12px #f4c8a5,0 -60px 0 -24px #f4c8a5,0 60px 0 -24px #f4c8a5,0 -78px 0 -36px #f4c8a5,0 78px 0 -36px #f4c8a5}.pixelBorder--10{box-shadow:0 -30px 0 -10px #1e1e2e,0 30px 0 -10px #1e1e2e,0 -60px 0 -20px #1e1e2e,0 60px 0 -20px #1e1e2e,0 -90px 0 -40px #1e1e2e,0 90px 0 -40px #1e1e2e,0 -120px 0 -60px #1e1e2e,0 120px 0 -60px #1e1e2e,-10px 0 0 0 #f4c8a5,10px 0 0 0 #f4c8a5,0 -20px 0 0 #f4c8a5,0 20px 0 0 #f4c8a5,0 -50px 0 -10px #f4c8a5,0 50px 0 -10px #f4c8a5,0 -70px 0 -20px #f4c8a5,0 70px 0 -20px #f4c8a5,0 -100px 0 -40px #f4c8a5,0 100px 0 -40px #f4c8a5,0 -130px 0 -60px #f4c8a5,0 130px 0 -60px #f4c8a5}.main-content{background-color:#1e1e2e;color:#cad3f5;grid-area:content;padding:1rem}@media (min-width:48em){.main-content{overflow-y:auto}}.main-content .content{height:100%}.site-head{background-color:#1e1e2e;color:#cad3f5;grid-area:navigation;height:fit-content;padding:0 .5rem}.site-footer{align-items:center;display:grid;gap:1rem 2rem;grid-area:footer;grid-template-columns:1fr 1fr;justify-content:center;width:100%}.site-footer__buttons{background-color:#1e1e2e;overflow:hidden;white-space:nowrap}.site-footer__buttons .scrolling{animation:marquee 2s linear infinite alternate;display:inline-block;padding-right:10px}.site-footer__buttons img{display:inline-block;height:31px;margin-right:1rem;width:81px}.site-footer__links{align-items:center;background-color:#1e1e2e;display:flex;gap:1rem;justify-content:center}@keyframes marquee{0%{transform:translateX(0)}to{transform:translateX(-100%)}}.nav__list{display:flex;flex-direction:row;flex-wrap:wrap;gap:.5rem}@media (min-width:48em){.nav__list&gt;*{width:6vw}}.nav a{color:#cad3f5;display:block;font-weight:400;padding:.2rem;position:relative;text-decoration:none}.nav a:after,.nav a:before{display:none}.nav a:hover{background-color:#f4c8a5;color:#11111b}.nav a[data-state=active],.nav a[data-state=page]{background:#f4c8a5;color:#11111b}.page-header h1{font-size:1.5rem}.page-header__summary__meta{align-items:baseline;display:flex;flex-direction:row}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack&gt;*{margin-bottom:0;margin-top:0}.stack&gt;*+*{margin-top:1.5rem;margin-top:var(--space,1.5rem)}code[class*=language-],pre[class*=language-]{background:#181825;color:#cad3f5;direction:ltr;font-family:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace;font-size:14px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.375;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre&gt;code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#f38ba8;text-shadow:none}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#f38ba8;text-shadow:none}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)&gt;code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog,.token.punctuation{color:#9399b2}.token.namespace{opacity:.7}.token.number,.token.operator,.token.tag{color:#f38ba8}.token.function,.token.property{color:#f5c2e7}.token.atrule-id,.token.selector,.token.tag-id{color:#b4befe}.token.attr-name,code.language-javascript{color:#fab387}.language-css .token.string,.language-scss .token.string,.style .token.string,.token.atrule,.token.attr-value,.token.boolean,.token.control,.token.directive,.token.entity,.token.keyword,.token.placeholder,.token.regex,.token.statement,.token.string,.token.unit,.token.url,.token.variable,code.language-css,code.language-scss{color:#f9e2af}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #b4befe;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#fab387}.token.entity{cursor:help}pre&gt;code.highlight{outline:.4em solid #cad3f5;outline-offset:.4em}.line-numbers.line-numbers .line-numbers-rows{border-right-color:#313244}.line-numbers .line-numbers-rows&gt;span:before{color:#45475a}.line-highlight.line-highlight{background:rgba(243,139,168,.2);background:-webkit-linear-gradient(left,rgba(243,139,168,.2) 70%,rgba(243,139,168,0));background:linear-gradient(90deg,rgba(243,139,168,.2) 70%,rgba(243,139,168,0))}html{background-color:#424266;background-image:url(../assets/images/bg-sample.png);background-repeat:repeat-x;background-size:100vw 100vh;cursor:url(../assets/icons/cursor.png) 4 12,auto;font-family:Terminal,Times New Roman,Times,serif;font-size:14px;margin:0;padding:0}@media (min-width:48em){html{font-size:20px}}body{align-items:center;display:flex;flex-direction:column;justify-content:flex-start}.layout,body{height:100vh;width:100vw}.layout{display:grid;gap:0;grid-template-areas:&quot;navigation&quot; &quot;header&quot; &quot;content&quot; &quot;footer &quot;;grid-template-columns:1fr;grid-template-rows:100px 80px 1fr 150px;overflow-x:hidden;padding:1rem}@media (min-width:48em){.layout{gap:2em 1em;grid-template-areas:&quot;navigation header&quot; &quot;navigation content&quot; &quot;footer footer&quot;;grid-template-columns:150px 1fr;grid-template-rows:60px 1fr 50px;height:calc(100vh - 25ch);width:80ch}}.page-header{background-color:#1e1e2e;border-top-left-radius:5px;border-top-right-radius:5px;display:flex;gap:1rem;margin:1rem 0}.page-header h2{font-size:3rem}.page-header img{display:inline-block;width:80px}.site-info{align-items:flex-start;background-color:#1e1e2e;color:#cad3f5;display:flex;flex-direction:row;grid-area:header;height:fit-content;justify-content:space-between;padding:0 1rem}.site-info .summary{align-items:center;display:flex;flex-grow:1;font-size:13px;gap:1rem;justify-content:flex-start}pre{font-size:.825rem!important}table{border-collapse:collapse;font-size:1rem;font-size:.9rem;margin:.5rem 0;width:80%}caption,td,th{padding:.5rem}caption,th{text-align:left}th{background-color:#f4c8a5;color:#000}td{border:1px solid #cad3f5;text-align:center}.warmup{color:#edcdbb}.failure{color:#eb455c}
+</a><a href="#h1-0-1" id="h1-0-1" class="d">-\ No newline at end of file
+</a><a href="#h1-0-2" id="h1-0-2" class="i">+*,:after,:before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{line-height:1.5;min-height:100vh;text-rendering:optimizeSpeed}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important}}.bg-Rosewater{background:#f4c8a5}.bg-Flamingo{background:#f2cdcd}.bg-Brid{background:#edcdbb}.bg-Pink{background:#f5c2e7}.bg-Mauve{background:#cba6f7}.bg-Red{background:#eb455c}.bg-Maroon{background:#eba0ac}.bg-Peach{background:#fab387}.bg-Yellow{background:#f9e2af}.bg-Green{background:#a6e3a1}.bg-Teal{background:#94e2d5}.bg-Sky{background:#89dceb}.bg-Sapphire{background:#74c7ec}.bg-Blue{background:#354059}.bg-Lavender{background:#b4befe}.bg-Text{background:#cad3f5}.bg-Subtext1{background:#bac2de}.bg-Subtext0{background:#a6adc8}.bg-Overlay2{background:#9399b2}.bg-Overlay1{background:#7f849c}.bg-Overlay0{background:#6c7086}.bg-Surface2{background:#585b70}.bg-Surface1{background:#45475a}.bg-Surface0{background:#313244}.bg-Base{background:#1e1e2e}.bg-Mantle{background:#181825}.bg-Crust{background:#11111b}.color-Rosewater{color:#f4c8a5}.color-Flamingo{color:#f2cdcd}.color-Brid{color:#edcdbb}.color-Pink{color:#f5c2e7}.color-Mauve{color:#cba6f7}.color-Red{color:#eb455c}.color-Maroon{color:#eba0ac}.color-Peach{color:#fab387}.color-Yellow{color:#f9e2af}.color-Green{color:#a6e3a1}.color-Teal{color:#94e2d5}.color-Sky{color:#89dceb}.color-Sapphire{color:#74c7ec}.color-Blue{color:#354059}.color-Lavender{color:#b4befe}.color-Text{color:#cad3f5}.color-Subtext1{color:#bac2de}.color-Subtext0{color:#a6adc8}.color-Overlay2{color:#9399b2}.color-Overlay1{color:#7f849c}.color-Overlay0{color:#6c7086}.color-Surface2{color:#585b70}.color-Surface1{color:#45475a}.color-Surface0{color:#313244}.color-Base{color:#1e1e2e}.color-Mantle{color:#181825}.color-Crust{color:#11111b}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:sans-serif}.font-terminal{font-family:serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.2rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-800{margin-top:2.5rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.2rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-800{margin-right:2.5rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.2rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-800{margin-bottom:2.5rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.2rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-800{margin-left:2.5rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.2rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-800{padding-top:2.5rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.2rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-800{padding-right:2.5rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.2rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-800{padding-bottom:2.5rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.2rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-800{padding-left:2.5rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.2rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-800{font-size:2.5rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.2rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-800{font-size:2.5rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.2rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-800{font-size:2.5rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.2rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-800{font-size:2.5rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}h1,h2,h3,h4,h5,h6{line-height:1.2;margin:0}h1,h2,h3,h4{font-weight:900;text-rendering:optimizeLegibility}p{line-height:1.5}a{color:#f4c8a5;cursor:url(../../assets/icons/pointer.png) 4 12,pointer;text-decoration:underline;transition:.3s}a:hover{background-color:#f4c8a5;color:#1e1e2e}::-webkit-scrollbar{background-color:#354059}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{background:#7f849c;border-radius:5px}main:focus{outline:none}:focus{outline:2px dashed #94e2d5;outline-offset:.2rem}::selection{background:#45475a}.anchor hidden{display:block}@font-face{font-family:Terminal;font-style:normal;font-weight:400;src:url(../../assets/fonts/terminal-grotesque-webfont.eot);src:url(../../assets/fonts/terminal-grotesque-webfont.eot?#iefix) format(&quot;embedded-opentype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff2) format(&quot;woff2&quot;),url(../../assets/fonts/terminal-grotesque-webfont.woff) format(&quot;woff&quot;),url(../../assets/fonts/terminal-grotesque-webfont.ttf) format(&quot;truetype&quot;),url(../../assets/fonts/terminal-grotesque-webfont.svg#terminal_grotesqueregular) format(&quot;svg&quot;)}@font-face{font-family:FreePixel;src:url(https://sadhost.neocities.org/fonts/FreePixel.ttf) format(&quot;truetype&quot;)}.wrapper{text-wrap:pretty;max-width:55ch;position:relative}.constrained{max-width:60ch;position:relative}.loose{margin-left:auto;margin-right:auto;min-width:50ch;position:relative}.pixelBorder{display:inline-block;padding:1rem;transform:translateZ(0)}.pixelBorder--2{background-color:#f3d6b6;box-shadow:-2px -2px 0 0 #fff1de,0 -2px 0 0 #fff1de,-2px 0 0 0 #fff1de,2px 0 0 0 #ac7d75,0 2px 0 0 #ac7d75,2px 2px 0 0 #ac7d75,-4px -4px 0 0 #754d46,4px -4px 0 0 #754d46,-4px 4px 0 0 #754d46,4px 4px 0 0 #754d46}.pixelBorder--4{background-color:#f3d6b6;box-shadow:-4px -4px 0 0 #fff1de,0 -4px 0 0 #fff1de,-4px 0 0 0 #fff1de,4px 0 0 0 #ac7d75,0 4px 0 0 #ac7d75,4px 4px 0 0 #ac7d75,-8px -8px 0 0 #754d46,8px -8px 0 0 #754d46,-8px 8px 0 0 #754d46,8px 8px 0 0 #754d46}.pixelBorder--6{background-color:#f3d6b6;box-shadow:-6px -6px 0 0 #fff1de,0 -6px 0 0 #fff1de,-6px 0 0 0 #fff1de,6px 0 0 0 #ac7d75,0 6px 0 0 #ac7d75,6px 6px 0 0 #ac7d75,-12px -12px 0 0 #754d46,12px -12px 0 0 #754d46,-12px 12px 0 0 #754d46,12px 12px 0 0 #754d46}.pixelBorder--10{background-color:#f3d6b6;box-shadow:-10px -10px 0 0 #fff1de,0 -10px 0 0 #fff1de,-10px 0 0 0 #fff1de,10px 0 0 0 #ac7d75,0 10px 0 0 #ac7d75,10px 10px 0 0 #ac7d75,-20px -20px 0 0 #754d46,20px -20px 0 0 #754d46,-20px 20px 0 0 #754d46,20px 20px 0 0 #754d46}.topbar{background-color:#cba6f7;grid-area:topbar;height:30px;justify-content:flex-start;padding:1rem}.header,.topbar{align-items:center;display:flex;width:100%}.header{background-color:#1e1e2e;background-image:url(../../assets/images/ditther.png);background-size:100vw;grid-area:header;height:120px;justify-content:center;margin-top:-7px}.header img{width:80px}.header h2{font-size:10px}.site-nav{align-self:start;background-color:#1e1e2e;color:#cad3f5;grid-area:navigation;height:auto;position:sticky;top:0}.site-nav .nav__list{display:flex;flex-direction:column;flex-wrap:wrap;gap:.5rem;margin-left:1rem;margin-top:1rem}.site-nav .nav a{background-color:none;color:#f4c8a5;display:block;position:relative;text-decoration:underline}.site-nav .nav a:after{content:&quot;/&quot;;display:inline-block}.main-content,.site-nav .nav a:hover{background-color:#1e1e2e}.main-content{color:#cad3f5;grid-area:content}.main-content .title-content{background-color:#b4befe;background-image:url(../../assets/images/dit.png);background-repeat:no-repeat;color:#1e1e2e;display:flex;flex-direction:column;font-size:1.5rem}.main-content .title-content .summary,.main-content .title-content .title{margin-left:1rem}.main-content .content{padding:1rem}.site-footer{align-items:center;background-color:#1e1e2e;display:flex;flex-direction:column;grid-area:footer;justify-content:center;margin-top:1rem;width:100%}.site-footer__links,.site-footer__webring{align-content:center;align-items:center;display:flex;gap:1rem}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack&gt;*{margin-bottom:0;margin-top:0}.stack&gt;*+*{margin-top:1.5rem;margin-top:var(--space,1.5rem)}code[class*=language-],pre[class*=language-]{background:#181825;color:#cad3f5;direction:ltr;font-family:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace;font-size:14px;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.375;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre&gt;code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#f38ba8;text-shadow:none}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#f38ba8;text-shadow:none}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)&gt;code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog,.token.punctuation{color:#9399b2}.token.namespace{opacity:.7}.token.number,.token.operator,.token.tag{color:#f38ba8}.token.function,.token.property{color:#f5c2e7}.token.atrule-id,.token.selector,.token.tag-id{color:#b4befe}.token.attr-name,code.language-javascript{color:#fab387}.language-css .token.string,.language-scss .token.string,.style .token.string,.token.atrule,.token.attr-value,.token.boolean,.token.control,.token.directive,.token.entity,.token.keyword,.token.placeholder,.token.regex,.token.statement,.token.string,.token.unit,.token.url,.token.variable,code.language-css,code.language-scss{color:#f9e2af}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #b4befe;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#fab387}.token.entity{cursor:help}pre&gt;code.highlight{outline:.4em solid #cad3f5;outline-offset:.4em}.line-numbers.line-numbers .line-numbers-rows{border-right-color:#313244}.line-numbers .line-numbers-rows&gt;span:before{color:#45475a}.line-highlight.line-highlight{background:rgba(243,139,168,.2);background:-webkit-linear-gradient(left,rgba(243,139,168,.2) 70%,rgba(243,139,168,0));background:linear-gradient(90deg,rgba(243,139,168,.2) 70%,rgba(243,139,168,0))}html{background-attachment:fixed;background-blend-mode:luminosity;background-color:#11111b;background-image:url(../assets/images/bg-sample.png);background-repeat:repeat;background-size:100vw 100vh;cursor:url(../assets/icons/cursor.png) 4 12,auto;font-family:FreePixel;font-size:18px;margin:0;padding:0}.ascii{background-attachment:fixed;color:#fff;font-size:5px;line-height:1}body{margin:0 0 20px;padding:0}.layout{display:grid;gap:1rem;grid-template-areas:&quot;topbar topbar&quot; &quot;header header&quot; &quot;content navigation&quot; &quot;footer footer&quot;;grid-template-columns:1fr 200px;grid-template-rows:auto auto auto auto;margin:0 auto;max-width:900px}.ascii{color:#cad3f5;font-family:monospace,Courier New,Courier;font-size:10px;line-height:.9;overflow-x:auto;padding:1rem;white-space:pre}
+</a><a href="#h1-0-3" id="h1-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h2" href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a> b/<a href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a></b>
+<a href="#h2-0" id="h2-0" class="h">@@ -1 +1 @@
+</a><a href="#h2-0-0" id="h2-0-0" class="d">-.intro__title{font-size:3rem;font-weight:400;line-height:1.15}.intro__title .favicon{display:inline-block;max-height:50px;max-width:50px;object-fit:cover}@media (min-width:48em){.intro__title{font-size:3rem}}.intro__description{max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;flex-wrap:wrap;font-size:1.2rem;gap:1rem}.cool-stuff{display:flex;flex-direction:column;flex-wrap:wrap}.socials{align-items:center;margin-top:-2rem}.socials,.socials ul{display:flex;flex-direction:row;justify-content:flex-start}.socials ul{gap:1rem;list-style-type:none;margin-left:-1rem}.outsiders{align-items:center;display:flex;flex-direction:column;gap:2rem;justify-content:space-between}@media (min-width:48em){.outsiders{flex-direction:row}}.outsiders iframe{width:100%}@media (min-width:48em){.outsiders iframe{width:30vw}}.outsiders div{margin:0 auto}.u-photo{display:none}.ring{align-items:flex-end;bottom:0;display:flex;font-size:16px;gap:1rem;justify-content:flex-start;position:absolute}audio{background:linear-gradient(180deg,#cef,#9cf);border:2px solid #6eb4ff;border-radius:12px;box-shadow:inset 0 1px 3px hsla(0,0%,100%,.6),0 4px 8px rgba(0,0,0,.2);height:40px;margin:10px 0;padding:4px;width:320px}audio::-webkit-media-controls-panel{background:linear-gradient(180deg,#e0f7ff,#a3d4ff);border-radius:10px}audio::-webkit-media-controls-play-button{background-color:#5ebeff;border-radius:50%;box-shadow:0 0 4px rgba(0,120,200,.8)}audio::-webkit-media-controls-play-button:hover{background-color:#72d0ff}audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls-time-remaining-display{color:#036;font-weight:700;text-shadow:0 1px 1px #fff}audio::-webkit-media-controls-timeline{background-color:#cce7ff;border-radius:4px}audio::-webkit-media-controls-volume-slider{background-color:#d0ecff;border-radius:4px}.feature-post{padding-bottom:1.2rem;padding-top:1.2rem}.feature-post__title{color:#eb455c;font-size:1.6rem}.feature-post__list{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:var(--text-heading-color)}.featured-article__meta__tags:hover{background-color:var(--text-heading-color);color:var(--bg-color)}.featured-article__title{color:#354059;font-family:serif;font-size:1.2rem;text-decoration-color:#354059}.featured-article__excerpt{display:block;font-size:1rem}
+</a><a href="#h2-0-1" id="h2-0-1" class="d">-\ No newline at end of file
+</a><a href="#h2-0-2" id="h2-0-2" class="i">+.intro__title{font-size:3rem;font-weight:400;line-height:1.15}.intro__title .favicon{display:inline-block;max-height:50px;max-width:50px;object-fit:cover}@media (min-width:48em){.intro__title{font-size:3rem}}.intro__description{max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;flex-wrap:wrap;font-size:1.2rem;gap:1rem}.cool-stuff{display:flex;flex-direction:column;flex-wrap:wrap}.socials{align-items:center;margin-top:-2rem}.socials,.socials ul{display:flex;flex-direction:row;justify-content:flex-start}.socials ul{gap:1rem;list-style-type:none;margin-left:-1rem}audio{background:linear-gradient(180deg,#cef,#9cf);border:2px solid #6eb4ff;border-radius:12px;box-shadow:inset 0 1px 3px hsla(0,0%,100%,.6),0 4px 8px rgba(0,0,0,.2);height:40px;margin:10px 0;padding:4px;width:320px}audio::-webkit-media-controls-panel{background:linear-gradient(180deg,#e0f7ff,#a3d4ff);border-radius:10px}audio::-webkit-media-controls-play-button{background-color:#5ebeff;border-radius:50%;box-shadow:0 0 4px rgba(0,120,200,.8)}audio::-webkit-media-controls-play-button:hover{background-color:#72d0ff}audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls-time-remaining-display{color:#036;font-weight:700;text-shadow:0 1px 1px #fff}audio::-webkit-media-controls-timeline{background-color:#cce7ff;border-radius:4px}audio::-webkit-media-controls-volume-slider{background-color:#d0ecff;border-radius:4px}.feature-post{padding-bottom:1.2rem;padding-top:1.2rem}.feature-post__title{color:#eb455c;font-size:1.6rem}.feature-post__list{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:var(--text-heading-color)}.featured-article__meta__tags:hover{background-color:var(--text-heading-color);color:var(--bg-color)}.featured-article__title{color:#354059;font-family:serif;font-size:1.2rem;text-decoration-color:#354059}.featured-article__excerpt{display:block;font-size:1rem}
+</a><a href="#h2-0-3" id="h2-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h3" href="../file/src/_includes/css/page.css.html">src/_includes/css/page.css</a> b/<a href="../file/src/_includes/css/page.css.html">src/_includes/css/page.css</a></b>
+<a href="#h3-0" id="h3-0" class="h">@@ -1 +1 @@
+</a><a href="#h3-0-0" id="h3-0-0" class="d">-.post-list__item{padding:1rem 0}.post-list__item__link{font-size:1.2rem}.post-list__item__info{display:flex;font-size:1rem}.post-list__item__info__excerpt{margin-top:-.5rem}.post-list__item__info__tags{display:flex;gap:.5rem;height:100%}.post-list__item__info__tags li a{color:#f4c8a5}.post-list__item__info__tags li a:hover{color:#11111b}.tag-list{display:flex;flex-direction:row;gap:.5rem;list-style-type:none}.page-content{font-size:1rem!important}.page-content__post-title{font-size:3rem!important}.page-content blockquote{background-color:#11111b;border-left:2px solid var(--link-hover-color);box-shadow:5px 5px #cad3f5;color:#f4c8a5;text-align:left}.page-content blockquote p{font-size:.9rem;padding-left:.8rem}.page-content h1{color:var(--feature-post-color)}.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6{font-weight:400;position:relative;text-indent:-3px}.page-content h2{font-size:2rem}.page-content h3{font-size:1.2rem}.page-content ol,.page-content ul{padding-inline-start:3rem}.page-content li+li{margin-top:.8rem}.page-content h2,.page-content h3{--flow-space:3rem;margin-bottom:.8rem;margin-top:.8rem}.page-content h2+*,.page-content h3+*{--flow-space:0.8rem}.page-content p{line-height:1.5;margin-bottom:1.2rem;margin-top:1.2rem}.page-content .header-anchor{visibility:hidden}.page-content figcaption{background-color:#11111b;font-size:1rem;padding:.2rem 0;text-align:center}.page-content li::marker{color:var(--feature-post-color)}@media screen and (hover:hover){.page-content h2:focus .header-anchor,.page-content h2:hover .header-anchor,.page-content h3:focus .header-anchor,.page-content h3:hover .header-anchor,.page-content h4:focus .header-anchor,.page-content h4:hover .header-anchor,.page-content h5:focus .header-anchor,.page-content h5:hover .header-anchor,.page-content h6:focus .header-anchor,.page-content h6:hover .header-anchor{visibility:visible}}.screen-reader-only{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.books-list{flex-wrap:wrap}.books-list,.books-list__item{display:flex;flex-direction:column}.books-list__item p{font-size:1rem}html{background-color:#424266;background-image:url(../../assets/images/bg-sample.png);background-repeat:repeat-x;background-size:100vw 100vh;cursor:url(../../assets/icons/cursor.png) 4 12,auto}
+</a><a href="#h3-0-1" id="h3-0-1" class="d">-\ No newline at end of file
+</a><a href="#h3-0-2" id="h3-0-2" class="i">+.post-list__item{padding:1rem 0}.post-list__item__link{font-size:1.2rem}.post-list__item__info{display:flex;font-size:1rem}.post-list__item__info__excerpt{margin-top:-.5rem}.post-list__item__info__tags{display:flex;gap:.5rem;height:100%}.post-list__item__info__tags li a{color:#f4c8a5}.post-list__item__info__tags li a:hover{color:#11111b}.tag-list{display:flex;flex-direction:row;gap:.5rem;list-style-type:none}.page-content{font-size:1rem!important}.page-content__post-title{font-size:3rem!important}.page-content blockquote{background-color:#11111b;border-left:2px solid var(--link-hover-color);box-shadow:5px 5px #cad3f5;color:#f4c8a5;text-align:left}.page-content blockquote p{font-size:.9rem;padding-left:.8rem}.page-content h1{color:var(--feature-post-color)}.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6{font-weight:400;position:relative;text-indent:-3px}.page-content h2{font-size:2rem}.page-content h3{font-size:1.2rem}.page-content ol,.page-content ul{padding-inline-start:3rem}.page-content li+li{margin-top:.8rem}.page-content h2,.page-content h3{--flow-space:3rem;margin-bottom:.8rem;margin-top:.8rem}.page-content h2+*,.page-content h3+*{--flow-space:0.8rem}.page-content p{line-height:1.5;margin-bottom:1.2rem;margin-top:1.2rem}.page-content .header-anchor{visibility:hidden}.page-content figcaption{background-color:#11111b;font-size:1rem;padding:.2rem 0;text-align:center}.page-content li::marker{color:var(--feature-post-color)}@media screen and (hover:hover){.page-content h2:focus .header-anchor,.page-content h2:hover .header-anchor,.page-content h3:focus .header-anchor,.page-content h3:hover .header-anchor,.page-content h4:focus .header-anchor,.page-content h4:hover .header-anchor,.page-content h5:focus .header-anchor,.page-content h5:hover .header-anchor,.page-content h6:focus .header-anchor,.page-content h6:hover .header-anchor{visibility:visible}}.screen-reader-only{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.books-list{flex-wrap:wrap}.books-list,.books-list__item{display:flex;flex-direction:column}.books-list__item p{font-size:1rem}html{background-attachment:fixed;background-blend-mode:luminosity;background-color:#11111b;background-image:url(../../assets/images/bg-sample.png);background-repeat:no-repeat;background-size:100vw 100vh;cursor:url(../../assets/icons/cursor.png) 4 12,auto}
+</a><a href="#h3-0-3" id="h3-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h4" href="../file/src/_includes/layouts/base.njk.html">src/_includes/layouts/base.njk</a> b/<a href="../file/src/_includes/layouts/base.njk.html">src/_includes/layouts/base.njk</a></b>
+<a href="#h4-0" id="h4-0" class="h">@@ -1,68 +1,151 @@
+</a> {% set assetHash = global.random() %}
+ &lt;!DOCTYPE html&gt;
+<a href="#h4-0-2" id="h4-0-2" class="d">-&lt;html lang=&quot;en&quot; data-theme=&#39;dark&#39;&gt;
+</a><a href="#h4-0-3" id="h4-0-3" class="d">-    &lt;head&gt;
+</a><a href="#h4-0-4" id="h4-0-4" class="d">-        &lt;meta charset=&quot;UTF-8&quot;&gt;
+</a><a href="#h4-0-5" id="h4-0-5" class="d">-        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+</a><a href="#h4-0-6" id="h4-0-6" class="d">-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</a><a href="#h4-0-7" id="h4-0-7" class="d">-        &lt;title&gt;{{title}}&lt;/title&gt;
+</a><a href="#h4-0-8" id="h4-0-8" class="d">-        &lt;style&gt;
+</a><a href="#h4-0-9" id="h4-0-9" class="d">-            {% include &quot;css/critical.css&quot; %}
+</a><a href="#h4-0-10" id="h4-0-10" class="d">-        &lt;/style&gt;
+</a><a href="#h4-0-11" id="h4-0-11" class="i">+&lt;html lang=&quot;en&quot; data-theme=&quot;dark&quot;&gt;
+</a><a href="#h4-0-12" id="h4-0-12" class="i">+  &lt;head&gt;
+</a><a href="#h4-0-13" id="h4-0-13" class="i">+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+</a><a href="#h4-0-14" id="h4-0-14" class="i">+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+</a><a href="#h4-0-15" id="h4-0-15" class="i">+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+</a><a href="#h4-0-16" id="h4-0-16" class="i">+    &lt;title&gt;{{title}}&lt;/title&gt;
+</a><a href="#h4-0-17" id="h4-0-17" class="i">+    &lt;style&gt;
+</a><a href="#h4-0-18" id="h4-0-18" class="i">+      {% include &quot;css/critical.css&quot; %}
+</a><a href="#h4-0-19" id="h4-0-19" class="i">+    &lt;/style&gt;
+</a>
+<a href="#h4-0-21" id="h4-0-21" class="d">-        &lt;link rel=&quot;preload&quot; href=&quot;/assets/fonts/terminal-grotesque-webfont.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin=&quot;anonymous&quot;&gt;
+</a><a href="#h4-0-22" id="h4-0-22" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-57x57.png&#39; | url}}&quot;&gt;
+</a><a href="#h4-0-23" id="h4-0-23" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;60x60&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-60x60.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-24" id="h4-0-24" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-72x72.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-25" id="h4-0-25" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;76x76&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-76x76.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-26" id="h4-0-26" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-114x114.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-27" id="h4-0-27" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;120x120&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-120x120.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-28" id="h4-0-28" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-144x144.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-29" id="h4-0-29" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;152x152&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-152x152.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-30" id="h4-0-30" class="d">-        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;{{&#39;/assets/favicon/apple-icon-180x180.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-31" id="h4-0-31" class="d">-        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;192x192&quot;  href=&quot;{{&#39;/assets/favicon/android-icon-192x192.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-32" id="h4-0-32" class="d">-        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;{{&#39;/assets/favicon/favicon-32x32.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-33" id="h4-0-33" class="d">-        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;96x96&quot; href=&quot;{{&#39;/assets/favicon/favicon-96x96.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-34" id="h4-0-34" class="d">-        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;{{&#39;/assets/favicon/favicon-16x16.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-35" id="h4-0-35" class="d">-        &lt;link rel=&quot;manifest&quot; href=&quot;{{&#39;/assets/favicon/manifest.json&#39; | url }} &quot;&gt;
+</a><a href="#h4-0-36" id="h4-0-36" class="d">-        &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#ffffff&quot;&gt;
+</a><a href="#h4-0-37" id="h4-0-37" class="d">-        &lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;{{&#39;/assets/favicon/ms-icon-144x144.png&#39; | url }}&quot;&gt;
+</a><a href="#h4-0-38" id="h4-0-38" class="d">-        &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+</a><a href="#h4-0-39" id="h4-0-39" class="i">+    &lt;link
+</a><a href="#h4-0-40" id="h4-0-40" class="i">+      rel=&quot;preload&quot;
+</a><a href="#h4-0-41" id="h4-0-41" class="i">+      href=&quot;/assets/fonts/terminal-grotesque-webfont.woff2&quot;
+</a><a href="#h4-0-42" id="h4-0-42" class="i">+      as=&quot;font&quot;
+</a><a href="#h4-0-43" id="h4-0-43" class="i">+      type=&quot;font/woff2&quot;
+</a><a href="#h4-0-44" id="h4-0-44" class="i">+      crossorigin=&quot;anonymous&quot;
+</a><a href="#h4-0-45" id="h4-0-45" class="i">+    /&gt;
+</a><a href="#h4-0-46" id="h4-0-46" class="i">+    &lt;link
+</a><a href="#h4-0-47" id="h4-0-47" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-48" id="h4-0-48" class="i">+      sizes=&quot;57x57&quot;
+</a><a href="#h4-0-49" id="h4-0-49" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-57x57.png&#39; | url}}&quot;
+</a><a href="#h4-0-50" id="h4-0-50" class="i">+    /&gt;
+</a><a href="#h4-0-51" id="h4-0-51" class="i">+    &lt;link
+</a><a href="#h4-0-52" id="h4-0-52" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-53" id="h4-0-53" class="i">+      sizes=&quot;60x60&quot;
+</a><a href="#h4-0-54" id="h4-0-54" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-60x60.png&#39; | url }}&quot;
+</a><a href="#h4-0-55" id="h4-0-55" class="i">+    /&gt;
+</a><a href="#h4-0-56" id="h4-0-56" class="i">+    &lt;link
+</a><a href="#h4-0-57" id="h4-0-57" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-58" id="h4-0-58" class="i">+      sizes=&quot;72x72&quot;
+</a><a href="#h4-0-59" id="h4-0-59" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-72x72.png&#39; | url }}&quot;
+</a><a href="#h4-0-60" id="h4-0-60" class="i">+    /&gt;
+</a><a href="#h4-0-61" id="h4-0-61" class="i">+    &lt;link
+</a><a href="#h4-0-62" id="h4-0-62" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-63" id="h4-0-63" class="i">+      sizes=&quot;76x76&quot;
+</a><a href="#h4-0-64" id="h4-0-64" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-76x76.png&#39; | url }}&quot;
+</a><a href="#h4-0-65" id="h4-0-65" class="i">+    /&gt;
+</a><a href="#h4-0-66" id="h4-0-66" class="i">+    &lt;link
+</a><a href="#h4-0-67" id="h4-0-67" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-68" id="h4-0-68" class="i">+      sizes=&quot;114x114&quot;
+</a><a href="#h4-0-69" id="h4-0-69" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-114x114.png&#39; | url }}&quot;
+</a><a href="#h4-0-70" id="h4-0-70" class="i">+    /&gt;
+</a><a href="#h4-0-71" id="h4-0-71" class="i">+    &lt;link
+</a><a href="#h4-0-72" id="h4-0-72" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-73" id="h4-0-73" class="i">+      sizes=&quot;120x120&quot;
+</a><a href="#h4-0-74" id="h4-0-74" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-120x120.png&#39; | url }}&quot;
+</a><a href="#h4-0-75" id="h4-0-75" class="i">+    /&gt;
+</a><a href="#h4-0-76" id="h4-0-76" class="i">+    &lt;link
+</a><a href="#h4-0-77" id="h4-0-77" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-78" id="h4-0-78" class="i">+      sizes=&quot;144x144&quot;
+</a><a href="#h4-0-79" id="h4-0-79" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-144x144.png&#39; | url }}&quot;
+</a><a href="#h4-0-80" id="h4-0-80" class="i">+    /&gt;
+</a><a href="#h4-0-81" id="h4-0-81" class="i">+    &lt;link
+</a><a href="#h4-0-82" id="h4-0-82" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-83" id="h4-0-83" class="i">+      sizes=&quot;152x152&quot;
+</a><a href="#h4-0-84" id="h4-0-84" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-152x152.png&#39; | url }}&quot;
+</a><a href="#h4-0-85" id="h4-0-85" class="i">+    /&gt;
+</a><a href="#h4-0-86" id="h4-0-86" class="i">+    &lt;link
+</a><a href="#h4-0-87" id="h4-0-87" class="i">+      rel=&quot;apple-touch-icon&quot;
+</a><a href="#h4-0-88" id="h4-0-88" class="i">+      sizes=&quot;180x180&quot;
+</a><a href="#h4-0-89" id="h4-0-89" class="i">+      href=&quot;{{&#39;/assets/favicon/apple-icon-180x180.png&#39; | url }}&quot;
+</a><a href="#h4-0-90" id="h4-0-90" class="i">+    /&gt;
+</a><a href="#h4-0-91" id="h4-0-91" class="i">+    &lt;link
+</a><a href="#h4-0-92" id="h4-0-92" class="i">+      rel=&quot;icon&quot;
+</a><a href="#h4-0-93" id="h4-0-93" class="i">+      type=&quot;image/png&quot;
+</a><a href="#h4-0-94" id="h4-0-94" class="i">+      sizes=&quot;192x192&quot;
+</a><a href="#h4-0-95" id="h4-0-95" class="i">+      href=&quot;{{&#39;/assets/favicon/android-icon-192x192.png&#39; | url }}&quot;
+</a><a href="#h4-0-96" id="h4-0-96" class="i">+    /&gt;
+</a><a href="#h4-0-97" id="h4-0-97" class="i">+    &lt;link
+</a><a href="#h4-0-98" id="h4-0-98" class="i">+      rel=&quot;icon&quot;
+</a><a href="#h4-0-99" id="h4-0-99" class="i">+      type=&quot;image/png&quot;
+</a><a href="#h4-0-100" id="h4-0-100" class="i">+      sizes=&quot;32x32&quot;
+</a><a href="#h4-0-101" id="h4-0-101" class="i">+      href=&quot;{{&#39;/assets/favicon/favicon-32x32.png&#39; | url }}&quot;
+</a><a href="#h4-0-102" id="h4-0-102" class="i">+    /&gt;
+</a><a href="#h4-0-103" id="h4-0-103" class="i">+    &lt;link
+</a><a href="#h4-0-104" id="h4-0-104" class="i">+      rel=&quot;icon&quot;
+</a><a href="#h4-0-105" id="h4-0-105" class="i">+      type=&quot;image/png&quot;
+</a><a href="#h4-0-106" id="h4-0-106" class="i">+      sizes=&quot;96x96&quot;
+</a><a href="#h4-0-107" id="h4-0-107" class="i">+      href=&quot;{{&#39;/assets/favicon/favicon-96x96.png&#39; | url }}&quot;
+</a><a href="#h4-0-108" id="h4-0-108" class="i">+    /&gt;
+</a><a href="#h4-0-109" id="h4-0-109" class="i">+    &lt;link
+</a><a href="#h4-0-110" id="h4-0-110" class="i">+      rel=&quot;icon&quot;
+</a><a href="#h4-0-111" id="h4-0-111" class="i">+      type=&quot;image/png&quot;
+</a><a href="#h4-0-112" id="h4-0-112" class="i">+      sizes=&quot;16x16&quot;
+</a><a href="#h4-0-113" id="h4-0-113" class="i">+      href=&quot;{{&#39;/assets/favicon/favicon-16x16.png&#39; | url }}&quot;
+</a><a href="#h4-0-114" id="h4-0-114" class="i">+    /&gt;
+</a><a href="#h4-0-115" id="h4-0-115" class="i">+    &lt;link rel=&quot;manifest&quot; href=&quot;{{&#39;/assets/favicon/manifest.json&#39; | url }} &quot; /&gt;
+</a><a href="#h4-0-116" id="h4-0-116" class="i">+    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#ffffff&quot; /&gt;
+</a><a href="#h4-0-117" id="h4-0-117" class="i">+    &lt;meta
+</a><a href="#h4-0-118" id="h4-0-118" class="i">+      name=&quot;msapplication-TileImage&quot;
+</a><a href="#h4-0-119" id="h4-0-119" class="i">+      content=&quot;{{&#39;/assets/favicon/ms-icon-144x144.png&#39; | url }}&quot;
+</a><a href="#h4-0-120" id="h4-0-120" class="i">+    /&gt;
+</a><a href="#h4-0-121" id="h4-0-121" class="i">+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+</a>
+<a href="#h4-0-123" id="h4-0-123" class="d">-        {# Add facility for pages to delare an array of critical styles #}
+</a><a href="#h4-0-124" id="h4-0-124" class="d">-        {% if pageCriticalStyles %}
+</a><a href="#h4-0-125" id="h4-0-125" class="d">-            {% for item in pageCriticalStyles %}
+</a><a href="#h4-0-126" id="h4-0-126" class="d">-                &lt;style&gt;
+</a><a href="#h4-0-127" id="h4-0-127" class="d">-                    {% include item %}
+</a><a href="#h4-0-128" id="h4-0-128" class="d">-                &lt;/style&gt;
+</a><a href="#h4-0-129" id="h4-0-129" class="d">-            {% endfor %}
+</a><a href="#h4-0-130" id="h4-0-130" class="d">-        {% endif %}
+</a><a href="#h4-0-131" id="h4-0-131" class="i">+    {# Add facility for pages to delare an array of critical styles #} {% if
+</a><a href="#h4-0-132" id="h4-0-132" class="i">+    pageCriticalStyles %} {% for item in pageCriticalStyles %}
+</a><a href="#h4-0-133" id="h4-0-133" class="i">+    &lt;style&gt;
+</a><a href="#h4-0-134" id="h4-0-134" class="i">+      {% include item %}
+</a><a href="#h4-0-135" id="h4-0-135" class="i">+    &lt;/style&gt;
+</a><a href="#h4-0-136" id="h4-0-136" class="i">+    {% endfor %} {% endif %}
+</a>
+<a href="#h4-0-138" id="h4-0-138" class="d">-        &lt;link rel=&quot;preload&quot; media=&quot;print&quot; href=&quot;/fonts/fonts.css?{{ assetHash }}&quot; onload=&quot;this.media=&#39;all&#39;&quot;/&gt;
+</a><a href="#h4-0-139" id="h4-0-139" class="i">+    &lt;link
+</a><a href="#h4-0-140" id="h4-0-140" class="i">+      rel=&quot;preload&quot;
+</a><a href="#h4-0-141" id="h4-0-141" class="i">+      media=&quot;print&quot;
+</a><a href="#h4-0-142" id="h4-0-142" class="i">+      href=&quot;/fonts/fonts.css?{{ assetHash }}&quot;
+</a><a href="#h4-0-143" id="h4-0-143" class="i">+      onload=&quot;this.media=&#39;all&#39;&quot;
+</a><a href="#h4-0-144" id="h4-0-144" class="i">+    /&gt;
+</a>
+<a href="#h4-0-146" id="h4-0-146" class="d">-        &lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; href=&quot;{{ site.url }}/feed.xml&quot;/&gt;
+</a><a href="#h4-0-147" id="h4-0-147" class="i">+    &lt;link
+</a><a href="#h4-0-148" id="h4-0-148" class="i">+      rel=&quot;alternate&quot;
+</a><a href="#h4-0-149" id="h4-0-149" class="i">+      type=&quot;application/rss+xml&quot;
+</a><a href="#h4-0-150" id="h4-0-150" class="i">+      href=&quot;{{ site.url }}/feed.xml&quot;
+</a><a href="#h4-0-151" id="h4-0-151" class="i">+    /&gt;
+</a>
+<a href="#h4-0-153" id="h4-0-153" class="d">-        {% include &quot;partials/meta.njk&quot; %}
+</a><a href="#h4-0-154" id="h4-0-154" class="d">-
+</a><a href="#h4-0-155" id="h4-0-155" class="d">-        {# Add facility for pages to declare an array of stylesheet paths #}
+</a><a href="#h4-0-156" id="h4-0-156" class="d">-        {% if pageStylesheets %}
+</a><a href="#h4-0-157" id="h4-0-157" class="d">-            {% for item in pageStylesheets %}
+</a><a href="#h4-0-158" id="h4-0-158" class="d">-                &lt;link rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;{{ item }}?{{ assetHash }}&quot; onload=&quot;this.media=&#39;all&#39;&quot;/&gt;
+</a><a href="#h4-0-159" id="h4-0-159" class="d">-            {% endfor %}
+</a><a href="#h4-0-160" id="h4-0-160" class="d">-        {% endif %}
+</a><a href="#h4-0-161" id="h4-0-161" class="d">-
+</a><a href="#h4-0-162" id="h4-0-162" class="d">-    &lt;/head&gt;
+</a><a href="#h4-0-163" id="h4-0-163" class="d">-    &lt;body&gt;
+</a><a href="#h4-0-164" id="h4-0-164" class="d">-      {% include &quot;partials/site-title.njk&quot; %}
+</a><a href="#h4-0-165" id="h4-0-165" class="d">-      &lt;div class=&quot;layout&quot;&gt;
+</a><a href="#h4-0-166" id="h4-0-166" class="d">-        {% include &quot;partials/site-head.njk&quot; %}
+</a><a href="#h4-0-167" id="h4-0-167" class="d">-        {% include &quot;partials/site-info.njk&quot; %}
+</a><a href="#h4-0-168" id="h4-0-168" class="d">-        &lt;main tabindex=&quot;-1&quot; id=&quot;main-content&quot; class=&quot;[ main-content pixelBorder pixelBorder--2 ]&quot;&gt;
+</a><a href="#h4-0-169" id="h4-0-169" class="d">-            &lt;section class=&quot;content&quot;&gt;
+</a><a href="#h4-0-170" id="h4-0-170" class="d">-            {% block content %}{% endblock %}
+</a><a href="#h4-0-171" id="h4-0-171" class="d">-            &lt;/section&gt;
+</a><a href="#h4-0-172" id="h4-0-172" class="d">-        &lt;/main&gt;
+</a><a href="#h4-0-173" id="h4-0-173" class="d">-        {% include &quot;partials/footer.njk&quot; %}
+</a><a href="#h4-0-174" id="h4-0-174" class="d">-      &lt;/div&gt;
+</a><a href="#h4-0-175" id="h4-0-175" class="d">-    &lt;/body&gt;
+</a><a href="#h4-0-176" id="h4-0-176" class="i">+    {% include &quot;partials/meta.njk&quot; %} {# Add facility for pages to declare an
+</a><a href="#h4-0-177" id="h4-0-177" class="i">+    array of stylesheet paths #} {% if pageStylesheets %} {% for item in
+</a><a href="#h4-0-178" id="h4-0-178" class="i">+    pageStylesheets %}
+</a><a href="#h4-0-179" id="h4-0-179" class="i">+    &lt;link
+</a><a href="#h4-0-180" id="h4-0-180" class="i">+      rel=&quot;stylesheet&quot;
+</a><a href="#h4-0-181" id="h4-0-181" class="i">+      media=&quot;print&quot;
+</a><a href="#h4-0-182" id="h4-0-182" class="i">+      href=&quot;{{ item }}?{{ assetHash }}&quot;
+</a><a href="#h4-0-183" id="h4-0-183" class="i">+      onload=&quot;this.media=&#39;all&#39;&quot;
+</a><a href="#h4-0-184" id="h4-0-184" class="i">+    /&gt;
+</a><a href="#h4-0-185" id="h4-0-185" class="i">+    {% endfor %} {% endif %}
+</a><a href="#h4-0-186" id="h4-0-186" class="i">+  &lt;/head&gt;
+</a><a href="#h4-0-187" id="h4-0-187" class="i">+  &lt;body&gt;
+</a><a href="#h4-0-188" id="h4-0-188" class="i">+    &lt;div class=&quot;layout&quot;&gt;
+</a><a href="#h4-0-189" id="h4-0-189" class="i">+      {% include &quot;partials/topbar.njk&quot; %} {% include &quot;partials/header.njk&quot; %} {%
+</a><a href="#h4-0-190" id="h4-0-190" class="i">+      include &quot;partials/site-nav.njk&quot; %}
+</a><a href="#h4-0-191" id="h4-0-191" class="i">+      &lt;main
+</a><a href="#h4-0-192" id="h4-0-192" class="i">+        tabindex=&quot;-1&quot;
+</a><a href="#h4-0-193" id="h4-0-193" class="i">+        id=&quot;main-content&quot;
+</a><a href="#h4-0-194" id="h4-0-194" class="i">+        class=&quot;[ main-content pixelBorder--2 ]&quot;
+</a><a href="#h4-0-195" id="h4-0-195" class="i">+      &gt;
+</a><a href="#h4-0-196" id="h4-0-196" class="i">+        {% set pageHeaderTitle = title %} {% set summary = pageHeaderSummary %}
+</a><a href="#h4-0-197" id="h4-0-197" class="i">+        {% if pageHeaderTitle %}
+</a><a href="#h4-0-198" id="h4-0-198" class="i">+        &lt;div class=&quot;title-content&quot;&gt;
+</a><a href="#h4-0-199" id="h4-0-199" class="i">+          &lt;h5 class=&quot;title&quot;&gt;{{title | safe }}&lt;/h5&gt;
+</a><a href="#h4-0-200" id="h4-0-200" class="i">+          {% if summary %}
+</a><a href="#h4-0-201" id="h4-0-201" class="i">+          &lt;h6 class=&quot;summary&quot;&gt;{{summary | safe }}&lt;/h6&gt;
+</a><a href="#h4-0-202" id="h4-0-202" class="i">+          {% endif%}
+</a><a href="#h4-0-203" id="h4-0-203" class="i">+        &lt;/div&gt;
+</a><a href="#h4-0-204" id="h4-0-204" class="i">+        {% endif%}
+</a><a href="#h4-0-205" id="h4-0-205" class="i">+        &lt;section class=&quot;content&quot;&gt;{% block content %}{% endblock %}&lt;/section&gt;
+</a><a href="#h4-0-206" id="h4-0-206" class="i">+      &lt;/main&gt;
+</a><a href="#h4-0-207" id="h4-0-207" class="i">+      {% include &quot;partials/footer.njk&quot; %}
+</a><a href="#h4-0-208" id="h4-0-208" class="i">+    &lt;/div&gt;
+</a><a href="#h4-0-209" id="h4-0-209" class="i">+  &lt;/body&gt;
+</a> &lt;/html&gt;
+<b>diff --git a/<a id="h5" href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a> b/<a href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a></b>
+<a href="#h5-0" id="h5-0" class="h">@@ -34,13 +34,4 @@
+</a>   Tu navegador no soporta el elemento de audio.
+ &lt;/audio&gt;
+ &lt;/section&gt;
+<a href="#h5-0-3" id="h5-0-3" class="d">-&lt;section&gt;
+</a><a href="#h5-0-4" id="h5-0-4" class="d">-  &lt;div class=&quot;ring&quot;&gt;
+</a><a href="#h5-0-5" id="h5-0-5" class="d">-    &lt;a href=&quot;https://xn--sr8hvo.ws/previous&quot;&gt;[[previous]]&lt;/a&gt;
+</a><a href="#h5-0-6" id="h5-0-6" class="d">-    &lt;a href=&quot;https://xn--sr8hvo.ws&quot;&gt;
+</a><a href="#h5-0-7" id="h5-0-7" class="d">-      An IndieWeb Webring 🕸💍
+</a><a href="#h5-0-8" id="h5-0-8" class="d">-    &lt;/a&gt;
+</a><a href="#h5-0-9" id="h5-0-9" class="d">-    &lt;a href=&quot;https://xn--sr8hvo.ws/next&quot;&gt;[[next]]&lt;/a&gt;
+</a><a href="#h5-0-10" id="h5-0-10" class="d">-    &lt;/div&gt;
+</a><a href="#h5-0-11" id="h5-0-11" class="d">-&lt;/section&gt;
+</a> {% endblock %}
+<b>diff --git a/<a id="h6" href="../file/src/_includes/partials/footer.njk.html">src/_includes/partials/footer.njk</a> b/<a href="../file/src/_includes/partials/footer.njk.html">src/_includes/partials/footer.njk</a></b>
+<a href="#h6-0" id="h6-0" class="h">@@ -1,57 +1,5 @@
+</a><a href="#h6-0-0" id="h6-0-0" class="d">-&lt;footer class=&quot;[ site-footer ]&quot;&gt;
+</a><a href="#h6-0-1" id="h6-0-1" class="d">-  &lt;nav class=&quot;site-footer__buttons pixelBorder--2&quot; aria-label=&quot;Secondary&quot;&gt;
+</a><a href="#h6-0-2" id="h6-0-2" class="d">-    &lt;div class=&quot;site-footer__navigation__buttons&quot;&gt;
+</a><a href="#h6-0-3" id="h6-0-3" class="d">-      &lt;div class=&quot;scrolling&quot;&gt;
+</a><a href="#h6-0-4" id="h6-0-4" class="d">-        &lt;img
+</a><a href="#h6-0-5" id="h6-0-5" class="d">-          width=&quot;88&quot;
+</a><a href="#h6-0-6" id="h6-0-6" class="d">-          height=&quot;31&quot;
+</a><a href="#h6-0-7" id="h6-0-7" class="d">-          src=&quot;{{&#39;/assets/images/cyberrot.gif&#39; | url }}&quot;
+</a><a href="#h6-0-8" id="h6-0-8" class="d">-          alt=&quot;Website ping whink whink&quot;
+</a><a href="#h6-0-9" id="h6-0-9" class="d">-        /&gt;
+</a><a href="#h6-0-10" id="h6-0-10" class="d">-      &lt;/div&gt;
+</a><a href="#h6-0-11" id="h6-0-11" class="d">-      &lt;div class=&quot;scrolling&quot;&gt;
+</a><a href="#h6-0-12" id="h6-0-12" class="d">-        &lt;img
+</a><a href="#h6-0-13" id="h6-0-13" class="d">-          width=&quot;88&quot;
+</a><a href="#h6-0-14" id="h6-0-14" class="d">-          height=&quot;31&quot;
+</a><a href="#h6-0-15" id="h6-0-15" class="d">-          src=&quot;{{&#39;/assets/images/digitalme.gif&#39; | url }}&quot;
+</a><a href="#h6-0-16" id="h6-0-16" class="d">-          alt=&quot;Website ping whink whink&quot;
+</a><a href="#h6-0-17" id="h6-0-17" class="d">-        /&gt;
+</a><a href="#h6-0-18" id="h6-0-18" class="d">-      &lt;/div&gt;
+</a><a href="#h6-0-19" id="h6-0-19" class="d">-      &lt;div class=&quot;scrolling&quot;&gt;
+</a><a href="#h6-0-20" id="h6-0-20" class="d">-        &lt;img
+</a><a href="#h6-0-21" id="h6-0-21" class="d">-          width=&quot;88&quot;
+</a><a href="#h6-0-22" id="h6-0-22" class="d">-          height=&quot;31&quot;
+</a><a href="#h6-0-23" id="h6-0-23" class="d">-          src=&quot;{{&#39;/assets/images/dbfire88.gif&#39; | url }}&quot;
+</a><a href="#h6-0-24" id="h6-0-24" class="d">-          alt=&quot;Website ping whink whink&quot;
+</a><a href="#h6-0-25" id="h6-0-25" class="d">-        /&gt;
+</a><a href="#h6-0-26" id="h6-0-26" class="d">-      &lt;/div&gt;
+</a><a href="#h6-0-27" id="h6-0-27" class="d">-      &lt;div class=&quot;scrolling&quot;&gt;
+</a><a href="#h6-0-28" id="h6-0-28" class="d">-        &lt;img
+</a><a href="#h6-0-29" id="h6-0-29" class="d">-          width=&quot;88&quot;
+</a><a href="#h6-0-30" id="h6-0-30" class="d">-          height=&quot;31&quot;
+</a><a href="#h6-0-31" id="h6-0-31" class="d">-          src=&quot;{{&#39;/assets/images/learn_html.gif&#39; | url }}&quot;
+</a><a href="#h6-0-32" id="h6-0-32" class="d">-          alt=&quot;Website ping whink whink&quot;
+</a><a href="#h6-0-33" id="h6-0-33" class="d">-        /&gt;
+</a><a href="#h6-0-34" id="h6-0-34" class="d">-      &lt;/div&gt;
+</a><a href="#h6-0-35" id="h6-0-35" class="d">-      &lt;div class=&quot;scrolling&quot;&gt;
+</a><a href="#h6-0-36" id="h6-0-36" class="d">-        &lt;img
+</a><a href="#h6-0-37" id="h6-0-37" class="d">-          width=&quot;88&quot;
+</a><a href="#h6-0-38" id="h6-0-38" class="d">-          height=&quot;31&quot;
+</a><a href="#h6-0-39" id="h6-0-39" class="d">-          src=&quot;{{&#39;/assets/images/nekojiru.gif&#39; | url }}&quot;
+</a><a href="#h6-0-40" id="h6-0-40" class="d">-          alt=&quot;Website ping whink whink&quot;
+</a><a href="#h6-0-41" id="h6-0-41" class="d">-        /&gt;
+</a><a href="#h6-0-42" id="h6-0-42" class="d">-      &lt;/div&gt;
+</a><a href="#h6-0-43" id="h6-0-43" class="d">-      &lt;div class=&quot;scrolling&quot;&gt;
+</a><a href="#h6-0-44" id="h6-0-44" class="d">-        &lt;img
+</a><a href="#h6-0-45" id="h6-0-45" class="d">-          width=&quot;88&quot;
+</a><a href="#h6-0-46" id="h6-0-46" class="d">-          height=&quot;31&quot;
+</a><a href="#h6-0-47" id="h6-0-47" class="d">-          src=&quot;{{&#39;/assets/images/sonicstadium.gif&#39; | url }}&quot;
+</a><a href="#h6-0-48" id="h6-0-48" class="d">-          alt=&quot;Website ping whink whink&quot;
+</a><a href="#h6-0-49" id="h6-0-49" class="d">-        /&gt;
+</a><a href="#h6-0-50" id="h6-0-50" class="d">-      &lt;/div&gt;
+</a><a href="#h6-0-51" id="h6-0-51" class="d">-    &lt;/div&gt;
+</a><a href="#h6-0-52" id="h6-0-52" class="d">-  &lt;/nav&gt;
+</a><a href="#h6-0-53" id="h6-0-53" class="d">-  &lt;ul class=&quot;site-footer__links pixelBorder--2&quot;&gt;
+</a><a href="#h6-0-54" id="h6-0-54" class="i">+&lt;footer class=&quot;[ site-footer pixelBorder--2 ]&quot;&gt;
+</a><a href="#h6-0-55" id="h6-0-55" class="i">+  &lt;ul class=&quot;site-footer__links&quot;&gt;
+</a>     &lt;li&gt;
+       &lt;a href=&quot;/feed.xml&quot;&gt;RSS&lt;/a&gt;
+     &lt;/li&gt;
+<a href="#h6-1" id="h6-1" class="h">@@ -63,4 +11,9 @@
+</a>       &gt;
+     &lt;/li&gt;
+   &lt;/ul&gt;
+<a href="#h6-1-3" id="h6-1-3" class="i">+  &lt;section class=&quot;site-footer__webring&quot;&gt;
+</a><a href="#h6-1-4" id="h6-1-4" class="i">+    &lt;a href=&quot;https://xn--sr8hvo.ws/previous&quot;&gt;[[previous]]&lt;/a&gt;
+</a><a href="#h6-1-5" id="h6-1-5" class="i">+    &lt;a href=&quot;https://xn--sr8hvo.ws&quot;&gt; An IndieWeb Webring 🕸💍 &lt;/a&gt;
+</a><a href="#h6-1-6" id="h6-1-6" class="i">+    &lt;a href=&quot;https://xn--sr8hvo.ws/next&quot;&gt;[[next]]&lt;/a&gt;
+</a><a href="#h6-1-7" id="h6-1-7" class="i">+  &lt;/section&gt;
+</a> &lt;/footer&gt;
+<b>diff --git a/<a id="h7" href="../file/src/_includes/partials/header.njk.html">src/_includes/partials/header.njk</a> b/<a href="../file/src/_includes/partials/header.njk.html">src/_includes/partials/header.njk</a></b>
+<a href="#h7-0" id="h7-0" class="h">@@ -0,0 +1,18 @@
+</a><a href="#h7-0-0" id="h7-0-0" class="i">+&lt;div role=&quot;banner&quot; class=&quot;[ header pixelBorder--2 ]&quot;&gt;
+</a><a href="#h7-0-1" id="h7-0-1" class="i">+  {% image &quot;src/assets/images/ball.gif&quot;, &quot;logo from blog&quot;, &quot;favicon&quot; %}
+</a><a href="#h7-0-2" id="h7-0-2" class="i">+  &lt;pre class=&quot;ascii&quot; href=&quot;https://www.bitbyte.blog/&quot; rel=&quot;me&quot;&gt;
+</a><a href="#h7-0-3" id="h7-0-3" class="i">+ __       __   __     __                  __                 __       __
+</a><a href="#h7-0-4" id="h7-0-4" class="i">+|  \     |  \ |  \   |  \                |  \               |  \     |  \
+</a><a href="#h7-0-5" id="h7-0-5" class="i">+| ▓▓____  \▓▓_| ▓▓_  | ▓▓____  __    __ _| ▓▓_    ______    | ▓▓____ | ▓▓ ______   ______
+</a><a href="#h7-0-6" id="h7-0-6" class="i">+| ▓▓    \|  \   ▓▓ \ | ▓▓    \|  \  |  \   ▓▓ \  /      \   | ▓▓    \| ▓▓/      \ /      \
+</a><a href="#h7-0-7" id="h7-0-7" class="i">+| ▓▓▓▓▓▓▓\ ▓▓\▓▓▓▓▓▓ | ▓▓▓▓▓▓▓\ ▓▓  | ▓▓\▓▓▓▓▓▓ |  ▓▓▓▓▓▓\  | ▓▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\
+</a><a href="#h7-0-8" id="h7-0-8" class="i">+| ▓▓  | ▓▓ ▓▓ | ▓▓ __| ▓▓  | ▓▓ ▓▓  | ▓▓ | ▓▓ __| ▓▓    ▓▓  | ▓▓  | ▓▓ ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓
+</a><a href="#h7-0-9" id="h7-0-9" class="i">+| ▓▓__/ ▓▓ ▓▓ | ▓▓|  \ ▓▓__/ ▓▓ ▓▓__/ ▓▓ | ▓▓|  \ ▓▓▓▓▓▓▓▓__| ▓▓__/ ▓▓ ▓▓ ▓▓__/ ▓▓ ▓▓__| ▓▓
+</a><a href="#h7-0-10" id="h7-0-10" class="i">+| ▓▓    ▓▓ ▓▓  \▓▓  ▓▓ ▓▓    ▓▓\▓▓    ▓▓  \▓▓  ▓▓\▓▓     \  \ ▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓
+</a><a href="#h7-0-11" id="h7-0-11" class="i">+ \▓▓▓▓▓▓▓ \▓▓   \▓▓▓▓ \▓▓▓▓▓▓▓ _\▓▓▓▓▓▓▓   \▓▓▓▓  \▓▓▓▓▓▓▓\▓▓\▓▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓ _\▓▓▓▓▓▓▓
+</a><a href="#h7-0-12" id="h7-0-12" class="i">+                              |  \__| ▓▓                                         |  \__| ▓▓
+</a><a href="#h7-0-13" id="h7-0-13" class="i">+                               \▓▓    ▓▓                                          \▓▓    ▓▓
+</a><a href="#h7-0-14" id="h7-0-14" class="i">+                                \▓▓▓▓▓▓                                            \▓▓▓▓▓▓
+</a><a href="#h7-0-15" id="h7-0-15" class="i">+  &lt;/pre&gt;
+</a><a href="#h7-0-16" id="h7-0-16" class="i">+  {% image &quot;src/assets/images/ball.gif&quot;, &quot;logo from blog&quot;, &quot;favicon&quot; %}
+</a><a href="#h7-0-17" id="h7-0-17" class="i">+&lt;/div&gt;
+</a><b>diff --git a/<a id="h8" href="../file/src/_includes/partials/page-header.njk.html">src/_includes/partials/page-header.njk</a> b/<a href="../file/src/_includes/partials/page-header.njk.html">src/_includes/partials/page-header.njk</a></b>
+<a href="#h8-0" id="h8-0" class="h">@@ -1,2 +0,0 @@
+</a><a href="#h8-0-0" id="h8-0-0" class="d">-&lt;div class=&quot;[ page-header ]&quot;&gt;
+</a><a href="#h8-0-1" id="h8-0-1" class="d">-&lt;/div&gt;
+</a><b>diff --git a/<a id="h9" href="../file/src/_includes/partials/site-head.njk.html">src/_includes/partials/site-head.njk</a> b/<a href="../file/src/_includes/partials/site-head.njk.html">src/_includes/partials/site-head.njk</a></b>
+<a href="#h9-0" id="h9-0" class="h">@@ -1,14 +0,0 @@
+</a><a href="#h9-0-0" id="h9-0-0" class="d">-&lt;header role=&quot;banner&quot; class=&quot;site-head pixelBorder pixelBorder--2&quot;&gt;
+</a><a href="#h9-0-1" id="h9-0-1" class="d">-    &lt;div class=&quot;site-head__inner&quot;&gt;
+</a><a href="#h9-0-2" id="h9-0-2" class="d">-      &lt;nav class=&quot;[ nav ] [ site-head__nav ]&quot; aria-label=&quot;Primary&quot;&gt;
+</a><a href="#h9-0-3" id="h9-0-3" class="d">-        &lt;ul class=&quot;nav__list&quot;&gt;
+</a><a href="#h9-0-4" id="h9-0-4" class="d">-          {% for item in collections.all | eleventyNavigation %}
+</a><a href="#h9-0-5" id="h9-0-5" class="d">-          &lt;li&gt;
+</a><a href="#h9-0-6" id="h9-0-6" class="d">-            &lt;a href=&quot;{{item.url}}&quot; {{ helpers.getLinkActiveState(item.url, page.url) | safe }}&gt;{{item.title}}&lt;/a&gt;
+</a><a href="#h9-0-7" id="h9-0-7" class="d">-          &lt;/li&gt;
+</a><a href="#h9-0-8" id="h9-0-8" class="d">-          {% endfor %}
+</a><a href="#h9-0-9" id="h9-0-9" class="d">-          &lt;li&gt;&lt;a href=&quot;../../assets/files/resume.pdf&quot; target=&quot;_blank&quot;&gt;resume&lt;/a&gt;&lt;/li&gt;
+</a><a href="#h9-0-10" id="h9-0-10" class="d">-        &lt;/ul&gt;
+</a><a href="#h9-0-11" id="h9-0-11" class="d">-      &lt;/nav&gt;
+</a><a href="#h9-0-12" id="h9-0-12" class="d">-    &lt;/div&gt;
+</a><a href="#h9-0-13" id="h9-0-13" class="d">-&lt;/header&gt;
+</a><b>diff --git a/<a id="h10" href="../file/src/_includes/partials/site-nav.njk.html">src/_includes/partials/site-nav.njk</a> b/<a href="../file/src/_includes/partials/site-nav.njk.html">src/_includes/partials/site-nav.njk</a></b>
+<a href="#h10-0" id="h10-0" class="h">@@ -0,0 +1,23 @@
+</a><a href="#h10-0-0" id="h10-0-0" class="i">+&lt;aside class=&quot;[ site-nav pixelBorder--2 ]&quot;&gt;
+</a><a href="#h10-0-1" id="h10-0-1" class="i">+  &lt;nav class=&quot;[ nav ]&quot; aria-label=&quot;Primary&quot;&gt;
+</a><a href="#h10-0-2" id="h10-0-2" class="i">+    &lt;ul class=&quot;nav__list&quot;&gt;
+</a><a href="#h10-0-3" id="h10-0-3" class="i">+      {% for item in collections.all | eleventyNavigation %}
+</a><a href="#h10-0-4" id="h10-0-4" class="i">+      &lt;li&gt;
+</a><a href="#h10-0-5" id="h10-0-5" class="i">+        &lt;a
+</a><a href="#h10-0-6" id="h10-0-6" class="i">+          href=&quot;{{item.url}}&quot;
+</a><a href="#h10-0-7" id="h10-0-7" class="i">+          {{
+</a><a href="#h10-0-8" id="h10-0-8" class="i">+          helpers.getLinkActiveState(item.url,
+</a><a href="#h10-0-9" id="h10-0-9" class="i">+          page.url)
+</a><a href="#h10-0-10" id="h10-0-10" class="i">+          |
+</a><a href="#h10-0-11" id="h10-0-11" class="i">+          safe
+</a><a href="#h10-0-12" id="h10-0-12" class="i">+          }}
+</a><a href="#h10-0-13" id="h10-0-13" class="i">+          &gt;{{item.title}}&lt;/a
+</a><a href="#h10-0-14" id="h10-0-14" class="i">+        &gt;
+</a><a href="#h10-0-15" id="h10-0-15" class="i">+      &lt;/li&gt;
+</a><a href="#h10-0-16" id="h10-0-16" class="i">+      {% endfor %}
+</a><a href="#h10-0-17" id="h10-0-17" class="i">+      &lt;li&gt;
+</a><a href="#h10-0-18" id="h10-0-18" class="i">+        &lt;a href=&quot;../../assets/files/resume.pdf&quot; target=&quot;_blank&quot;&gt;resume&lt;/a&gt;
+</a><a href="#h10-0-19" id="h10-0-19" class="i">+      &lt;/li&gt;
+</a><a href="#h10-0-20" id="h10-0-20" class="i">+    &lt;/ul&gt;
+</a><a href="#h10-0-21" id="h10-0-21" class="i">+  &lt;/nav&gt;
+</a><a href="#h10-0-22" id="h10-0-22" class="i">+&lt;/aside&gt;
+</a><b>diff --git a/<a id="h11" href="../file/src/_includes/partials/site-title.njk.html">src/_includes/partials/site-title.njk</a> b/<a href="../file/src/_includes/partials/site-title.njk.html">src/_includes/partials/site-title.njk</a></b>
+<a href="#h11-0" id="h11-0" class="h">@@ -1,7 +0,0 @@
+</a><a href="#h11-0-0" id="h11-0-0" class="d">-&lt;div role=&quot;banner&quot; class=&quot;page-header&quot;&gt;
+</a><a href="#h11-0-1" id="h11-0-1" class="d">-  {% image &quot;src/assets/images/ball.gif&quot;, &quot;logo from blog&quot;, &quot;favicon&quot; %}
+</a><a href="#h11-0-2" id="h11-0-2" class="d">-  &lt;h2&gt;
+</a><a href="#h11-0-3" id="h11-0-3" class="d">-    &lt;a href=&quot;https://www.bitbyte.blog/&quot; rel=&quot;me&quot;&gt;bitbyte.blog&lt;/a&gt;
+</a><a href="#h11-0-4" id="h11-0-4" class="d">-  &lt;/h2&gt;
+</a><a href="#h11-0-5" id="h11-0-5" class="d">-  {% image &quot;src/assets/images/ball.gif&quot;, &quot;logo from blog&quot;, &quot;favicon&quot; %}
+</a><a href="#h11-0-6" id="h11-0-6" class="d">-&lt;/div&gt;
+</a><b>diff --git a/<a id="h12" href="../file/src/_includes/partials/topbar.njk.html">src/_includes/partials/topbar.njk</a> b/<a href="../file/src/_includes/partials/topbar.njk.html">src/_includes/partials/topbar.njk</a></b>
+<a href="#h12-0" id="h12-0" class="h">@@ -0,0 +1,3 @@
+</a><a href="#h12-0-0" id="h12-0-0" class="i">+&lt;div class=&quot;topbar&quot;&gt;
+</a><a href="#h12-0-1" id="h12-0-1" class="i">+  &lt;p&gt;are u feeling lucky? &lt;a&gt;Try this...&lt;/a&gt;&lt;/p&gt;
+</a><a href="#h12-0-2" id="h12-0-2" class="i">+&lt;/div&gt;
+</a><b>diff --git a/<a id="h13" href="../file/src/assets/fonts/FreePixel.ttf.html">src/assets/fonts/FreePixel.ttf</a> b/<a href="../file/src/assets/fonts/FreePixel.ttf.html">src/assets/fonts/FreePixel.ttf</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h14" href="../file/src/assets/fonts/GohuFont-Bold.ttf.html">src/assets/fonts/GohuFont-Bold.ttf</a> b/<a href="../file/src/assets/fonts/GohuFont-Bold.ttf.html">src/assets/fonts/GohuFont-Bold.ttf</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h15" href="../file/src/assets/fonts/GohuFont-Medium.ttf.html">src/assets/fonts/GohuFont-Medium.ttf</a> b/<a href="../file/src/assets/fonts/GohuFont-Medium.ttf.html">src/assets/fonts/GohuFont-Medium.ttf</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h16" href="../file/src/assets/images/ditherbg.png.html">src/assets/images/ditherbg.png</a> b/<a href="../file/src/assets/images/ditherbg.png.html">src/assets/images/ditherbg.png</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h17" href="../file/src/scss/base/_fonts.scss.html">src/scss/base/_fonts.scss</a> b/<a href="../file/src/scss/base/_fonts.scss.html">src/scss/base/_fonts.scss</a></b>
+<a href="#h17-0" id="h17-0" class="h">@@ -11,3 +11,9 @@
+</a>   font-weight: normal;
+   font-style: normal;
+ }
+<a href="#h17-0-3" id="h17-0-3" class="i">+
+</a><a href="#h17-0-4" id="h17-0-4" class="i">+@font-face {
+</a><a href="#h17-0-5" id="h17-0-5" class="i">+  font-family: &quot;FreePixel&quot;;
+</a><a href="#h17-0-6" id="h17-0-6" class="i">+  src: url(&quot;https://sadhost.neocities.org/fonts/FreePixel.ttf&quot;)
+</a><a href="#h17-0-7" id="h17-0-7" class="i">+    format(&quot;truetype&quot;);
+</a><a href="#h17-0-8" id="h17-0-8" class="i">+}
+</a><b>diff --git a/<a id="h18" href="../file/src/scss/blocks/_footer.scss.html">src/scss/blocks/_footer.scss</a> b/<a href="../file/src/scss/blocks/_footer.scss.html">src/scss/blocks/_footer.scss</a></b>
+<a href="#h18-0" id="h18-0" class="h">@@ -1,46 +1,24 @@
+</a> .site-footer {
+   grid-area: footer;
+<a href="#h18-0-2" id="h18-0-2" class="i">+  display: flex;
+</a>   width: 100%;
+<a href="#h18-0-4" id="h18-0-4" class="d">-  display: grid;
+</a><a href="#h18-0-5" id="h18-0-5" class="d">-  grid-template-columns: 1fr 1fr;
+</a><a href="#h18-0-6" id="h18-0-6" class="d">-  gap: 1rem 2rem;
+</a><a href="#h18-0-7" id="h18-0-7" class="i">+  background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h18-0-8" id="h18-0-8" class="i">+  flex-direction: column;
+</a><a href="#h18-0-9" id="h18-0-9" class="i">+  margin-top: 1rem;
+</a>   align-items: center;
+   justify-content: center;
+
+<a href="#h18-0-13" id="h18-0-13" class="d">-  &amp;__buttons {
+</a><a href="#h18-0-14" id="h18-0-14" class="d">-    overflow: hidden;
+</a><a href="#h18-0-15" id="h18-0-15" class="d">-    white-space: nowrap;
+</a><a href="#h18-0-16" id="h18-0-16" class="d">-    background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h18-0-17" id="h18-0-17" class="d">-
+</a><a href="#h18-0-18" id="h18-0-18" class="d">-    .scrolling {
+</a><a href="#h18-0-19" id="h18-0-19" class="d">-      animation: marquee 2s linear infinite alternate;
+</a><a href="#h18-0-20" id="h18-0-20" class="d">-      display: inline-block;
+</a><a href="#h18-0-21" id="h18-0-21" class="d">-      padding-right: 10px;
+</a><a href="#h18-0-22" id="h18-0-22" class="d">-    }
+</a><a href="#h18-0-23" id="h18-0-23" class="d">-
+</a><a href="#h18-0-24" id="h18-0-24" class="d">-    img {
+</a><a href="#h18-0-25" id="h18-0-25" class="d">-      display: inline-block;
+</a><a href="#h18-0-26" id="h18-0-26" class="d">-      margin-right: 1rem;
+</a><a href="#h18-0-27" id="h18-0-27" class="d">-      width: 81px;
+</a><a href="#h18-0-28" id="h18-0-28" class="d">-      height: 31px;
+</a><a href="#h18-0-29" id="h18-0-29" class="d">-    }
+</a><a href="#h18-0-30" id="h18-0-30" class="d">-  }
+</a><a href="#h18-0-31" id="h18-0-31" class="d">-
+</a>   &amp;__links {
+     display: flex;
+     gap: 1rem;
+<a href="#h18-0-35" id="h18-0-35" class="d">-    align-items: center;
+</a><a href="#h18-0-36" id="h18-0-36" class="d">-    justify-content: center;
+</a><a href="#h18-0-37" id="h18-0-37" class="d">-    background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h18-0-38" id="h18-0-38" class="i">+    align-content: center;
+</a><a href="#h18-0-39" id="h18-0-39" class="i">+    align-items: center
+</a>   }
+<a href="#h18-0-41" id="h18-0-41" class="d">-}
+</a>
+<a href="#h18-0-43" id="h18-0-43" class="d">-@keyframes marquee {
+</a><a href="#h18-0-44" id="h18-0-44" class="d">-  from {
+</a><a href="#h18-0-45" id="h18-0-45" class="d">-    transform: translateX(0);
+</a><a href="#h18-0-46" id="h18-0-46" class="d">-  }
+</a><a href="#h18-0-47" id="h18-0-47" class="d">-
+</a><a href="#h18-0-48" id="h18-0-48" class="d">-  to {
+</a><a href="#h18-0-49" id="h18-0-49" class="d">-    transform: translateX(-100%);
+</a><a href="#h18-0-50" id="h18-0-50" class="i">+  &amp;__webring {
+</a><a href="#h18-0-51" id="h18-0-51" class="i">+    display: flex;
+</a><a href="#h18-0-52" id="h18-0-52" class="i">+    align-content: center;
+</a><a href="#h18-0-53" id="h18-0-53" class="i">+    gap: 1rem;
+</a><a href="#h18-0-54" id="h18-0-54" class="i">+    align-items: center
+</a>   }
+ }
+<b>diff --git a/<a id="h19" href="../file/src/scss/blocks/_header.scss.html">src/scss/blocks/_header.scss</a> b/<a href="../file/src/scss/blocks/_header.scss.html">src/scss/blocks/_header.scss</a></b>
+<a href="#h19-0" id="h19-0" class="h">@@ -1,8 +1,20 @@
+</a><a href="#h19-0-0" id="h19-0-0" class="d">-.site-head {
+</a><a href="#h19-0-1" id="h19-0-1" class="d">-  grid-area: navigation;
+</a><a href="#h19-0-2" id="h19-0-2" class="d">-  padding: 0 0.5rem;
+</a><a href="#h19-0-3" id="h19-0-3" class="i">+.header {
+</a><a href="#h19-0-4" id="h19-0-4" class="i">+  grid-area: header;
+</a><a href="#h19-0-5" id="h19-0-5" class="i">+  display: flex;
+</a><a href="#h19-0-6" id="h19-0-6" class="i">+  align-items: center;
+</a><a href="#h19-0-7" id="h19-0-7" class="i">+  justify-content: center;
+</a><a href="#h19-0-8" id="h19-0-8" class="i">+  width: 100%;
+</a>   background-color: #{get-color(&#39;Base&#39;)};
+<a href="#h19-0-10" id="h19-0-10" class="d">-  height: fit-content;
+</a><a href="#h19-0-11" id="h19-0-11" class="d">-  color: #{get-color(&#39;Text&#39;)};
+</a><a href="#h19-0-12" id="h19-0-12" class="d">-  height: fit-content;
+</a><a href="#h19-0-13" id="h19-0-13" class="i">+  background-image: url(&quot;../../assets/images/ditther.png&quot;);
+</a><a href="#h19-0-14" id="h19-0-14" class="i">+  background-size: 100vw;
+</a><a href="#h19-0-15" id="h19-0-15" class="i">+  margin-top: -7px;
+</a><a href="#h19-0-16" id="h19-0-16" class="i">+  height: 120px;
+</a><a href="#h19-0-17" id="h19-0-17" class="i">+
+</a><a href="#h19-0-18" id="h19-0-18" class="i">+  img {
+</a><a href="#h19-0-19" id="h19-0-19" class="i">+    width: 80px;
+</a><a href="#h19-0-20" id="h19-0-20" class="i">+  }
+</a><a href="#h19-0-21" id="h19-0-21" class="i">+
+</a><a href="#h19-0-22" id="h19-0-22" class="i">+  h2 {
+</a><a href="#h19-0-23" id="h19-0-23" class="i">+    font-size: 10px;
+</a><a href="#h19-0-24" id="h19-0-24" class="i">+  }
+</a> }
+<b>diff --git a/<a id="h20" href="../file/src/scss/blocks/_intro.scss.html">src/scss/blocks/_intro.scss</a> b/<a href="../file/src/scss/blocks/_intro.scss.html">src/scss/blocks/_intro.scss</a></b>
+<a href="#h20-0" id="h20-0" class="h">@@ -54,44 +54,6 @@
+</a>   }
+ }
+
+<a href="#h20-0-3" id="h20-0-3" class="d">-.outsiders {
+</a><a href="#h20-0-4" id="h20-0-4" class="d">-  display: flex;
+</a><a href="#h20-0-5" id="h20-0-5" class="d">-  align-items: center;
+</a><a href="#h20-0-6" id="h20-0-6" class="d">-  flex-direction: column;
+</a><a href="#h20-0-7" id="h20-0-7" class="d">-  justify-content: space-between;
+</a><a href="#h20-0-8" id="h20-0-8" class="d">-  gap: 2rem;
+</a><a href="#h20-0-9" id="h20-0-9" class="d">-
+</a><a href="#h20-0-10" id="h20-0-10" class="d">-  @include media-query(&#39;md&#39;) {
+</a><a href="#h20-0-11" id="h20-0-11" class="d">-    flex-direction: row;
+</a><a href="#h20-0-12" id="h20-0-12" class="d">-  }
+</a><a href="#h20-0-13" id="h20-0-13" class="d">-
+</a><a href="#h20-0-14" id="h20-0-14" class="d">-  iframe {
+</a><a href="#h20-0-15" id="h20-0-15" class="d">-    width: 100%;
+</a><a href="#h20-0-16" id="h20-0-16" class="d">-
+</a><a href="#h20-0-17" id="h20-0-17" class="d">-    @include media-query(&#39;md&#39;) {
+</a><a href="#h20-0-18" id="h20-0-18" class="d">-      width: 30vw;
+</a><a href="#h20-0-19" id="h20-0-19" class="d">-    }
+</a><a href="#h20-0-20" id="h20-0-20" class="d">-  }
+</a><a href="#h20-0-21" id="h20-0-21" class="d">-
+</a><a href="#h20-0-22" id="h20-0-22" class="d">-  div {
+</a><a href="#h20-0-23" id="h20-0-23" class="d">-    margin: 0 auto;
+</a><a href="#h20-0-24" id="h20-0-24" class="d">-  }
+</a><a href="#h20-0-25" id="h20-0-25" class="d">-}
+</a><a href="#h20-0-26" id="h20-0-26" class="d">-
+</a><a href="#h20-0-27" id="h20-0-27" class="d">-.u-photo {
+</a><a href="#h20-0-28" id="h20-0-28" class="d">-  display: none;
+</a><a href="#h20-0-29" id="h20-0-29" class="d">-}
+</a><a href="#h20-0-30" id="h20-0-30" class="d">-
+</a><a href="#h20-0-31" id="h20-0-31" class="d">-.ring {
+</a><a href="#h20-0-32" id="h20-0-32" class="d">-  position: absolute;
+</a><a href="#h20-0-33" id="h20-0-33" class="d">-  bottom: 0;
+</a><a href="#h20-0-34" id="h20-0-34" class="d">-  display: flex;
+</a><a href="#h20-0-35" id="h20-0-35" class="d">-  align-items: flex-end;
+</a><a href="#h20-0-36" id="h20-0-36" class="d">-  justify-content: flex-start;
+</a><a href="#h20-0-37" id="h20-0-37" class="d">-  gap: 1rem;
+</a><a href="#h20-0-38" id="h20-0-38" class="d">-  font-size: 16px;
+</a><a href="#h20-0-39" id="h20-0-39" class="d">-}
+</a><a href="#h20-0-40" id="h20-0-40" class="d">-
+</a> audio {
+   width: 320px;
+   height: 40px;
+<b>diff --git a/<a id="h21" href="../file/src/scss/blocks/_main-content.scss.html">src/scss/blocks/_main-content.scss</a> b/<a href="../file/src/scss/blocks/_main-content.scss.html">src/scss/blocks/_main-content.scss</a></b>
+<a href="#h21-0" id="h21-0" class="h">@@ -1,14 +1,25 @@
+</a> .main-content {
+   grid-area: content;
+<a href="#h21-0-2" id="h21-0-2" class="d">-  padding: 1rem;
+</a>   background-color: #{get-color(&#39;Base&#39;)};
+   color: #{get-color(&#39;Text&#39;)};
+
+<a href="#h21-0-6" id="h21-0-6" class="d">-  @include media-query(&#39;md&#39;) {
+</a><a href="#h21-0-7" id="h21-0-7" class="d">-    overflow-y: auto;
+</a><a href="#h21-0-8" id="h21-0-8" class="i">+  .title-content {
+</a><a href="#h21-0-9" id="h21-0-9" class="i">+    display: flex;
+</a><a href="#h21-0-10" id="h21-0-10" class="i">+    flex-direction: column;
+</a><a href="#h21-0-11" id="h21-0-11" class="i">+    background-color: #b4befe;
+</a><a href="#h21-0-12" id="h21-0-12" class="i">+    background-image: url(&quot;../../assets/images/dit.png&quot;);
+</a><a href="#h21-0-13" id="h21-0-13" class="i">+    background-repeat: no-repeat;
+</a><a href="#h21-0-14" id="h21-0-14" class="i">+    font-size: 1.5rem;
+</a><a href="#h21-0-15" id="h21-0-15" class="i">+    color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h21-0-16" id="h21-0-16" class="i">+
+</a><a href="#h21-0-17" id="h21-0-17" class="i">+    .title,
+</a><a href="#h21-0-18" id="h21-0-18" class="i">+    .summary {
+</a><a href="#h21-0-19" id="h21-0-19" class="i">+      margin-left: 1rem;
+</a><a href="#h21-0-20" id="h21-0-20" class="i">+    }
+</a>   }
+
+   .content {
+<a href="#h21-0-24" id="h21-0-24" class="d">-    height: 100%;
+</a><a href="#h21-0-25" id="h21-0-25" class="i">+    padding: 1rem;
+</a><a href="#h21-0-26" id="h21-0-26" class="i">+
+</a>   }
+ }
+<b>diff --git a/<a id="h22" href="../file/src/scss/blocks/_nav.scss.html">src/scss/blocks/_nav.scss</a> b/<a href="../file/src/scss/blocks/_nav.scss.html">src/scss/blocks/_nav.scss</a></b>
+<a href="#h22-0" id="h22-0" class="h">@@ -1,40 +0,0 @@
+</a><a href="#h22-0-0" id="h22-0-0" class="d">-.nav {
+</a><a href="#h22-0-1" id="h22-0-1" class="d">-  &amp;__list {
+</a><a href="#h22-0-2" id="h22-0-2" class="d">-    display: flex;
+</a><a href="#h22-0-3" id="h22-0-3" class="d">-    flex-direction: row;
+</a><a href="#h22-0-4" id="h22-0-4" class="d">-    flex-wrap: wrap;
+</a><a href="#h22-0-5" id="h22-0-5" class="d">-    gap: 0.5rem;
+</a><a href="#h22-0-6" id="h22-0-6" class="d">-
+</a><a href="#h22-0-7" id="h22-0-7" class="d">-    &gt; * {
+</a><a href="#h22-0-8" id="h22-0-8" class="d">-      padding-top: get-size(&#39;100&#39;);
+</a><a href="#h22-0-9" id="h22-0-9" class="d">-      @include media-query(&#39;md&#39;) {
+</a><a href="#h22-0-10" id="h22-0-10" class="d">-        width: 6vw;
+</a><a href="#h22-0-11" id="h22-0-11" class="d">-      }
+</a><a href="#h22-0-12" id="h22-0-12" class="d">-    }
+</a><a href="#h22-0-13" id="h22-0-13" class="d">-  }
+</a><a href="#h22-0-14" id="h22-0-14" class="d">-
+</a><a href="#h22-0-15" id="h22-0-15" class="d">-  a {
+</a><a href="#h22-0-16" id="h22-0-16" class="d">-    position: relative;
+</a><a href="#h22-0-17" id="h22-0-17" class="d">-    display: block;
+</a><a href="#h22-0-18" id="h22-0-18" class="d">-    text-decoration: none;
+</a><a href="#h22-0-19" id="h22-0-19" class="d">-    padding: 0.2rem;
+</a><a href="#h22-0-20" id="h22-0-20" class="d">-    font-weight: normal;
+</a><a href="#h22-0-21" id="h22-0-21" class="d">-    color: #{get-color(&#39;Text&#39;)};
+</a><a href="#h22-0-22" id="h22-0-22" class="d">-
+</a><a href="#h22-0-23" id="h22-0-23" class="d">-    &amp;::after,
+</a><a href="#h22-0-24" id="h22-0-24" class="d">-    &amp;::before {
+</a><a href="#h22-0-25" id="h22-0-25" class="d">-      display: none;
+</a><a href="#h22-0-26" id="h22-0-26" class="d">-    }
+</a><a href="#h22-0-27" id="h22-0-27" class="d">-
+</a><a href="#h22-0-28" id="h22-0-28" class="d">-    &amp;:hover {
+</a><a href="#h22-0-29" id="h22-0-29" class="d">-      color: #{get-color(&#39;Crust&#39;)};
+</a><a href="#h22-0-30" id="h22-0-30" class="d">-      background-color: #{get-color(&#39;Rosewater&#39;)};
+</a><a href="#h22-0-31" id="h22-0-31" class="d">-    }
+</a><a href="#h22-0-32" id="h22-0-32" class="d">-
+</a><a href="#h22-0-33" id="h22-0-33" class="d">-    &amp;[data-state=&#39;active&#39;],
+</a><a href="#h22-0-34" id="h22-0-34" class="d">-    &amp;[data-state=&#39;page&#39;] {
+</a><a href="#h22-0-35" id="h22-0-35" class="d">-      background: #{get-color(&#39;Rosewater&#39;)};
+</a><a href="#h22-0-36" id="h22-0-36" class="d">-      color: #{get-color(&#39;Crust&#39;)};
+</a><a href="#h22-0-37" id="h22-0-37" class="d">-    }
+</a><a href="#h22-0-38" id="h22-0-38" class="d">-  }
+</a><a href="#h22-0-39" id="h22-0-39" class="d">-}
+</a><b>diff --git a/<a id="h23" href="../file/src/scss/blocks/_page-header.scss.html">src/scss/blocks/_page-header.scss</a> b/<a href="../file/src/scss/blocks/_page-header.scss.html">src/scss/blocks/_page-header.scss</a></b>
+<a href="#h23-0" id="h23-0" class="h">@@ -1,13 +0,0 @@
+</a><a href="#h23-0-0" id="h23-0-0" class="d">-.page-header {
+</a><a href="#h23-0-1" id="h23-0-1" class="d">-  h1 {
+</a><a href="#h23-0-2" id="h23-0-2" class="d">-    font-size: 1.5rem;
+</a><a href="#h23-0-3" id="h23-0-3" class="d">-  }
+</a><a href="#h23-0-4" id="h23-0-4" class="d">-
+</a><a href="#h23-0-5" id="h23-0-5" class="d">-  &amp;__summary {
+</a><a href="#h23-0-6" id="h23-0-6" class="d">-    &amp;__meta {
+</a><a href="#h23-0-7" id="h23-0-7" class="d">-      display: flex;
+</a><a href="#h23-0-8" id="h23-0-8" class="d">-      flex-direction: row;
+</a><a href="#h23-0-9" id="h23-0-9" class="d">-      align-items: baseline;
+</a><a href="#h23-0-10" id="h23-0-10" class="d">-    }
+</a><a href="#h23-0-11" id="h23-0-11" class="d">-  }
+</a><a href="#h23-0-12" id="h23-0-12" class="d">-}
+</a><b>diff --git a/<a id="h24" href="../file/src/scss/blocks/_site-nav.scss.html">src/scss/blocks/_site-nav.scss</a> b/<a href="../file/src/scss/blocks/_site-nav.scss.html">src/scss/blocks/_site-nav.scss</a></b>
+<a href="#h24-0" id="h24-0" class="h">@@ -0,0 +1,38 @@
+</a><a href="#h24-0-0" id="h24-0-0" class="i">+.site-nav {
+</a><a href="#h24-0-1" id="h24-0-1" class="i">+  grid-area: navigation;
+</a><a href="#h24-0-2" id="h24-0-2" class="i">+  background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h24-0-3" id="h24-0-3" class="i">+  color: #{get-color(&#39;Text&#39;)};
+</a><a href="#h24-0-4" id="h24-0-4" class="i">+  height: auto;
+</a><a href="#h24-0-5" id="h24-0-5" class="i">+  align-self: start;
+</a><a href="#h24-0-6" id="h24-0-6" class="i">+  top: 0;
+</a><a href="#h24-0-7" id="h24-0-7" class="i">+  position: sticky;
+</a><a href="#h24-0-8" id="h24-0-8" class="i">+
+</a><a href="#h24-0-9" id="h24-0-9" class="i">+  .nav {
+</a><a href="#h24-0-10" id="h24-0-10" class="i">+    &amp;__list {
+</a><a href="#h24-0-11" id="h24-0-11" class="i">+      display: flex;
+</a><a href="#h24-0-12" id="h24-0-12" class="i">+      flex-direction: column;
+</a><a href="#h24-0-13" id="h24-0-13" class="i">+      flex-wrap: wrap;
+</a><a href="#h24-0-14" id="h24-0-14" class="i">+      gap: 0.5rem;
+</a><a href="#h24-0-15" id="h24-0-15" class="i">+      margin-left: 1rem;
+</a><a href="#h24-0-16" id="h24-0-16" class="i">+      margin-top: 1rem;
+</a><a href="#h24-0-17" id="h24-0-17" class="i">+    }
+</a><a href="#h24-0-18" id="h24-0-18" class="i">+
+</a><a href="#h24-0-19" id="h24-0-19" class="i">+    a {
+</a><a href="#h24-0-20" id="h24-0-20" class="i">+      background-color: none;
+</a><a href="#h24-0-21" id="h24-0-21" class="i">+      position: relative;
+</a><a href="#h24-0-22" id="h24-0-22" class="i">+      display: block;
+</a><a href="#h24-0-23" id="h24-0-23" class="i">+      text-decoration: underline;
+</a><a href="#h24-0-24" id="h24-0-24" class="i">+
+</a><a href="#h24-0-25" id="h24-0-25" class="i">+      &amp;::after {
+</a><a href="#h24-0-26" id="h24-0-26" class="i">+        display: inline-block;
+</a><a href="#h24-0-27" id="h24-0-27" class="i">+        content: &quot;/&quot;
+</a><a href="#h24-0-28" id="h24-0-28" class="i">+      }
+</a><a href="#h24-0-29" id="h24-0-29" class="i">+
+</a><a href="#h24-0-30" id="h24-0-30" class="i">+      color: #{get-color(&#39;Rosewater&#39;)};
+</a><a href="#h24-0-31" id="h24-0-31" class="i">+
+</a><a href="#h24-0-32" id="h24-0-32" class="i">+      &amp;:hover {
+</a><a href="#h24-0-33" id="h24-0-33" class="i">+        background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h24-0-34" id="h24-0-34" class="i">+      }
+</a><a href="#h24-0-35" id="h24-0-35" class="i">+    }
+</a><a href="#h24-0-36" id="h24-0-36" class="i">+  }
+</a><a href="#h24-0-37" id="h24-0-37" class="i">+}
+</a><b>diff --git a/<a id="h25" href="../file/src/scss/blocks/_topbar.scss.html">src/scss/blocks/_topbar.scss</a> b/<a href="../file/src/scss/blocks/_topbar.scss.html">src/scss/blocks/_topbar.scss</a></b>
+<a href="#h25-0" id="h25-0" class="h">@@ -0,0 +1,10 @@
+</a><a href="#h25-0-0" id="h25-0-0" class="i">+.topbar {
+</a><a href="#h25-0-1" id="h25-0-1" class="i">+  grid-area: topbar;
+</a><a href="#h25-0-2" id="h25-0-2" class="i">+  display: flex;
+</a><a href="#h25-0-3" id="h25-0-3" class="i">+  align-items: center;
+</a><a href="#h25-0-4" id="h25-0-4" class="i">+  justify-content: flex-start;
+</a><a href="#h25-0-5" id="h25-0-5" class="i">+  width: 100%;
+</a><a href="#h25-0-6" id="h25-0-6" class="i">+  background-color: #{get-color(&quot;Mauve&quot;)};
+</a><a href="#h25-0-7" id="h25-0-7" class="i">+  padding: 1rem;
+</a><a href="#h25-0-8" id="h25-0-8" class="i">+  height: 30px;
+</a><a href="#h25-0-9" id="h25-0-9" class="i">+}
+</a><b>diff --git a/<a id="h26" href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a> b/<a href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a></b>
+<a href="#h26-0" id="h26-0" class="h">@@ -18,11 +18,11 @@
+</a> @import &#39;utilities/pixel-border&#39;;
+
+ // Blocks
+<a href="#h26-0-3" id="h26-0-3" class="d">-@import &#39;blocks/main-content&#39;;
+</a><a href="#h26-0-4" id="h26-0-4" class="i">+@import &#39;blocks/topbar&#39;;
+</a> @import &#39;blocks/header&#39;;
+<a href="#h26-0-6" id="h26-0-6" class="i">+@import &#39;blocks/site-nav&#39;;
+</a><a href="#h26-0-7" id="h26-0-7" class="i">+@import &#39;blocks/main-content&#39;;
+</a> @import &#39;blocks/footer&#39;;
+<a href="#h26-0-9" id="h26-0-9" class="d">-@import &#39;blocks/nav&#39;;
+</a><a href="#h26-0-10" id="h26-0-10" class="d">-@import &#39;blocks/page-header&#39;;
+</a> @import &#39;blocks/stack&#39;;
+
+ @import &#39;themes/prism-laserwave&#39;;
+<a href="#h26-1" id="h26-1" class="h">@@ -30,132 +30,81 @@
+</a> html {
+   margin: 0;
+   padding: 0;
+<a href="#h26-1-3" id="h26-1-3" class="d">-  font-size: 14px;
+</a><a href="#h26-1-4" id="h26-1-4" class="d">-  background-color: #424266;
+</a><a href="#h26-1-5" id="h26-1-5" class="i">+  font-size: 18px;
+</a><a href="#h26-1-6" id="h26-1-6" class="i">+  font-family: &quot;FreePixel&quot;;
+</a><a href="#h26-1-7" id="h26-1-7" class="i">+  cursor: url(&#39;../assets/icons/cursor.png&#39;) 4 12, auto;
+</a>   background-image: url(&#39;../assets/images/bg-sample.png&#39;);
+<a href="#h26-1-9" id="h26-1-9" class="d">-  background-repeat: repeat-x;
+</a><a href="#h26-1-10" id="h26-1-10" class="i">+  background-repeat: repeat;
+</a>   background-size: 100vw 100vh;
+<a href="#h26-1-12" id="h26-1-12" class="d">-  font-family: &#39;Terminal&#39;, &#39;Times New Roman&#39;, Times, serif;
+</a><a href="#h26-1-13" id="h26-1-13" class="d">-  cursor: url(&#39;../assets/icons/cursor.png&#39;) 4 12, auto;
+</a><a href="#h26-1-14" id="h26-1-14" class="d">-
+</a><a href="#h26-1-15" id="h26-1-15" class="d">-  @include media-query(&#39;md&#39;) {
+</a><a href="#h26-1-16" id="h26-1-16" class="d">-    font-size: 20px;
+</a><a href="#h26-1-17" id="h26-1-17" class="d">-  }
+</a><a href="#h26-1-18" id="h26-1-18" class="i">+  background-color: #{get-color(&quot;Crust&quot;)};
+</a><a href="#h26-1-19" id="h26-1-19" class="i">+  background-attachment: fixed;
+</a><a href="#h26-1-20" id="h26-1-20" class="i">+  background-blend-mode: luminosity;
+</a> }
+
+ body {
+<a href="#h26-1-24" id="h26-1-24" class="d">-  display: flex;
+</a><a href="#h26-1-25" id="h26-1-25" class="d">-  flex-direction: column;
+</a><a href="#h26-1-26" id="h26-1-26" class="d">-  justify-content: flex-start;
+</a><a href="#h26-1-27" id="h26-1-27" class="d">-  align-items: center;
+</a><a href="#h26-1-28" id="h26-1-28" class="d">-  height: 100vh;
+</a><a href="#h26-1-29" id="h26-1-29" class="d">-  width: 100vw;
+</a><a href="#h26-1-30" id="h26-1-30" class="i">+  padding: 0;
+</a><a href="#h26-1-31" id="h26-1-31" class="i">+  margin: 0;
+</a><a href="#h26-1-32" id="h26-1-32" class="i">+  margin-bottom: 20px;
+</a> }
+
+ .layout {
+<a href="#h26-1-36" id="h26-1-36" class="i">+  max-width: 900px;
+</a><a href="#h26-1-37" id="h26-1-37" class="i">+  margin: 0 auto;
+</a>   display: grid;
+<a href="#h26-1-39" id="h26-1-39" class="d">-  grid-template-columns: 1fr;
+</a><a href="#h26-1-40" id="h26-1-40" class="d">-  padding: 1rem;
+</a><a href="#h26-1-41" id="h26-1-41" class="d">-  grid-template-rows: 100px 80px 1fr 150px;
+</a><a href="#h26-1-42" id="h26-1-42" class="d">-  gap: 0;
+</a><a href="#h26-1-43" id="h26-1-43" class="d">-  grid-template-areas:
+</a><a href="#h26-1-44" id="h26-1-44" class="d">-    &#39;navigation&#39;
+</a><a href="#h26-1-45" id="h26-1-45" class="d">-    &#39;header&#39;
+</a><a href="#h26-1-46" id="h26-1-46" class="d">-    &#39;content&#39;
+</a><a href="#h26-1-47" id="h26-1-47" class="d">-    &#39;footer &#39;;
+</a><a href="#h26-1-48" id="h26-1-48" class="d">-  width: 100vw;
+</a><a href="#h26-1-49" id="h26-1-49" class="d">-  height: 100vh;
+</a><a href="#h26-1-50" id="h26-1-50" class="d">-  overflow-x: hidden;
+</a><a href="#h26-1-51" id="h26-1-51" class="d">-
+</a><a href="#h26-1-52" id="h26-1-52" class="d">-  @include media-query(&#39;md&#39;) {
+</a><a href="#h26-1-53" id="h26-1-53" class="d">-    grid-template-columns: 150px 1fr;
+</a><a href="#h26-1-54" id="h26-1-54" class="d">-    grid-template-rows: 60px 1fr 50px;
+</a><a href="#h26-1-55" id="h26-1-55" class="d">-    gap: 2em 1em;
+</a><a href="#h26-1-56" id="h26-1-56" class="d">-    width: 80ch;
+</a><a href="#h26-1-57" id="h26-1-57" class="d">-    height: calc(100vh - 25ch);
+</a><a href="#h26-1-58" id="h26-1-58" class="d">-    grid-template-areas:
+</a><a href="#h26-1-59" id="h26-1-59" class="d">-      &#39;navigation header&#39;
+</a><a href="#h26-1-60" id="h26-1-60" class="d">-      &#39;navigation content&#39;
+</a><a href="#h26-1-61" id="h26-1-61" class="d">-      &#39;footer footer&#39;;
+</a><a href="#h26-1-62" id="h26-1-62" class="d">-  }
+</a><a href="#h26-1-63" id="h26-1-63" class="d">-}
+</a><a href="#h26-1-64" id="h26-1-64" class="d">-
+</a><a href="#h26-1-65" id="h26-1-65" class="d">-.page-header {
+</a><a href="#h26-1-66" id="h26-1-66" class="d">-  display: flex;
+</a>   gap: 1rem;
+<a href="#h26-1-68" id="h26-1-68" class="d">-  margin: 1rem 0;
+</a><a href="#h26-1-69" id="h26-1-69" class="d">-  background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h26-1-70" id="h26-1-70" class="d">-  border-top-right-radius: 5px;
+</a><a href="#h26-1-71" id="h26-1-71" class="d">-  border-top-left-radius: 5px;
+</a><a href="#h26-1-72" id="h26-1-72" class="d">-
+</a><a href="#h26-1-73" id="h26-1-73" class="d">-  h2 {
+</a><a href="#h26-1-74" id="h26-1-74" class="d">-    font-size: 3rem;
+</a><a href="#h26-1-75" id="h26-1-75" class="d">-  }
+</a><a href="#h26-1-76" id="h26-1-76" class="d">-
+</a><a href="#h26-1-77" id="h26-1-77" class="d">-  img {
+</a><a href="#h26-1-78" id="h26-1-78" class="d">-    display: inline-block;
+</a><a href="#h26-1-79" id="h26-1-79" class="d">-    width: 80px;
+</a><a href="#h26-1-80" id="h26-1-80" class="d">-  }
+</a><a href="#h26-1-81" id="h26-1-81" class="d">-}
+</a><a href="#h26-1-82" id="h26-1-82" class="d">-
+</a><a href="#h26-1-83" id="h26-1-83" class="d">-.site-info {
+</a><a href="#h26-1-84" id="h26-1-84" class="d">-  grid-area: header;
+</a><a href="#h26-1-85" id="h26-1-85" class="d">-  display: flex;
+</a><a href="#h26-1-86" id="h26-1-86" class="d">-  flex-direction: row;
+</a><a href="#h26-1-87" id="h26-1-87" class="d">-  align-items: flex-start;
+</a><a href="#h26-1-88" id="h26-1-88" class="d">-  justify-content: space-between;
+</a><a href="#h26-1-89" id="h26-1-89" class="d">-  padding: 0 1rem;
+</a><a href="#h26-1-90" id="h26-1-90" class="d">-  background-color: #{get-color(&#39;Base&#39;)};
+</a><a href="#h26-1-91" id="h26-1-91" class="d">-  color: #{get-color(&#39;Text&#39;)};
+</a><a href="#h26-1-92" id="h26-1-92" class="d">-  height: fit-content;
+</a><a href="#h26-1-93" id="h26-1-93" class="d">-
+</a><a href="#h26-1-94" id="h26-1-94" class="d">-  .summary {
+</a><a href="#h26-1-95" id="h26-1-95" class="d">-    display: flex;
+</a><a href="#h26-1-96" id="h26-1-96" class="d">-    flex-grow: 1;
+</a><a href="#h26-1-97" id="h26-1-97" class="d">-    justify-content: flex-start;
+</a><a href="#h26-1-98" id="h26-1-98" class="d">-    align-items: center;
+</a><a href="#h26-1-99" id="h26-1-99" class="d">-    font-size: 13px;
+</a><a href="#h26-1-100" id="h26-1-100" class="d">-    gap: 1rem;
+</a><a href="#h26-1-101" id="h26-1-101" class="d">-  }
+</a><a href="#h26-1-102" id="h26-1-102" class="d">-}
+</a><a href="#h26-1-103" id="h26-1-103" class="d">-
+</a><a href="#h26-1-104" id="h26-1-104" class="d">-pre {
+</a><a href="#h26-1-105" id="h26-1-105" class="d">-  font-size: 0.825rem !important;
+</a><a href="#h26-1-106" id="h26-1-106" class="d">-}
+</a><a href="#h26-1-107" id="h26-1-107" class="d">-
+</a><a href="#h26-1-108" id="h26-1-108" class="d">-table {
+</a><a href="#h26-1-109" id="h26-1-109" class="d">-  width: 80%;
+</a><a href="#h26-1-110" id="h26-1-110" class="d">-  border-collapse: collapse;
+</a><a href="#h26-1-111" id="h26-1-111" class="d">-  font-size: 1rem;
+</a><a href="#h26-1-112" id="h26-1-112" class="d">-  margin: 0.5rem 0;
+</a><a href="#h26-1-113" id="h26-1-113" class="d">-  font-size: 0.9rem;
+</a><a href="#h26-1-114" id="h26-1-114" class="d">-}
+</a><a href="#h26-1-115" id="h26-1-115" class="d">-
+</a><a href="#h26-1-116" id="h26-1-116" class="d">-caption,
+</a><a href="#h26-1-117" id="h26-1-117" class="d">-th,
+</a><a href="#h26-1-118" id="h26-1-118" class="d">-td {
+</a><a href="#h26-1-119" id="h26-1-119" class="d">-  padding: 0.5rem;
+</a><a href="#h26-1-120" id="h26-1-120" class="i">+  grid-template-columns: 1fr 200px;
+</a><a href="#h26-1-121" id="h26-1-121" class="i">+  grid-template-rows: auto auto auto auto;
+</a><a href="#h26-1-122" id="h26-1-122" class="i">+  grid-template-areas:
+</a><a href="#h26-1-123" id="h26-1-123" class="i">+    &quot;topbar topbar&quot;
+</a><a href="#h26-1-124" id="h26-1-124" class="i">+    &quot;header header&quot;
+</a><a href="#h26-1-125" id="h26-1-125" class="i">+    &quot;content navigation&quot;
+</a><a href="#h26-1-126" id="h26-1-126" class="i">+    &quot;footer footer&quot;;
+</a> }
+
+<a href="#h26-1-129" id="h26-1-129" class="d">-caption,
+</a><a href="#h26-1-130" id="h26-1-130" class="d">-th {
+</a><a href="#h26-1-131" id="h26-1-131" class="d">-  text-align: left;
+</a><a href="#h26-1-132" id="h26-1-132" class="i">+.ascii {
+</a><a href="#h26-1-133" id="h26-1-133" class="i">+  font-family: monospace, &quot;Courier New&quot;, Courier;
+</a><a href="#h26-1-134" id="h26-1-134" class="i">+  white-space: pre;
+</a><a href="#h26-1-135" id="h26-1-135" class="i">+  font-size: 5px;
+</a><a href="#h26-1-136" id="h26-1-136" class="i">+  /* ajusta según se vea mejor */
+</a><a href="#h26-1-137" id="h26-1-137" class="i">+  line-height: 1;
+</a><a href="#h26-1-138" id="h26-1-138" class="i">+  color: white;
+</a><a href="#h26-1-139" id="h26-1-139" class="i">+  /* opcional: estilo tipo terminal */
+</a><a href="#h26-1-140" id="h26-1-140" class="i">+  /* opcional */
+</a><a href="#h26-1-141" id="h26-1-141" class="i">+  padding: 1rem;
+</a><a href="#h26-1-142" id="h26-1-142" class="i">+  overflow-x: auto;
+</a><a href="#h26-1-143" id="h26-1-143" class="i">+  background-attachment: fixed;
+</a> }
+
+<a href="#h26-1-146" id="h26-1-146" class="d">-th {
+</a><a href="#h26-1-147" id="h26-1-147" class="d">-  background-color: #{get-color(&#39;Rosewater&#39;)};
+</a><a href="#h26-1-148" id="h26-1-148" class="d">-  color: black;
+</a><a href="#h26-1-149" id="h26-1-149" class="i">+body {
+</a><a href="#h26-1-150" id="h26-1-150" class="i">+  padding: 0;
+</a><a href="#h26-1-151" id="h26-1-151" class="i">+  margin: 0;
+</a><a href="#h26-1-152" id="h26-1-152" class="i">+  margin-bottom: 20px;
+</a> }
+
+<a href="#h26-1-155" id="h26-1-155" class="d">-td {
+</a><a href="#h26-1-156" id="h26-1-156" class="d">-  border: 1px solid #{get-color(&#39;Text&#39;)};
+</a><a href="#h26-1-157" id="h26-1-157" class="d">-  text-align: center;
+</a><a href="#h26-1-158" id="h26-1-158" class="i">+.layout {
+</a><a href="#h26-1-159" id="h26-1-159" class="i">+  max-width: 900px;
+</a><a href="#h26-1-160" id="h26-1-160" class="i">+  margin: 0 auto;
+</a><a href="#h26-1-161" id="h26-1-161" class="i">+  display: grid;
+</a><a href="#h26-1-162" id="h26-1-162" class="i">+  gap: 1rem;
+</a><a href="#h26-1-163" id="h26-1-163" class="i">+  grid-template-columns: 1fr 200px;
+</a><a href="#h26-1-164" id="h26-1-164" class="i">+  grid-template-rows: auto auto auto auto;
+</a><a href="#h26-1-165" id="h26-1-165" class="i">+  grid-template-areas:
+</a><a href="#h26-1-166" id="h26-1-166" class="i">+    &quot;topbar topbar&quot;
+</a><a href="#h26-1-167" id="h26-1-167" class="i">+    &quot;header header&quot;
+</a><a href="#h26-1-168" id="h26-1-168" class="i">+    &quot;content navigation&quot;
+</a><a href="#h26-1-169" id="h26-1-169" class="i">+    &quot;footer footer&quot;;
+</a> }
+
+<a href="#h26-1-172" id="h26-1-172" class="d">-.warmup {
+</a><a href="#h26-1-173" id="h26-1-173" class="d">-  color: #{get-color(&#39;Brid&#39;)};
+</a><a href="#h26-1-174" id="h26-1-174" class="d">-}
+</a><a href="#h26-1-175" id="h26-1-175" class="i">+.ascii {
+</a><a href="#h26-1-176" id="h26-1-176" class="i">+  font-family: monospace, &quot;Courier New&quot;, Courier;
+</a><a href="#h26-1-177" id="h26-1-177" class="i">+  white-space: pre;
+</a><a href="#h26-1-178" id="h26-1-178" class="i">+  font-size: 10px;
+</a><a href="#h26-1-179" id="h26-1-179" class="i">+  /* ajusta según se vea mejor */
+</a><a href="#h26-1-180" id="h26-1-180" class="i">+  line-height: 0.9;
+</a><a href="#h26-1-181" id="h26-1-181" class="i">+  color: #{get-color(&quot;Text&quot;)};
+</a><a href="#h26-1-182" id="h26-1-182" class="i">+  /* opcional: estilo tipo terminal */
+</a><a href="#h26-1-183" id="h26-1-183" class="i">+  /* opcional */
+</a>
+<a href="#h26-1-185" id="h26-1-185" class="d">-.failure {
+</a><a href="#h26-1-186" id="h26-1-186" class="d">-  color: #{get-color(&#39;Red&#39;)};
+</a><a href="#h26-1-187" id="h26-1-187" class="i">+  padding: 1rem;
+</a><a href="#h26-1-188" id="h26-1-188" class="i">+  overflow-x: auto;
+</a> }
+<b>diff --git a/<a id="h27" href="../file/src/scss/page.scss.html">src/scss/page.scss</a> b/<a href="../file/src/scss/page.scss.html">src/scss/page.scss</a></b>
+<a href="#h27-0" id="h27-0" class="h">@@ -16,8 +16,10 @@ $generate-utility-classes: false;
+</a>
+ html {
+   cursor: url(&#39;../../assets/icons/cursor.png&#39;) 4 12, auto;
+<a href="#h27-0-3" id="h27-0-3" class="d">-  background-color: #424266;
+</a><a href="#h27-0-4" id="h27-0-4" class="i">+  background-color: #{get-color(&quot;Crust&quot;)};
+</a>   background-image: url(&#39;../../assets/images/bg-sample.png&#39;);
+<a href="#h27-0-6" id="h27-0-6" class="d">-  background-repeat: repeat-x;
+</a><a href="#h27-0-7" id="h27-0-7" class="i">+  background-repeat: no-repeat;
+</a>   background-size: 100vw 100vh;
+<a href="#h27-0-9" id="h27-0-9" class="i">+  background-attachment: fixed;
+</a><a href="#h27-0-10" id="h27-0-10" class="i">+  background-blend-mode: luminosity;
+</a> }
+<b>diff --git a/<a id="h28" href="../file/src/scss/utilities/_pixel-border.scss.html">src/scss/utilities/_pixel-border.scss</a> b/<a href="../file/src/scss/utilities/_pixel-border.scss.html">src/scss/utilities/_pixel-border.scss</a></b>
+<a href="#h28-0" id="h28-0" class="h">@@ -1,44 +1,43 @@
+</a><a href="#h28-0-0" id="h28-0-0" class="d">-@mixin pixelBorder($backgroundColor, $borderColor, $borderWidth: 2px) {
+</a><a href="#h28-0-1" id="h28-0-1" class="i">+@mixin pixelBorder($bg, $light, $dark, $size: 2px) {
+</a><a href="#h28-0-2" id="h28-0-2" class="i">+  $outline: darken($dark, 20%); // contorno más oscuro
+</a><a href="#h28-0-3" id="h28-0-3" class="i">+  background-color: $bg;
+</a><a href="#h28-0-4" id="h28-0-4" class="i">+
+</a>   box-shadow:
+<a href="#h28-0-6" id="h28-0-6" class="d">-    // Background Color
+</a><a href="#h28-0-7" id="h28-0-7" class="d">-    0 (-$borderWidth * 3) 0 (-$borderWidth) $backgroundColor,
+</a><a href="#h28-0-8" id="h28-0-8" class="d">-    0 ($borderWidth * 3) 0 (-$borderWidth) $backgroundColor,
+</a><a href="#h28-0-9" id="h28-0-9" class="d">-    0 (-$borderWidth * 6) 0 (-$borderWidth * 2) $backgroundColor,
+</a><a href="#h28-0-10" id="h28-0-10" class="d">-    0 ($borderWidth * 6) 0 (-$borderWidth * 2) $backgroundColor,
+</a><a href="#h28-0-11" id="h28-0-11" class="d">-    0 (-$borderWidth * 9) 0 (-$borderWidth * 4) $backgroundColor,
+</a><a href="#h28-0-12" id="h28-0-12" class="d">-    0 ($borderWidth * 9) 0 (-$borderWidth * 4) $backgroundColor,
+</a><a href="#h28-0-13" id="h28-0-13" class="d">-    0 (-$borderWidth * 12) 0 (-$borderWidth * 6) $backgroundColor,
+</a><a href="#h28-0-14" id="h28-0-14" class="d">-    0 ($borderWidth * 12) 0 (-$borderWidth * 6) $backgroundColor,
+</a><a href="#h28-0-15" id="h28-0-15" class="d">-    // Border
+</a><a href="#h28-0-16" id="h28-0-16" class="d">-    (-$borderWidth) 0 0 0 $borderColor,
+</a><a href="#h28-0-17" id="h28-0-17" class="d">-    ($borderWidth) 0 0 0 $borderColor, 0 (-$borderWidth * 2) 0 0 $borderColor,
+</a><a href="#h28-0-18" id="h28-0-18" class="d">-    0 ($borderWidth * 2) 0 0 $borderColor,
+</a><a href="#h28-0-19" id="h28-0-19" class="d">-    0 (-$borderWidth * 5) 0 (-$borderWidth) $borderColor,
+</a><a href="#h28-0-20" id="h28-0-20" class="d">-    0 ($borderWidth * 5) 0 (-$borderWidth) $borderColor,
+</a><a href="#h28-0-21" id="h28-0-21" class="d">-    0 (-$borderWidth * 7) 0 (-$borderWidth * 2) $borderColor,
+</a><a href="#h28-0-22" id="h28-0-22" class="d">-    0 ($borderWidth * 7) 0 (-$borderWidth * 2) $borderColor,
+</a><a href="#h28-0-23" id="h28-0-23" class="d">-    0 (-$borderWidth * 10) 0 (-$borderWidth * 4) $borderColor,
+</a><a href="#h28-0-24" id="h28-0-24" class="d">-    0 ($borderWidth * 10) 0 (-$borderWidth * 4) $borderColor,
+</a><a href="#h28-0-25" id="h28-0-25" class="d">-    0 (-$borderWidth * 13) 0 (-$borderWidth * 6) $borderColor,
+</a><a href="#h28-0-26" id="h28-0-26" class="d">-    0 ($borderWidth * 13) 0 (-$borderWidth * 6) $borderColor;
+</a><a href="#h28-0-27" id="h28-0-27" class="i">+    // Luz (arriba e izquierda)
+</a><a href="#h28-0-28" id="h28-0-28" class="i">+    -#{$size} -#{$size} 0 0 $light,
+</a><a href="#h28-0-29" id="h28-0-29" class="i">+     0        -#{$size} 0 0 $light,
+</a><a href="#h28-0-30" id="h28-0-30" class="i">+    -#{$size}  0        0 0 $light,
+</a><a href="#h28-0-31" id="h28-0-31" class="i">+
+</a><a href="#h28-0-32" id="h28-0-32" class="i">+    // Sombra (derecha y abajo)
+</a><a href="#h28-0-33" id="h28-0-33" class="i">+     #{$size}  0        0 0 $dark,
+</a><a href="#h28-0-34" id="h28-0-34" class="i">+     0         #{$size} 0 0 $dark,
+</a><a href="#h28-0-35" id="h28-0-35" class="i">+     #{$size}  #{$size} 0 0 $dark,
+</a><a href="#h28-0-36" id="h28-0-36" class="i">+
+</a><a href="#h28-0-37" id="h28-0-37" class="i">+    // Contorno exterior (más oscuro)
+</a><a href="#h28-0-38" id="h28-0-38" class="i">+    -#{$size * 2} -#{$size * 2} 0 0 $outline,
+</a><a href="#h28-0-39" id="h28-0-39" class="i">+     #{$size * 2} -#{$size * 2} 0 0 $outline,
+</a><a href="#h28-0-40" id="h28-0-40" class="i">+    -#{$size * 2}  #{$size * 2} 0 0 $outline,
+</a><a href="#h28-0-41" id="h28-0-41" class="i">+     #{$size * 2}  #{$size * 2} 0 0 $outline;
+</a> }
+
+ .pixelBorder {
+<a href="#h28-0-45" id="h28-0-45" class="i">+  display: inline-block;
+</a><a href="#h28-0-46" id="h28-0-46" class="i">+  padding: 1rem;
+</a>   transform: translateZ(0); // Safari fix
+
+   &amp;--2 {
+<a href="#h28-0-50" id="h28-0-50" class="d">-    @include pixelBorder(#1e1e2e, #f4c8a5, 2px);
+</a><a href="#h28-0-51" id="h28-0-51" class="i">+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 2px);
+</a>   }
+
+   &amp;--4 {
+<a href="#h28-0-55" id="h28-0-55" class="d">-    @include pixelBorder(#1e1e2e, #f4c8a5, 4px);
+</a><a href="#h28-0-56" id="h28-0-56" class="i">+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 4px);
+</a>   }
+
+   &amp;--6 {
+<a href="#h28-0-60" id="h28-0-60" class="d">-    @include pixelBorder(#1e1e2e, #f4c8a5, 6px);
+</a><a href="#h28-0-61" id="h28-0-61" class="i">+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 6px);
+</a>   }
+
+   &amp;--10 {
+<a href="#h28-0-65" id="h28-0-65" class="d">-    @include pixelBorder(#1e1e2e, #f4c8a5, 10px);
+</a><a href="#h28-0-66" id="h28-0-66" class="i">+    @include pixelBorder(#f3d6b6, #fff1de, #ac7d75, 10px);
+</a>   }
+ }
+</pre>
+</div>
+</body>
+</html>

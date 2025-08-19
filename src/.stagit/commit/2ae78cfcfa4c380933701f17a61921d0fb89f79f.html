@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>create critical sass and import reset - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/2ae78cfcfa4c380933701f17a61921d0fb89f79f.html">2ae78cfcfa4c380933701f17a61921d0fb89f79f</a>
+<b>parent</b> <a href="../commit/dff46fae5f7bf5b506099f7a347cf7475336c41e.html">dff46fae5f7bf5b506099f7a347cf7475336c41e</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Sun,  7 Nov 2021 21:02:21 -0600
+
+create critical sass and import reset
+
+<b>Diffstat:</b>
+<table><tr><td class="A">A</td><td><a href="#h0">dist/fonts/Lora-400-cyrillic-ext1.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h1">dist/fonts/Lora-400-cyrillic2.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h2">dist/fonts/Lora-400-latin-ext4.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h3">dist/fonts/Lora-400-latin5.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h4">dist/fonts/Lora-400-vietnamese3.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h5">dist/fonts/Lora-600-cyrillic-ext6.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h6">dist/fonts/Lora-600-cyrillic7.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h7">dist/fonts/Lora-600-latin-ext9.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h8">dist/fonts/Lora-600-latin10.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h9">dist/fonts/Lora-600-vietnamese8.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h10">dist/fonts/Nunito-400-cyrillic-ext11.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h11">dist/fonts/Nunito-400-cyrillic-ext16.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h12">dist/fonts/Nunito-400-cyrillic12.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h13">dist/fonts/Nunito-400-cyrillic17.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h14">dist/fonts/Nunito-400-latin-ext14.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h15">dist/fonts/Nunito-400-latin-ext19.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h16">dist/fonts/Nunito-400-latin15.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h17">dist/fonts/Nunito-400-latin20.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h18">dist/fonts/Nunito-400-vietnamese13.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h19">dist/fonts/Nunito-400-vietnamese18.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h20">dist/fonts/Nunito-700-cyrillic-ext21.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h21">dist/fonts/Nunito-700-cyrillic22.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h22">dist/fonts/Nunito-700-latin-ext24.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h23">dist/fonts/Nunito-700-latin25.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h24">dist/fonts/Nunito-700-vietnamese23.woff2</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="A">A</td><td><a href="#h25">dist/fonts/fonts.css</a></td><td> | </td><td class="num">225</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h26">dist/index.html</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h27">package-lock.json</a></td><td> | </td><td class="num">82</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h28">package.json</a></td><td> | </td><td class="num">2</td><td><span class="i">++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h29">src/_includes/css/critical.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h30">src/scss/_config.scss</a></td><td> | </td><td class="num">156</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="C">C</td><td><a href="#h31">src/scss/critical.scss -&gt; src/scss/_reset.scss</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h32">src/scss/critical.scss</a></td><td> | </td><td class="num">102</td><td><span class="i">++++++++++++++++++++++++++++++++++++</span><span class="d">-------------------------------------------</span></td></tr>
+</table></pre><pre>33 files changed, 515 insertions(+), 60 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/dist/fonts/Lora-400-cyrillic-ext1.woff2.html">dist/fonts/Lora-400-cyrillic-ext1.woff2</a> b/<a href="../file/dist/fonts/Lora-400-cyrillic-ext1.woff2.html">dist/fonts/Lora-400-cyrillic-ext1.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h1" href="../file/dist/fonts/Lora-400-cyrillic2.woff2.html">dist/fonts/Lora-400-cyrillic2.woff2</a> b/<a href="../file/dist/fonts/Lora-400-cyrillic2.woff2.html">dist/fonts/Lora-400-cyrillic2.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h2" href="../file/dist/fonts/Lora-400-latin-ext4.woff2.html">dist/fonts/Lora-400-latin-ext4.woff2</a> b/<a href="../file/dist/fonts/Lora-400-latin-ext4.woff2.html">dist/fonts/Lora-400-latin-ext4.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h3" href="../file/dist/fonts/Lora-400-latin5.woff2.html">dist/fonts/Lora-400-latin5.woff2</a> b/<a href="../file/dist/fonts/Lora-400-latin5.woff2.html">dist/fonts/Lora-400-latin5.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h4" href="../file/dist/fonts/Lora-400-vietnamese3.woff2.html">dist/fonts/Lora-400-vietnamese3.woff2</a> b/<a href="../file/dist/fonts/Lora-400-vietnamese3.woff2.html">dist/fonts/Lora-400-vietnamese3.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h5" href="../file/dist/fonts/Lora-600-cyrillic-ext6.woff2.html">dist/fonts/Lora-600-cyrillic-ext6.woff2</a> b/<a href="../file/dist/fonts/Lora-600-cyrillic-ext6.woff2.html">dist/fonts/Lora-600-cyrillic-ext6.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h6" href="../file/dist/fonts/Lora-600-cyrillic7.woff2.html">dist/fonts/Lora-600-cyrillic7.woff2</a> b/<a href="../file/dist/fonts/Lora-600-cyrillic7.woff2.html">dist/fonts/Lora-600-cyrillic7.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h7" href="../file/dist/fonts/Lora-600-latin-ext9.woff2.html">dist/fonts/Lora-600-latin-ext9.woff2</a> b/<a href="../file/dist/fonts/Lora-600-latin-ext9.woff2.html">dist/fonts/Lora-600-latin-ext9.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h8" href="../file/dist/fonts/Lora-600-latin10.woff2.html">dist/fonts/Lora-600-latin10.woff2</a> b/<a href="../file/dist/fonts/Lora-600-latin10.woff2.html">dist/fonts/Lora-600-latin10.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h9" href="../file/dist/fonts/Lora-600-vietnamese8.woff2.html">dist/fonts/Lora-600-vietnamese8.woff2</a> b/<a href="../file/dist/fonts/Lora-600-vietnamese8.woff2.html">dist/fonts/Lora-600-vietnamese8.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h10" href="../file/dist/fonts/Nunito-400-cyrillic-ext11.woff2.html">dist/fonts/Nunito-400-cyrillic-ext11.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-cyrillic-ext11.woff2.html">dist/fonts/Nunito-400-cyrillic-ext11.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h11" href="../file/dist/fonts/Nunito-400-cyrillic-ext16.woff2.html">dist/fonts/Nunito-400-cyrillic-ext16.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-cyrillic-ext16.woff2.html">dist/fonts/Nunito-400-cyrillic-ext16.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h12" href="../file/dist/fonts/Nunito-400-cyrillic12.woff2.html">dist/fonts/Nunito-400-cyrillic12.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-cyrillic12.woff2.html">dist/fonts/Nunito-400-cyrillic12.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h13" href="../file/dist/fonts/Nunito-400-cyrillic17.woff2.html">dist/fonts/Nunito-400-cyrillic17.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-cyrillic17.woff2.html">dist/fonts/Nunito-400-cyrillic17.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h14" href="../file/dist/fonts/Nunito-400-latin-ext14.woff2.html">dist/fonts/Nunito-400-latin-ext14.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-latin-ext14.woff2.html">dist/fonts/Nunito-400-latin-ext14.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h15" href="../file/dist/fonts/Nunito-400-latin-ext19.woff2.html">dist/fonts/Nunito-400-latin-ext19.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-latin-ext19.woff2.html">dist/fonts/Nunito-400-latin-ext19.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h16" href="../file/dist/fonts/Nunito-400-latin15.woff2.html">dist/fonts/Nunito-400-latin15.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-latin15.woff2.html">dist/fonts/Nunito-400-latin15.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h17" href="../file/dist/fonts/Nunito-400-latin20.woff2.html">dist/fonts/Nunito-400-latin20.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-latin20.woff2.html">dist/fonts/Nunito-400-latin20.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h18" href="../file/dist/fonts/Nunito-400-vietnamese13.woff2.html">dist/fonts/Nunito-400-vietnamese13.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-vietnamese13.woff2.html">dist/fonts/Nunito-400-vietnamese13.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h19" href="../file/dist/fonts/Nunito-400-vietnamese18.woff2.html">dist/fonts/Nunito-400-vietnamese18.woff2</a> b/<a href="../file/dist/fonts/Nunito-400-vietnamese18.woff2.html">dist/fonts/Nunito-400-vietnamese18.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h20" href="../file/dist/fonts/Nunito-700-cyrillic-ext21.woff2.html">dist/fonts/Nunito-700-cyrillic-ext21.woff2</a> b/<a href="../file/dist/fonts/Nunito-700-cyrillic-ext21.woff2.html">dist/fonts/Nunito-700-cyrillic-ext21.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h21" href="../file/dist/fonts/Nunito-700-cyrillic22.woff2.html">dist/fonts/Nunito-700-cyrillic22.woff2</a> b/<a href="../file/dist/fonts/Nunito-700-cyrillic22.woff2.html">dist/fonts/Nunito-700-cyrillic22.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h22" href="../file/dist/fonts/Nunito-700-latin-ext24.woff2.html">dist/fonts/Nunito-700-latin-ext24.woff2</a> b/<a href="../file/dist/fonts/Nunito-700-latin-ext24.woff2.html">dist/fonts/Nunito-700-latin-ext24.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h23" href="../file/dist/fonts/Nunito-700-latin25.woff2.html">dist/fonts/Nunito-700-latin25.woff2</a> b/<a href="../file/dist/fonts/Nunito-700-latin25.woff2.html">dist/fonts/Nunito-700-latin25.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h24" href="../file/dist/fonts/Nunito-700-vietnamese23.woff2.html">dist/fonts/Nunito-700-vietnamese23.woff2</a> b/<a href="../file/dist/fonts/Nunito-700-vietnamese23.woff2.html">dist/fonts/Nunito-700-vietnamese23.woff2</a></b>
+Binary files differ.
+<b>diff --git a/<a id="h25" href="../file/dist/fonts/fonts.css.html">dist/fonts/fonts.css</a> b/<a href="../file/dist/fonts/fonts.css.html">dist/fonts/fonts.css</a></b>
+<a href="#h25-0" id="h25-0" class="h">@@ -0,0 +1,225 @@
+</a><a href="#h25-0-0" id="h25-0-0" class="i">+/* cyrillic-ext */
+</a><a href="#h25-0-1" id="h25-0-1" class="i">+@font-face {
+</a><a href="#h25-0-2" id="h25-0-2" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-3" id="h25-0-3" class="i">+  font-style: normal;
+</a><a href="#h25-0-4" id="h25-0-4" class="i">+  font-weight: 400;
+</a><a href="#h25-0-5" id="h25-0-5" class="i">+  font-display: swap;
+</a><a href="#h25-0-6" id="h25-0-6" class="i">+  src: url(&#39;./Lora-400-cyrillic-ext1.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-7" id="h25-0-7" class="i">+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+</a><a href="#h25-0-8" id="h25-0-8" class="i">+}
+</a><a href="#h25-0-9" id="h25-0-9" class="i">+/* cyrillic */
+</a><a href="#h25-0-10" id="h25-0-10" class="i">+@font-face {
+</a><a href="#h25-0-11" id="h25-0-11" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-12" id="h25-0-12" class="i">+  font-style: normal;
+</a><a href="#h25-0-13" id="h25-0-13" class="i">+  font-weight: 400;
+</a><a href="#h25-0-14" id="h25-0-14" class="i">+  font-display: swap;
+</a><a href="#h25-0-15" id="h25-0-15" class="i">+  src: url(&#39;./Lora-400-cyrillic2.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-16" id="h25-0-16" class="i">+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+</a><a href="#h25-0-17" id="h25-0-17" class="i">+}
+</a><a href="#h25-0-18" id="h25-0-18" class="i">+/* vietnamese */
+</a><a href="#h25-0-19" id="h25-0-19" class="i">+@font-face {
+</a><a href="#h25-0-20" id="h25-0-20" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-21" id="h25-0-21" class="i">+  font-style: normal;
+</a><a href="#h25-0-22" id="h25-0-22" class="i">+  font-weight: 400;
+</a><a href="#h25-0-23" id="h25-0-23" class="i">+  font-display: swap;
+</a><a href="#h25-0-24" id="h25-0-24" class="i">+  src: url(&#39;./Lora-400-vietnamese3.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-25" id="h25-0-25" class="i">+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+</a><a href="#h25-0-26" id="h25-0-26" class="i">+}
+</a><a href="#h25-0-27" id="h25-0-27" class="i">+/* latin-ext */
+</a><a href="#h25-0-28" id="h25-0-28" class="i">+@font-face {
+</a><a href="#h25-0-29" id="h25-0-29" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-30" id="h25-0-30" class="i">+  font-style: normal;
+</a><a href="#h25-0-31" id="h25-0-31" class="i">+  font-weight: 400;
+</a><a href="#h25-0-32" id="h25-0-32" class="i">+  font-display: swap;
+</a><a href="#h25-0-33" id="h25-0-33" class="i">+  src: url(&#39;./Lora-400-latin-ext4.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-34" id="h25-0-34" class="i">+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+</a><a href="#h25-0-35" id="h25-0-35" class="i">+}
+</a><a href="#h25-0-36" id="h25-0-36" class="i">+/* latin */
+</a><a href="#h25-0-37" id="h25-0-37" class="i">+@font-face {
+</a><a href="#h25-0-38" id="h25-0-38" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-39" id="h25-0-39" class="i">+  font-style: normal;
+</a><a href="#h25-0-40" id="h25-0-40" class="i">+  font-weight: 400;
+</a><a href="#h25-0-41" id="h25-0-41" class="i">+  font-display: swap;
+</a><a href="#h25-0-42" id="h25-0-42" class="i">+  src: url(&#39;./Lora-400-latin5.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-43" id="h25-0-43" class="i">+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+</a><a href="#h25-0-44" id="h25-0-44" class="i">+}
+</a><a href="#h25-0-45" id="h25-0-45" class="i">+/* cyrillic-ext */
+</a><a href="#h25-0-46" id="h25-0-46" class="i">+@font-face {
+</a><a href="#h25-0-47" id="h25-0-47" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-48" id="h25-0-48" class="i">+  font-style: normal;
+</a><a href="#h25-0-49" id="h25-0-49" class="i">+  font-weight: 600;
+</a><a href="#h25-0-50" id="h25-0-50" class="i">+  font-display: swap;
+</a><a href="#h25-0-51" id="h25-0-51" class="i">+  src: url(&#39;./Lora-600-cyrillic-ext6.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-52" id="h25-0-52" class="i">+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+</a><a href="#h25-0-53" id="h25-0-53" class="i">+}
+</a><a href="#h25-0-54" id="h25-0-54" class="i">+/* cyrillic */
+</a><a href="#h25-0-55" id="h25-0-55" class="i">+@font-face {
+</a><a href="#h25-0-56" id="h25-0-56" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-57" id="h25-0-57" class="i">+  font-style: normal;
+</a><a href="#h25-0-58" id="h25-0-58" class="i">+  font-weight: 600;
+</a><a href="#h25-0-59" id="h25-0-59" class="i">+  font-display: swap;
+</a><a href="#h25-0-60" id="h25-0-60" class="i">+  src: url(&#39;./Lora-600-cyrillic7.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-61" id="h25-0-61" class="i">+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+</a><a href="#h25-0-62" id="h25-0-62" class="i">+}
+</a><a href="#h25-0-63" id="h25-0-63" class="i">+/* vietnamese */
+</a><a href="#h25-0-64" id="h25-0-64" class="i">+@font-face {
+</a><a href="#h25-0-65" id="h25-0-65" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-66" id="h25-0-66" class="i">+  font-style: normal;
+</a><a href="#h25-0-67" id="h25-0-67" class="i">+  font-weight: 600;
+</a><a href="#h25-0-68" id="h25-0-68" class="i">+  font-display: swap;
+</a><a href="#h25-0-69" id="h25-0-69" class="i">+  src: url(&#39;./Lora-600-vietnamese8.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-70" id="h25-0-70" class="i">+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+</a><a href="#h25-0-71" id="h25-0-71" class="i">+}
+</a><a href="#h25-0-72" id="h25-0-72" class="i">+/* latin-ext */
+</a><a href="#h25-0-73" id="h25-0-73" class="i">+@font-face {
+</a><a href="#h25-0-74" id="h25-0-74" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-75" id="h25-0-75" class="i">+  font-style: normal;
+</a><a href="#h25-0-76" id="h25-0-76" class="i">+  font-weight: 600;
+</a><a href="#h25-0-77" id="h25-0-77" class="i">+  font-display: swap;
+</a><a href="#h25-0-78" id="h25-0-78" class="i">+  src: url(&#39;./Lora-600-latin-ext9.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-79" id="h25-0-79" class="i">+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+</a><a href="#h25-0-80" id="h25-0-80" class="i">+}
+</a><a href="#h25-0-81" id="h25-0-81" class="i">+/* latin */
+</a><a href="#h25-0-82" id="h25-0-82" class="i">+@font-face {
+</a><a href="#h25-0-83" id="h25-0-83" class="i">+  font-family: &#39;Lora&#39;;
+</a><a href="#h25-0-84" id="h25-0-84" class="i">+  font-style: normal;
+</a><a href="#h25-0-85" id="h25-0-85" class="i">+  font-weight: 600;
+</a><a href="#h25-0-86" id="h25-0-86" class="i">+  font-display: swap;
+</a><a href="#h25-0-87" id="h25-0-87" class="i">+  src: url(&#39;./Lora-600-latin10.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-88" id="h25-0-88" class="i">+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+</a><a href="#h25-0-89" id="h25-0-89" class="i">+}
+</a><a href="#h25-0-90" id="h25-0-90" class="i">+/* cyrillic-ext */
+</a><a href="#h25-0-91" id="h25-0-91" class="i">+@font-face {
+</a><a href="#h25-0-92" id="h25-0-92" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-93" id="h25-0-93" class="i">+  font-style: italic;
+</a><a href="#h25-0-94" id="h25-0-94" class="i">+  font-weight: 400;
+</a><a href="#h25-0-95" id="h25-0-95" class="i">+  font-display: swap;
+</a><a href="#h25-0-96" id="h25-0-96" class="i">+  src: url(&#39;./Nunito-400-cyrillic-ext11.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-97" id="h25-0-97" class="i">+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+</a><a href="#h25-0-98" id="h25-0-98" class="i">+}
+</a><a href="#h25-0-99" id="h25-0-99" class="i">+/* cyrillic */
+</a><a href="#h25-0-100" id="h25-0-100" class="i">+@font-face {
+</a><a href="#h25-0-101" id="h25-0-101" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-102" id="h25-0-102" class="i">+  font-style: italic;
+</a><a href="#h25-0-103" id="h25-0-103" class="i">+  font-weight: 400;
+</a><a href="#h25-0-104" id="h25-0-104" class="i">+  font-display: swap;
+</a><a href="#h25-0-105" id="h25-0-105" class="i">+  src: url(&#39;./Nunito-400-cyrillic12.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-106" id="h25-0-106" class="i">+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+</a><a href="#h25-0-107" id="h25-0-107" class="i">+}
+</a><a href="#h25-0-108" id="h25-0-108" class="i">+/* vietnamese */
+</a><a href="#h25-0-109" id="h25-0-109" class="i">+@font-face {
+</a><a href="#h25-0-110" id="h25-0-110" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-111" id="h25-0-111" class="i">+  font-style: italic;
+</a><a href="#h25-0-112" id="h25-0-112" class="i">+  font-weight: 400;
+</a><a href="#h25-0-113" id="h25-0-113" class="i">+  font-display: swap;
+</a><a href="#h25-0-114" id="h25-0-114" class="i">+  src: url(&#39;./Nunito-400-vietnamese13.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-115" id="h25-0-115" class="i">+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+</a><a href="#h25-0-116" id="h25-0-116" class="i">+}
+</a><a href="#h25-0-117" id="h25-0-117" class="i">+/* latin-ext */
+</a><a href="#h25-0-118" id="h25-0-118" class="i">+@font-face {
+</a><a href="#h25-0-119" id="h25-0-119" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-120" id="h25-0-120" class="i">+  font-style: italic;
+</a><a href="#h25-0-121" id="h25-0-121" class="i">+  font-weight: 400;
+</a><a href="#h25-0-122" id="h25-0-122" class="i">+  font-display: swap;
+</a><a href="#h25-0-123" id="h25-0-123" class="i">+  src: url(&#39;./Nunito-400-latin-ext14.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-124" id="h25-0-124" class="i">+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+</a><a href="#h25-0-125" id="h25-0-125" class="i">+}
+</a><a href="#h25-0-126" id="h25-0-126" class="i">+/* latin */
+</a><a href="#h25-0-127" id="h25-0-127" class="i">+@font-face {
+</a><a href="#h25-0-128" id="h25-0-128" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-129" id="h25-0-129" class="i">+  font-style: italic;
+</a><a href="#h25-0-130" id="h25-0-130" class="i">+  font-weight: 400;
+</a><a href="#h25-0-131" id="h25-0-131" class="i">+  font-display: swap;
+</a><a href="#h25-0-132" id="h25-0-132" class="i">+  src: url(&#39;./Nunito-400-latin15.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-133" id="h25-0-133" class="i">+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+</a><a href="#h25-0-134" id="h25-0-134" class="i">+}
+</a><a href="#h25-0-135" id="h25-0-135" class="i">+/* cyrillic-ext */
+</a><a href="#h25-0-136" id="h25-0-136" class="i">+@font-face {
+</a><a href="#h25-0-137" id="h25-0-137" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-138" id="h25-0-138" class="i">+  font-style: normal;
+</a><a href="#h25-0-139" id="h25-0-139" class="i">+  font-weight: 400;
+</a><a href="#h25-0-140" id="h25-0-140" class="i">+  font-display: swap;
+</a><a href="#h25-0-141" id="h25-0-141" class="i">+  src: url(&#39;./Nunito-400-cyrillic-ext16.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-142" id="h25-0-142" class="i">+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+</a><a href="#h25-0-143" id="h25-0-143" class="i">+}
+</a><a href="#h25-0-144" id="h25-0-144" class="i">+/* cyrillic */
+</a><a href="#h25-0-145" id="h25-0-145" class="i">+@font-face {
+</a><a href="#h25-0-146" id="h25-0-146" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-147" id="h25-0-147" class="i">+  font-style: normal;
+</a><a href="#h25-0-148" id="h25-0-148" class="i">+  font-weight: 400;
+</a><a href="#h25-0-149" id="h25-0-149" class="i">+  font-display: swap;
+</a><a href="#h25-0-150" id="h25-0-150" class="i">+  src: url(&#39;./Nunito-400-cyrillic17.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-151" id="h25-0-151" class="i">+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+</a><a href="#h25-0-152" id="h25-0-152" class="i">+}
+</a><a href="#h25-0-153" id="h25-0-153" class="i">+/* vietnamese */
+</a><a href="#h25-0-154" id="h25-0-154" class="i">+@font-face {
+</a><a href="#h25-0-155" id="h25-0-155" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-156" id="h25-0-156" class="i">+  font-style: normal;
+</a><a href="#h25-0-157" id="h25-0-157" class="i">+  font-weight: 400;
+</a><a href="#h25-0-158" id="h25-0-158" class="i">+  font-display: swap;
+</a><a href="#h25-0-159" id="h25-0-159" class="i">+  src: url(&#39;./Nunito-400-vietnamese18.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-160" id="h25-0-160" class="i">+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+</a><a href="#h25-0-161" id="h25-0-161" class="i">+}
+</a><a href="#h25-0-162" id="h25-0-162" class="i">+/* latin-ext */
+</a><a href="#h25-0-163" id="h25-0-163" class="i">+@font-face {
+</a><a href="#h25-0-164" id="h25-0-164" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-165" id="h25-0-165" class="i">+  font-style: normal;
+</a><a href="#h25-0-166" id="h25-0-166" class="i">+  font-weight: 400;
+</a><a href="#h25-0-167" id="h25-0-167" class="i">+  font-display: swap;
+</a><a href="#h25-0-168" id="h25-0-168" class="i">+  src: url(&#39;./Nunito-400-latin-ext19.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-169" id="h25-0-169" class="i">+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+</a><a href="#h25-0-170" id="h25-0-170" class="i">+}
+</a><a href="#h25-0-171" id="h25-0-171" class="i">+/* latin */
+</a><a href="#h25-0-172" id="h25-0-172" class="i">+@font-face {
+</a><a href="#h25-0-173" id="h25-0-173" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-174" id="h25-0-174" class="i">+  font-style: normal;
+</a><a href="#h25-0-175" id="h25-0-175" class="i">+  font-weight: 400;
+</a><a href="#h25-0-176" id="h25-0-176" class="i">+  font-display: swap;
+</a><a href="#h25-0-177" id="h25-0-177" class="i">+  src: url(&#39;./Nunito-400-latin20.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-178" id="h25-0-178" class="i">+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+</a><a href="#h25-0-179" id="h25-0-179" class="i">+}
+</a><a href="#h25-0-180" id="h25-0-180" class="i">+/* cyrillic-ext */
+</a><a href="#h25-0-181" id="h25-0-181" class="i">+@font-face {
+</a><a href="#h25-0-182" id="h25-0-182" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-183" id="h25-0-183" class="i">+  font-style: normal;
+</a><a href="#h25-0-184" id="h25-0-184" class="i">+  font-weight: 700;
+</a><a href="#h25-0-185" id="h25-0-185" class="i">+  font-display: swap;
+</a><a href="#h25-0-186" id="h25-0-186" class="i">+  src: url(&#39;./Nunito-700-cyrillic-ext21.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-187" id="h25-0-187" class="i">+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+</a><a href="#h25-0-188" id="h25-0-188" class="i">+}
+</a><a href="#h25-0-189" id="h25-0-189" class="i">+/* cyrillic */
+</a><a href="#h25-0-190" id="h25-0-190" class="i">+@font-face {
+</a><a href="#h25-0-191" id="h25-0-191" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-192" id="h25-0-192" class="i">+  font-style: normal;
+</a><a href="#h25-0-193" id="h25-0-193" class="i">+  font-weight: 700;
+</a><a href="#h25-0-194" id="h25-0-194" class="i">+  font-display: swap;
+</a><a href="#h25-0-195" id="h25-0-195" class="i">+  src: url(&#39;./Nunito-700-cyrillic22.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-196" id="h25-0-196" class="i">+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+</a><a href="#h25-0-197" id="h25-0-197" class="i">+}
+</a><a href="#h25-0-198" id="h25-0-198" class="i">+/* vietnamese */
+</a><a href="#h25-0-199" id="h25-0-199" class="i">+@font-face {
+</a><a href="#h25-0-200" id="h25-0-200" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-201" id="h25-0-201" class="i">+  font-style: normal;
+</a><a href="#h25-0-202" id="h25-0-202" class="i">+  font-weight: 700;
+</a><a href="#h25-0-203" id="h25-0-203" class="i">+  font-display: swap;
+</a><a href="#h25-0-204" id="h25-0-204" class="i">+  src: url(&#39;./Nunito-700-vietnamese23.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-205" id="h25-0-205" class="i">+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+</a><a href="#h25-0-206" id="h25-0-206" class="i">+}
+</a><a href="#h25-0-207" id="h25-0-207" class="i">+/* latin-ext */
+</a><a href="#h25-0-208" id="h25-0-208" class="i">+@font-face {
+</a><a href="#h25-0-209" id="h25-0-209" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-210" id="h25-0-210" class="i">+  font-style: normal;
+</a><a href="#h25-0-211" id="h25-0-211" class="i">+  font-weight: 700;
+</a><a href="#h25-0-212" id="h25-0-212" class="i">+  font-display: swap;
+</a><a href="#h25-0-213" id="h25-0-213" class="i">+  src: url(&#39;./Nunito-700-latin-ext24.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-214" id="h25-0-214" class="i">+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+</a><a href="#h25-0-215" id="h25-0-215" class="i">+}
+</a><a href="#h25-0-216" id="h25-0-216" class="i">+/* latin */
+</a><a href="#h25-0-217" id="h25-0-217" class="i">+@font-face {
+</a><a href="#h25-0-218" id="h25-0-218" class="i">+  font-family: &#39;Nunito&#39;;
+</a><a href="#h25-0-219" id="h25-0-219" class="i">+  font-style: normal;
+</a><a href="#h25-0-220" id="h25-0-220" class="i">+  font-weight: 700;
+</a><a href="#h25-0-221" id="h25-0-221" class="i">+  font-display: swap;
+</a><a href="#h25-0-222" id="h25-0-222" class="i">+  src: url(&#39;./Nunito-700-latin25.woff2&#39;) format(&#39;woff2&#39;);
+</a><a href="#h25-0-223" id="h25-0-223" class="i">+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+</a><a href="#h25-0-224" id="h25-0-224" class="i">+}
+</a><b>diff --git a/<a id="h26" href="../file/dist/index.html.html">dist/index.html</a> b/<a href="../file/dist/index.html.html">dist/index.html</a></b>
+<a href="#h26-0" id="h26-0" class="h">@@ -7,13 +7,13 @@
+</a>         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+         &lt;title&gt;Hello, world&lt;/title&gt;
+         &lt;style&gt;
+<a href="#h26-0-3" id="h26-0-3" class="d">-            @charset &quot;UTF-8&quot;;*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0;list-style:none}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:10ms!important;animation-iteration-count:1!important;transition-duration:10ms!important;scroll-behavior:auto!important}}
+</a><a href="#h26-0-4" id="h26-0-4" class="i">+            @charset &quot;UTF-8&quot;;*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:10ms!important;animation-iteration-count:1!important;transition-duration:10ms!important;scroll-behavior:auto!important}}.bg-background{background:#1f1d36}.bg-shade{background:#3f3351}.bg-text{background:#f3f3f3}.bg-secondary{background:#916bbf}.bg-primary{background:#e9a6a6}.color-background{color:#1f1d36}.color-shade{color:#3f3351}.color-text{color:#f3f3f3}.color-secondary{color:#916bbf}.color-primary{color:#e9a6a6}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:Nunito,Arial,sans-serif}.font-sans{font-family:Lora,serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.25rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.25rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.25rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.25rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.25rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.25rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.25rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.25rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.25rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.25rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.25rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.25rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}root{--flow-space:1.6rem}html{font-size:18px}body{display:flex;flex-direction:column;background:#1f1d36;color:#f3f3f3;line-height:1.5;font-size:1.25rem;font-family:Nunito,Arial,sans-serif;overflow-x:hidden;min-height:100vh}main:focus{outline:0}h1,h2,h3,h4{font-weight:900;font-family:Lora,serif}a{color:inherit}:focus{outline:2px dashed #f3f3f3;outline-offset:.1rem}::selection{background:#916bbf}::-webkit-scrollbar{height:1rem;background:#3f3351}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{border-radius:0;background:#916bbf}
+</a>         &lt;/style&gt;
+
+
+
+
+<a href="#h26-0-10" id="h26-0-10" class="d">-        &lt;link rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;/fonts/fonts.css?6f40-7f5a-0663&quot; onload=&quot;this.media=&#39;all&#39;&quot;/&gt;
+</a><a href="#h26-0-11" id="h26-0-11" class="i">+        &lt;link rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;/fonts/fonts.css?e0b5-c995-0be6&quot; onload=&quot;this.media=&#39;all&#39;&quot;/&gt;
+</a>
+
+
+<b>diff --git a/<a id="h27" href="../file/package-lock.json.html">package-lock.json</a> b/<a href="../file/package-lock.json.html">package-lock.json</a></b>
+<a href="#h27-0" id="h27-0" class="h">@@ -806,6 +806,15 @@
+</a>         &quot;source-map&quot;: &quot;~0.6.0&quot;
+       }
+     },
+<a href="#h27-0-3" id="h27-0-3" class="i">+    &quot;cli&quot;: {
+</a><a href="#h27-0-4" id="h27-0-4" class="i">+      &quot;version&quot;: &quot;1.0.1&quot;,
+</a><a href="#h27-0-5" id="h27-0-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/cli/-/cli-1.0.1.tgz&quot;,
+</a><a href="#h27-0-6" id="h27-0-6" class="i">+      &quot;integrity&quot;: &quot;sha1-IoF1NPJL+klQw01TLUjsvGIbjBQ=&quot;,
+</a><a href="#h27-0-7" id="h27-0-7" class="i">+      &quot;requires&quot;: {
+</a><a href="#h27-0-8" id="h27-0-8" class="i">+        &quot;exit&quot;: &quot;0.1.2&quot;,
+</a><a href="#h27-0-9" id="h27-0-9" class="i">+        &quot;glob&quot;: &quot;^7.1.1&quot;
+</a><a href="#h27-0-10" id="h27-0-10" class="i">+      }
+</a><a href="#h27-0-11" id="h27-0-11" class="i">+    },
+</a>     &quot;cliui&quot;: {
+       &quot;version&quot;: &quot;6.0.0&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/cliui/-/cliui-6.0.0.tgz&quot;,
+<a href="#h27-1" id="h27-1" class="h">@@ -1558,6 +1567,11 @@
+</a>       &quot;resolved&quot;: &quot;https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz&quot;,
+       &quot;integrity&quot;: &quot;sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==&quot;
+     },
+<a href="#h27-1-3" id="h27-1-3" class="i">+    &quot;exit&quot;: {
+</a><a href="#h27-1-4" id="h27-1-4" class="i">+      &quot;version&quot;: &quot;0.1.2&quot;,
+</a><a href="#h27-1-5" id="h27-1-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/exit/-/exit-0.1.2.tgz&quot;,
+</a><a href="#h27-1-6" id="h27-1-6" class="i">+      &quot;integrity&quot;: &quot;sha1-BjJjj42HfMghB9MKD/8aF8uhzQw=&quot;
+</a><a href="#h27-1-7" id="h27-1-7" class="i">+    },
+</a>     &quot;expand-brackets&quot;: {
+       &quot;version&quot;: &quot;2.1.4&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/expand-brackets/-/expand-brackets-2.1.4.tgz&quot;,
+<a href="#h27-2" id="h27-2" class="h">@@ -2091,6 +2105,18 @@
+</a>       &quot;resolved&quot;: &quot;https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz&quot;,
+       &quot;integrity&quot;: &quot;sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==&quot;
+     },
+<a href="#h27-2-3" id="h27-2-3" class="i">+    &quot;get-google-fonts&quot;: {
+</a><a href="#h27-2-4" id="h27-2-4" class="i">+      &quot;version&quot;: &quot;1.2.2&quot;,
+</a><a href="#h27-2-5" id="h27-2-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/get-google-fonts/-/get-google-fonts-1.2.2.tgz&quot;,
+</a><a href="#h27-2-6" id="h27-2-6" class="i">+      &quot;integrity&quot;: &quot;sha512-X9T17oCujJ7Xq4bAvEbKi2dXiPVrzSZEVGV36f1gdnQTg6Wqm5MCJiDaZ8svJwaTiRCfMFAWej8eYbIZ+4yXhQ==&quot;,
+</a><a href="#h27-2-7" id="h27-2-7" class="i">+      &quot;requires&quot;: {
+</a><a href="#h27-2-8" id="h27-2-8" class="i">+        &quot;cli&quot;: &quot;^1.0.1&quot;,
+</a><a href="#h27-2-9" id="h27-2-9" class="i">+        &quot;mkdirp&quot;: &quot;^0.5.1&quot;,
+</a><a href="#h27-2-10" id="h27-2-10" class="i">+        &quot;normalize-url&quot;: &quot;^2.0.1&quot;,
+</a><a href="#h27-2-11" id="h27-2-11" class="i">+        &quot;q&quot;: &quot;^1.5.1&quot;,
+</a><a href="#h27-2-12" id="h27-2-12" class="i">+        &quot;request&quot;: &quot;^2.88.0&quot;
+</a><a href="#h27-2-13" id="h27-2-13" class="i">+      }
+</a><a href="#h27-2-14" id="h27-2-14" class="i">+    },
+</a>     &quot;get-intrinsic&quot;: {
+       &quot;version&quot;: &quot;1.1.1&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.1.1.tgz&quot;,
+<a href="#h27-3" id="h27-3" class="h">@@ -2479,6 +2505,14 @@
+</a>         &quot;sparkles&quot;: &quot;^1.0.0&quot;
+       }
+     },
+<a href="#h27-3-3" id="h27-3-3" class="i">+    &quot;gorko&quot;: {
+</a><a href="#h27-3-4" id="h27-3-4" class="i">+      &quot;version&quot;: &quot;0.8.0&quot;,
+</a><a href="#h27-3-5" id="h27-3-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/gorko/-/gorko-0.8.0.tgz&quot;,
+</a><a href="#h27-3-6" id="h27-3-6" class="i">+      &quot;integrity&quot;: &quot;sha512-b0ZynKheIrCa4SsqKlNzOUuzbrpcgg9/vl4FmAWcZyXBw4RNDZz2We/wy4qZ60rHpd2u7GjVN76rLoRZIiRVPA==&quot;,
+</a><a href="#h27-3-7" id="h27-3-7" class="i">+      &quot;requires&quot;: {
+</a><a href="#h27-3-8" id="h27-3-8" class="i">+        &quot;sass&quot;: &quot;^1.26.5&quot;
+</a><a href="#h27-3-9" id="h27-3-9" class="i">+      }
+</a><a href="#h27-3-10" id="h27-3-10" class="i">+    },
+</a>     &quot;graceful-fs&quot;: {
+       &quot;version&quot;: &quot;4.2.8&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.8.tgz&quot;,
+<a href="#h27-4" id="h27-4" class="h">@@ -3158,6 +3192,11 @@
+</a>         &quot;path-is-inside&quot;: &quot;^1.0.1&quot;
+       }
+     },
+<a href="#h27-4-3" id="h27-4-3" class="i">+    &quot;is-plain-obj&quot;: {
+</a><a href="#h27-4-4" id="h27-4-4" class="i">+      &quot;version&quot;: &quot;1.1.0&quot;,
+</a><a href="#h27-4-5" id="h27-4-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz&quot;,
+</a><a href="#h27-4-6" id="h27-4-6" class="i">+      &quot;integrity&quot;: &quot;sha1-caUMhCnfync8kqOQpKA7OfzVHT4=&quot;
+</a><a href="#h27-4-7" id="h27-4-7" class="i">+    },
+</a>     &quot;is-plain-object&quot;: {
+       &quot;version&quot;: &quot;2.0.4&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz&quot;,
+<a href="#h27-5" id="h27-5" class="h">@@ -4054,6 +4093,16 @@
+</a>       &quot;resolved&quot;: &quot;https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz&quot;,
+       &quot;integrity&quot;: &quot;sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==&quot;
+     },
+<a href="#h27-5-3" id="h27-5-3" class="i">+    &quot;normalize-url&quot;: {
+</a><a href="#h27-5-4" id="h27-5-4" class="i">+      &quot;version&quot;: &quot;2.0.1&quot;,
+</a><a href="#h27-5-5" id="h27-5-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/normalize-url/-/normalize-url-2.0.1.tgz&quot;,
+</a><a href="#h27-5-6" id="h27-5-6" class="i">+      &quot;integrity&quot;: &quot;sha512-D6MUW4K/VzoJ4rJ01JFKxDrtY1v9wrgzCX5f2qj/lzH1m/lW6MhUZFKerVsnyjOhOsYzI9Kqqak+10l4LvLpMw==&quot;,
+</a><a href="#h27-5-7" id="h27-5-7" class="i">+      &quot;requires&quot;: {
+</a><a href="#h27-5-8" id="h27-5-8" class="i">+        &quot;prepend-http&quot;: &quot;^2.0.0&quot;,
+</a><a href="#h27-5-9" id="h27-5-9" class="i">+        &quot;query-string&quot;: &quot;^5.0.1&quot;,
+</a><a href="#h27-5-10" id="h27-5-10" class="i">+        &quot;sort-keys&quot;: &quot;^2.0.0&quot;
+</a><a href="#h27-5-11" id="h27-5-11" class="i">+      }
+</a><a href="#h27-5-12" id="h27-5-12" class="i">+    },
+</a>     &quot;now-and-later&quot;: {
+       &quot;version&quot;: &quot;2.0.1&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/now-and-later/-/now-and-later-2.0.1.tgz&quot;,
+<a href="#h27-6" id="h27-6" class="h">@@ -4453,6 +4502,11 @@
+</a>       &quot;resolved&quot;: &quot;https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz&quot;,
+       &quot;integrity&quot;: &quot;sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=&quot;
+     },
+<a href="#h27-6-3" id="h27-6-3" class="i">+    &quot;prepend-http&quot;: {
+</a><a href="#h27-6-4" id="h27-6-4" class="i">+      &quot;version&quot;: &quot;2.0.0&quot;,
+</a><a href="#h27-6-5" id="h27-6-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz&quot;,
+</a><a href="#h27-6-6" id="h27-6-6" class="i">+      &quot;integrity&quot;: &quot;sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=&quot;
+</a><a href="#h27-6-7" id="h27-6-7" class="i">+    },
+</a>     &quot;pretty&quot;: {
+       &quot;version&quot;: &quot;2.0.0&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/pretty/-/pretty-2.0.0.tgz&quot;,
+<a href="#h27-7" id="h27-7" class="h">@@ -4645,11 +4699,26 @@
+</a>       &quot;resolved&quot;: &quot;https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz&quot;,
+       &quot;integrity&quot;: &quot;sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==&quot;
+     },
+<a href="#h27-7-3" id="h27-7-3" class="i">+    &quot;q&quot;: {
+</a><a href="#h27-7-4" id="h27-7-4" class="i">+      &quot;version&quot;: &quot;1.5.1&quot;,
+</a><a href="#h27-7-5" id="h27-7-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/q/-/q-1.5.1.tgz&quot;,
+</a><a href="#h27-7-6" id="h27-7-6" class="i">+      &quot;integrity&quot;: &quot;sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=&quot;
+</a><a href="#h27-7-7" id="h27-7-7" class="i">+    },
+</a>     &quot;qs&quot;: {
+       &quot;version&quot;: &quot;6.2.3&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/qs/-/qs-6.2.3.tgz&quot;,
+       &quot;integrity&quot;: &quot;sha1-HPyyXBCpsrSDBT/zn138kjOQjP4=&quot;
+     },
+<a href="#h27-7-13" id="h27-7-13" class="i">+    &quot;query-string&quot;: {
+</a><a href="#h27-7-14" id="h27-7-14" class="i">+      &quot;version&quot;: &quot;5.1.1&quot;,
+</a><a href="#h27-7-15" id="h27-7-15" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/query-string/-/query-string-5.1.1.tgz&quot;,
+</a><a href="#h27-7-16" id="h27-7-16" class="i">+      &quot;integrity&quot;: &quot;sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==&quot;,
+</a><a href="#h27-7-17" id="h27-7-17" class="i">+      &quot;requires&quot;: {
+</a><a href="#h27-7-18" id="h27-7-18" class="i">+        &quot;decode-uri-component&quot;: &quot;^0.2.0&quot;,
+</a><a href="#h27-7-19" id="h27-7-19" class="i">+        &quot;object-assign&quot;: &quot;^4.1.0&quot;,
+</a><a href="#h27-7-20" id="h27-7-20" class="i">+        &quot;strict-uri-encode&quot;: &quot;^1.0.0&quot;
+</a><a href="#h27-7-21" id="h27-7-21" class="i">+      }
+</a><a href="#h27-7-22" id="h27-7-22" class="i">+    },
+</a>     &quot;queue-microtask&quot;: {
+       &quot;version&quot;: &quot;1.2.3&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz&quot;,
+<a href="#h27-8" id="h27-8" class="h">@@ -5608,6 +5677,14 @@
+</a>         }
+       }
+     },
+<a href="#h27-8-3" id="h27-8-3" class="i">+    &quot;sort-keys&quot;: {
+</a><a href="#h27-8-4" id="h27-8-4" class="i">+      &quot;version&quot;: &quot;2.0.0&quot;,
+</a><a href="#h27-8-5" id="h27-8-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/sort-keys/-/sort-keys-2.0.0.tgz&quot;,
+</a><a href="#h27-8-6" id="h27-8-6" class="i">+      &quot;integrity&quot;: &quot;sha1-ZYU1WEhh7JfXMNbPQYIuH1ZoQSg=&quot;,
+</a><a href="#h27-8-7" id="h27-8-7" class="i">+      &quot;requires&quot;: {
+</a><a href="#h27-8-8" id="h27-8-8" class="i">+        &quot;is-plain-obj&quot;: &quot;^1.0.0&quot;
+</a><a href="#h27-8-9" id="h27-8-9" class="i">+      }
+</a><a href="#h27-8-10" id="h27-8-10" class="i">+    },
+</a>     &quot;source-map&quot;: {
+       &quot;version&quot;: &quot;0.6.1&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz&quot;,
+<a href="#h27-9" id="h27-9" class="h">@@ -5779,6 +5856,11 @@
+</a>         }
+       }
+     },
+<a href="#h27-9-3" id="h27-9-3" class="i">+    &quot;strict-uri-encode&quot;: {
+</a><a href="#h27-9-4" id="h27-9-4" class="i">+      &quot;version&quot;: &quot;1.1.0&quot;,
+</a><a href="#h27-9-5" id="h27-9-5" class="i">+      &quot;resolved&quot;: &quot;https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz&quot;,
+</a><a href="#h27-9-6" id="h27-9-6" class="i">+      &quot;integrity&quot;: &quot;sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=&quot;
+</a><a href="#h27-9-7" id="h27-9-7" class="i">+    },
+</a>     &quot;string-width&quot;: {
+       &quot;version&quot;: &quot;4.2.3&quot;,
+       &quot;resolved&quot;: &quot;https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz&quot;,
+<b>diff --git a/<a id="h28" href="../file/package.json.html">package.json</a> b/<a href="../file/package.json.html">package.json</a></b>
+<a href="#h28-0" id="h28-0" class="h">@@ -21,6 +21,8 @@
+</a>   &quot;dependencies&quot;: {
+     &quot;@11ty/eleventy&quot;: &quot;^0.12.1&quot;,
+     &quot;concurrently&quot;: &quot;^6.3.0&quot;,
+<a href="#h28-0-3" id="h28-0-3" class="i">+    &quot;get-google-fonts&quot;: &quot;^1.2.2&quot;,
+</a><a href="#h28-0-4" id="h28-0-4" class="i">+    &quot;gorko&quot;: &quot;^0.8.0&quot;,
+</a>     &quot;gulp&quot;: &quot;^4.0.2&quot;,
+     &quot;gulp-clean-css&quot;: &quot;^4.3.0&quot;,
+     &quot;gulp-sass&quot;: &quot;^4.1.0&quot;,
+<b>diff --git a/<a id="h29" href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a> b/<a href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a></b>
+<a href="#h29-0" id="h29-0" class="h">@@ -1 +1 @@
+</a><a href="#h29-0-0" id="h29-0-0" class="d">-@charset &quot;UTF-8&quot;;*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0;list-style:none}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:10ms!important;animation-iteration-count:1!important;transition-duration:10ms!important;scroll-behavior:auto!important}}
+</a><a href="#h29-0-1" id="h29-0-1" class="d">-\ No newline at end of file
+</a><a href="#h29-0-2" id="h29-0-2" class="i">+@charset &quot;UTF-8&quot;;*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:10ms!important;animation-iteration-count:1!important;transition-duration:10ms!important;scroll-behavior:auto!important}}.bg-background{background:#1f1d36}.bg-shade{background:#3f3351}.bg-text{background:#f3f3f3}.bg-secondary{background:#916bbf}.bg-primary{background:#e9a6a6}.color-background{color:#1f1d36}.color-shade{color:#3f3351}.color-text{color:#f3f3f3}.color-secondary{color:#916bbf}.color-primary{color:#e9a6a6}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:Nunito,Arial,sans-serif}.font-sans{font-family:Lora,serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.25rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.25rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.25rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.25rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.25rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.25rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.25rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.25rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.25rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.25rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.25rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.25rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}root{--flow-space:1.6rem}html{font-size:18px}body{display:flex;flex-direction:column;background:#1f1d36;color:#f3f3f3;line-height:1.5;font-size:1.25rem;font-family:Nunito,Arial,sans-serif;overflow-x:hidden;min-height:100vh}main:focus{outline:0}h1,h2,h3,h4{font-weight:900;font-family:Lora,serif}a{color:inherit}:focus{outline:2px dashed #f3f3f3;outline-offset:.1rem}::selection{background:#916bbf}::-webkit-scrollbar{height:1rem;background:#3f3351}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{border-radius:0;background:#916bbf}
+</a><a href="#h29-0-3" id="h29-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h30" href="../file/src/scss/_config.scss.html">src/scss/_config.scss</a> b/<a href="../file/src/scss/_config.scss.html">src/scss/_config.scss</a></b>
+<a href="#h30-0" id="h30-0" class="h">@@ -0,0 +1,156 @@
+</a><a href="#h30-0-0" id="h30-0-0" class="i">+/// BASE SIZE
+</a><a href="#h30-0-1" id="h30-0-1" class="i">+/// All calculations are based on this. It’s recommended that
+</a><a href="#h30-0-2" id="h30-0-2" class="i">+/// you keep it at 1rem because that is the root font size. You
+</a><a href="#h30-0-3" id="h30-0-3" class="i">+/// can set it to whatever you like and whatever unit you like.
+</a><a href="#h30-0-4" id="h30-0-4" class="i">+///
+</a><a href="#h30-0-5" id="h30-0-5" class="i">+$gorko-base-size: 1rem;
+</a><a href="#h30-0-6" id="h30-0-6" class="i">+
+</a><a href="#h30-0-7" id="h30-0-7" class="i">+/// SIZE SCALE
+</a><a href="#h30-0-8" id="h30-0-8" class="i">+/// This is a Major Third scale that powers all the utilities that
+</a><a href="#h30-0-9" id="h30-0-9" class="i">+/// it is relevant for (font-size, margin, padding). All items are
+</a><a href="#h30-0-10" id="h30-0-10" class="i">+/// calcuated off the base size, so change that and cascade across
+</a><a href="#h30-0-11" id="h30-0-11" class="i">+/// your whole project.
+</a><a href="#h30-0-12" id="h30-0-12" class="i">+///
+</a><a href="#h30-0-13" id="h30-0-13" class="i">+$gorko-size-scale: (
+</a><a href="#h30-0-14" id="h30-0-14" class="i">+  &quot;300&quot;: $gorko-base-size * 0.8,
+</a><a href="#h30-0-15" id="h30-0-15" class="i">+  &quot;400&quot;: $gorko-base-size,
+</a><a href="#h30-0-16" id="h30-0-16" class="i">+  &quot;500&quot;: $gorko-base-size * 1.25,
+</a><a href="#h30-0-17" id="h30-0-17" class="i">+  &quot;600&quot;: $gorko-base-size * 1.6,
+</a><a href="#h30-0-18" id="h30-0-18" class="i">+  &quot;700&quot;: $gorko-base-size * 2,
+</a><a href="#h30-0-19" id="h30-0-19" class="i">+  &quot;900&quot;: $gorko-base-size * 3,
+</a><a href="#h30-0-20" id="h30-0-20" class="i">+  &quot;1000&quot;: $gorko-base-size * 4,
+</a><a href="#h30-0-21" id="h30-0-21" class="i">+  &quot;1100&quot;: $gorko-base-size * 5,
+</a><a href="#h30-0-22" id="h30-0-22" class="i">+  &quot;1200&quot;: $gorko-base-size * 6,
+</a><a href="#h30-0-23" id="h30-0-23" class="i">+);
+</a><a href="#h30-0-24" id="h30-0-24" class="i">+
+</a><a href="#h30-0-25" id="h30-0-25" class="i">+/// COLORS
+</a><a href="#h30-0-26" id="h30-0-26" class="i">+/// Colors are shared between backgrounds and text by default.
+</a><a href="#h30-0-27" id="h30-0-27" class="i">+/// You can also use them to power borders, fills or shadows, for example.
+</a><a href="#h30-0-28" id="h30-0-28" class="i">+///
+</a><a href="#h30-0-29" id="h30-0-29" class="i">+$gorko-colors: (
+</a><a href="#h30-0-30" id="h30-0-30" class="i">+  // &#39;background&#39;: #1f1d36,
+</a><a href="#h30-0-31" id="h30-0-31" class="i">+  // &#39;text&#39;: #f3f3f3,
+</a><a href="#h30-0-32" id="h30-0-32" class="i">+  // &#39;primary&#39;: #e9a6a6,
+</a><a href="#h30-0-33" id="h30-0-33" class="i">+  // &#39;secondary&#39;: #864879,
+</a><a href="#h30-0-34" id="h30-0-34" class="i">+  // &#39;shade&#39;: #3f3351,
+</a><a href="#h30-0-35" id="h30-0-35" class="i">+  &quot;background&quot;: #1f1d36,
+</a><a href="#h30-0-36" id="h30-0-36" class="i">+  &quot;shade&quot;: #3f3351,
+</a><a href="#h30-0-37" id="h30-0-37" class="i">+  &quot;text&quot;: #f3f3f3,
+</a><a href="#h30-0-38" id="h30-0-38" class="i">+  &quot;secondary&quot;: #916bbf,
+</a><a href="#h30-0-39" id="h30-0-39" class="i">+  &quot;primary&quot;: #e9a6a6
+</a><a href="#h30-0-40" id="h30-0-40" class="i">+);
+</a><a href="#h30-0-41" id="h30-0-41" class="i">+
+</a><a href="#h30-0-42" id="h30-0-42" class="i">+/// CORE CONFIG
+</a><a href="#h30-0-43" id="h30-0-43" class="i">+/// This powers everything from utility class generation to breakpoints
+</a><a href="#h30-0-44" id="h30-0-44" class="i">+/// to enabling/disabling pre-built components/utilities.
+</a><a href="#h30-0-45" id="h30-0-45" class="i">+///
+</a><a href="#h30-0-46" id="h30-0-46" class="i">+$gorko-config: (
+</a><a href="#h30-0-47" id="h30-0-47" class="i">+  &quot;bg&quot;: (
+</a><a href="#h30-0-48" id="h30-0-48" class="i">+    &quot;items&quot;: $gorko-colors,
+</a><a href="#h30-0-49" id="h30-0-49" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-50" id="h30-0-50" class="i">+    &quot;property&quot;: &quot;background&quot;,
+</a><a href="#h30-0-51" id="h30-0-51" class="i">+  ),
+</a><a href="#h30-0-52" id="h30-0-52" class="i">+  &quot;color&quot;: (
+</a><a href="#h30-0-53" id="h30-0-53" class="i">+    &quot;items&quot;: $gorko-colors,
+</a><a href="#h30-0-54" id="h30-0-54" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-55" id="h30-0-55" class="i">+    &quot;property&quot;: &quot;color&quot;,
+</a><a href="#h30-0-56" id="h30-0-56" class="i">+  ),
+</a><a href="#h30-0-57" id="h30-0-57" class="i">+  &quot;box&quot;: (
+</a><a href="#h30-0-58" id="h30-0-58" class="i">+    &quot;items&quot;: (
+</a><a href="#h30-0-59" id="h30-0-59" class="i">+      &quot;block&quot;: &quot;block&quot;,
+</a><a href="#h30-0-60" id="h30-0-60" class="i">+      &quot;flex&quot;: &quot;flex&quot;,
+</a><a href="#h30-0-61" id="h30-0-61" class="i">+      &quot;hide&quot;: &quot;none&quot;,
+</a><a href="#h30-0-62" id="h30-0-62" class="i">+      &quot;show&quot;: &quot;inherit&quot;,
+</a><a href="#h30-0-63" id="h30-0-63" class="i">+    ),
+</a><a href="#h30-0-64" id="h30-0-64" class="i">+    &quot;output&quot;: &quot;responsive&quot;,
+</a><a href="#h30-0-65" id="h30-0-65" class="i">+    &quot;property&quot;: &quot;display&quot;,
+</a><a href="#h30-0-66" id="h30-0-66" class="i">+  ),
+</a><a href="#h30-0-67" id="h30-0-67" class="i">+  &quot;font&quot;: (
+</a><a href="#h30-0-68" id="h30-0-68" class="i">+    &quot;items&quot;: (
+</a><a href="#h30-0-69" id="h30-0-69" class="i">+      &quot;base&quot;: &quot;Nunito, Arial, sans-serif&quot;,
+</a><a href="#h30-0-70" id="h30-0-70" class="i">+      &quot;sans&quot;: &quot;Lora, serif&quot;,
+</a><a href="#h30-0-71" id="h30-0-71" class="i">+    ),
+</a><a href="#h30-0-72" id="h30-0-72" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-73" id="h30-0-73" class="i">+    &quot;property&quot;: &quot;font-family&quot;,
+</a><a href="#h30-0-74" id="h30-0-74" class="i">+  ),
+</a><a href="#h30-0-75" id="h30-0-75" class="i">+  &quot;gap-top&quot;: (
+</a><a href="#h30-0-76" id="h30-0-76" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-77" id="h30-0-77" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-78" id="h30-0-78" class="i">+    &quot;property&quot;: &quot;margin-top&quot;,
+</a><a href="#h30-0-79" id="h30-0-79" class="i">+  ),
+</a><a href="#h30-0-80" id="h30-0-80" class="i">+  &quot;gap-right&quot;: (
+</a><a href="#h30-0-81" id="h30-0-81" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-82" id="h30-0-82" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-83" id="h30-0-83" class="i">+    &quot;property&quot;: &quot;margin-right&quot;,
+</a><a href="#h30-0-84" id="h30-0-84" class="i">+  ),
+</a><a href="#h30-0-85" id="h30-0-85" class="i">+  &quot;gap-bottom&quot;: (
+</a><a href="#h30-0-86" id="h30-0-86" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-87" id="h30-0-87" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-88" id="h30-0-88" class="i">+    &quot;property&quot;: &quot;margin-bottom&quot;,
+</a><a href="#h30-0-89" id="h30-0-89" class="i">+  ),
+</a><a href="#h30-0-90" id="h30-0-90" class="i">+  &quot;gap-left&quot;: (
+</a><a href="#h30-0-91" id="h30-0-91" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-92" id="h30-0-92" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-93" id="h30-0-93" class="i">+    &quot;property&quot;: &quot;margin-left&quot;,
+</a><a href="#h30-0-94" id="h30-0-94" class="i">+  ),
+</a><a href="#h30-0-95" id="h30-0-95" class="i">+  &quot;pad-top&quot;: (
+</a><a href="#h30-0-96" id="h30-0-96" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-97" id="h30-0-97" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-98" id="h30-0-98" class="i">+    &quot;property&quot;: &quot;padding-top&quot;,
+</a><a href="#h30-0-99" id="h30-0-99" class="i">+  ),
+</a><a href="#h30-0-100" id="h30-0-100" class="i">+  &quot;pad-right&quot;: (
+</a><a href="#h30-0-101" id="h30-0-101" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-102" id="h30-0-102" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-103" id="h30-0-103" class="i">+    &quot;property&quot;: &quot;padding-right&quot;,
+</a><a href="#h30-0-104" id="h30-0-104" class="i">+  ),
+</a><a href="#h30-0-105" id="h30-0-105" class="i">+  &quot;pad-bottom&quot;: (
+</a><a href="#h30-0-106" id="h30-0-106" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-107" id="h30-0-107" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-108" id="h30-0-108" class="i">+    &quot;property&quot;: &quot;padding-bottom&quot;,
+</a><a href="#h30-0-109" id="h30-0-109" class="i">+  ),
+</a><a href="#h30-0-110" id="h30-0-110" class="i">+  &quot;pad-left&quot;: (
+</a><a href="#h30-0-111" id="h30-0-111" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-112" id="h30-0-112" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-113" id="h30-0-113" class="i">+    &quot;property&quot;: &quot;padding-left&quot;,
+</a><a href="#h30-0-114" id="h30-0-114" class="i">+  ),
+</a><a href="#h30-0-115" id="h30-0-115" class="i">+  &quot;stack&quot;: (
+</a><a href="#h30-0-116" id="h30-0-116" class="i">+    &quot;items&quot;: (
+</a><a href="#h30-0-117" id="h30-0-117" class="i">+      &quot;300&quot;: 0,
+</a><a href="#h30-0-118" id="h30-0-118" class="i">+      &quot;400&quot;: 10,
+</a><a href="#h30-0-119" id="h30-0-119" class="i">+      &quot;500&quot;: 20,
+</a><a href="#h30-0-120" id="h30-0-120" class="i">+      &quot;600&quot;: 30,
+</a><a href="#h30-0-121" id="h30-0-121" class="i">+      &quot;700&quot;: 40,
+</a><a href="#h30-0-122" id="h30-0-122" class="i">+    ),
+</a><a href="#h30-0-123" id="h30-0-123" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-124" id="h30-0-124" class="i">+    &quot;property&quot;: &quot;z-index&quot;,
+</a><a href="#h30-0-125" id="h30-0-125" class="i">+  ),
+</a><a href="#h30-0-126" id="h30-0-126" class="i">+  &quot;text&quot;: (
+</a><a href="#h30-0-127" id="h30-0-127" class="i">+    &quot;items&quot;: $gorko-size-scale,
+</a><a href="#h30-0-128" id="h30-0-128" class="i">+    &quot;output&quot;: &quot;responsive&quot;,
+</a><a href="#h30-0-129" id="h30-0-129" class="i">+    &quot;property&quot;: &quot;font-size&quot;,
+</a><a href="#h30-0-130" id="h30-0-130" class="i">+  ),
+</a><a href="#h30-0-131" id="h30-0-131" class="i">+  &quot;weight&quot;: (
+</a><a href="#h30-0-132" id="h30-0-132" class="i">+    &quot;items&quot;: (
+</a><a href="#h30-0-133" id="h30-0-133" class="i">+      &quot;light&quot;: &quot;300&quot;,
+</a><a href="#h30-0-134" id="h30-0-134" class="i">+      &quot;regular&quot;: &quot;400&quot;,
+</a><a href="#h30-0-135" id="h30-0-135" class="i">+      &quot;bold&quot;: &quot;700&quot;,
+</a><a href="#h30-0-136" id="h30-0-136" class="i">+    ),
+</a><a href="#h30-0-137" id="h30-0-137" class="i">+    &quot;output&quot;: &quot;standard&quot;,
+</a><a href="#h30-0-138" id="h30-0-138" class="i">+    &quot;property&quot;: &quot;font-weight&quot;,
+</a><a href="#h30-0-139" id="h30-0-139" class="i">+  ),
+</a><a href="#h30-0-140" id="h30-0-140" class="i">+  &quot;width&quot;: (
+</a><a href="#h30-0-141" id="h30-0-141" class="i">+    &quot;items&quot;: (
+</a><a href="#h30-0-142" id="h30-0-142" class="i">+      &quot;full&quot;: &quot;100%&quot;,
+</a><a href="#h30-0-143" id="h30-0-143" class="i">+      // &#39;half&#39;: percentage(1/2),
+</a><a href="#h30-0-144" id="h30-0-144" class="i">+      // &#39;quarter&#39;: percentage(1/4),
+</a><a href="#h30-0-145" id="h30-0-145" class="i">+      // &#39;third&#39;: percentage(1/3),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+</a><a href="#h30-0-146" id="h30-0-146" class="i">+    ),
+</a><a href="#h30-0-147" id="h30-0-147" class="i">+    &quot;output&quot;: &quot;responsive&quot;,
+</a><a href="#h30-0-148" id="h30-0-148" class="i">+    &quot;property&quot;: &quot;width&quot;,
+</a><a href="#h30-0-149" id="h30-0-149" class="i">+  ),
+</a><a href="#h30-0-150" id="h30-0-150" class="i">+  &quot;breakpoints&quot;: (
+</a><a href="#h30-0-151" id="h30-0-151" class="i">+    &quot;sm&quot;: &quot;(min-width: 36em)&quot;,
+</a><a href="#h30-0-152" id="h30-0-152" class="i">+    &quot;md&quot;: &quot;(min-width: 48em)&quot;,
+</a><a href="#h30-0-153" id="h30-0-153" class="i">+    &quot;lg&quot;: &quot;(min-width: 62em)&quot;,
+</a><a href="#h30-0-154" id="h30-0-154" class="i">+  ),
+</a><a href="#h30-0-155" id="h30-0-155" class="i">+);
+</a><b>diff --git a/<a id="h31" href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a> b/<a href="../file/src/scss/_reset.scss.html">src/scss/_reset.scss</a></b>
+<b>diff --git a/<a id="h32" href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a> b/<a href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a></b>
+<a href="#h32-0" id="h32-0" class="h">@@ -1,77 +1,67 @@
+</a><a href="#h32-0-0" id="h32-0-0" class="d">-// A modified version of my &quot;modern reset&quot; https://github.com/hankchizljaw/modern-css-reset
+</a><a href="#h32-0-1" id="h32-0-1" class="i">+@import &quot;reset&quot;;
+</a>
+<a href="#h32-0-3" id="h32-0-3" class="d">-/* Box sizing rules */
+</a><a href="#h32-0-4" id="h32-0-4" class="d">-*,
+</a><a href="#h32-0-5" id="h32-0-5" class="d">-*::before,
+</a><a href="#h32-0-6" id="h32-0-6" class="d">-*::after {
+</a><a href="#h32-0-7" id="h32-0-7" class="d">-  box-sizing: border-box;
+</a><a href="#h32-0-8" id="h32-0-8" class="d">-}
+</a><a href="#h32-0-9" id="h32-0-9" class="i">+// First up: config and functions
+</a><a href="#h32-0-10" id="h32-0-10" class="i">+@import &quot;config&quot;;
+</a>
+<a href="#h32-0-12" id="h32-0-12" class="d">-/* Remove default padding */
+</a><a href="#h32-0-13" id="h32-0-13" class="d">-ul[class],
+</a><a href="#h32-0-14" id="h32-0-14" class="d">-ol[class] {
+</a><a href="#h32-0-15" id="h32-0-15" class="d">-  padding: 0;
+</a><a href="#h32-0-16" id="h32-0-16" class="d">-}
+</a><a href="#h32-0-17" id="h32-0-17" class="i">+// Next: pull in gorko for design tokens
+</a><a href="#h32-0-18" id="h32-0-18" class="i">+@import &quot;../../node_modules/gorko/gorko.scss&quot;;
+</a>
+<a href="#h32-0-20" id="h32-0-20" class="d">-/* Remove default margin */
+</a><a href="#h32-0-21" id="h32-0-21" class="d">-body,
+</a><a href="#h32-0-22" id="h32-0-22" class="d">-h1,
+</a><a href="#h32-0-23" id="h32-0-23" class="d">-h2,
+</a><a href="#h32-0-24" id="h32-0-24" class="d">-h3,
+</a><a href="#h32-0-25" id="h32-0-25" class="d">-h4,
+</a><a href="#h32-0-26" id="h32-0-26" class="d">-p,
+</a><a href="#h32-0-27" id="h32-0-27" class="d">-ul[class],
+</a><a href="#h32-0-28" id="h32-0-28" class="d">-ol[class],
+</a><a href="#h32-0-29" id="h32-0-29" class="d">-figure,
+</a><a href="#h32-0-30" id="h32-0-30" class="d">-blockquote,
+</a><a href="#h32-0-31" id="h32-0-31" class="d">-dl,
+</a><a href="#h32-0-32" id="h32-0-32" class="d">-dd {
+</a><a href="#h32-0-33" id="h32-0-33" class="d">-  margin: 0;
+</a><a href="#h32-0-34" id="h32-0-34" class="i">+root {
+</a><a href="#h32-0-35" id="h32-0-35" class="i">+  --flow-space: #{get-size(&quot;600&quot;)};
+</a> }
+
+<a href="#h32-0-38" id="h32-0-38" class="d">-/* Set core root defaults */
+</a> html {
+<a href="#h32-0-40" id="h32-0-40" class="d">-  scroll-behavior: smooth;
+</a><a href="#h32-0-41" id="h32-0-41" class="i">+  font-size: 18px;
+</a> }
+
+<a href="#h32-0-44" id="h32-0-44" class="d">-/* Set core body defaults */
+</a> body {
+<a href="#h32-0-46" id="h32-0-46" class="d">-  min-height: 100vh;
+</a><a href="#h32-0-47" id="h32-0-47" class="d">-  text-rendering: optimizeSpeed;
+</a><a href="#h32-0-48" id="h32-0-48" class="i">+  display: flex;
+</a><a href="#h32-0-49" id="h32-0-49" class="i">+  flex-direction: column;
+</a><a href="#h32-0-50" id="h32-0-50" class="i">+  background: get-color(&quot;background&quot;);
+</a><a href="#h32-0-51" id="h32-0-51" class="i">+  color: get-color(&quot;text&quot;);
+</a>   line-height: 1.5;
+<a href="#h32-0-53" id="h32-0-53" class="i">+  font-size: get-size(&quot;500&quot;);
+</a><a href="#h32-0-54" id="h32-0-54" class="i">+  @include apply-utility(&quot;font&quot;, &quot;base&quot;);
+</a><a href="#h32-0-55" id="h32-0-55" class="i">+  overflow-x: hidden;
+</a><a href="#h32-0-56" id="h32-0-56" class="i">+  min-height: 100vh;
+</a> }
+
+<a href="#h32-0-59" id="h32-0-59" class="d">-/* Remove list styles on ul, ol elements with a class attribute */
+</a><a href="#h32-0-60" id="h32-0-60" class="d">-ul[class],
+</a><a href="#h32-0-61" id="h32-0-61" class="d">-ol[class] {
+</a><a href="#h32-0-62" id="h32-0-62" class="d">-  list-style: none;
+</a><a href="#h32-0-63" id="h32-0-63" class="i">+main:focus {
+</a><a href="#h32-0-64" id="h32-0-64" class="i">+  outline: none;
+</a> }
+
+<a href="#h32-0-67" id="h32-0-67" class="d">-/* A elements that don’t have a class get default styles */
+</a><a href="#h32-0-68" id="h32-0-68" class="d">-a:not([class]) {
+</a><a href="#h32-0-69" id="h32-0-69" class="d">-  text-decoration-skip-ink: auto;
+</a><a href="#h32-0-70" id="h32-0-70" class="i">+h1,
+</a><a href="#h32-0-71" id="h32-0-71" class="i">+h2,
+</a><a href="#h32-0-72" id="h32-0-72" class="i">+h3,
+</a><a href="#h32-0-73" id="h32-0-73" class="i">+h4 {
+</a><a href="#h32-0-74" id="h32-0-74" class="i">+  font-weight: 900;
+</a><a href="#h32-0-75" id="h32-0-75" class="i">+  @include apply-utility(&quot;font&quot;, &quot;sans&quot;);
+</a><a href="#h32-0-76" id="h32-0-76" class="i">+}
+</a><a href="#h32-0-77" id="h32-0-77" class="i">+
+</a><a href="#h32-0-78" id="h32-0-78" class="i">+a {
+</a><a href="#h32-0-79" id="h32-0-79" class="i">+  color: inherit;
+</a> }
+
+<a href="#h32-0-82" id="h32-0-82" class="d">-/* Make images easier to work with */
+</a><a href="#h32-0-83" id="h32-0-83" class="d">-img {
+</a><a href="#h32-0-84" id="h32-0-84" class="d">-  max-width: 100%;
+</a><a href="#h32-0-85" id="h32-0-85" class="d">-  display: block;
+</a><a href="#h32-0-86" id="h32-0-86" class="i">+:focus {
+</a><a href="#h32-0-87" id="h32-0-87" class="i">+  outline: 2px dashed get-color(&quot;text&quot;);
+</a><a href="#h32-0-88" id="h32-0-88" class="i">+  outline-offset: 0.1rem;
+</a><a href="#h32-0-89" id="h32-0-89" class="i">+}
+</a><a href="#h32-0-90" id="h32-0-90" class="i">+
+</a><a href="#h32-0-91" id="h32-0-91" class="i">+::selection {
+</a><a href="#h32-0-92" id="h32-0-92" class="i">+  background: get-color(&quot;secondary&quot;);
+</a><a href="#h32-0-93" id="h32-0-93" class="i">+}
+</a><a href="#h32-0-94" id="h32-0-94" class="i">+// Scrollbar styles
+</a><a href="#h32-0-95" id="h32-0-95" class="i">+::-webkit-scrollbar {
+</a><a href="#h32-0-96" id="h32-0-96" class="i">+  height: 1rem;
+</a><a href="#h32-0-97" id="h32-0-97" class="i">+  background: get-color(&quot;shade&quot;);
+</a> }
+
+<a href="#h32-0-100" id="h32-0-100" class="d">-/* Inherit fonts for inputs and buttons */
+</a><a href="#h32-0-101" id="h32-0-101" class="d">-input,
+</a><a href="#h32-0-102" id="h32-0-102" class="d">-button,
+</a><a href="#h32-0-103" id="h32-0-103" class="d">-textarea,
+</a><a href="#h32-0-104" id="h32-0-104" class="d">-select {
+</a><a href="#h32-0-105" id="h32-0-105" class="d">-  font: inherit;
+</a><a href="#h32-0-106" id="h32-0-106" class="i">+::-webkit-scrollbar-track {
+</a><a href="#h32-0-107" id="h32-0-107" class="i">+  background-color: transparent;
+</a><a href="#h32-0-108" id="h32-0-108" class="i">+  border-radius: 0.25rem;
+</a> }
+
+<a href="#h32-0-111" id="h32-0-111" class="d">-/* Remove all animations and transitions for people that prefer not to see them */
+</a><a href="#h32-0-112" id="h32-0-112" class="d">-@media (prefers-reduced-motion: reduce) {
+</a><a href="#h32-0-113" id="h32-0-113" class="d">-  * {
+</a><a href="#h32-0-114" id="h32-0-114" class="d">-    animation-duration: 0.01s !important;
+</a><a href="#h32-0-115" id="h32-0-115" class="d">-    animation-iteration-count: 1 !important;
+</a><a href="#h32-0-116" id="h32-0-116" class="d">-    transition-duration: 0.01s !important;
+</a><a href="#h32-0-117" id="h32-0-117" class="d">-    scroll-behavior: auto !important;
+</a><a href="#h32-0-118" id="h32-0-118" class="d">-  }
+</a><a href="#h32-0-119" id="h32-0-119" class="i">+::-webkit-scrollbar-thumb {
+</a><a href="#h32-0-120" id="h32-0-120" class="i">+  border-radius: 0rem;
+</a><a href="#h32-0-121" id="h32-0-121" class="i">+  background: get-color(&quot;secondary&quot;);
+</a> }
+</pre>
+</div>
+</body>
+</html>

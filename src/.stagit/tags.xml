@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>bitbyte-blog, branch HEAD</title>
+<subtitle>Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</subtitle>
+<entry>
+<id>15e66f3c036ef5e12fa376323ec9d99fe17c3b75</id>
+<published>2022-02-26T00:11:05Z</published>
+<updated>2022-02-26T00:11:05Z</updated>
+<title>[v0.1.0] Add Pins</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/15e66f3c036ef5e12fa376323ec9d99fe17c3b75.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 15e66f3c036ef5e12fa376323ec9d99fe17c3b75
+parent 4ed06e4a34cdf76879827be1f4293980d91da9d3
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 25 Feb 2022 18:11:05 -0600
+
+Add Pins
+
+</content>
+</entry>
+</feed>

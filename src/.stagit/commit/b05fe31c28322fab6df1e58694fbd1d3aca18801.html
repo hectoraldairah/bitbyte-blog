@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>add h-card - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/b05fe31c28322fab6df1e58694fbd1d3aca18801.html">b05fe31c28322fab6df1e58694fbd1d3aca18801</a>
+<b>parent</b> <a href="../commit/7740b7e1d33fe227064664f55bbf0dd4889aeea3.html">7740b7e1d33fe227064664f55bbf0dd4889aeea3</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Wed, 11 Sep 2024 23:04:52 -0600
+
+add h-card
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">src/_includes/css/home.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">src/_includes/layouts/home.njk</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h2">src/scss/blocks/_intro.scss</a></td><td> | </td><td class="num">17</td><td><span class="i">+++++++++++++++++</span><span class="d"></span></td></tr>
+</table></pre><pre>3 files changed, 21 insertions(+), 4 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a> b/<a href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -1 +1 @@
+</a><a href="#h0-0-0" id="h0-0-0" class="d">-.intro{margin:1.2rem 0;padding:1.2rem 0}.intro__title{font-size:3rem;font-weight:400;line-height:1.15}.intro__title .favicon{display:inline-block;max-height:50px;max-width:50px;object-fit:cover}@media (min-width:48em){.intro__title{font-size:3rem}}.intro__description{max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;flex-wrap:wrap;font-size:1.2rem;gap:1rem}.cool-stuff{display:flex;flex-direction:column;flex-wrap:wrap}.socials{align-items:center;margin-top:-2rem}.socials,.socials ul{display:flex;justify-content:flex-start}.socials ul{flex-direction:row;gap:1rem;list-style-type:none;margin-left:-1rem}.outsiders{align-items:center;display:flex;justify-content:space-between}.outsiders div{margin:0 auto}.feature-post{padding-bottom:1.2rem;padding-top:1.2rem}.feature-post__title{color:#eb455c;font-size:1.6rem}.feature-post__list{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:var(--text-heading-color)}.featured-article__meta__tags:hover{background-color:var(--text-heading-color);color:var(--bg-color)}.featured-article__title{color:#354059;font-family:serif;font-size:1.2rem;text-decoration-color:#354059}.featured-article__excerpt{display:block;font-size:1rem}
+</a><a href="#h0-0-1" id="h0-0-1" class="d">-\ No newline at end of file
+</a><a href="#h0-0-2" id="h0-0-2" class="i">+.intro{margin:1.2rem 0;padding:1.2rem 0}.intro__title{font-size:3rem;font-weight:400;line-height:1.15}.intro__title .favicon{display:inline-block;max-height:50px;max-width:50px;object-fit:cover}@media (min-width:48em){.intro__title{font-size:3rem}}.intro__description{max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;flex-wrap:wrap;font-size:1.2rem;gap:1rem}.cool-stuff{display:flex;flex-direction:column;flex-wrap:wrap}.socials{align-items:center;margin-top:-2rem}.socials,.socials ul{display:flex;flex-direction:row;justify-content:flex-start}.socials ul{gap:1rem;list-style-type:none;margin-left:-1rem}.outsiders{align-items:center;display:flex;flex-direction:column;gap:2rem;justify-content:space-between}@media (min-width:48em){.outsiders{flex-direction:row}}.outsiders iframe{width:100%}@media (min-width:48em){.outsiders iframe{width:30vw}}.outsiders div{margin:0 auto}.feature-post{padding-bottom:1.2rem;padding-top:1.2rem}.feature-post__title{color:#eb455c;font-size:1.6rem}.feature-post__list{display:grid;gap:2rem;grid-template-columns:1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:var(--text-heading-color)}.featured-article__meta__tags:hover{background-color:var(--text-heading-color);color:var(--bg-color)}.featured-article__title{color:#354059;font-family:serif;font-size:1.2rem;text-decoration-color:#354059}.featured-article__excerpt{display:block;font-size:1rem}
+</a><a href="#h0-0-3" id="h0-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h1" href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a> b/<a href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -3,7 +3,7 @@
+</a>
+ &lt;section class=&quot;[ intro ]&quot;&gt;
+   &lt;div class=&quot;constrained&quot;&gt;
+<a href="#h1-0-3" id="h1-0-3" class="d">-    &lt;h2 class=&quot;[ intro__title ]&quot;&gt;{% image &quot;src/assets/icons/favicon.svg&quot;, &quot;logo from blog&quot;, &quot;favicon&quot; %} bitbyte.blog&lt;/h2&gt;
+</a><a href="#h1-0-4" id="h1-0-4" class="i">+    &lt;h2 class=&quot;[ intro__title ]&quot;&gt;{% image &quot;src/assets/icons/favicon.svg&quot;, &quot;logo from blog&quot;, &quot;favicon&quot; %}     &lt;a href=&quot;https://www.bitbyte.blog/&quot; class=&quot;h-card&quot; rel=&quot;me&quot;&gt;bitbyte.blog&lt;/a&gt;&lt;/h2&gt;
+</a>     &lt;div class=&quot;intro__description&quot;&gt;
+       &lt;p&gt;Hi, I&#39;m Héctor, a Software Engineer with passion for web development.&lt;/p&gt;
+       &lt;p&gt;
+<a href="#h1-1" id="h1-1" class="h">@@ -34,7 +34,7 @@
+</a>   &lt;br /&gt;
+   &lt;section class=&quot;outsiders&quot;&gt;
+
+<a href="#h1-1-3" id="h1-1-3" class="d">-    &lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0wLnD2gyI5NMbfShUeqNul?utm_source=generator&amp;theme=0&quot; width=&quot;40%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
+</a><a href="#h1-1-4" id="h1-1-4" class="i">+    &lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0wLnD2gyI5NMbfShUeqNul?utm_source=generator&amp;theme=0&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
+</a>     &lt;div&gt;
+     &lt;a href=&quot;https://xn--sr8hvo.ws/previous&quot;&gt;←&lt;/a&gt;
+     An &lt;a href=&quot;https://xn--sr8hvo.ws&quot;&gt;IndieWeb Webring&lt;/a&gt; 🕸💍
+<b>diff --git a/<a id="h2" href="../file/src/scss/blocks/_intro.scss.html">src/scss/blocks/_intro.scss</a> b/<a href="../file/src/scss/blocks/_intro.scss.html">src/scss/blocks/_intro.scss</a></b>
+<a href="#h2-0" id="h2-0" class="h">@@ -47,6 +47,7 @@
+</a>   align-items: center;
+   justify-content: flex-start;
+   margin-top: -2rem;
+<a href="#h2-0-3" id="h2-0-3" class="i">+  flex-direction: row;
+</a>   ul {
+     display:  flex;
+     flex-direction: row;
+<a href="#h2-1" id="h2-1" class="h">@@ -55,12 +56,28 @@
+</a>     list-style-type: none;
+     margin-left: -1rem;
+   }
+<a href="#h2-1-3" id="h2-1-3" class="i">+
+</a> }
+
+ .outsiders {
+   display: flex;
+   align-items: center;
+<a href="#h2-1-9" id="h2-1-9" class="i">+  flex-direction: column;
+</a>   justify-content: space-between;
+<a href="#h2-1-11" id="h2-1-11" class="i">+  gap: 2rem;
+</a><a href="#h2-1-12" id="h2-1-12" class="i">+
+</a><a href="#h2-1-13" id="h2-1-13" class="i">+  @include media-query(&quot;md&quot;) {
+</a><a href="#h2-1-14" id="h2-1-14" class="i">+    flex-direction: row;
+</a><a href="#h2-1-15" id="h2-1-15" class="i">+  }
+</a><a href="#h2-1-16" id="h2-1-16" class="i">+
+</a><a href="#h2-1-17" id="h2-1-17" class="i">+  iframe {
+</a><a href="#h2-1-18" id="h2-1-18" class="i">+    width: 100%;
+</a><a href="#h2-1-19" id="h2-1-19" class="i">+
+</a><a href="#h2-1-20" id="h2-1-20" class="i">+    @include media-query(&quot;md&quot;) {
+</a><a href="#h2-1-21" id="h2-1-21" class="i">+      width: 30vw;
+</a><a href="#h2-1-22" id="h2-1-22" class="i">+    }
+</a><a href="#h2-1-23" id="h2-1-23" class="i">+  }
+</a><a href="#h2-1-24" id="h2-1-24" class="i">+
+</a>
+   div {
+     margin: 0 auto;
+</pre>
+</div>
+</body>
+</html>

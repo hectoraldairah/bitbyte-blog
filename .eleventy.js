@@ -54,6 +54,9 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/books/');
   eleventyConfig.addPassthroughCopy('./src/js/');
   eleventyConfig.addPassthroughCopy('src/_redirects');
+  eleventyConfig.addPassthroughCopy("src/.stagit/**/*.html");
+  eleventyConfig.addPassthroughCopy("src/.stagit/**/*.xml");
+  eleventyConfig.addPassthroughCopy("src/.stagit/**/*.css");
 
   // Filters
   for (const [name, fn] of Object.entries(filters)) {

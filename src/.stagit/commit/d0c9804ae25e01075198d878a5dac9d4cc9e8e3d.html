@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>add catppuccin - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/d0c9804ae25e01075198d878a5dac9d4cc9e8e3d.html">d0c9804ae25e01075198d878a5dac9d4cc9e8e3d</a>
+<b>parent</b> <a href="../commit/72851ded61677a8b0e6db0347deb7e9bb0d3cce2.html">72851ded61677a8b0e6db0347deb7e9bb0d3cce2</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Fri, 23 Jun 2023 18:50:20 -0600
+
+add catppuccin
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">src/_data/social.json</a></td><td> | </td><td class="num">5</td><td><span class="i"></span><span class="d">-----</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">src/_includes/css/critical.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h2">src/_includes/css/home.css</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h3">src/_includes/layouts/home.njk</a></td><td> | </td><td class="num">6</td><td><span class="i">+++</span><span class="d">---</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h4">src/_includes/partials/featured-posts.njk</a></td><td> | </td><td class="num">20</td><td><span class="i">++++++++++++</span><span class="d">--------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h5">src/scss/blocks/_featured-article.scss</a></td><td> | </td><td class="num">17</td><td><span class="i">+++++++++++++</span><span class="d">----</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h6">src/scss/blocks/_featured.scss</a></td><td> | </td><td class="num">32</td><td><span class="i">++++++++</span><span class="d">------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h7">src/scss/critical.scss</a></td><td> | </td><td class="num">9</td><td><span class="i">+++++</span><span class="d">----</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h8">src/scss/utilities/_colors.scss</a></td><td> | </td><td class="num">103</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h9">src/scss/utilities/_wrapper.scss</a></td><td> | </td><td class="num">10</td><td><span class="i">+++++++++</span><span class="d">-</span></td></tr>
+<tr><td class="D">D</td><td><a href="#h10">src/scss/utilities/colors.scss</a></td><td> | </td><td class="num">0</td><td><span class="i"></span><span class="d"></span></td></tr>
+</table></pre><pre>11 files changed, 157 insertions(+), 53 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/_data/social.json.html">src/_data/social.json</a> b/<a href="../file/src/_data/social.json.html">src/_data/social.json</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -6,11 +6,6 @@
+</a>       &quot;rel&quot;: &quot;me&quot;
+     },
+     {
+<a href="#h0-0-3" id="h0-0-3" class="d">-      &quot;url&quot;: &quot;https://www.twitter.com/BitByte_&quot;,
+</a><a href="#h0-0-4" id="h0-0-4" class="d">-      &quot;text&quot;: &quot;Twitter&quot;,
+</a><a href="#h0-0-5" id="h0-0-5" class="d">-      &quot;rel&quot;: &quot;me&quot;
+</a><a href="#h0-0-6" id="h0-0-6" class="d">-    },
+</a><a href="#h0-0-7" id="h0-0-7" class="d">-    {
+</a>       &quot;url&quot;: &quot;https://codepen.io/hectoraldairah&quot;,
+       &quot;text&quot;: &quot;Codepen&quot;
+     },
+<b>diff --git a/<a id="h1" href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a> b/<a href="../file/src/_includes/css/critical.css.html">src/_includes/css/critical.css</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -1 +1 @@
+</a><a href="#h1-0-0" id="h1-0-0" class="d">-*,:after,:before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{text-rendering:optimizeSpeed}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important}}.bg-Rosewater{background:#f5e0dc}.bg-Flamingo{background:#f2cdcd}.bg-Pink{background:#f5c2e7}.bg-Mauve{background:#cba6f7}.bg-Red{background:#f38ba8}.bg-Maroon{background:#eba0ac}.bg-Peach{background:#fab387}.bg-Yellow{background:#f9e2af}.bg-Green{background:#a6e3a1}.bg-Teal{background:#94e2d5}.bg-Sky{background:#89dceb}.bg-Sapphire{background:#74c7ec}.bg-Blue{background:#89b4fa}.bg-Lavender{background:#b4befe}.bg-Text{background:#cdd6f4}.bg-Subtext1{background:#bac2de}.bg-Subtext0{background:#a6adc8}.bg-Overlay2{background:#9399b2}.bg-Overlay1{background:#7f849c}.bg-Overlay0{background:#6c7086}.bg-Surface2{background:#585b70}.bg-Surface1{background:#45475a}.bg-Surface0{background:#313244}.bg-Base{background:#1e1e2e}.bg-Mantle{background:#181825}.bg-Crust{background:#11111b}.color-Rosewater{color:#f5e0dc}.color-Flamingo{color:#f2cdcd}.color-Pink{color:#f5c2e7}.color-Mauve{color:#cba6f7}.color-Red{color:#f38ba8}.color-Maroon{color:#eba0ac}.color-Peach{color:#fab387}.color-Yellow{color:#f9e2af}.color-Green{color:#a6e3a1}.color-Teal{color:#94e2d5}.color-Sky{color:#89dceb}.color-Sapphire{color:#74c7ec}.color-Blue{color:#89b4fa}.color-Lavender{color:#b4befe}.color-Text{color:#cdd6f4}.color-Subtext1{color:#bac2de}.color-Subtext0{color:#a6adc8}.color-Overlay2{color:#9399b2}.color-Overlay1{color:#7f849c}.color-Overlay0{color:#6c7086}.color-Surface2{color:#585b70}.color-Surface1{color:#45475a}.color-Surface0{color:#313244}.color-Base{color:#1e1e2e}.color-Mantle{color:#181825}.color-Crust{color:#11111b}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:sans-serif}.font-terminal{font-family:serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.25rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.25rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.25rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.25rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.25rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.25rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.25rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.25rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.25rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.25rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.25rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.25rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}.fade-in{animation:fadeInDown .8s ease;backface-visibility:hidden;perspective:1000px;transform:translateZ(0)}@keyframes fadeInDown{0%{filter:blur(5px);opacity:0;transform:translateY(-20px)}to{filter:blur(0);opacity:1;transform:translateY(0)}}h1,h2,h3,h4,h5,h6{line-height:1.2;margin:0}h1,h2,h3,h4{font-family:serif;font-weight:900;text-rendering:optimizeLegibility}p{line-height:1.5}a{color:#cdd6f4;color:var(--link-color);font-family:serif;text-decoration-color:#f2cdcd;text-decoration-color:var(--text-decoration-color);transition:.3s}a:hover{color:#f2cdcd;color:var(--link-hover-color)}::-webkit-scrollbar{background:#585b70;background:var(--scrollbar-color);height:1rem}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{background:#181825;background:var(--scrollbar-thumb-color);border-radius:0}main:focus{outline:none}:focus{outline:2px dashed #cdd6f4;outline:2px dashed var(--text-color);outline-offset:.2rem}::selection{background:#45475a;background:var(--focus-color)}.anchor hidden{display:block}.wrapper{max-width:70rem;padding:0 1.33rem}.constrained,.wrapper{margin-left:auto;margin-right:auto;position:relative}.constrained{max-width:45rem}.site-head{padding:1.6rem 0}.site-head__inner{align-items:center;flex-wrap:wrap}.site-head__inner,.site-head__inner__themes ul{display:flex;gap:1rem;justify-content:space-between}.site-head__inner__themes ul{list-style-type:none;margin:0;padding:0}.site-head__inner__themes ul li{align-items:center;display:flex}.site-head__inner__themes ul li span{border-radius:100%;cursor:pointer;display:inline-block;height:28px;width:28px}.site-head__brand{flex-shrink:0;margin-inline-end:1.25rem;transform:translateY(.25rem)}.site-head__nav{padding:.8rem 0}.teal{background-color:teal}.site-footer{border-top:1px solid;border-top:1px solid var(--footer-border-color);font-size:1rem;margin-top:3rem;padding:2rem 0}.site-footer__navigation{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:-.8rem;margin-inline-start:-1rem}.site-footer__navigation__middle{align-items:center;display:flex;gap:3rem;margin:1rem 0 1rem 1rem}.site-footer ul{gap:1rem}.site-footer li,.site-footer ul{align-items:center;display:flex;flex-wrap:wrap}.site-footer li{flex-direction:column;margin-inline-start:1rem}.nav{font-weight:600;line-height:1;margin-top:-1rem;margin-inline-start:-1rem}.nav__list{display:flex;flex-wrap:wrap;gap:1.25rem}.nav__list&gt;*{padding-top:1rem;padding-inline-start:1rem}.nav a{color:#cdd6f4;color:var(--link-color);display:block;padding:.5rem;position:relative;text-decoration:none}.nav a:before{background:#f2cdcd;background:var(--link-hover-color);bottom:-.2rem;content:&quot;&quot;;display:block;height:.2rem;left:0;position:absolute;transform:scaleX(0);transform-origin:bottom left;transition:transform .2s linear;width:100%}.nav a:hover{color:#f2cdcd;color:var(--link-hover-color)}.nav a:hover:before,.nav a[data-state=active]:before,.nav a[data-state=page]:before{background:#f2cdcd;background:var(--link-hover-color);transform:scaleX(1)}.nav a[data-state=active]:before,.nav a[data-state=page]:before{content:&quot;&quot;}.link{color:#cdd6f4;color:var(--link-color)}.page-header{padding:3rem 0;text-align:center}.page-header h1{font-size:3rem}.page-header__summary{font-size:1.25rem;margin-top:1.25rem}@media (min-width:48em){.page-header h1{font-size:5rem}}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack&gt;*{margin-bottom:0;margin-top:0}.stack&gt;*+*{margin-top:1.5rem;margin-top:var(--space,1.5rem)}code[class*=language-],pre[class*=language-]{background:#27212e;color:#fff;direction:ltr;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:2;-o-tab-size:2;tab-size:2;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#eb64b927;color:inherit}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#eb64b927;color:inherit}pre[class*=language-]{border-radius:.5em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)&gt;code[class*=language-]{border-radius:.5rem;padding:.2em .3em;white-space:normal}.token.cdata,.token.comment,.token.prolog{color:#91889b}.token.punctuation{color:#7b6995}.token.boolean,.token.builtin,.token.constant{color:#ffe261}.token.number{color:#b381c5}.token.atrule,.token.important,.token.keyword,.token.property{color:#40b4c4}.token.class-name,.token.doctype,.token.inserted,.token.operator,.token.symbol,.token.tag{color:#74dfc4}.token.attr-name,.token.deleted,.token.function,.token.selector{color:#eb64b9}.token.attr-value,.token.char,.token.regex,.token.string{color:#b4dce7}.token.entity,.token.url,.token.variable{color:#fff}.token.bold{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.namespace{opacity:.7}:root{--bg-color:#1e1e2e;--text-color:#cdd6f4;--feature-post-color:#181825;--text-heading-color: ;--link-color:#cdd6f4;--text-decoration-color:#f2cdcd;--link-hover-color:#f2cdcd;--focus-color:#45475a;--flow-space:1.6rem;--scrollbar-color:#585b70;--scrollbar-thumb-color:#181825;--block-quote-color: ;--block-quote-shadow-color: ;--footer-border-color: ;scrollbar-color:#585b70 #181825;scrollbar-color:var(--scrollbar-color) var(--scrollbar-thumb-color);scrollbar-width:auto!important}html{font-size:17px}body{background:#1e1e2e;background:var(--bg-color);color:#cdd6f4;color:var(--text-color);display:flex;flex-direction:column;font-family:system-ui,sans-serif;font-size:1.25rem;line-height:1.5;min-height:100vh;overflow-x:hidden}h1,h2,h3{color:var(--text-heading-color);font-weight:3rem}pre{font-size:.825rem!important}#main-content{margin-top:1.6rem}
+</a><a href="#h1-0-1" id="h1-0-1" class="d">-\ No newline at end of file
+</a><a href="#h1-0-2" id="h1-0-2" class="i">+*,:after,:before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,ol[class],p,ul[class]{margin:0}html{scroll-behavior:smooth}body{text-rendering:optimizeSpeed}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important}}.bg-Rosewater{background:#f5e0dc}.bg-Flamingo{background:#f2cdcd}.bg-Pink{background:#f5c2e7}.bg-Mauve{background:#cba6f7}.bg-Red{background:#f38ba8}.bg-Maroon{background:#eba0ac}.bg-Peach{background:#fab387}.bg-Yellow{background:#f9e2af}.bg-Green{background:#a6e3a1}.bg-Teal{background:#94e2d5}.bg-Sky{background:#89dceb}.bg-Sapphire{background:#74c7ec}.bg-Blue{background:#89b4fa}.bg-Lavender{background:#b4befe}.bg-Text{background:#cdd6f4}.bg-Subtext1{background:#bac2de}.bg-Subtext0{background:#a6adc8}.bg-Overlay2{background:#9399b2}.bg-Overlay1{background:#7f849c}.bg-Overlay0{background:#6c7086}.bg-Surface2{background:#585b70}.bg-Surface1{background:#45475a}.bg-Surface0{background:#313244}.bg-Base{background:#1e1e2e}.bg-Mantle{background:#181825}.bg-Crust{background:#11111b}.color-Rosewater{color:#f5e0dc}.color-Flamingo{color:#f2cdcd}.color-Pink{color:#f5c2e7}.color-Mauve{color:#cba6f7}.color-Red{color:#f38ba8}.color-Maroon{color:#eba0ac}.color-Peach{color:#fab387}.color-Yellow{color:#f9e2af}.color-Green{color:#a6e3a1}.color-Teal{color:#94e2d5}.color-Sky{color:#89dceb}.color-Sapphire{color:#74c7ec}.color-Blue{color:#89b4fa}.color-Lavender{color:#b4befe}.color-Text{color:#cdd6f4}.color-Subtext1{color:#bac2de}.color-Subtext0{color:#a6adc8}.color-Overlay2{color:#9399b2}.color-Overlay1{color:#7f849c}.color-Overlay0{color:#6c7086}.color-Surface2{color:#585b70}.color-Surface1{color:#45475a}.color-Surface0{color:#313244}.color-Base{color:#1e1e2e}.color-Mantle{color:#181825}.color-Crust{color:#11111b}.box-block{display:block}.box-flex{display:flex}.box-hide{display:none}.box-show{display:inherit}.font-base{font-family:sans-serif}.font-terminal{font-family:serif}.gap-top-300{margin-top:.8rem}.gap-top-400{margin-top:1rem}.gap-top-500{margin-top:1.25rem}.gap-top-600{margin-top:1.6rem}.gap-top-700{margin-top:2rem}.gap-top-900{margin-top:3rem}.gap-top-1000{margin-top:4rem}.gap-top-1100{margin-top:5rem}.gap-top-1200{margin-top:6rem}.gap-right-300{margin-right:.8rem}.gap-right-400{margin-right:1rem}.gap-right-500{margin-right:1.25rem}.gap-right-600{margin-right:1.6rem}.gap-right-700{margin-right:2rem}.gap-right-900{margin-right:3rem}.gap-right-1000{margin-right:4rem}.gap-right-1100{margin-right:5rem}.gap-right-1200{margin-right:6rem}.gap-bottom-300{margin-bottom:.8rem}.gap-bottom-400{margin-bottom:1rem}.gap-bottom-500{margin-bottom:1.25rem}.gap-bottom-600{margin-bottom:1.6rem}.gap-bottom-700{margin-bottom:2rem}.gap-bottom-900{margin-bottom:3rem}.gap-bottom-1000{margin-bottom:4rem}.gap-bottom-1100{margin-bottom:5rem}.gap-bottom-1200{margin-bottom:6rem}.gap-left-300{margin-left:.8rem}.gap-left-400{margin-left:1rem}.gap-left-500{margin-left:1.25rem}.gap-left-600{margin-left:1.6rem}.gap-left-700{margin-left:2rem}.gap-left-900{margin-left:3rem}.gap-left-1000{margin-left:4rem}.gap-left-1100{margin-left:5rem}.gap-left-1200{margin-left:6rem}.pad-top-300{padding-top:.8rem}.pad-top-400{padding-top:1rem}.pad-top-500{padding-top:1.25rem}.pad-top-600{padding-top:1.6rem}.pad-top-700{padding-top:2rem}.pad-top-900{padding-top:3rem}.pad-top-1000{padding-top:4rem}.pad-top-1100{padding-top:5rem}.pad-top-1200{padding-top:6rem}.pad-right-300{padding-right:.8rem}.pad-right-400{padding-right:1rem}.pad-right-500{padding-right:1.25rem}.pad-right-600{padding-right:1.6rem}.pad-right-700{padding-right:2rem}.pad-right-900{padding-right:3rem}.pad-right-1000{padding-right:4rem}.pad-right-1100{padding-right:5rem}.pad-right-1200{padding-right:6rem}.pad-bottom-300{padding-bottom:.8rem}.pad-bottom-400{padding-bottom:1rem}.pad-bottom-500{padding-bottom:1.25rem}.pad-bottom-600{padding-bottom:1.6rem}.pad-bottom-700{padding-bottom:2rem}.pad-bottom-900{padding-bottom:3rem}.pad-bottom-1000{padding-bottom:4rem}.pad-bottom-1100{padding-bottom:5rem}.pad-bottom-1200{padding-bottom:6rem}.pad-left-300{padding-left:.8rem}.pad-left-400{padding-left:1rem}.pad-left-500{padding-left:1.25rem}.pad-left-600{padding-left:1.6rem}.pad-left-700{padding-left:2rem}.pad-left-900{padding-left:3rem}.pad-left-1000{padding-left:4rem}.pad-left-1100{padding-left:5rem}.pad-left-1200{padding-left:6rem}.stack-300{z-index:0}.stack-400{z-index:10}.stack-500{z-index:20}.stack-600{z-index:30}.stack-700{z-index:40}.text-300{font-size:.8rem}.text-400{font-size:1rem}.text-500{font-size:1.25rem}.text-600{font-size:1.6rem}.text-700{font-size:2rem}.text-900{font-size:3rem}.text-1000{font-size:4rem}.text-1100{font-size:5rem}.text-1200{font-size:6rem}.weight-light{font-weight:300}.weight-regular{font-weight:400}.weight-bold{font-weight:700}.width-full{width:100%}@media (min-width:36em){.sm\:box-block{display:block}.sm\:box-flex{display:flex}.sm\:box-hide{display:none}.sm\:box-show{display:inherit}.sm\:text-300{font-size:.8rem}.sm\:text-400{font-size:1rem}.sm\:text-500{font-size:1.25rem}.sm\:text-600{font-size:1.6rem}.sm\:text-700{font-size:2rem}.sm\:text-900{font-size:3rem}.sm\:text-1000{font-size:4rem}.sm\:text-1100{font-size:5rem}.sm\:text-1200{font-size:6rem}.sm\:width-full{width:100%}}@media (min-width:48em){.md\:box-block{display:block}.md\:box-flex{display:flex}.md\:box-hide{display:none}.md\:box-show{display:inherit}.md\:text-300{font-size:.8rem}.md\:text-400{font-size:1rem}.md\:text-500{font-size:1.25rem}.md\:text-600{font-size:1.6rem}.md\:text-700{font-size:2rem}.md\:text-900{font-size:3rem}.md\:text-1000{font-size:4rem}.md\:text-1100{font-size:5rem}.md\:text-1200{font-size:6rem}.md\:width-full{width:100%}}@media (min-width:62em){.lg\:box-block{display:block}.lg\:box-flex{display:flex}.lg\:box-hide{display:none}.lg\:box-show{display:inherit}.lg\:text-300{font-size:.8rem}.lg\:text-400{font-size:1rem}.lg\:text-500{font-size:1.25rem}.lg\:text-600{font-size:1.6rem}.lg\:text-700{font-size:2rem}.lg\:text-900{font-size:3rem}.lg\:text-1000{font-size:4rem}.lg\:text-1100{font-size:5rem}.lg\:text-1200{font-size:6rem}.lg\:width-full{width:100%}}.fade-in{animation:fadeInDown .8s ease;backface-visibility:hidden;perspective:1000px;transform:translateZ(0)}@keyframes fadeInDown{0%{filter:blur(5px);opacity:0;transform:translateY(-20px)}to{filter:blur(0);opacity:1;transform:translateY(0)}}h1,h2,h3,h4,h5,h6{line-height:1.2;margin:0}h1,h2,h3,h4{font-family:serif;font-weight:900;text-rendering:optimizeLegibility}p{line-height:1.5}a{color:#cdd6f4;color:var(--link-color);font-family:serif;text-decoration-color:#f2cdcd;text-decoration-color:var(--text-decoration-color);transition:.3s}a:hover{color:#f2cdcd;color:var(--link-hover-color)}::-webkit-scrollbar{background:#585b70;background:var(--scrollbar-color);height:1rem}::-webkit-scrollbar-track{background-color:transparent;border-radius:.25rem}::-webkit-scrollbar-thumb{background:#181825;background:var(--scrollbar-thumb-color);border-radius:0}main:focus{outline:none}:focus{outline:2px dashed #cdd6f4;outline:2px dashed var(--text-color);outline-offset:.2rem}::selection{background:#45475a;background:var(--focus-color)}.anchor hidden{display:block}.loose{max-width:70rem}.loose,.wrapper{margin-left:auto;margin-right:auto;padding:0 1.33rem;position:relative}.wrapper{max-width:80ch}.constrained{margin-left:auto;margin-right:auto;max-width:45rem;position:relative}.Rosewater{color:&quot;#f5e0dc&quot;}.Flamingo{color:&quot;#f2cdcd&quot;}.Pink{color:&quot;#f5c2e7&quot;}.Mauve{color:&quot;#cba6f7&quot;}.Red{color:&quot;#f38ba8&quot;}.Maroon{color:&quot;#eba0ac&quot;}.Peach{color:&quot;#fab387&quot;}.Yellow{color:&quot;#f9e2af&quot;}.Green{color:&quot;#a6e3a1&quot;}.Teal{color:&quot;#94e2d5&quot;}.Sky{color:&quot;#89dceb&quot;}.Sapphire{color:&quot;#74c7ec&quot;}.Blue{color:&quot;#89b4fa&quot;}.Lavender{color:&quot;#b4befe&quot;}.Text{color:&quot;#cdd6f4&quot;}.Subtext1{color:&quot;#bac2de&quot;}.Subtext0{color:&quot;#a6adc8&quot;}.Overlay2{color:&quot;#9399b2&quot;}.Overlay1{color:&quot;#7f849c&quot;}.Overlay0{color:&quot;#6c7086&quot;}.Surface2{color:&quot;#585b70&quot;}.Surface1{color:&quot;#45475a&quot;}.Surface0{color:&quot;#313244&quot;}.Base{color:&quot;#1e1e2e&quot;}.Mantle{color:&quot;#181825&quot;}.Crust{color:&quot;#11111b&quot;}.site-head{padding:1.6rem 0}.site-head__inner{align-items:center;flex-wrap:wrap}.site-head__inner,.site-head__inner__themes ul{display:flex;gap:1rem;justify-content:space-between}.site-head__inner__themes ul{list-style-type:none;margin:0;padding:0}.site-head__inner__themes ul li{align-items:center;display:flex}.site-head__inner__themes ul li span{border-radius:100%;cursor:pointer;display:inline-block;height:28px;width:28px}.site-head__brand{flex-shrink:0;margin-inline-end:1.25rem;transform:translateY(.25rem)}.site-head__nav{padding:.8rem 0}.teal{background-color:teal}.site-footer{border-top:1px solid #b4befe;border-top:1px solid var(--footer-border-color);font-size:1rem;margin-top:3rem;padding:2rem 0}.site-footer__navigation{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:-.8rem;margin-inline-start:-1rem}.site-footer__navigation__middle{align-items:center;display:flex;gap:3rem;margin:1rem 0 1rem 1rem}.site-footer ul{gap:1rem}.site-footer li,.site-footer ul{align-items:center;display:flex;flex-wrap:wrap}.site-footer li{flex-direction:column;margin-inline-start:1rem}.nav{font-weight:600;line-height:1;margin-top:-1rem;margin-inline-start:-1rem}.nav__list{display:flex;flex-wrap:wrap;gap:1.25rem}.nav__list&gt;*{padding-top:1rem;padding-inline-start:1rem}.nav a{color:#cdd6f4;color:var(--link-color);display:block;padding:.5rem;position:relative;text-decoration:none}.nav a:before{background:#f2cdcd;background:var(--link-hover-color);bottom:-.2rem;content:&quot;&quot;;display:block;height:.2rem;left:0;position:absolute;transform:scaleX(0);transform-origin:bottom left;transition:transform .2s linear;width:100%}.nav a:hover{color:#f2cdcd;color:var(--link-hover-color)}.nav a:hover:before,.nav a[data-state=active]:before,.nav a[data-state=page]:before{background:#f2cdcd;background:var(--link-hover-color);transform:scaleX(1)}.nav a[data-state=active]:before,.nav a[data-state=page]:before{content:&quot;&quot;}.link{color:#cdd6f4;color:var(--link-color)}.page-header{padding:3rem 0;text-align:center}.page-header h1{font-size:3rem}.page-header__summary{font-size:1.25rem;margin-top:1.25rem}@media (min-width:48em){.page-header h1{font-size:5rem}}.stack{display:flex;flex-direction:column;justify-content:flex-start}.stack&gt;*{margin-bottom:0;margin-top:0}.stack&gt;*+*{margin-top:1.5rem;margin-top:var(--space,1.5rem)}code[class*=language-],pre[class*=language-]{background:#27212e;color:#fff;direction:ltr;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:2;-o-tab-size:2;tab-size:2;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#eb64b927;color:inherit}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#eb64b927;color:inherit}pre[class*=language-]{border-radius:.5em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)&gt;code[class*=language-]{border-radius:.5rem;padding:.2em .3em;white-space:normal}.token.cdata,.token.comment,.token.prolog{color:#91889b}.token.punctuation{color:#7b6995}.token.boolean,.token.builtin,.token.constant{color:#ffe261}.token.number{color:#b381c5}.token.atrule,.token.important,.token.keyword,.token.property{color:#40b4c4}.token.class-name,.token.doctype,.token.inserted,.token.operator,.token.symbol,.token.tag{color:#74dfc4}.token.attr-name,.token.deleted,.token.function,.token.selector{color:#eb64b9}.token.attr-value,.token.char,.token.regex,.token.string{color:#b4dce7}.token.entity,.token.url,.token.variable{color:#fff}.token.bold{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.namespace{opacity:.7}:root{--bg-color:#1e1e2e;--text-color:#cdd6f4;--feature-post-color:#181825;--text-heading-color:#b4befe;--link-color:#cdd6f4;--text-decoration-color:#f2cdcd;--link-hover-color:#f2cdcd;--focus-color:#45475a;--flow-space:1.6rem;--scrollbar-color:#585b70;--scrollbar-thumb-color:#181825;--block-quote-color:#b4befe;--block-quote-shadow-color:#b4befe;--footer-border-color:#b4befe;scrollbar-color:#585b70 #181825;scrollbar-color:var(--scrollbar-color) var(--scrollbar-thumb-color);scrollbar-width:auto!important}html{font-size:17px}body{background:#1e1e2e;background:var(--bg-color);color:#cdd6f4;color:var(--text-color);display:flex;flex-direction:column;font-family:system-ui,sans-serif;font-size:1.25rem;line-height:1.5;min-height:100vh;overflow-x:hidden}h1,h2,h3{color:#b4befe;color:var(--text-heading-color);font-weight:3rem}pre{font-size:.825rem!important}#main-content{margin-top:1.6rem}
+</a><a href="#h1-0-3" id="h1-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h2" href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a> b/<a href="../file/src/_includes/css/home.css.html">src/_includes/css/home.css</a></b>
+<a href="#h2-0" id="h2-0" class="h">@@ -1 +1 @@
+</a><a href="#h2-0-0" id="h2-0-0" class="d">-.intro{margin:2rem 0;padding:2rem 0}.intro__title{font-size:3rem;font-weight:400;line-height:1.15;max-width:50rem}.intro__description{font-size:1.6rem;max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;font-size:1.25rem;gap:1rem}@media (min-width:48em){.intro__title{font-size:5rem}}.feature-post{background-color:var(--feature-post-color);padding-bottom:2rem;padding-top:2rem}.feature-post__inner{display:grid;grid-template-columns:1fr;grid-template-rows:1fr}.feature-post__list{display:grid;gap:4rem;margin-top:2rem}@media (min-width:48em){.feature-post .feature-post__list{grid-template-columns:repeat(2,1fr)}}@media (min-width:62em){.feature-post .feature-post__inner{grid-template-columns:200px 1fr}.feature-post .feature-post__list{margin-top:0}}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1rem;margin-bottom:.5rem;width:100%}.featured-article__title{color:var(--link-color);font-family:serif;font-size:1.6rem;text-decoration-color:var(--link-hover-color)}.featured-article__excerpt{display:block;font-size:1rem;margin-top:.8rem}
+</a><a href="#h2-0-1" id="h2-0-1" class="d">-\ No newline at end of file
+</a><a href="#h2-0-2" id="h2-0-2" class="i">+.intro{margin:2rem 0;padding:2rem 0}.intro__title{font-size:3rem;font-weight:400;line-height:1.15;max-width:50rem}.intro__description{font-size:1.6rem;max-width:60rem}.intro__description&gt;*{margin:1rem 0}.intro__description__social{align-items:center;display:flex;font-size:1.25rem;gap:1rem}@media (min-width:48em){.intro__title{font-size:5rem}}.feature-post{padding-bottom:2rem;padding-top:5rem}.feature-post__title{font-size:2rem}.feature-post__list{display:grid;gap:4rem;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;margin-top:2rem}.feature-post__more{display:inline-block;margin-top:3rem}.featured-article{width:100%}.featured-article__clamp{overflow:hidden;text-overflow:ellipsis;white-space:wrap}.featured-article__meta{display:block;font-size:1.25rem;margin-bottom:.5rem;width:100%}.featured-article__meta__tags{color:#b4befe;text-decoration-color:#b4befe}.featured-article__meta__tags:hover{color:#b4befe}.featured-article__title{color:#f5e0dc;font-family:serif;font-size:2rem;text-decoration-color:#f5e0dc}.featured-article__excerpt{display:block;font-size:1rem;margin-top:.8rem}
+</a><a href="#h2-0-3" id="h2-0-3" class="i">+\ No newline at end of file
+</a><b>diff --git a/<a id="h3" href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a> b/<a href="../file/src/_includes/layouts/home.njk.html">src/_includes/layouts/home.njk</a></b>
+<a href="#h3-0" id="h3-0" class="h">@@ -1,9 +1,9 @@
+</a> {% extends &quot;layouts/base.njk&quot; %} {% set pageCriticalStyles = [&#39;css/home.css&#39;] %}
+<a href="#h3-0-1" id="h3-0-1" class="d">-{% set featuredPostsItems = pagination.items %} {% block content %}
+</a><a href="#h3-0-2" id="h3-0-2" class="i">+{% set postItems = pagination.items %} {% block content %}
+</a>
+ &lt;section class=&quot;[ fade-in ] [ intro ]&quot;&gt;
+   &lt;div class=&quot;wrapper&quot;&gt;
+<a href="#h3-0-6" id="h3-0-6" class="d">-    &lt;h1 class=&quot;intro__title&quot;&gt;Hi, I&#39;m Héctor Aguilar.&lt;/h1&gt;
+</a><a href="#h3-0-7" id="h3-0-7" class="i">+    &lt;h1 class=&quot;[ intro__title ] [ Blue ]&quot;&gt;Hi, I&#39;m Héctor Aguilar.&lt;/h1&gt;
+</a>     &lt;div class=&quot;intro__description&quot;&gt;
+       &lt;p&gt;A software engineer that loves the web and CLI programs.&lt;/p&gt;
+       &lt;p&gt;
+<a href="#h3-1" id="h3-1" class="h">@@ -13,7 +13,7 @@
+</a>       &lt;/p&gt;
+       &lt;ul class=&quot;intro__description__social&quot;&gt;
+         {% for item in social.items%}
+<a href="#h3-1-3" id="h3-1-3" class="d">-          &lt;li&gt;&lt;a href={{item.url}} rel=&quot;me&quot;&gt;{{item.text}}&lt;/a&gt;&lt;/li&gt;
+</a><a href="#h3-1-4" id="h3-1-4" class="i">+          &lt;li&gt;&lt;a href={{item.url}} target=&quot;_blank&quot; rel=&quot;me&quot;&gt;{{item.text}}&lt;/a&gt;&lt;/li&gt;
+</a>         {% endfor %}
+       &lt;/ul&gt;
+     &lt;/div&gt;
+<b>diff --git a/<a id="h4" href="../file/src/_includes/partials/featured-posts.njk.html">src/_includes/partials/featured-posts.njk</a> b/<a href="../file/src/_includes/partials/featured-posts.njk.html">src/_includes/partials/featured-posts.njk</a></b>
+<a href="#h4-0" id="h4-0" class="h">@@ -1,25 +1,29 @@
+</a> &lt;section class=&quot;[ feature-post ]&quot;&gt;
+<a href="#h4-0-1" id="h4-0-1" class="d">-  &lt;div class=&quot;[ wrapper ] [ feature-post__inner ] &quot;&gt;
+</a><a href="#h4-0-2" id="h4-0-2" class="d">-    &lt;h3&gt;Featured&lt;/h3&gt;
+</a><a href="#h4-0-3" id="h4-0-3" class="i">+  &lt;div class=&quot;[ wrapper ]&quot;&gt;
+</a><a href="#h4-0-4" id="h4-0-4" class="i">+    &lt;h2 class=&quot;feature-post__title&quot;&gt;Posts&lt;/h2&gt;
+</a>     &lt;div class=&quot;feature-post__list&quot;&gt;
+<a href="#h4-0-6" id="h4-0-6" class="d">-      {% for item in featuredPostsItems %}
+</a><a href="#h4-0-7" id="h4-0-7" class="i">+      {% for item in postItems %}
+</a>       &lt;article class=&quot;featured-article&quot;&gt;
+         &lt;a href=&quot;{{ item.url }}&quot; class=&quot;[ featured-article__title ]&quot;&gt;
+           {{item.data.title}}
+         &lt;/a&gt;
+         &lt;p class=&quot;featured-article__clamp&quot;&gt;
+           &lt;span class=&quot;featured-article__meta&quot;&gt;
+<a href="#h4-0-14" id="h4-0-14" class="d">-            &lt;time class=&quot;featured-article__date&quot; datetime=&quot;{{ item.data.date | postDate }}&quot;&gt;{{ item.data.date | postDate
+</a><a href="#h4-0-15" id="h4-0-15" class="d">-              }}&lt;/time&gt;
+</a><a href="#h4-0-16" id="h4-0-16" class="d">-            ⁃
+</a>             {% for tag in item.data.tags %}
+<a href="#h4-0-18" id="h4-0-18" class="d">-            &lt;a href=&quot;/tag/{{ tag | slug }}/&quot;&gt;#{{ tag }}&lt;/a&gt;
+</a><a href="#h4-0-19" id="h4-0-19" class="d">-            {% endfor %}
+</a><a href="#h4-0-20" id="h4-0-20" class="i">+            &lt;a class=&quot;featured-article__meta__tags&quot; href=&quot;/tag/{{ tag | slug }}/&quot;&gt;#{{ tag }}&lt;/a&gt;
+</a><a href="#h4-0-21" id="h4-0-21" class="i">+            {% endfor %} ⁃
+</a><a href="#h4-0-22" id="h4-0-22" class="i">+            &lt;time
+</a><a href="#h4-0-23" id="h4-0-23" class="i">+              class=&quot;featured-article__date&quot;
+</a><a href="#h4-0-24" id="h4-0-24" class="i">+              datetime=&quot;{{ item.data.date | postDate }}&quot;
+</a><a href="#h4-0-25" id="h4-0-25" class="i">+              &gt;{{ item.data.date | postDate }}&lt;/time
+</a><a href="#h4-0-26" id="h4-0-26" class="i">+            &gt;
+</a>           &lt;/span&gt;
+           {{item.data.description }}
+         &lt;/p&gt;
+       &lt;/article&gt;
+       {% endfor %}
+     &lt;/div&gt;
+<a href="#h4-0-33" id="h4-0-33" class="i">+
+</a><a href="#h4-0-34" id="h4-0-34" class="i">+    &lt;a class=&quot;feature-post__more&quot; href=&quot;/blog&quot;&gt;See more articles...&lt;/a&gt;
+</a>   &lt;/div&gt;
+ &lt;/section&gt;
+<b>diff --git a/<a id="h5" href="../file/src/scss/blocks/_featured-article.scss.html">src/scss/blocks/_featured-article.scss</a> b/<a href="../file/src/scss/blocks/_featured-article.scss.html">src/scss/blocks/_featured-article.scss</a></b>
+<a href="#h5-0" id="h5-0" class="h">@@ -1,4 +1,5 @@
+</a> .featured-article {
+<a href="#h5-0-1" id="h5-0-1" class="i">+  width: 100%;
+</a>   &amp;__clamp {
+     overflow: hidden;
+     text-overflow: ellipsis;
+<a href="#h5-1" id="h5-1" class="h">@@ -9,13 +10,21 @@
+</a>     display: block;
+     width: 100%;
+     margin-bottom: 0.5rem;
+<a href="#h5-1-3" id="h5-1-3" class="d">-    font-size: get-size(&#39;400&#39;);
+</a><a href="#h5-1-4" id="h5-1-4" class="i">+    font-size: get-size(&#39;500&#39;);
+</a><a href="#h5-1-5" id="h5-1-5" class="i">+
+</a><a href="#h5-1-6" id="h5-1-6" class="i">+    &amp;__tags {
+</a><a href="#h5-1-7" id="h5-1-7" class="i">+      color: #{get-color(&#39;Lavender&#39;)};
+</a><a href="#h5-1-8" id="h5-1-8" class="i">+      text-decoration-color: #{get-color(&#39;Lavender&#39;)};
+</a><a href="#h5-1-9" id="h5-1-9" class="i">+      &amp;:hover {
+</a><a href="#h5-1-10" id="h5-1-10" class="i">+        color: #{get-color(&#39;Lavender&#39;)};
+</a><a href="#h5-1-11" id="h5-1-11" class="i">+      }
+</a><a href="#h5-1-12" id="h5-1-12" class="i">+    }
+</a>   }
+
+   &amp;__title {
+<a href="#h5-1-16" id="h5-1-16" class="d">-    font-size: get-size(&#39;600&#39;);
+</a><a href="#h5-1-17" id="h5-1-17" class="d">-    color: var(--link-color);
+</a><a href="#h5-1-18" id="h5-1-18" class="d">-    text-decoration-color: var(--link-hover-color);
+</a><a href="#h5-1-19" id="h5-1-19" class="i">+    font-size: get-size(&#39;700&#39;);
+</a><a href="#h5-1-20" id="h5-1-20" class="i">+    color: #{get-color(&#39;Rosewater&#39;)};
+</a><a href="#h5-1-21" id="h5-1-21" class="i">+    text-decoration-color: #{get-color(&#39;Rosewater&#39;)};
+</a>     @include apply-utility(&#39;font&#39;, &#39;terminal&#39;);
+   }
+
+<b>diff --git a/<a id="h6" href="../file/src/scss/blocks/_featured.scss.html">src/scss/blocks/_featured.scss</a> b/<a href="../file/src/scss/blocks/_featured.scss.html">src/scss/blocks/_featured.scss</a></b>
+<a href="#h6-0" id="h6-0" class="h">@@ -1,37 +1,21 @@
+</a> .feature-post {
+<a href="#h6-0-1" id="h6-0-1" class="d">-  background-color: var(--feature-post-color);
+</a><a href="#h6-0-2" id="h6-0-2" class="d">-  padding-top: 2rem;
+</a><a href="#h6-0-3" id="h6-0-3" class="i">+  padding-top: 5rem;
+</a>   padding-bottom: 2rem;
+
+<a href="#h6-0-6" id="h6-0-6" class="d">-  &amp;__inner {
+</a><a href="#h6-0-7" id="h6-0-7" class="d">-    display: grid;
+</a><a href="#h6-0-8" id="h6-0-8" class="d">-    grid-template-columns: 1fr;
+</a><a href="#h6-0-9" id="h6-0-9" class="d">-    grid-template-rows: 1fr;
+</a><a href="#h6-0-10" id="h6-0-10" class="i">+  &amp;__title {
+</a><a href="#h6-0-11" id="h6-0-11" class="i">+    font-size: get-size(&#39;700&#39;);
+</a>   }
+
+   &amp;__list {
+     display: grid;
+<a href="#h6-0-16" id="h6-0-16" class="i">+    grid-template-columns: 1fr 1fr;
+</a><a href="#h6-0-17" id="h6-0-17" class="i">+    grid-template-rows: 1fr 1fr;
+</a>     gap: get-size(&#39;1000&#39;);
+     margin-top: get-size(&#39;700&#39;);
+   }
+
+<a href="#h6-0-22" id="h6-0-22" class="d">-  @include media-query(&#39;md&#39;) {
+</a><a href="#h6-0-23" id="h6-0-23" class="d">-    .feature-post {
+</a><a href="#h6-0-24" id="h6-0-24" class="d">-      &amp;__list {
+</a><a href="#h6-0-25" id="h6-0-25" class="d">-        grid-template-columns: repeat(2, 1fr);
+</a><a href="#h6-0-26" id="h6-0-26" class="d">-      }
+</a><a href="#h6-0-27" id="h6-0-27" class="d">-    }
+</a><a href="#h6-0-28" id="h6-0-28" class="d">-  }
+</a><a href="#h6-0-29" id="h6-0-29" class="d">-
+</a><a href="#h6-0-30" id="h6-0-30" class="d">-  @include media-query(&#39;lg&#39;) {
+</a><a href="#h6-0-31" id="h6-0-31" class="d">-    .feature-post {
+</a><a href="#h6-0-32" id="h6-0-32" class="d">-      &amp;__inner {
+</a><a href="#h6-0-33" id="h6-0-33" class="d">-        grid-template-columns: 200px 1fr;
+</a><a href="#h6-0-34" id="h6-0-34" class="d">-      }
+</a><a href="#h6-0-35" id="h6-0-35" class="d">-
+</a><a href="#h6-0-36" id="h6-0-36" class="d">-      &amp;__list {
+</a><a href="#h6-0-37" id="h6-0-37" class="d">-        margin-top: 0;
+</a><a href="#h6-0-38" id="h6-0-38" class="d">-      }
+</a><a href="#h6-0-39" id="h6-0-39" class="d">-    }
+</a><a href="#h6-0-40" id="h6-0-40" class="i">+  &amp;__more {
+</a><a href="#h6-0-41" id="h6-0-41" class="i">+    display: inline-block;
+</a><a href="#h6-0-42" id="h6-0-42" class="i">+    margin-top: 3rem;
+</a>   }
+ }
+<b>diff --git a/<a id="h7" href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a> b/<a href="../file/src/scss/critical.scss.html">src/scss/critical.scss</a></b>
+<a href="#h7-0" id="h7-0" class="h">@@ -15,6 +15,7 @@
+</a>
+ // Import Utilities
+ @import &#39;utilities/wrapper&#39;;
+<a href="#h7-0-3" id="h7-0-3" class="i">+@import &#39;utilities/colors&#39;;
+</a>
+ // Blocks
+ @import &#39;blocks/header&#39;;
+<a href="#h7-1" id="h7-1" class="h">@@ -32,7 +33,7 @@
+</a>   --text-color: #{get-color(&#39;Text&#39;)};
+
+   --feature-post-color: #{get-color(&#39;Mantle&#39;)};
+<a href="#h7-1-3" id="h7-1-3" class="d">-  --text-heading-color: #{get-color(&#39;Lavander&#39;)};
+</a><a href="#h7-1-4" id="h7-1-4" class="i">+  --text-heading-color: #{get-color(&#39;Lavender&#39;)};
+</a>
+   --link-color: #{get-color(&#39;Text&#39;)};
+   --text-decoration-color: #{get-color(&#39;Flamingo&#39;)};
+<a href="#h7-2" id="h7-2" class="h">@@ -45,9 +46,9 @@
+</a>   --scrollbar-color: #{get-color(&#39;Surface2&#39;)};
+   --scrollbar-thumb-color: #{get-color(&#39;Mantle&#39;)};
+
+<a href="#h7-2-3" id="h7-2-3" class="d">-  --block-quote-color: #{get-color(&#39;Lavander&#39;)};
+</a><a href="#h7-2-4" id="h7-2-4" class="d">-  --block-quote-shadow-color: #{get-color(&#39;Lavander&#39;)};
+</a><a href="#h7-2-5" id="h7-2-5" class="d">-  --footer-border-color: #{get-color(&#39;Lavander&#39;)};
+</a><a href="#h7-2-6" id="h7-2-6" class="i">+  --block-quote-color: #{get-color(&#39;Lavender&#39;)};
+</a><a href="#h7-2-7" id="h7-2-7" class="i">+  --block-quote-shadow-color: #{get-color(&#39;Lavender&#39;)};
+</a><a href="#h7-2-8" id="h7-2-8" class="i">+  --footer-border-color: #{get-color(&#39;Lavender&#39;)};
+</a>
+   scrollbar-color: var(--scrollbar-color) var(--scrollbar-thumb-color);
+   scrollbar-width: auto !important;
+<b>diff --git a/<a id="h8" href="../file/src/scss/utilities/_colors.scss.html">src/scss/utilities/_colors.scss</a> b/<a href="../file/src/scss/utilities/_colors.scss.html">src/scss/utilities/_colors.scss</a></b>
+<a href="#h8-0" id="h8-0" class="h">@@ -0,0 +1,103 @@
+</a><a href="#h8-0-0" id="h8-0-0" class="i">+.Rosewater {
+</a><a href="#h8-0-1" id="h8-0-1" class="i">+  color: get-color(&#39;Rosewater&#39;);
+</a><a href="#h8-0-2" id="h8-0-2" class="i">+}
+</a><a href="#h8-0-3" id="h8-0-3" class="i">+
+</a><a href="#h8-0-4" id="h8-0-4" class="i">+.Flamingo {
+</a><a href="#h8-0-5" id="h8-0-5" class="i">+  color: get-color(&#39;Flamingo&#39;);
+</a><a href="#h8-0-6" id="h8-0-6" class="i">+}
+</a><a href="#h8-0-7" id="h8-0-7" class="i">+
+</a><a href="#h8-0-8" id="h8-0-8" class="i">+.Pink {
+</a><a href="#h8-0-9" id="h8-0-9" class="i">+  color: get-color(&#39;Pink&#39;);
+</a><a href="#h8-0-10" id="h8-0-10" class="i">+}
+</a><a href="#h8-0-11" id="h8-0-11" class="i">+
+</a><a href="#h8-0-12" id="h8-0-12" class="i">+.Mauve {
+</a><a href="#h8-0-13" id="h8-0-13" class="i">+  color: get-color(&#39;Mauve&#39;);
+</a><a href="#h8-0-14" id="h8-0-14" class="i">+}
+</a><a href="#h8-0-15" id="h8-0-15" class="i">+
+</a><a href="#h8-0-16" id="h8-0-16" class="i">+.Red {
+</a><a href="#h8-0-17" id="h8-0-17" class="i">+  color: get-color(&#39;Red&#39;);
+</a><a href="#h8-0-18" id="h8-0-18" class="i">+}
+</a><a href="#h8-0-19" id="h8-0-19" class="i">+
+</a><a href="#h8-0-20" id="h8-0-20" class="i">+.Maroon {
+</a><a href="#h8-0-21" id="h8-0-21" class="i">+  color: get-color(&#39;Maroon&#39;);
+</a><a href="#h8-0-22" id="h8-0-22" class="i">+}
+</a><a href="#h8-0-23" id="h8-0-23" class="i">+
+</a><a href="#h8-0-24" id="h8-0-24" class="i">+.Peach {
+</a><a href="#h8-0-25" id="h8-0-25" class="i">+  color: get-color(&#39;Peach&#39;);
+</a><a href="#h8-0-26" id="h8-0-26" class="i">+}
+</a><a href="#h8-0-27" id="h8-0-27" class="i">+
+</a><a href="#h8-0-28" id="h8-0-28" class="i">+.Yellow {
+</a><a href="#h8-0-29" id="h8-0-29" class="i">+  color: get-color(&#39;Yellow&#39;);
+</a><a href="#h8-0-30" id="h8-0-30" class="i">+}
+</a><a href="#h8-0-31" id="h8-0-31" class="i">+
+</a><a href="#h8-0-32" id="h8-0-32" class="i">+.Green {
+</a><a href="#h8-0-33" id="h8-0-33" class="i">+  color: get-color(&#39;Green&#39;);
+</a><a href="#h8-0-34" id="h8-0-34" class="i">+}
+</a><a href="#h8-0-35" id="h8-0-35" class="i">+
+</a><a href="#h8-0-36" id="h8-0-36" class="i">+.Teal {
+</a><a href="#h8-0-37" id="h8-0-37" class="i">+  color: get-color(&#39;Teal&#39;);
+</a><a href="#h8-0-38" id="h8-0-38" class="i">+}
+</a><a href="#h8-0-39" id="h8-0-39" class="i">+
+</a><a href="#h8-0-40" id="h8-0-40" class="i">+.Sky {
+</a><a href="#h8-0-41" id="h8-0-41" class="i">+  color: get-color(&#39;Sky&#39;);
+</a><a href="#h8-0-42" id="h8-0-42" class="i">+}
+</a><a href="#h8-0-43" id="h8-0-43" class="i">+
+</a><a href="#h8-0-44" id="h8-0-44" class="i">+.Sapphire {
+</a><a href="#h8-0-45" id="h8-0-45" class="i">+  color: get-color(&#39;Sapphire&#39;);
+</a><a href="#h8-0-46" id="h8-0-46" class="i">+}
+</a><a href="#h8-0-47" id="h8-0-47" class="i">+
+</a><a href="#h8-0-48" id="h8-0-48" class="i">+.Blue {
+</a><a href="#h8-0-49" id="h8-0-49" class="i">+  color: get-color(&#39;Blue&#39;);
+</a><a href="#h8-0-50" id="h8-0-50" class="i">+}
+</a><a href="#h8-0-51" id="h8-0-51" class="i">+
+</a><a href="#h8-0-52" id="h8-0-52" class="i">+.Lavender {
+</a><a href="#h8-0-53" id="h8-0-53" class="i">+  color: get-color(&#39;Lavender&#39;);
+</a><a href="#h8-0-54" id="h8-0-54" class="i">+}
+</a><a href="#h8-0-55" id="h8-0-55" class="i">+
+</a><a href="#h8-0-56" id="h8-0-56" class="i">+.Text {
+</a><a href="#h8-0-57" id="h8-0-57" class="i">+  color: get-color(&#39;Text&#39;);
+</a><a href="#h8-0-58" id="h8-0-58" class="i">+}
+</a><a href="#h8-0-59" id="h8-0-59" class="i">+
+</a><a href="#h8-0-60" id="h8-0-60" class="i">+.Subtext1 {
+</a><a href="#h8-0-61" id="h8-0-61" class="i">+  color: get-color(&#39;Subtext1&#39;);
+</a><a href="#h8-0-62" id="h8-0-62" class="i">+}
+</a><a href="#h8-0-63" id="h8-0-63" class="i">+
+</a><a href="#h8-0-64" id="h8-0-64" class="i">+.Subtext0 {
+</a><a href="#h8-0-65" id="h8-0-65" class="i">+  color: get-color(&#39;Subtext0&#39;);
+</a><a href="#h8-0-66" id="h8-0-66" class="i">+}
+</a><a href="#h8-0-67" id="h8-0-67" class="i">+
+</a><a href="#h8-0-68" id="h8-0-68" class="i">+.Overlay2 {
+</a><a href="#h8-0-69" id="h8-0-69" class="i">+  color: get-color(&#39;Overlay2&#39;);
+</a><a href="#h8-0-70" id="h8-0-70" class="i">+}
+</a><a href="#h8-0-71" id="h8-0-71" class="i">+
+</a><a href="#h8-0-72" id="h8-0-72" class="i">+.Overlay1 {
+</a><a href="#h8-0-73" id="h8-0-73" class="i">+  color: get-color(&#39;Overlay1&#39;);
+</a><a href="#h8-0-74" id="h8-0-74" class="i">+}
+</a><a href="#h8-0-75" id="h8-0-75" class="i">+
+</a><a href="#h8-0-76" id="h8-0-76" class="i">+.Overlay0 {
+</a><a href="#h8-0-77" id="h8-0-77" class="i">+  color: get-color(&#39;Overlay0&#39;);
+</a><a href="#h8-0-78" id="h8-0-78" class="i">+}
+</a><a href="#h8-0-79" id="h8-0-79" class="i">+
+</a><a href="#h8-0-80" id="h8-0-80" class="i">+.Surface2 {
+</a><a href="#h8-0-81" id="h8-0-81" class="i">+  color: get-color(&#39;Surface2&#39;);
+</a><a href="#h8-0-82" id="h8-0-82" class="i">+}
+</a><a href="#h8-0-83" id="h8-0-83" class="i">+
+</a><a href="#h8-0-84" id="h8-0-84" class="i">+.Surface1 {
+</a><a href="#h8-0-85" id="h8-0-85" class="i">+  color: get-color(&#39;Surface1&#39;);
+</a><a href="#h8-0-86" id="h8-0-86" class="i">+}
+</a><a href="#h8-0-87" id="h8-0-87" class="i">+
+</a><a href="#h8-0-88" id="h8-0-88" class="i">+.Surface0 {
+</a><a href="#h8-0-89" id="h8-0-89" class="i">+  color: get-color(&#39;Surface0&#39;);
+</a><a href="#h8-0-90" id="h8-0-90" class="i">+}
+</a><a href="#h8-0-91" id="h8-0-91" class="i">+
+</a><a href="#h8-0-92" id="h8-0-92" class="i">+.Base {
+</a><a href="#h8-0-93" id="h8-0-93" class="i">+  color: get-color(&#39;Base&#39;);
+</a><a href="#h8-0-94" id="h8-0-94" class="i">+}
+</a><a href="#h8-0-95" id="h8-0-95" class="i">+
+</a><a href="#h8-0-96" id="h8-0-96" class="i">+.Mantle {
+</a><a href="#h8-0-97" id="h8-0-97" class="i">+  color: get-color(&#39;Mantle&#39;);
+</a><a href="#h8-0-98" id="h8-0-98" class="i">+}
+</a><a href="#h8-0-99" id="h8-0-99" class="i">+
+</a><a href="#h8-0-100" id="h8-0-100" class="i">+.Crust {
+</a><a href="#h8-0-101" id="h8-0-101" class="i">+  color: get-color(&#39;Crust&#39;);
+</a><a href="#h8-0-102" id="h8-0-102" class="i">+}
+</a><b>diff --git a/<a id="h9" href="../file/src/scss/utilities/_wrapper.scss.html">src/scss/utilities/_wrapper.scss</a> b/<a href="../file/src/scss/utilities/_wrapper.scss.html">src/scss/utilities/_wrapper.scss</a></b>
+<a href="#h9-0" id="h9-0" class="h">@@ -1,4 +1,4 @@
+</a><a href="#h9-0-0" id="h9-0-0" class="d">-.wrapper {
+</a><a href="#h9-0-1" id="h9-0-1" class="i">+.loose {
+</a>   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+<a href="#h9-1" id="h9-1" class="h">@@ -6,6 +6,14 @@
+</a>   padding: 0 1.33rem;
+ }
+
+<a href="#h9-1-3" id="h9-1-3" class="i">+.wrapper {
+</a><a href="#h9-1-4" id="h9-1-4" class="i">+  position: relative;
+</a><a href="#h9-1-5" id="h9-1-5" class="i">+  margin-left: auto;
+</a><a href="#h9-1-6" id="h9-1-6" class="i">+  margin-right: auto;
+</a><a href="#h9-1-7" id="h9-1-7" class="i">+  max-width: 80ch;
+</a><a href="#h9-1-8" id="h9-1-8" class="i">+  padding: 0 1.33rem;
+</a><a href="#h9-1-9" id="h9-1-9" class="i">+}
+</a><a href="#h9-1-10" id="h9-1-10" class="i">+
+</a> .constrained {
+   position: relative;
+   margin-left: auto;
+<b>diff --git a/<a id="h10" href="../file/src/scss/utilities/colors.scss.html">src/scss/utilities/colors.scss</a> b/<a href="../file/src/scss/utilities/colors.scss.html">src/scss/utilities/colors.scss</a></b>
+</pre>
+</div>
+</body>
+</html>

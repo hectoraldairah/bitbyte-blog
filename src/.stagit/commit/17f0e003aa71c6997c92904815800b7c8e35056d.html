@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>add mastodon link - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/17f0e003aa71c6997c92904815800b7c8e35056d.html">17f0e003aa71c6997c92904815800b7c8e35056d</a>
+<b>parent</b> <a href="../commit/129d219e66713e4b830f537771d28648d07d4d7f.html">129d219e66713e4b830f537771d28648d07d4d7f</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Fri,  4 Nov 2022 18:39:09 -0600
+
+add mastodon link
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">src/_data/footer.json</a></td><td> | </td><td class="num">5</td><td><span class="i">+++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">src/_includes/partials/footer.njk</a></td><td> | </td><td class="num">5</td><td><span class="i">+++++</span><span class="d"></span></td></tr>
+</table></pre><pre>2 files changed, 10 insertions(+), 0 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/_data/footer.json.html">src/_data/footer.json</a> b/<a href="../file/src/_data/footer.json.html">src/_data/footer.json</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -5,6 +5,11 @@
+</a>       &quot;text&quot;: &quot;Build with Eleventy&quot;
+     },
+     {
+<a href="#h0-0-3" id="h0-0-3" class="i">+      &quot;url&quot;: &quot;https://hostux.social/@bitbyte&quot;,
+</a><a href="#h0-0-4" id="h0-0-4" class="i">+      &quot;text&quot;: &quot;Mastodon&quot;,
+</a><a href="#h0-0-5" id="h0-0-5" class="i">+      &quot;rel&quot;: &quot;me&quot;
+</a><a href="#h0-0-6" id="h0-0-6" class="i">+    },
+</a><a href="#h0-0-7" id="h0-0-7" class="i">+    {
+</a>       &quot;url&quot;: &quot;https://www.twitter.com/BitByte_&quot;,
+       &quot;text&quot;: &quot;Twitter&quot;,
+       &quot;icon&quot;: &quot;{{../assets/icons/twitter.svg}}&quot;
+<b>diff --git a/<a id="h1" href="../file/src/_includes/partials/footer.njk.html">src/_includes/partials/footer.njk</a> b/<a href="../file/src/_includes/partials/footer.njk.html">src/_includes/partials/footer.njk</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -3,8 +3,13 @@
+</a>     &lt;nav class=&quot;site-footer__navigation&quot; aria-label=&quot;Secondary&quot;&gt;
+       &lt;ul class=&quot;site-footer__navigation__inner&quot;&gt;
+         {% for item in footer.items %}
+<a href="#h1-0-3" id="h1-0-3" class="i">+        {% set relLink = item.rel %}
+</a>         &lt;li&gt;
+<a href="#h1-0-5" id="h1-0-5" class="i">+          {% if relLink %}
+</a><a href="#h1-0-6" id="h1-0-6" class="i">+          &lt;a href=&quot;{{item.url}}&quot; rel=&quot;me&quot; target=&quot;_blank&quot;&gt;{{item.text}}&lt;/a&gt;
+</a><a href="#h1-0-7" id="h1-0-7" class="i">+          {% else %}
+</a>           &lt;a href=&quot;{{item.url}}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;{{item.text}}&lt;/a&gt;
+<a href="#h1-0-9" id="h1-0-9" class="i">+          {% endif %}
+</a>         &lt;/li&gt;
+         {% endfor %}
+       &lt;/ul&gt;
+</pre>
+</div>
+</body>
+</html>

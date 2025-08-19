@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Add format script to run prettier on CI - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/d7cf38ff885f3fe504778c12a712dbb239ab3b65.html">d7cf38ff885f3fe504778c12a712dbb239ab3b65</a>
+<b>parent</b> <a href="../commit/e6e333569699988bb20b92010210c7e00addb87b.html">e6e333569699988bb20b92010210c7e00addb87b</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Thu, 24 Nov 2022 23:55:30 -0600
+
+Add format script to run prettier on CI
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">package.json</a></td><td> | </td><td class="num">3</td><td><span class="i">+</span><span class="d">--</span></td></tr>
+</table></pre><pre>1 file changed, 1 insertion(+), 2 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/package.json.html">package.json</a> b/<a href="../file/package.json.html">package.json</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -6,8 +6,7 @@
+</a>   &quot;scripts&quot;: {
+     &quot;start&quot;: &quot;npx gulp &amp;&amp; concurrently \&quot;npx gulp watch\&quot; \&quot;npx eleventy --serve\&quot;&quot;,
+     &quot;production&quot;: &quot;NODE_ENV=production npx gulp &amp;&amp; NODE_ENV=production npx eleventy&quot;,
+<a href="#h0-0-3" id="h0-0-3" class="d">-    &quot;prettier:check&quot;: &quot;prettier --check .&quot;,
+</a><a href="#h0-0-4" id="h0-0-4" class="d">-    &quot;prettier:write&quot;: &quot;prettier --write .&quot;,
+</a><a href="#h0-0-5" id="h0-0-5" class="i">+    &quot;format&quot;: &quot;prettier --write .&quot;,
+</a>     &quot;prepare&quot;: &quot;husky install&quot;
+   },
+   &quot;repository&quot;: {
+</pre>
+</div>
+</body>
+</html>

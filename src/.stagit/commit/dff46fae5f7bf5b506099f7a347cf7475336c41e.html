@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../styles/log.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>set up fonts - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/dff46fae5f7bf5b506099f7a347cf7475336c41e.html">dff46fae5f7bf5b506099f7a347cf7475336c41e</a>
+<b>parent</b> <a href="../commit/30fb1348bff93a56bd289c820ea4ae893c3a5fdc.html">30fb1348bff93a56bd289c820ea4ae893c3a5fdc</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Sun,  7 Nov 2021 20:25:47 -0600
+
+set up fonts
+
+<b>Diffstat:</b>
+<table><tr><td class="A">A</td><td><a href="#h0">gulp-tasks/fonts.js</a></td><td> | </td><td class="num">20</td><td><span class="i">++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="M">M</td><td><a href="#h1">gulpfile.js</a></td><td> | </td><td class="num">3</td><td><span class="i">++</span><span class="d">-</span></td></tr>
+</table></pre><pre>2 files changed, 22 insertions(+), 1 deletion(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/gulp-tasks/fonts.js.html">gulp-tasks/fonts.js</a> b/<a href="../file/gulp-tasks/fonts.js.html">gulp-tasks/fonts.js</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -0,0 +1,20 @@
+</a><a href="#h0-0-0" id="h0-0-0" class="i">+const {dest, src} = require(&#39;gulp&#39;);
+</a><a href="#h0-0-1" id="h0-0-1" class="i">+const GetGoogleFonts = require(&#39;get-google-fonts&#39;);
+</a><a href="#h0-0-2" id="h0-0-2" class="i">+
+</a><a href="#h0-0-3" id="h0-0-3" class="i">+const fonts = async () =&gt; {
+</a><a href="#h0-0-4" id="h0-0-4" class="i">+  // Setup of the library instance by setting where we want
+</a><a href="#h0-0-5" id="h0-0-5" class="i">+  // the output to go. CSS is relative to output font directory
+</a><a href="#h0-0-6" id="h0-0-6" class="i">+  const instance = new GetGoogleFonts({
+</a><a href="#h0-0-7" id="h0-0-7" class="i">+    outputDir: &#39;./dist/fonts&#39;,
+</a><a href="#h0-0-8" id="h0-0-8" class="i">+    cssFile: &#39;./fonts.css&#39;
+</a><a href="#h0-0-9" id="h0-0-9" class="i">+  });
+</a><a href="#h0-0-10" id="h0-0-10" class="i">+
+</a><a href="#h0-0-11" id="h0-0-11" class="i">+  // Grabs fonts and CSS from google and puts in the dist folder
+</a><a href="#h0-0-12" id="h0-0-12" class="i">+  const result = await instance.download(
+</a><a href="#h0-0-13" id="h0-0-13" class="i">+    &#39;https://fonts.googleapis.com/css2?family=Lora:wght@400;600&amp;family=Nunito:ital,wght@0,400;0,700;1,400&amp;display=swap&#39;
+</a><a href="#h0-0-14" id="h0-0-14" class="i">+  );
+</a><a href="#h0-0-15" id="h0-0-15" class="i">+
+</a><a href="#h0-0-16" id="h0-0-16" class="i">+  return result;
+</a><a href="#h0-0-17" id="h0-0-17" class="i">+};
+</a><a href="#h0-0-18" id="h0-0-18" class="i">+
+</a><a href="#h0-0-19" id="h0-0-19" class="i">+module.exports = fonts;
+</a><b>diff --git a/<a id="h1" href="../file/gulpfile.js.html">gulpfile.js</a> b/<a href="../file/gulpfile.js.html">gulpfile.js</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -2,6 +2,7 @@ const {parallel, watch} = require(&#39;gulp&#39;);
+</a>
+ // Pull in each task
+ const sass = require(&#39;./gulp-tasks/sass.js&#39;);
+<a href="#h1-0-3" id="h1-0-3" class="i">+const fonts = require(&#39;./gulp-tasks/fonts.js&#39;);
+</a>
+ // Set each directory and contents that we want to watch and
+ // assign the relevant task. `ignoreInitial` set to true will
+<a href="#h1-1" id="h1-1" class="h">@@ -12,7 +13,7 @@ const watcher = () =&gt; {
+</a> };
+
+ // The default (if someone just runs `gulp`) is to run each task in parrallel
+<a href="#h1-1-3" id="h1-1-3" class="d">-exports.default = parallel(sass);
+</a><a href="#h1-1-4" id="h1-1-4" class="i">+exports.default = parallel(fonts, sass);
+</a>
+ // This is our watcher task that instructs gulp to watch directories and
+ // act accordingly
+</pre>
+</div>
+</body>
+</html>
