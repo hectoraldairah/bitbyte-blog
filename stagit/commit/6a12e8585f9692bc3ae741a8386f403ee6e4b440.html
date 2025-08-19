@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Change Node version - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/6a12e8585f9692bc3ae741a8386f403ee6e4b440.html">6a12e8585f9692bc3ae741a8386f403ee6e4b440</a>
+<b>parent</b> <a href="../commit/8d585e1253dbf0583f32a50943d8e5ddbe9d2f02.html">8d585e1253dbf0583f32a50943d8e5ddbe9d2f02</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Tue, 15 Jul 2025 18:47:54 -0600
+
+Change Node version
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">.github/workflows/main.yml</a></td><td> | </td><td class="num">2</td><td><span class="i">+</span><span class="d">-</span></td></tr>
+<tr><td class="A">A</td><td><a href="#h1">netlify.toml</a></td><td> | </td><td class="num">2</td><td><span class="i">++</span><span class="d"></span></td></tr>
+</table></pre><pre>2 files changed, 3 insertions(+), 1 deletion(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/.github/workflows/main.yml.html">.github/workflows/main.yml</a> b/<a href="../file/.github/workflows/main.yml.html">.github/workflows/main.yml</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -32,7 +32,7 @@ jobs:
+</a>       - name: Setup Node
+         uses: actions/setup-node@v1
+         with:
+<a href="#h0-0-3" id="h0-0-3" class="d">-          node-version: &#39;20.10.0&#39;
+</a><a href="#h0-0-4" id="h0-0-4" class="i">+          node-version: &#39;18.18.2&#39;
+</a> 
+       - name: Remove node lockfile
+         run: rm package-lock.json
+<b>diff --git a/<a id="h1" href="../file/netlify.toml.html">netlify.toml</a> b/<a href="../file/netlify.toml.html">netlify.toml</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -0,0 +1,2 @@
+</a><a href="#h1-0-0" id="h1-0-0" class="i">+[build.environment]
+</a><a href="#h1-0-1" id="h1-0-1" class="i">+  NODE_VERSION = &quot;18.18.2&quot;
+</a></pre>
+</div>
+</body>
+</html>

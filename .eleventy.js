@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import path from "node:path";
 import pluginNavigation from '@11ty/eleventy-navigation';
 import pluginRSS from '@11ty/eleventy-plugin-rss';
 import pluginSyntax from '@11ty/eleventy-plugin-syntaxhighlight';
@@ -54,9 +55,9 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/books/');
   eleventyConfig.addPassthroughCopy('./src/js/');
   eleventyConfig.addPassthroughCopy('src/_redirects');
-  eleventyConfig.addPassthroughCopy("src/.stagit/**/*.html");
-  eleventyConfig.addPassthroughCopy("src/.stagit/**/*.xml");
-  eleventyConfig.addPassthroughCopy("src/.stagit/**/*.css");
+  eleventyConfig.addPassthroughCopy('src/scss/stagit');
+  eleventyConfig.addPassthroughCopy({ "stagit": "stagit" });
+
 
   // Filters
   for (const [name, fn] of Object.entries(filters)) {
@@ -106,6 +107,28 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addCollection('navItems', (collection) => {
     return collection.getAll().filter(item => item.data.eleventyNavigation);
+  });
+
+  eleventyConfig.addTransform("inject-stagit-css", function(content, outputPath) {
+    // Only process HTML files in the stagit directory
+    if (outputPath && outputPath.includes('stagit') && outputPath.endsWith('.html')) {
+      // Read your custom CSS file
+      const cssPath = path.join(__dirname, 'src/scss/stagit/styles.css');
+      let customCSS = '';
+
+      try {
+        customCSS = fs.readFileSync(cssPath, 'utf8');
+      } catch (err) {
+        console.warn('Could not read stagit-custom.css:', err.message);
+        return content;
+      }
+
+      // Inject the CSS before closing </head> tag
+      const cssInjection = `<style>\n${customCSS}\n</style>\n</head>`;
+      return content.replace('</head>', cssInjection);
+    }
+
+    return content;
   });
 
   eleventyConfig.setUseGitIgnore(false);

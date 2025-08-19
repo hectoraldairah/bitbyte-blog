@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Update workflow - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/c4772247bd130c76e6922981cdb83f8ccfe388e2.html">c4772247bd130c76e6922981cdb83f8ccfe388e2</a>
+<b>parent</b> <a href="../commit/6a12e8585f9692bc3ae741a8386f403ee6e4b440.html">6a12e8585f9692bc3ae741a8386f403ee6e4b440</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Tue, 15 Jul 2025 19:02:17 -0600
+
+Update workflow
+
+<b>Diffstat:</b>
+<table><tr><td class="A">A</td><td><a href="#h0">.github/workflows/deploy.yml</a></td><td> | </td><td class="num">53</td><td><span class="i">+++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="d"></span></td></tr>
+<tr><td class="D">D</td><td><a href="#h1">.github/workflows/main.yml</a></td><td> | </td><td class="num">61</td><td><span class="i"></span><span class="d">-------------------------------------------------------------</span></td></tr>
+<tr><td class="M">M</td><td><a href="#h2">netlify.toml</a></td><td> | </td><td class="num">2</td><td><span class="i">+</span><span class="d">-</span></td></tr>
+</table></pre><pre>3 files changed, 54 insertions(+), 62 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/.github/workflows/deploy.yml.html">.github/workflows/deploy.yml</a> b/<a href="../file/.github/workflows/deploy.yml.html">.github/workflows/deploy.yml</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -0,0 +1,53 @@
+</a><a href="#h0-0-0" id="h0-0-0" class="i">+# This is a basic workflow to help you get started with Actions
+</a><a href="#h0-0-1" id="h0-0-1" class="i">+
+</a><a href="#h0-0-2" id="h0-0-2" class="i">+name: ⚡ deploy website
+</a><a href="#h0-0-3" id="h0-0-3" class="i">+
+</a><a href="#h0-0-4" id="h0-0-4" class="i">+# Controls when the workflow will run
+</a><a href="#h0-0-5" id="h0-0-5" class="i">+on:
+</a><a href="#h0-0-6" id="h0-0-6" class="i">+  # Triggers the workflow on push or pull request events but only for the main branch
+</a><a href="#h0-0-7" id="h0-0-7" class="i">+  push:
+</a><a href="#h0-0-8" id="h0-0-8" class="i">+    branches: [main]
+</a><a href="#h0-0-9" id="h0-0-9" class="i">+  pull_request:
+</a><a href="#h0-0-10" id="h0-0-10" class="i">+    branches: [main]
+</a><a href="#h0-0-11" id="h0-0-11" class="i">+
+</a><a href="#h0-0-12" id="h0-0-12" class="i">+  # Allows you to run this workflow manually from the Actions tab
+</a><a href="#h0-0-13" id="h0-0-13" class="i">+  workflow_dispatch:
+</a><a href="#h0-0-14" id="h0-0-14" class="i">+
+</a><a href="#h0-0-15" id="h0-0-15" class="i">+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+</a><a href="#h0-0-16" id="h0-0-16" class="i">+jobs:
+</a><a href="#h0-0-17" id="h0-0-17" class="i">+  # This workflow contains a single job called &quot;build&quot;
+</a><a href="#h0-0-18" id="h0-0-18" class="i">+  build:
+</a><a href="#h0-0-19" id="h0-0-19" class="i">+    # The type of runner that the job will run on
+</a><a href="#h0-0-20" id="h0-0-20" class="i">+    runs-on: ubuntu-latest
+</a><a href="#h0-0-21" id="h0-0-21" class="i">+
+</a><a href="#h0-0-22" id="h0-0-22" class="i">+    # Steps represent a sequence of tasks that will be executed as part of the job
+</a><a href="#h0-0-23" id="h0-0-23" class="i">+    steps:
+</a><a href="#h0-0-24" id="h0-0-24" class="i">+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+</a><a href="#h0-0-25" id="h0-0-25" class="i">+      - uses: actions/checkout@v3
+</a><a href="#h0-0-26" id="h0-0-26" class="i">+        with:
+</a><a href="#h0-0-27" id="h0-0-27" class="i">+          ref: ${{ github.head_ref }}
+</a><a href="#h0-0-28" id="h0-0-28" class="i">+
+</a><a href="#h0-0-29" id="h0-0-29" class="i">+      # Setup Node with a version to run gulp and sass correctly
+</a><a href="#h0-0-30" id="h0-0-30" class="i">+      - name: Setup Node
+</a><a href="#h0-0-31" id="h0-0-31" class="i">+        uses: actions/setup-node@v4
+</a><a href="#h0-0-32" id="h0-0-32" class="i">+        with:
+</a><a href="#h0-0-33" id="h0-0-33" class="i">+          node-version: &#39;20.10.0&#39;
+</a><a href="#h0-0-34" id="h0-0-34" class="i">+
+</a><a href="#h0-0-35" id="h0-0-35" class="i">+      # Install dependencies using pnpm
+</a><a href="#h0-0-36" id="h0-0-36" class="i">+      - name: Install dependencies
+</a><a href="#h0-0-37" id="h0-0-37" class="i">+        run: npm install
+</a><a href="#h0-0-38" id="h0-0-38" class="i">+
+</a><a href="#h0-0-39" id="h0-0-39" class="i">+      # Build Eleventy for Production
+</a><a href="#h0-0-40" id="h0-0-40" class="i">+      - name: Build 11ty
+</a><a href="#h0-0-41" id="h0-0-41" class="i">+        run: npm run production
+</a><a href="#h0-0-42" id="h0-0-42" class="i">+
+</a><a href="#h0-0-43" id="h0-0-43" class="i">+      # Deploy to Netifly branch
+</a><a href="#h0-0-44" id="h0-0-44" class="i">+      - name: Deploy to Netifly Branch
+</a><a href="#h0-0-45" id="h0-0-45" class="i">+        uses: nwtgck/actions-netlify@v2.0
+</a><a href="#h0-0-46" id="h0-0-46" class="i">+        with:
+</a><a href="#h0-0-47" id="h0-0-47" class="i">+          build_dir: ./dist
+</a><a href="#h0-0-48" id="h0-0-48" class="i">+          production-deploy: true
+</a><a href="#h0-0-49" id="h0-0-49" class="i">+        env:
+</a><a href="#h0-0-50" id="h0-0-50" class="i">+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</a><a href="#h0-0-51" id="h0-0-51" class="i">+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+</a><a href="#h0-0-52" id="h0-0-52" class="i">+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+</a><b>diff --git a/<a id="h1" href="../file/.github/workflows/main.yml.html">.github/workflows/main.yml</a> b/<a href="../file/.github/workflows/main.yml.html">.github/workflows/main.yml</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -1,61 +0,0 @@
+</a><a href="#h1-0-0" id="h1-0-0" class="d">-# This is a basic workflow to help you get started with Actions
+</a><a href="#h1-0-1" id="h1-0-1" class="d">-# jjjjjjjjjjjjjjj
+</a><a href="#h1-0-2" id="h1-0-2" class="d">-
+</a><a href="#h1-0-3" id="h1-0-3" class="d">-name: ⚡ deploy website
+</a><a href="#h1-0-4" id="h1-0-4" class="d">-
+</a><a href="#h1-0-5" id="h1-0-5" class="d">-# Controls when the workflow will run
+</a><a href="#h1-0-6" id="h1-0-6" class="d">-on:
+</a><a href="#h1-0-7" id="h1-0-7" class="d">-  # Triggers the workflow on push or pull request events but only for the main branch
+</a><a href="#h1-0-8" id="h1-0-8" class="d">-  push:
+</a><a href="#h1-0-9" id="h1-0-9" class="d">-    branches: [main]
+</a><a href="#h1-0-10" id="h1-0-10" class="d">-  pull_request:
+</a><a href="#h1-0-11" id="h1-0-11" class="d">-    branches: [main]
+</a><a href="#h1-0-12" id="h1-0-12" class="d">-
+</a><a href="#h1-0-13" id="h1-0-13" class="d">-  # Allows you to run this workflow manually from the Actions tab
+</a><a href="#h1-0-14" id="h1-0-14" class="d">-  workflow_dispatch:
+</a><a href="#h1-0-15" id="h1-0-15" class="d">-
+</a><a href="#h1-0-16" id="h1-0-16" class="d">-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+</a><a href="#h1-0-17" id="h1-0-17" class="d">-jobs:
+</a><a href="#h1-0-18" id="h1-0-18" class="d">-  # This workflow contains a single job called &quot;build&quot;
+</a><a href="#h1-0-19" id="h1-0-19" class="d">-  build:
+</a><a href="#h1-0-20" id="h1-0-20" class="d">-    # The type of runner that the job will run on
+</a><a href="#h1-0-21" id="h1-0-21" class="d">-    runs-on: ubuntu-latest
+</a><a href="#h1-0-22" id="h1-0-22" class="d">-
+</a><a href="#h1-0-23" id="h1-0-23" class="d">-    # Steps represent a sequence of tasks that will be executed as part of the job
+</a><a href="#h1-0-24" id="h1-0-24" class="d">-    steps:
+</a><a href="#h1-0-25" id="h1-0-25" class="d">-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+</a><a href="#h1-0-26" id="h1-0-26" class="d">-      - uses: actions/checkout@v2
+</a><a href="#h1-0-27" id="h1-0-27" class="d">-        with:
+</a><a href="#h1-0-28" id="h1-0-28" class="d">-          ref: ${{ github.head_ref }}
+</a><a href="#h1-0-29" id="h1-0-29" class="d">-
+</a><a href="#h1-0-30" id="h1-0-30" class="d">-      # Setup Node with a version to run gulp and sass correctly
+</a><a href="#h1-0-31" id="h1-0-31" class="d">-      - name: Setup Node
+</a><a href="#h1-0-32" id="h1-0-32" class="d">-        uses: actions/setup-node@v1
+</a><a href="#h1-0-33" id="h1-0-33" class="d">-        with:
+</a><a href="#h1-0-34" id="h1-0-34" class="d">-          node-version: &#39;18.18.2&#39;
+</a><a href="#h1-0-35" id="h1-0-35" class="d">-
+</a><a href="#h1-0-36" id="h1-0-36" class="d">-      - name: Remove node lockfile
+</a><a href="#h1-0-37" id="h1-0-37" class="d">-        run: rm package-lock.json
+</a><a href="#h1-0-38" id="h1-0-38" class="d">-
+</a><a href="#h1-0-39" id="h1-0-39" class="d">-      - name: Remove node modules
+</a><a href="#h1-0-40" id="h1-0-40" class="d">-        run: rm -rf node_modules
+</a><a href="#h1-0-41" id="h1-0-41" class="d">-
+</a><a href="#h1-0-42" id="h1-0-42" class="d">-      - name: Remove dist
+</a><a href="#h1-0-43" id="h1-0-43" class="d">-        run: rm -rf dist
+</a><a href="#h1-0-44" id="h1-0-44" class="d">-
+</a><a href="#h1-0-45" id="h1-0-45" class="d">-      # Install dependencies using pnpm
+</a><a href="#h1-0-46" id="h1-0-46" class="d">-      - name: Install dependencies
+</a><a href="#h1-0-47" id="h1-0-47" class="d">-        run: npm install
+</a><a href="#h1-0-48" id="h1-0-48" class="d">-
+</a><a href="#h1-0-49" id="h1-0-49" class="d">-      # Build Eleventy for Production
+</a><a href="#h1-0-50" id="h1-0-50" class="d">-      - name: Build 11ty
+</a><a href="#h1-0-51" id="h1-0-51" class="d">-        run: npm run production
+</a><a href="#h1-0-52" id="h1-0-52" class="d">-
+</a><a href="#h1-0-53" id="h1-0-53" class="d">-      # Deploy to Netifly branch
+</a><a href="#h1-0-54" id="h1-0-54" class="d">-      - name: Deploy to Netifly Branch
+</a><a href="#h1-0-55" id="h1-0-55" class="d">-        uses: crazy-max/ghaction-github-pages@v2
+</a><a href="#h1-0-56" id="h1-0-56" class="d">-        with:
+</a><a href="#h1-0-57" id="h1-0-57" class="d">-          target_branch: netifly
+</a><a href="#h1-0-58" id="h1-0-58" class="d">-          build_dir: dist
+</a><a href="#h1-0-59" id="h1-0-59" class="d">-        env:
+</a><a href="#h1-0-60" id="h1-0-60" class="d">-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</a><b>diff --git a/<a id="h2" href="../file/netlify.toml.html">netlify.toml</a> b/<a href="../file/netlify.toml.html">netlify.toml</a></b>
+<a href="#h2-0" id="h2-0" class="h">@@ -1,2 +1,2 @@
+</a> [build.environment]
+<a href="#h2-0-1" id="h2-0-1" class="d">-  NODE_VERSION = &quot;18.18.2&quot;
+</a><a href="#h2-0-2" id="h2-0-2" class="i">+  NODE_VERSION = &quot;20.10.0&quot;
+</a></pre>
+</div>
+</body>
+</html>

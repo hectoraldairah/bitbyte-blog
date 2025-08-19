@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>bitbyte-blog, branch HEAD</title>
+<subtitle>Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</subtitle>
+<entry>
+<id>0a1818c089d35d97a41012c15f7872190ad2ce1e</id>
+<published>2025-08-19T19:02:09Z</published>
+<updated>2025-08-19T19:02:09Z</updated>
+<title>Upload stagit files</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/0a1818c089d35d97a41012c15f7872190ad2ce1e.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 0a1818c089d35d97a41012c15f7872190ad2ce1e
+parent 8ecc5922021e89965a72ea76721d522ab7b0e46e
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 19 Aug 2025 13:02:09 -0600
+
+Upload stagit files
+
+</content>
+</entry>
+<entry>
+<id>8ecc5922021e89965a72ea76721d522ab7b0e46e</id>
+<published>2025-08-18T21:57:02Z</published>
+<updated>2025-08-18T21:57:02Z</updated>
+<title>Update visited styles</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/8ecc5922021e89965a72ea76721d522ab7b0e46e.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 8ecc5922021e89965a72ea76721d522ab7b0e46e
+parent 3cd7ea2b8dc420114d390b4c4f0c8daa6e8d889f
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 15:57:02 -0600
+
+Update visited styles
+
+</content>
+</entry>
+<entry>
+<id>3cd7ea2b8dc420114d390b4c4f0c8daa6e8d889f</id>
+<published>2025-08-18T20:38:32Z</published>
+<updated>2025-08-18T20:38:32Z</updated>
+<title>remove cached files</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/3cd7ea2b8dc420114d390b4c4f0c8daa6e8d889f.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 3cd7ea2b8dc420114d390b4c4f0c8daa6e8d889f
+parent 799280418a83980f88b74d5bccfa2bcc116944f0
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 14:38:32 -0600
+
+remove cached files
+
+</content>
+</entry>
+<entry>
+<id>799280418a83980f88b74d5bccfa2bcc116944f0</id>
+<published>2025-08-18T20:37:03Z</published>
+<updated>2025-08-18T20:37:03Z</updated>
+<title> update .gitignore</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/799280418a83980f88b74d5bccfa2bcc116944f0.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 799280418a83980f88b74d5bccfa2bcc116944f0
+parent 05675106edbdc07a6f3fae5e0af5e19577eef319
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 14:37:03 -0600
+
+ update .gitignore
+
+</content>
+</entry>
+<entry>
+<id>05675106edbdc07a6f3fae5e0af5e19577eef319</id>
+<published>2025-08-18T20:33:45Z</published>
+<updated>2025-08-18T20:33:45Z</updated>
+<title>reset gitignore</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/05675106edbdc07a6f3fae5e0af5e19577eef319.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 05675106edbdc07a6f3fae5e0af5e19577eef319
+parent 19ec31caa66c6b90c16c937c068e0d87273a7704
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 14:33:45 -0600
+
+reset gitignore
+
+</content>
+</entry>
+<entry>
+<id>19ec31caa66c6b90c16c937c068e0d87273a7704</id>
+<published>2025-08-18T20:32:39Z</published>
+<updated>2025-08-18T20:32:39Z</updated>
+<title>reset gitignore</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/19ec31caa66c6b90c16c937c068e0d87273a7704.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 19ec31caa66c6b90c16c937c068e0d87273a7704
+parent 7477135e2d0dfe38d89a2d81d53a8f5f8c843494
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 14:32:39 -0600
+
+reset gitignore
+
+</content>
+</entry>
+<entry>
+<id>7477135e2d0dfe38d89a2d81d53a8f5f8c843494</id>
+<published>2025-08-18T15:29:12Z</published>
+<updated>2025-08-18T15:29:12Z</updated>
+<title>Use fallback version for status cafe</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/7477135e2d0dfe38d89a2d81d53a8f5f8c843494.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 7477135e2d0dfe38d89a2d81d53a8f5f8c843494
+parent dfb77af1a63882c5b6545dd2bff3ec29e81245e0
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 09:29:12 -0600
+
+Use fallback version for status cafe
+
+</content>
+</entry>
+<entry>
+<id>dfb77af1a63882c5b6545dd2bff3ec29e81245e0</id>
+<published>2025-08-18T15:24:04Z</published>
+<updated>2025-08-18T15:24:04Z</updated>
+<title>add includes</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/dfb77af1a63882c5b6545dd2bff3ec29e81245e0.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit dfb77af1a63882c5b6545dd2bff3ec29e81245e0
+parent 31489c12c04794ad1c9410513fc7825a05f52acd
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 09:24:04 -0600
+
+add includes
+
+</content>
+</entry>
+<entry>
+<id>31489c12c04794ad1c9410513fc7825a05f52acd</id>
+<published>2025-08-18T15:22:23Z</published>
+<updated>2025-08-18T15:22:23Z</updated>
+<title>Add status cafe widget</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/31489c12c04794ad1c9410513fc7825a05f52acd.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 31489c12c04794ad1c9410513fc7825a05f52acd
+parent dc9df062f16df2fd44455563a13e520d28e4d073
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 18 Aug 2025 09:22:23 -0600
+
+Add status cafe widget
+
+</content>
+</entry>
+<entry>
+<id>dc9df062f16df2fd44455563a13e520d28e4d073</id>
+<published>2025-08-16T00:52:35Z</published>
+<updated>2025-08-16T00:52:35Z</updated>
+<title>no listening section</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/dc9df062f16df2fd44455563a13e520d28e4d073.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit dc9df062f16df2fd44455563a13e520d28e4d073
+parent 7a0c30dd02e5fc7b55a1e7f6a22befaa4ce9fc44
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 15 Aug 2025 18:52:35 -0600
+
+no listening section
+
+</content>
+</entry>
+<entry>
+<id>7a0c30dd02e5fc7b55a1e7f6a22befaa4ce9fc44</id>
+<published>2025-08-15T20:54:00Z</published>
+<updated>2025-08-15T20:54:00Z</updated>
+<title>Update uses and home description</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/7a0c30dd02e5fc7b55a1e7f6a22befaa4ce9fc44.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 7a0c30dd02e5fc7b55a1e7f6a22befaa4ce9fc44
+parent 5475866bc796a2287fb11d8c614610b157d58c38
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 15 Aug 2025 14:54:00 -0600
+
+Update uses and home description
+
+</content>
+</entry>
+<entry>
+<id>5475866bc796a2287fb11d8c614610b157d58c38</id>
+<published>2025-08-15T04:32:17Z</published>
+<updated>2025-08-15T04:32:17Z</updated>
+<title>Restore theme script</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/5475866bc796a2287fb11d8c614610b157d58c38.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 5475866bc796a2287fb11d8c614610b157d58c38
+parent d6d9df57399dc73d02805e23b47a188c6ce90770
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu, 14 Aug 2025 22:32:17 -0600
+
+Restore theme script
+
+</content>
+</entry>
+<entry>
+<id>d6d9df57399dc73d02805e23b47a188c6ce90770</id>
+<published>2025-08-14T04:34:54Z</published>
+<updated>2025-08-14T04:34:54Z</updated>
+<title>Increase font size for og-image</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/d6d9df57399dc73d02805e23b47a188c6ce90770.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit d6d9df57399dc73d02805e23b47a188c6ce90770
+parent fa1e09bd710f1310bd6fc34934e620c5c4270a16
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Aug 2025 22:34:54 -0600
+
+Increase font size for og-image
+
+</content>
+</entry>
+<entry>
+<id>fa1e09bd710f1310bd6fc34934e620c5c4270a16</id>
+<published>2025-08-14T04:34:17Z</published>
+<updated>2025-08-14T04:34:17Z</updated>
+<title>Delete script for goatcounter</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/fa1e09bd710f1310bd6fc34934e620c5c4270a16.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit fa1e09bd710f1310bd6fc34934e620c5c4270a16
+parent bd60d2d314512976c6f94d16d6c35a4382602d7b
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Aug 2025 22:34:17 -0600
+
+Delete script for goatcounter
+
+</content>
+</entry>
+<entry>
+<id>bd60d2d314512976c6f94d16d6c35a4382602d7b</id>
+<published>2025-08-14T02:03:20Z</published>
+<updated>2025-08-14T02:03:20Z</updated>
+<title>New styles for OG images</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/bd60d2d314512976c6f94d16d6c35a4382602d7b.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit bd60d2d314512976c6f94d16d6c35a4382602d7b
+parent f8132d0a4da1c261bd3d7337ad6c245535e16ef5
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Aug 2025 20:03:20 -0600
+
+New styles for OG images
+
+</content>
+</entry>
+<entry>
+<id>f8132d0a4da1c261bd3d7337ad6c245535e16ef5</id>
+<published>2025-08-14T01:40:11Z</published>
+<updated>2025-08-14T01:40:11Z</updated>
+<title>Change og-image styling</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/f8132d0a4da1c261bd3d7337ad6c245535e16ef5.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit f8132d0a4da1c261bd3d7337ad6c245535e16ef5
+parent 9464c1f8885d624bef38cc0c8464c38be6912754
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Aug 2025 19:40:11 -0600
+
+Change og-image styling
+
+</content>
+</entry>
+<entry>
+<id>9464c1f8885d624bef38cc0c8464c38be6912754</id>
+<published>2025-08-14T01:36:10Z</published>
+<updated>2025-08-14T01:36:10Z</updated>
+<title>Migration to Elevent 3</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/9464c1f8885d624bef38cc0c8464c38be6912754.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 9464c1f8885d624bef38cc0c8464c38be6912754
+parent 012c847a773c2f487010d4de45916198fcb3797e
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Aug 2025 19:36:10 -0600
+
+Migration to Elevent 3
+
+</content>
+</entry>
+<entry>
+<id>012c847a773c2f487010d4de45916198fcb3797e</id>
+<published>2025-08-12T05:50:47Z</published>
+<updated>2025-08-12T05:50:47Z</updated>
+<title>New test</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/012c847a773c2f487010d4de45916198fcb3797e.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 012c847a773c2f487010d4de45916198fcb3797e
+parent ebbd26b36d43bd7c2e0f9318ce81945c8f0e6e6e
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 23:50:47 -0600
+
+New test
+
+</content>
+</entry>
+<entry>
+<id>ebbd26b36d43bd7c2e0f9318ce81945c8f0e6e6e</id>
+<published>2025-08-12T05:39:24Z</published>
+<updated>2025-08-12T05:39:24Z</updated>
+<title>Test goatcounter</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/ebbd26b36d43bd7c2e0f9318ce81945c8f0e6e6e.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit ebbd26b36d43bd7c2e0f9318ce81945c8f0e6e6e
+parent 1302eceaa10c3832e7aec46fdb390ffc35bb66f8
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 23:39:24 -0600
+
+Test goatcounter
+
+</content>
+</entry>
+<entry>
+<id>1302eceaa10c3832e7aec46fdb390ffc35bb66f8</id>
+<published>2025-08-11T20:07:09Z</published>
+<updated>2025-08-11T20:07:09Z</updated>
+<title>Add webring page</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/1302eceaa10c3832e7aec46fdb390ffc35bb66f8.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 1302eceaa10c3832e7aec46fdb390ffc35bb66f8
+parent 3cb91cdf9a4fb6bb65078ed981215f73e8c3c42a
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 14:07:09 -0600
+
+Add webring page
+
+</content>
+</entry>
+<entry>
+<id>3cb91cdf9a4fb6bb65078ed981215f73e8c3c42a</id>
+<published>2025-08-11T19:56:21Z</published>
+<updated>2025-08-11T19:56:21Z</updated>
+<title>Add comma</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/3cb91cdf9a4fb6bb65078ed981215f73e8c3c42a.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 3cb91cdf9a4fb6bb65078ed981215f73e8c3c42a
+parent 466af7e4a7e93d81266187f3c332874b19bee9ee
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 13:56:21 -0600
+
+Add comma
+
+</content>
+</entry>
+<entry>
+<id>466af7e4a7e93d81266187f3c332874b19bee9ee</id>
+<published>2025-08-11T19:55:52Z</published>
+<updated>2025-08-11T19:55:52Z</updated>
+<title>Fix typo2</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/466af7e4a7e93d81266187f3c332874b19bee9ee.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 466af7e4a7e93d81266187f3c332874b19bee9ee
+parent 06d6c54c5c6b774a81058956880ab857c3c94c2d
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 13:55:52 -0600
+
+Fix typo2
+
+</content>
+</entry>
+<entry>
+<id>06d6c54c5c6b774a81058956880ab857c3c94c2d</id>
+<published>2025-08-11T19:55:13Z</published>
+<updated>2025-08-11T19:55:13Z</updated>
+<title>Fix typo</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/06d6c54c5c6b774a81058956880ab857c3c94c2d.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 06d6c54c5c6b774a81058956880ab857c3c94c2d
+parent 46158fd96ad60c1335886efbe97eeef14a63a958
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 13:55:13 -0600
+
+Fix typo
+
+</content>
+</entry>
+<entry>
+<id>46158fd96ad60c1335886efbe97eeef14a63a958</id>
+<published>2025-08-11T19:54:48Z</published>
+<updated>2025-08-11T19:54:48Z</updated>
+<title>Added meta page</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/46158fd96ad60c1335886efbe97eeef14a63a958.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 46158fd96ad60c1335886efbe97eeef14a63a958
+parent c218689d821ccf202fef7801a3adb5bbc8266a91
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 11 Aug 2025 13:54:48 -0600
+
+Added meta page
+
+</content>
+</entry>
+<entry>
+<id>c218689d821ccf202fef7801a3adb5bbc8266a91</id>
+<published>2025-08-09T02:00:39Z</published>
+<updated>2025-08-09T02:00:39Z</updated>
+<title>add pixelated include</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c218689d821ccf202fef7801a3adb5bbc8266a91.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c218689d821ccf202fef7801a3adb5bbc8266a91
+parent 9855fad08d800a6ee6d9ebbe1b0372ad45636582
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  8 Aug 2025 20:00:39 -0600
+
+add pixelated include
+
+</content>
+</entry>
+<entry>
+<id>9855fad08d800a6ee6d9ebbe1b0372ad45636582</id>
+<published>2025-08-09T02:00:25Z</published>
+<updated>2025-08-09T02:00:25Z</updated>
+<title>Pixelated in blog</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/9855fad08d800a6ee6d9ebbe1b0372ad45636582.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 9855fad08d800a6ee6d9ebbe1b0372ad45636582
+parent 2023d874d4f867737ef781daa61fed3cb0ed2963
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  8 Aug 2025 20:00:25 -0600
+
+Pixelated in blog
+
+</content>
+</entry>
+<entry>
+<id>2023d874d4f867737ef781daa61fed3cb0ed2963</id>
+<published>2025-08-09T01:59:52Z</published>
+<updated>2025-08-09T01:59:52Z</updated>
+<title>Image pixelated</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/2023d874d4f867737ef781daa61fed3cb0ed2963.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 2023d874d4f867737ef781daa61fed3cb0ed2963
+parent 7d6eb0d0b0503e58d65e56e80e502130981574b8
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  8 Aug 2025 19:59:52 -0600
+
+Image pixelated
+
+</content>
+</entry>
+<entry>
+<id>7d6eb0d0b0503e58d65e56e80e502130981574b8</id>
+<published>2025-08-09T01:50:43Z</published>
+<updated>2025-08-09T01:50:43Z</updated>
+<title>Change gameboy theme</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/7d6eb0d0b0503e58d65e56e80e502130981574b8.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 7d6eb0d0b0503e58d65e56e80e502130981574b8
+parent a419545802c1691c3ffe9d3d98f13a73f89c4c62
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  8 Aug 2025 19:50:43 -0600
+
+Change gameboy theme
+
+</content>
+</entry>
+<entry>
+<id>a419545802c1691c3ffe9d3d98f13a73f89c4c62</id>
+<published>2025-08-08T22:07:02Z</published>
+<updated>2025-08-08T22:07:02Z</updated>
+<title>Delete me picture</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/a419545802c1691c3ffe9d3d98f13a73f89c4c62.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit a419545802c1691c3ffe9d3d98f13a73f89c4c62
+parent 4fecbf5622136defe29dd0f36cfa2b48e3dfd301
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  8 Aug 2025 16:07:02 -0600
+
+Delete me picture
+
+</content>
+</entry>
+<entry>
+<id>4fecbf5622136defe29dd0f36cfa2b48e3dfd301</id>
+<published>2025-08-08T21:45:05Z</published>
+<updated>2025-08-08T21:45:05Z</updated>
+<title>Add .crush to gitignore</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/4fecbf5622136defe29dd0f36cfa2b48e3dfd301.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 4fecbf5622136defe29dd0f36cfa2b48e3dfd301
+parent ea95e50952017c212f34d75bb679393ff5f8929b
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  8 Aug 2025 15:45:05 -0600
+
+Add .crush to gitignore
+
+</content>
+</entry>
+<entry>
+<id>ea95e50952017c212f34d75bb679393ff5f8929b</id>
+<published>2025-08-07T14:54:29Z</published>
+<updated>2025-08-07T14:54:29Z</updated>
+<title>No header</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/ea95e50952017c212f34d75bb679393ff5f8929b.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit ea95e50952017c212f34d75bb679393ff5f8929b
+parent 0b0982b695dca0434f7bda56744c56239c6e4f38
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  7 Aug 2025 08:54:29 -0600
+
+No header
+
+</content>
+</entry>
+<entry>
+<id>0b0982b695dca0434f7bda56744c56239c6e4f38</id>
+<published>2025-08-07T14:44:19Z</published>
+<updated>2025-08-07T14:44:19Z</updated>
+<title>No bg in header</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/0b0982b695dca0434f7bda56744c56239c6e4f38.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 0b0982b695dca0434f7bda56744c56239c6e4f38
+parent 39bae77eb657b1e6da849031b1d29d1140a78f81
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  7 Aug 2025 08:44:19 -0600
+
+No bg in header
+
+</content>
+</entry>
+<entry>
+<id>39bae77eb657b1e6da849031b1d29d1140a78f81</id>
+<published>2025-08-05T18:02:04Z</published>
+<updated>2025-08-05T18:02:04Z</updated>
+<title>Tweaking themes</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/39bae77eb657b1e6da849031b1d29d1140a78f81.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 39bae77eb657b1e6da849031b1d29d1140a78f81
+parent fc26240e3d0a85b61fd6678b1d6fa2484719d2c7
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue,  5 Aug 2025 12:02:04 -0600
+
+Tweaking themes
+
+</content>
+</entry>
+<entry>
+<id>fc26240e3d0a85b61fd6678b1d6fa2484719d2c7</id>
+<published>2025-08-04T23:58:48Z</published>
+<updated>2025-08-04T23:58:48Z</updated>
+<title>Add pixelBorder Color</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/fc26240e3d0a85b61fd6678b1d6fa2484719d2c7.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit fc26240e3d0a85b61fd6678b1d6fa2484719d2c7
+parent bf629808462a980cb8109b2aeb536c6ef186af05
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  4 Aug 2025 17:58:48 -0600
+
+Add pixelBorder Color
+
+</content>
+</entry>
+<entry>
+<id>bf629808462a980cb8109b2aeb536c6ef186af05</id>
+<published>2025-08-04T23:56:20Z</published>
+<updated>2025-08-04T23:56:20Z</updated>
+<title>Add 404</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/bf629808462a980cb8109b2aeb536c6ef186af05.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit bf629808462a980cb8109b2aeb536c6ef186af05
+parent 9a1c0a7519ec21e258eeb865c2852abe7fc17f1c
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  4 Aug 2025 17:56:20 -0600
+
+Add 404
+
+</content>
+</entry>
+<entry>
+<id>9a1c0a7519ec21e258eeb865c2852abe7fc17f1c</id>
+<published>2025-08-04T22:44:51Z</published>
+<updated>2025-08-04T22:44:51Z</updated>
+<title>Add p5 and r3f</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/9a1c0a7519ec21e258eeb865c2852abe7fc17f1c.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 9a1c0a7519ec21e258eeb865c2852abe7fc17f1c
+parent cc22d55209347ef3409b2870e95390d427d7d462
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  4 Aug 2025 16:44:51 -0600
+
+Add p5 and r3f
+
+</content>
+</entry>
+<entry>
+<id>cc22d55209347ef3409b2870e95390d427d7d462</id>
+<published>2025-08-04T22:15:15Z</published>
+<updated>2025-08-04T22:15:15Z</updated>
+<title>No brackets</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/cc22d55209347ef3409b2870e95390d427d7d462.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit cc22d55209347ef3409b2870e95390d427d7d462
+parent 541f60f08cee69147c1843edf4e2eabe5733a975
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  4 Aug 2025 16:15:15 -0600
+
+No brackets
+
+</content>
+</entry>
+<entry>
+<id>541f60f08cee69147c1843edf4e2eabe5733a975</id>
+<published>2025-08-04T22:08:31Z</published>
+<updated>2025-08-04T22:08:31Z</updated>
+<title>Add themes</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/541f60f08cee69147c1843edf4e2eabe5733a975.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 541f60f08cee69147c1843edf4e2eabe5733a975
+parent 877f666002c2bf0877bac535be443c7128c8acbd
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  4 Aug 2025 16:08:31 -0600
+
+Add themes
+
+</content>
+</entry>
+<entry>
+<id>877f666002c2bf0877bac535be443c7128c8acbd</id>
+<published>2025-08-04T03:53:50Z</published>
+<updated>2025-08-04T03:53:50Z</updated>
+<title>Add topbar comment</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/877f666002c2bf0877bac535be443c7128c8acbd.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 877f666002c2bf0877bac535be443c7128c8acbd
+parent 04a4160b08544b853ce97545407655489e7e1241
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sun,  3 Aug 2025 21:53:50 -0600
+
+Add topbar comment
+
+</content>
+</entry>
+<entry>
+<id>04a4160b08544b853ce97545407655489e7e1241</id>
+<published>2025-08-04T03:53:11Z</published>
+<updated>2025-08-04T03:53:11Z</updated>
+<title>Remove terminal grotesque font</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/04a4160b08544b853ce97545407655489e7e1241.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 04a4160b08544b853ce97545407655489e7e1241
+parent 2b9968cd894ada285888bdb9ac6a76cd39e2959a
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sun,  3 Aug 2025 21:53:11 -0600
+
+Remove terminal grotesque font
+
+</content>
+</entry>
+<entry>
+<id>2b9968cd894ada285888bdb9ac6a76cd39e2959a</id>
+<published>2025-08-02T03:15:18Z</published>
+<updated>2025-08-02T03:15:18Z</updated>
+<title>New layout</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/2b9968cd894ada285888bdb9ac6a76cd39e2959a.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 2b9968cd894ada285888bdb9ac6a76cd39e2959a
+parent 75223d710ec83bff3ed4bcd9785ab6c36d6a00d4
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  1 Aug 2025 21:15:18 -0600
+
+New layout
+
+</content>
+</entry>
+<entry>
+<id>75223d710ec83bff3ed4bcd9785ab6c36d6a00d4</id>
+<published>2025-07-16T01:28:31Z</published>
+<updated>2025-07-16T01:28:31Z</updated>
+<title>UUpdate package.lock</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/75223d710ec83bff3ed4bcd9785ab6c36d6a00d4.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 75223d710ec83bff3ed4bcd9785ab6c36d6a00d4
+parent 01bdfec47364799fa6f8d69a1cac4c358cc95a64
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 19:28:31 -0600
+
+UUpdate package.lock
+
+</content>
+</entry>
+<entry>
+<id>01bdfec47364799fa6f8d69a1cac4c358cc95a64</id>
+<published>2025-07-16T01:20:15Z</published>
+<updated>2025-07-16T01:20:15Z</updated>
+<title>modify gulp task</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/01bdfec47364799fa6f8d69a1cac4c358cc95a64.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 01bdfec47364799fa6f8d69a1cac4c358cc95a64
+parent c4772247bd130c76e6922981cdb83f8ccfe388e2
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 19:20:15 -0600
+
+modify gulp task
+
+</content>
+</entry>
+<entry>
+<id>c4772247bd130c76e6922981cdb83f8ccfe388e2</id>
+<published>2025-07-16T01:02:17Z</published>
+<updated>2025-07-16T01:02:17Z</updated>
+<title>Update workflow</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c4772247bd130c76e6922981cdb83f8ccfe388e2.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c4772247bd130c76e6922981cdb83f8ccfe388e2
+parent 6a12e8585f9692bc3ae741a8386f403ee6e4b440
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 19:02:17 -0600
+
+Update workflow
+
+</content>
+</entry>
+<entry>
+<id>6a12e8585f9692bc3ae741a8386f403ee6e4b440</id>
+<published>2025-07-16T00:47:54Z</published>
+<updated>2025-07-16T00:47:54Z</updated>
+<title>Change Node version</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/6a12e8585f9692bc3ae741a8386f403ee6e4b440.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 6a12e8585f9692bc3ae741a8386f403ee6e4b440
+parent 8d585e1253dbf0583f32a50943d8e5ddbe9d2f02
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 18:47:54 -0600
+
+Change Node version
+
+</content>
+</entry>
+<entry>
+<id>8d585e1253dbf0583f32a50943d8e5ddbe9d2f02</id>
+<published>2025-07-16T00:44:45Z</published>
+<updated>2025-07-16T00:44:45Z</updated>
+<title>Remove log page</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/8d585e1253dbf0583f32a50943d8e5ddbe9d2f02.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 8d585e1253dbf0583f32a50943d8e5ddbe9d2f02
+parent edbb4c33c1e3a0559bc0d6e074b65edc09f6676c
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 18:44:45 -0600
+
+Remove log page
+
+</content>
+</entry>
+<entry>
+<id>edbb4c33c1e3a0559bc0d6e074b65edc09f6676c</id>
+<published>2025-07-16T00:43:16Z</published>
+<updated>2025-07-16T00:43:16Z</updated>
+<title>Delete gym data</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/edbb4c33c1e3a0559bc0d6e074b65edc09f6676c.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit edbb4c33c1e3a0559bc0d6e074b65edc09f6676c
+parent e5eb611873170b6da2994320ef1cd4b38fa1c735
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 18:43:16 -0600
+
+Delete gym data
+
+</content>
+</entry>
+<entry>
+<id>e5eb611873170b6da2994320ef1cd4b38fa1c735</id>
+<published>2025-07-16T00:16:48Z</published>
+<updated>2025-07-16T00:16:48Z</updated>
+<title>Marquee effect</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/e5eb611873170b6da2994320ef1cd4b38fa1c735.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit e5eb611873170b6da2994320ef1cd4b38fa1c735
+parent 90c04db5e67fd6ff0a33aaec8ea0addab542e35f
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 18:16:48 -0600
+
+Marquee effect
+
+</content>
+</entry>
+<entry>
+<id>90c04db5e67fd6ff0a33aaec8ea0addab542e35f</id>
+<published>2025-07-15T23:58:31Z</published>
+<updated>2025-07-15T23:58:31Z</updated>
+<title>New layout upudate</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/90c04db5e67fd6ff0a33aaec8ea0addab542e35f.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 90c04db5e67fd6ff0a33aaec8ea0addab542e35f
+parent c4cdb257350581d765bbed7ec4d87026e07841c8
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 15 Jul 2025 17:58:31 -0600
+
+New layout upudate
+
+</content>
+</entry>
+<entry>
+<id>c4cdb257350581d765bbed7ec4d87026e07841c8</id>
+<published>2025-07-13T04:57:35Z</published>
+<updated>2025-07-13T04:57:35Z</updated>
+<title>18ch</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c4cdb257350581d765bbed7ec4d87026e07841c8.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c4cdb257350581d765bbed7ec4d87026e07841c8
+parent 7d69640e51a60e9b3f4372a48211833db27fb58f
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:57:35 -0600
+
+18ch
+
+</content>
+</entry>
+<entry>
+<id>7d69640e51a60e9b3f4372a48211833db27fb58f</id>
+<published>2025-07-13T04:55:50Z</published>
+<updated>2025-07-13T04:55:50Z</updated>
+<title>Adapt height</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/7d69640e51a60e9b3f4372a48211833db27fb58f.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 7d69640e51a60e9b3f4372a48211833db27fb58f
+parent 050e15f61c1f3df1f5eb3da8b935551136b95cdc
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:55:50 -0600
+
+Adapt height
+
+</content>
+</entry>
+<entry>
+<id>050e15f61c1f3df1f5eb3da8b935551136b95cdc</id>
+<published>2025-07-13T04:50:28Z</published>
+<updated>2025-07-13T04:50:28Z</updated>
+<title>Set to 25ch</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/050e15f61c1f3df1f5eb3da8b935551136b95cdc.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 050e15f61c1f3df1f5eb3da8b935551136b95cdc
+parent 398eaef647cbbf7ed83d605a37839863f0b039fa
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:50:28 -0600
+
+Set to 25ch
+
+</content>
+</entry>
+<entry>
+<id>398eaef647cbbf7ed83d605a37839863f0b039fa</id>
+<published>2025-07-13T04:46:24Z</published>
+<updated>2025-07-13T04:46:24Z</updated>
+<title>Update height</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/398eaef647cbbf7ed83d605a37839863f0b039fa.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 398eaef647cbbf7ed83d605a37839863f0b039fa
+parent e20c906495ada3bc4e6265ddace9f4c2c2f5ac05
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:46:24 -0600
+
+Update height
+
+</content>
+</entry>
+<entry>
+<id>e20c906495ada3bc4e6265ddace9f4c2c2f5ac05</id>
+<published>2025-07-13T04:41:13Z</published>
+<updated>2025-07-13T04:41:13Z</updated>
+<title>Fix layouts</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/e20c906495ada3bc4e6265ddace9f4c2c2f5ac05.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit e20c906495ada3bc4e6265ddace9f4c2c2f5ac05
+parent 8d6d67246896cbb6282530e42903eb2879716d5e
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:41:13 -0600
+
+Fix layouts
+
+</content>
+</entry>
+<entry>
+<id>8d6d67246896cbb6282530e42903eb2879716d5e</id>
+<published>2025-07-13T04:14:43Z</published>
+<updated>2025-07-13T04:14:43Z</updated>
+<title>Fix typo</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/8d6d67246896cbb6282530e42903eb2879716d5e.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 8d6d67246896cbb6282530e42903eb2879716d5e
+parent 463b9a8a744e0867f1b624c5efd4022d7377a3a8
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:14:43 -0600
+
+Fix typo
+
+</content>
+</entry>
+<entry>
+<id>463b9a8a744e0867f1b624c5efd4022d7377a3a8</id>
+<published>2025-07-13T04:11:42Z</published>
+<updated>2025-07-13T04:11:42Z</updated>
+<title>A lot of stuff</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/463b9a8a744e0867f1b624c5efd4022d7377a3a8.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 463b9a8a744e0867f1b624c5efd4022d7377a3a8
+parent 21660300a16f66279611e932e26a46f9e07065b3
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 22:11:42 -0600
+
+A lot of stuff
+
+</content>
+</entry>
+<entry>
+<id>21660300a16f66279611e932e26a46f9e07065b3</id>
+<published>2025-07-13T00:10:44Z</published>
+<updated>2025-07-13T00:10:44Z</updated>
+<title>remove dist</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/21660300a16f66279611e932e26a46f9e07065b3.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 21660300a16f66279611e932e26a46f9e07065b3
+parent 33c5820d54edb51f601cdfa166c82792c76a5102
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 18:10:44 -0600
+
+remove dist
+
+</content>
+</entry>
+<entry>
+<id>33c5820d54edb51f601cdfa166c82792c76a5102</id>
+<published>2025-07-13T00:09:19Z</published>
+<updated>2025-07-13T00:09:19Z</updated>
+<title>update fonts</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/33c5820d54edb51f601cdfa166c82792c76a5102.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 33c5820d54edb51f601cdfa166c82792c76a5102
+parent 14a61ca97dd0227a609b5fc56a518b9507b4b68e
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 12 Jul 2025 18:09:19 -0600
+
+update fonts
+
+</content>
+</entry>
+<entry>
+<id>14a61ca97dd0227a609b5fc56a518b9507b4b68e</id>
+<published>2025-07-10T16:08:44Z</published>
+<updated>2025-07-10T16:08:44Z</updated>
+<title>Fix layoutshift</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/14a61ca97dd0227a609b5fc56a518b9507b4b68e.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 14a61ca97dd0227a609b5fc56a518b9507b4b68e
+parent a84325beab000604a521d1d49d68cc0b09b68aa9
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu, 10 Jul 2025 10:08:44 -0600
+
+Fix layoutshift
+
+</content>
+</entry>
+<entry>
+<id>a84325beab000604a521d1d49d68cc0b09b68aa9</id>
+<published>2025-07-10T03:09:57Z</published>
+<updated>2025-07-10T03:09:57Z</updated>
+<title>New posts</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/a84325beab000604a521d1d49d68cc0b09b68aa9.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit a84325beab000604a521d1d49d68cc0b09b68aa9
+parent b49c31e56e666e8583810f67868c230683b02753
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed,  9 Jul 2025 21:09:57 -0600
+
+New posts
+
+</content>
+</entry>
+<entry>
+<id>b49c31e56e666e8583810f67868c230683b02753</id>
+<published>2025-07-10T01:04:44Z</published>
+<updated>2025-07-10T01:04:44Z</updated>
+<title>Try to use ch for layout</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/b49c31e56e666e8583810f67868c230683b02753.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit b49c31e56e666e8583810f67868c230683b02753
+parent 506e47bc4f7a6e2399ebaee672ff22feaa950da2
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed,  9 Jul 2025 19:04:44 -0600
+
+Try to use ch for layout
+
+</content>
+</entry>
+<entry>
+<id>506e47bc4f7a6e2399ebaee672ff22feaa950da2</id>
+<published>2025-07-10T00:42:08Z</published>
+<updated>2025-07-10T00:42:08Z</updated>
+<title>Update file name</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/506e47bc4f7a6e2399ebaee672ff22feaa950da2.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 506e47bc4f7a6e2399ebaee672ff22feaa950da2
+parent 1bf1291ed6ae65d2d21d69dbc4b532716ad0e21a
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed,  9 Jul 2025 18:42:08 -0600
+
+Update file name
+
+</content>
+</entry>
+<entry>
+<id>1bf1291ed6ae65d2d21d69dbc4b532716ad0e21a</id>
+<published>2025-07-10T00:41:10Z</published>
+<updated>2025-07-10T00:41:10Z</updated>
+<title>Update github workflow</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/1bf1291ed6ae65d2d21d69dbc4b532716ad0e21a.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 1bf1291ed6ae65d2d21d69dbc4b532716ad0e21a
+parent ad67ece46b4b1d35b702a7f7f7057b6fefa6035c
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed,  9 Jul 2025 18:41:10 -0600
+
+Update github workflow
+
+</content>
+</entry>
+<entry>
+<id>ad67ece46b4b1d35b702a7f7f7057b6fefa6035c</id>
+<published>2025-07-10T00:33:48Z</published>
+<updated>2025-07-10T00:33:48Z</updated>
+<title>Add new layout proportion</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/ad67ece46b4b1d35b702a7f7f7057b6fefa6035c.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit ad67ece46b4b1d35b702a7f7f7057b6fefa6035c
+parent c28e8d0aab77f9d4ee1da6980f4238dff9bdf524
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed,  9 Jul 2025 18:33:48 -0600
+
+Add new layout proportion
+
+</content>
+</entry>
+<entry>
+<id>c28e8d0aab77f9d4ee1da6980f4238dff9bdf524</id>
+<published>2024-09-28T04:16:22Z</published>
+<updated>2024-09-28T04:16:22Z</updated>
+<title>Update image with dit command</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c28e8d0aab77f9d4ee1da6980f4238dff9bdf524.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c28e8d0aab77f9d4ee1da6980f4238dff9bdf524
+parent cbf15f27c2dff6ed802ca61c45bb2a2287b07852
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 27 Sep 2024 22:16:22 -0600
+
+Update image with dit command
+
+</content>
+</entry>
+<entry>
+<id>cbf15f27c2dff6ed802ca61c45bb2a2287b07852</id>
+<published>2024-09-28T01:25:10Z</published>
+<updated>2024-09-28T01:25:10Z</updated>
+<title>Update cache</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/cbf15f27c2dff6ed802ca61c45bb2a2287b07852.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit cbf15f27c2dff6ed802ca61c45bb2a2287b07852
+parent 03c515d5ce06d4227dd0d41a94fbcd2259dd9bad
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 27 Sep 2024 19:25:10 -0600
+
+Update cache
+
+</content>
+</entry>
+<entry>
+<id>03c515d5ce06d4227dd0d41a94fbcd2259dd9bad</id>
+<published>2024-09-24T04:23:11Z</published>
+<updated>2024-09-24T04:23:11Z</updated>
+<title>Remove lock file</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/03c515d5ce06d4227dd0d41a94fbcd2259dd9bad.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 03c515d5ce06d4227dd0d41a94fbcd2259dd9bad
+parent 56edd9477a96788f8f14c88444321d63153202c8
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 23 Sep 2024 22:23:11 -0600
+
+Remove lock file
+
+</content>
+</entry>
+<entry>
+<id>56edd9477a96788f8f14c88444321d63153202c8</id>
+<published>2024-09-24T04:21:53Z</published>
+<updated>2024-09-24T04:21:53Z</updated>
+<title>Update Node Version</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/56edd9477a96788f8f14c88444321d63153202c8.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 56edd9477a96788f8f14c88444321d63153202c8
+parent c66481a95712e7b2483b84b905e8a757655332b5
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 23 Sep 2024 22:21:53 -0600
+
+Update Node Version
+
+</content>
+</entry>
+<entry>
+<id>c66481a95712e7b2483b84b905e8a757655332b5</id>
+<published>2024-09-24T04:19:01Z</published>
+<updated>2024-09-24T04:19:01Z</updated>
+<title>Add HEAVY API support</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c66481a95712e7b2483b84b905e8a757655332b5.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c66481a95712e7b2483b84b905e8a757655332b5
+parent a4506a202ae05a27394c25b8bc4ff631f6e45f72
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon, 23 Sep 2024 22:19:01 -0600
+
+Add HEAVY API support
+
+</content>
+</entry>
+<entry>
+<id>a4506a202ae05a27394c25b8bc4ff631f6e45f72</id>
+<published>2024-09-13T03:33:12Z</published>
+<updated>2024-09-13T03:33:12Z</updated>
+<title>Add resume</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/a4506a202ae05a27394c25b8bc4ff631f6e45f72.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit a4506a202ae05a27394c25b8bc4ff631f6e45f72
+parent c36feeaa82c57a9b1f1a093e42bc6efbd176f49a
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu, 12 Sep 2024 21:33:12 -0600
+
+Add resume
+
+</content>
+</entry>
+<entry>
+<id>c36feeaa82c57a9b1f1a093e42bc6efbd176f49a</id>
+<published>2024-09-12T06:10:40Z</published>
+<updated>2024-09-12T06:10:40Z</updated>
+<title>Upload webring phot</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c36feeaa82c57a9b1f1a093e42bc6efbd176f49a.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c36feeaa82c57a9b1f1a093e42bc6efbd176f49a
+parent f57fbcc50d03fa77f66210f8cb62d3f8f4fc6fe6
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu, 12 Sep 2024 00:10:40 -0600
+
+Upload webring phot
+
+</content>
+</entry>
+<entry>
+<id>f57fbcc50d03fa77f66210f8cb62d3f8f4fc6fe6</id>
+<published>2024-09-12T05:13:51Z</published>
+<updated>2024-09-12T05:13:51Z</updated>
+<title>Upload u-photo</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/f57fbcc50d03fa77f66210f8cb62d3f8f4fc6fe6.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit f57fbcc50d03fa77f66210f8cb62d3f8f4fc6fe6
+parent b05fe31c28322fab6df1e58694fbd1d3aca18801
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 11 Sep 2024 23:13:51 -0600
+
+Upload u-photo
+
+</content>
+</entry>
+<entry>
+<id>b05fe31c28322fab6df1e58694fbd1d3aca18801</id>
+<published>2024-09-12T05:04:52Z</published>
+<updated>2024-09-12T05:04:52Z</updated>
+<title>add h-card</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/b05fe31c28322fab6df1e58694fbd1d3aca18801.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit b05fe31c28322fab6df1e58694fbd1d3aca18801
+parent 7740b7e1d33fe227064664f55bbf0dd4889aeea3
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 11 Sep 2024 23:04:52 -0600
+
+add h-card
+
+</content>
+</entry>
+<entry>
+<id>7740b7e1d33fe227064664f55bbf0dd4889aeea3</id>
+<published>2024-09-12T01:59:53Z</published>
+<updated>2024-09-12T01:59:53Z</updated>
+<title>Add webring links</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/7740b7e1d33fe227064664f55bbf0dd4889aeea3.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 7740b7e1d33fe227064664f55bbf0dd4889aeea3
+parent 87be7ff61305da79529a7249c47a0a99f901bbce
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 11 Sep 2024 19:59:53 -0600
+
+Add webring links
+
+</content>
+</entry>
+<entry>
+<id>87be7ff61305da79529a7249c47a0a99f901bbce</id>
+<published>2024-09-12T01:41:22Z</published>
+<updated>2024-09-12T01:41:22Z</updated>
+<title>Create socials</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/87be7ff61305da79529a7249c47a0a99f901bbce.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 87be7ff61305da79529a7249c47a0a99f901bbce
+parent 02acfab7431a3825438c5bc9af3c0f83d3de8676
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 11 Sep 2024 19:41:22 -0600
+
+Create socials
+
+</content>
+</entry>
+<entry>
+<id>02acfab7431a3825438c5bc9af3c0f83d3de8676</id>
+<published>2024-09-08T02:52:59Z</published>
+<updated>2024-09-08T02:52:59Z</updated>
+<title>Update icons for pointer</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/02acfab7431a3825438c5bc9af3c0f83d3de8676.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 02acfab7431a3825438c5bc9af3c0f83d3de8676
+parent a80e285aff51e4625002e8cc601ea009e4638edb
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat,  7 Sep 2024 20:52:59 -0600
+
+Update icons for pointer
+
+</content>
+</entry>
+<entry>
+<id>a80e285aff51e4625002e8cc601ea009e4638edb</id>
+<published>2024-09-06T06:02:09Z</published>
+<updated>2024-09-06T06:02:09Z</updated>
+<title>Saved audio</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/a80e285aff51e4625002e8cc601ea009e4638edb.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit a80e285aff51e4625002e8cc601ea009e4638edb
+parent bfeb991ab988eb825acd3b72a6aa7bb0a1b988e5
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri,  6 Sep 2024 00:02:09 -0600
+
+Saved audio
+
+</content>
+</entry>
+<entry>
+<id>bfeb991ab988eb825acd3b72a6aa7bb0a1b988e5</id>
+<published>2024-09-06T05:39:01Z</published>
+<updated>2024-09-06T05:39:01Z</updated>
+<title>Perfect movent in background</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/bfeb991ab988eb825acd3b72a6aa7bb0a1b988e5.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit bfeb991ab988eb825acd3b72a6aa7bb0a1b988e5
+parent 141d7d91ad032ba5d8983b3325aa291031b44bd1
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  5 Sep 2024 23:39:01 -0600
+
+Perfect movent in background
+
+</content>
+</entry>
+<entry>
+<id>141d7d91ad032ba5d8983b3325aa291031b44bd1</id>
+<published>2024-09-06T05:06:32Z</published>
+<updated>2024-09-06T05:06:32Z</updated>
+<title>Animate bg</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/141d7d91ad032ba5d8983b3325aa291031b44bd1.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 141d7d91ad032ba5d8983b3325aa291031b44bd1
+parent 74b7ee0aab4ec61afa27e6e567c192d8706a56d0
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  5 Sep 2024 23:06:32 -0600
+
+Animate bg
+
+</content>
+</entry>
+<entry>
+<id>74b7ee0aab4ec61afa27e6e567c192d8706a56d0</id>
+<published>2024-09-06T04:40:21Z</published>
+<updated>2024-09-06T04:40:21Z</updated>
+<title>Fix layouts summary</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/74b7ee0aab4ec61afa27e6e567c192d8706a56d0.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 74b7ee0aab4ec61afa27e6e567c192d8706a56d0
+parent 72dcbc34e705f59773ecea9721bc10706771505c
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  5 Sep 2024 22:40:21 -0600
+
+Fix layouts summary
+
+</content>
+</entry>
+<entry>
+<id>72dcbc34e705f59773ecea9721bc10706771505c</id>
+<published>2024-09-06T00:06:41Z</published>
+<updated>2024-09-06T00:06:41Z</updated>
+<title>New colors and fix image lost</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/72dcbc34e705f59773ecea9721bc10706771505c.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 72dcbc34e705f59773ecea9721bc10706771505c
+parent 31c886475c1cea59e000d7649ab69f025405d0ea
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  5 Sep 2024 18:06:41 -0600
+
+New colors and fix image lost
+
+</content>
+</entry>
+<entry>
+<id>31c886475c1cea59e000d7649ab69f025405d0ea</id>
+<published>2024-09-05T23:47:31Z</published>
+<updated>2024-09-05T23:47:31Z</updated>
+<title>Fix Url image for post</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/31c886475c1cea59e000d7649ab69f025405d0ea.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 31c886475c1cea59e000d7649ab69f025405d0ea
+parent 414185da3edd0962dedf5f753ea31180596ed06f
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  5 Sep 2024 17:47:31 -0600
+
+Fix Url image for post
+
+</content>
+</entry>
+<entry>
+<id>414185da3edd0962dedf5f753ea31180596ed06f</id>
+<published>2024-09-05T23:40:03Z</published>
+<updated>2024-09-05T23:40:03Z</updated>
+<title>Test new Layout</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/414185da3edd0962dedf5f753ea31180596ed06f.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 414185da3edd0962dedf5f753ea31180596ed06f
+parent 445c8a5d3f9b0e09b808761be3874767aedc995b
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu,  5 Sep 2024 17:40:03 -0600
+
+Test new Layout
+
+</content>
+</entry>
+<entry>
+<id>445c8a5d3f9b0e09b808761be3874767aedc995b</id>
+<published>2024-09-05T02:19:44Z</published>
+<updated>2024-09-05T02:19:44Z</updated>
+<title>Create new layout</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/445c8a5d3f9b0e09b808761be3874767aedc995b.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 445c8a5d3f9b0e09b808761be3874767aedc995b
+parent 144e7360f991d1c6ad0f975ba09378125f19373b
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed,  4 Sep 2024 20:19:44 -0600
+
+Create new layout
+
+</content>
+</entry>
+<entry>
+<id>144e7360f991d1c6ad0f975ba09378125f19373b</id>
+<published>2024-04-09T01:26:17Z</published>
+<updated>2024-04-09T01:26:17Z</updated>
+<title>Use terminal font</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/144e7360f991d1c6ad0f975ba09378125f19373b.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 144e7360f991d1c6ad0f975ba09378125f19373b
+parent 12283eff8edda1f80212acca0504e521257bc043
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  8 Apr 2024 19:26:17 -0600
+
+Use terminal font
+
+</content>
+</entry>
+<entry>
+<id>12283eff8edda1f80212acca0504e521257bc043</id>
+<published>2024-01-13T05:20:34Z</published>
+<updated>2024-01-13T05:20:34Z</updated>
+<title>Remove unused styles</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/12283eff8edda1f80212acca0504e521257bc043.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 12283eff8edda1f80212acca0504e521257bc043
+parent 81f52e6910e4167bc5a41a4e849d0d0c5f2e3db7
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 12 Jan 2024 23:20:34 -0600
+
+Remove unused styles
+
+</content>
+</entry>
+<entry>
+<id>81f52e6910e4167bc5a41a4e849d0d0c5f2e3db7</id>
+<published>2024-01-09T03:09:42Z</published>
+<updated>2024-01-09T03:09:42Z</updated>
+<title>Uses page</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/81f52e6910e4167bc5a41a4e849d0d0c5f2e3db7.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 81f52e6910e4167bc5a41a4e849d0d0c5f2e3db7
+parent 3b4be09f5472710df78c543b0aacb3a32f0f0669
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  8 Jan 2024 21:09:42 -0600
+
+Uses page
+
+</content>
+</entry>
+<entry>
+<id>3b4be09f5472710df78c543b0aacb3a32f0f0669</id>
+<published>2024-01-09T02:25:00Z</published>
+<updated>2024-01-09T02:25:00Z</updated>
+<title>Update domain</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/3b4be09f5472710df78c543b0aacb3a32f0f0669.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 3b4be09f5472710df78c543b0aacb3a32f0f0669
+parent 1f109b83c5462ec6fd9e5bd11ad985cd31bdaa0a
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  8 Jan 2024 20:25:00 -0600
+
+Update domain
+
+</content>
+</entry>
+<entry>
+<id>1f109b83c5462ec6fd9e5bd11ad985cd31bdaa0a</id>
+<published>2024-01-09T02:20:48Z</published>
+<updated>2024-01-09T02:20:48Z</updated>
+<title>New footer with icons</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/1f109b83c5462ec6fd9e5bd11ad985cd31bdaa0a.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 1f109b83c5462ec6fd9e5bd11ad985cd31bdaa0a
+parent c27e7d68a00f4261a1e27d49988827acac437f9d
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  8 Jan 2024 20:20:48 -0600
+
+New footer with icons
+
+</content>
+</entry>
+<entry>
+<id>c27e7d68a00f4261a1e27d49988827acac437f9d</id>
+<published>2024-01-09T00:52:08Z</published>
+<updated>2024-01-09T00:52:08Z</updated>
+<title>Change home layout</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/c27e7d68a00f4261a1e27d49988827acac437f9d.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit c27e7d68a00f4261a1e27d49988827acac437f9d
+parent d924670b6058a81780e3b4edea1beff5ffeecfcf
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Mon,  8 Jan 2024 18:52:08 -0600
+
+Change home layout
+
+</content>
+</entry>
+<entry>
+<id>d924670b6058a81780e3b4edea1beff5ffeecfcf</id>
+<published>2024-01-08T01:27:19Z</published>
+<updated>2024-01-08T01:27:19Z</updated>
+<title>New color scheme</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/d924670b6058a81780e3b4edea1beff5ffeecfcf.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit d924670b6058a81780e3b4edea1beff5ffeecfcf
+parent fd5c5722f4cec468c2ad76395880223708ca2591
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sun,  7 Jan 2024 19:27:19 -0600
+
+New color scheme
+
+</content>
+</entry>
+<entry>
+<id>fd5c5722f4cec468c2ad76395880223708ca2591</id>
+<published>2024-01-08T00:54:11Z</published>
+<updated>2024-01-08T00:54:11Z</updated>
+<title>Fiix post metadata</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/fd5c5722f4cec468c2ad76395880223708ca2591.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit fd5c5722f4cec468c2ad76395880223708ca2591
+parent 3b044afa4d84864f66133b49abf400812f265571
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sun,  7 Jan 2024 18:54:11 -0600
+
+Fiix post metadata
+
+</content>
+</entry>
+<entry>
+<id>3b044afa4d84864f66133b49abf400812f265571</id>
+<published>2024-01-08T00:45:20Z</published>
+<updated>2024-01-08T00:45:20Z</updated>
+<title>Remove prettier and ESLINT for CI check</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/3b044afa4d84864f66133b49abf400812f265571.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 3b044afa4d84864f66133b49abf400812f265571
+parent d061b61b4801428d66168bf9baefbfe52c77c979
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sun,  7 Jan 2024 18:45:20 -0600
+
+Remove prettier and ESLINT for CI check
+
+</content>
+</entry>
+<entry>
+<id>d061b61b4801428d66168bf9baefbfe52c77c979</id>
+<published>2024-01-08T00:38:41Z</published>
+<updated>2024-01-08T00:38:41Z</updated>
+<title>New post about Go</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/d061b61b4801428d66168bf9baefbfe52c77c979.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit d061b61b4801428d66168bf9baefbfe52c77c979
+parent fdbc9d3ab631fbe40b179af2ed1df6f5f7d66108
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sun,  7 Jan 2024 18:38:41 -0600
+
+New post about Go
+
+</content>
+</entry>
+<entry>
+<id>fdbc9d3ab631fbe40b179af2ed1df6f5f7d66108</id>
+<published>2023-12-14T00:29:54Z</published>
+<updated>2023-12-14T00:29:54Z</updated>
+<title>remove gym link</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/fdbc9d3ab631fbe40b179af2ed1df6f5f7d66108.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit fdbc9d3ab631fbe40b179af2ed1df6f5f7d66108
+parent 0b3b7743ceb9ce2dc05c0c197a2001cb9a9b9d65
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Dec 2023 18:29:54 -0600
+
+remove gym link
+
+</content>
+</entry>
+<entry>
+<id>0b3b7743ceb9ce2dc05c0c197a2001cb9a9b9d65</id>
+<published>2023-12-14T00:29:10Z</published>
+<updated>2023-12-14T00:29:10Z</updated>
+<title>fix typo</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/0b3b7743ceb9ce2dc05c0c197a2001cb9a9b9d65.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 0b3b7743ceb9ce2dc05c0c197a2001cb9a9b9d65
+parent 1d4717a181cecde4b282459d287ee0b88700f51c
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 13 Dec 2023 18:29:10 -0600
+
+fix typo
+
+</content>
+</entry>
+<entry>
+<id>1d4717a181cecde4b282459d287ee0b88700f51c</id>
+<published>2023-07-20T00:14:55Z</published>
+<updated>2023-07-20T00:14:55Z</updated>
+<title>remove mastodon link</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/1d4717a181cecde4b282459d287ee0b88700f51c.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 1d4717a181cecde4b282459d287ee0b88700f51c
+parent a6c3c68684e9d3936d12cb0698b0f52559cacde8
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Wed, 19 Jul 2023 18:14:55 -0600
+
+remove mastodon link
+
+</content>
+</entry>
+<entry>
+<id>a6c3c68684e9d3936d12cb0698b0f52559cacde8</id>
+<published>2023-07-15T23:19:56Z</published>
+<updated>2023-07-15T23:19:56Z</updated>
+<title>add books section</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/a6c3c68684e9d3936d12cb0698b0f52559cacde8.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit a6c3c68684e9d3936d12cb0698b0f52559cacde8
+parent 8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Sat, 15 Jul 2023 17:19:56 -0600
+
+add books section
+
+</content>
+</entry>
+<entry>
+<id>8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4</id>
+<published>2023-07-15T00:39:35Z</published>
+<updated>2023-07-15T00:39:35Z</updated>
+<title>fixed layout and less font size</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 8c46fa62ee4402d6ba40276ff8c5a69c7c9a1af4
+parent 67dc0433cd4001ef7a968bd8274c66f58c7ab3eb
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Fri, 14 Jul 2023 18:39:35 -0600
+
+fixed layout and less font size
+
+</content>
+</entry>
+<entry>
+<id>67dc0433cd4001ef7a968bd8274c66f58c7ab3eb</id>
+<published>2023-07-13T21:40:56Z</published>
+<updated>2023-07-13T21:40:56Z</updated>
+<title>remove navigations</title>
+<link rel="alternate" type="text/html" href="https://github.com/hectoraldairah/bitbyte-blogcommit/67dc0433cd4001ef7a968bd8274c66f58c7ab3eb.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit 67dc0433cd4001ef7a968bd8274c66f58c7ab3eb
+parent 40a45a4b654b4cd96c228c9036ff57dc0eb53a4b
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Thu, 13 Jul 2023 15:40:56 -0600
+
+remove navigations
+
+</content>
+</entry>
+</feed>

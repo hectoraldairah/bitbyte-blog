@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Configure images with logs - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/b656c27b49ae1078ed479936f22049314d2ab334.html">b656c27b49ae1078ed479936f22049314d2ab334</a>
+<b>parent</b> <a href="../commit/963652738148eef68bb88638980c2f05414d5101.html">963652738148eef68bb88638980c2f05414d5101</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Thu, 22 Dec 2022 17:57:56 -0600
+
+Configure images with logs
+
+<b>Diffstat:</b>
+<table><tr><td class="M">M</td><td><a href="#h0">src/utils/shortcodes.js</a></td><td> | </td><td class="num">4</td><td><span class="i">++</span><span class="d">--</span></td></tr>
+</table></pre><pre>1 file changed, 2 insertions(+), 2 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/utils/shortcodes.js.html">src/utils/shortcodes.js</a> b/<a href="../file/src/utils/shortcodes.js.html">src/utils/shortcodes.js</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -32,14 +32,14 @@ module.exports = {
+</a>     sizes = &#39;100vw&#39;,
+   ) {
+ 
+<a href="#h0-0-3" id="h0-0-3" class="d">-    const normal = `src/${src}`;
+</a><a href="#h0-0-4" id="h0-0-4" class="i">+    const normal = `../${src}`;
+</a>     console.log(normal, &#39;drecttion&#39;);
+ 
+     const imageMetadata = await Image(normal, {
+       widths: [...widths, null],
+       formats: [...formats, null],
+       urlPath: &#39;/assets/images&#39;,
+<a href="#h0-0-11" id="h0-0-11" class="d">-      outputDir: &#39;dist/assets/images/&#39;,
+</a><a href="#h0-0-12" id="h0-0-12" class="i">+      outputDir: &#39;dist/images/&#39;,
+</a>     });
+ 
+     const imageAttributes = {
+</pre>
+</div>
+</body>
+</html>

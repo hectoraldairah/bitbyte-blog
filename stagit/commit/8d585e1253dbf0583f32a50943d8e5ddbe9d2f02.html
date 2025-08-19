@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Remove log page - bitbyte-blog - Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</title>
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed" href="../atom.xml" />
+<link rel="alternate" type="application/atom+xml" title="bitbyte-blog Atom Feed (tags)" href="../tags.xml" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<table><tr><td><a href="../../"><img src="../logo.png" alt="" width="32" height="32" /></a></td><td><h1>bitbyte-blog</h1><span class="desc">Unnamed repository; edit this file &#39;description&#39; to name the repository.
+</span></td></tr><tr><td></td><td>
+<a href="../log.html">Log</a> | <a href="../files.html">Files</a> | <a href="../refs.html">Refs</a> | <a href="../file/LICENSE.html">LICENSE</a></td></tr></table>
+<hr/>
+<div id="content">
+<pre><b>commit</b> <a href="../commit/8d585e1253dbf0583f32a50943d8e5ddbe9d2f02.html">8d585e1253dbf0583f32a50943d8e5ddbe9d2f02</a>
+<b>parent</b> <a href="../commit/edbb4c33c1e3a0559bc0d6e074b65edc09f6676c.html">edbb4c33c1e3a0559bc0d6e074b65edc09f6676c</a>
+<b>Author:</b> hectoraldairah &lt;<a href="mailto:hectoraldairah@protonmail.com">hectoraldairah@protonmail.com</a>&gt;
+<b>Date:</b>   Tue, 15 Jul 2025 18:44:45 -0600
+
+Remove log page
+
+<b>Diffstat:</b>
+<table><tr><td class="D">D</td><td><a href="#h0">src/_includes/layouts/log.njk</a></td><td> | </td><td class="num">63</td><td><span class="i"></span><span class="d">---------------------------------------------------------------</span></td></tr>
+<tr><td class="D">D</td><td><a href="#h1">src/log.md</a></td><td> | </td><td class="num">12</td><td><span class="i"></span><span class="d">------------</span></td></tr>
+</table></pre><pre>2 files changed, 0 insertions(+), 75 deletions(-)
+<hr/><b>diff --git a/<a id="h0" href="../file/src/_includes/layouts/log.njk.html">src/_includes/layouts/log.njk</a> b/<a href="../file/src/_includes/layouts/log.njk.html">src/_includes/layouts/log.njk</a></b>
+<a href="#h0-0" id="h0-0" class="h">@@ -1,63 +0,0 @@
+</a><a href="#h0-0-0" id="h0-0-0" class="d">-{% extends &quot;layouts/base.njk&quot; %}  
+</a><a href="#h0-0-1" id="h0-0-1" class="d">-{% set pageCriticalStyles = [&#39;css/page.css&#39;] %}
+</a><a href="#h0-0-2" id="h0-0-2" class="d">-{% set pageHeaderTitle = title %} 
+</a><a href="#h0-0-3" id="h0-0-3" class="d">-
+</a><a href="#h0-0-4" id="h0-0-4" class="d">-{% block content %}
+</a><a href="#h0-0-5" id="h0-0-5" class="d">-  &lt;div class=&quot;[ page-content ]&quot;&gt;{{ content | safe }}&lt;/div&gt;
+</a><a href="#h0-0-6" id="h0-0-6" class="d">-  {% if showList %}
+</a><a href="#h0-0-7" id="h0-0-7" class="d">-  &lt;ol class=&quot;[ books-list gym-log ]&quot;&gt;
+</a><a href="#h0-0-8" id="h0-0-8" class="d">-    {% for workout in gym %}
+</a><a href="#h0-0-9" id="h0-0-9" class="d">-      &lt;li class=&quot;[ book_list__item ]&quot;&gt;
+</a><a href="#h0-0-10" id="h0-0-10" class="d">-      {% set url = workout.workout.id %}
+</a><a href="#h0-0-11" id="h0-0-11" class="d">-      &lt;a href=&quot;{{url}}&quot;&gt;{{workout.workout.title}}&lt;/a&gt;
+</a><a href="#h0-0-12" id="h0-0-12" class="d">-      &lt;p&gt;- {{workout.workout.created_at | w3Date }}&lt;/p&gt;
+</a><a href="#h0-0-13" id="h0-0-13" class="d">-      &lt;/li&gt;
+</a><a href="#h0-0-14" id="h0-0-14" class="d">-    {% endfor%}
+</a><a href="#h0-0-15" id="h0-0-15" class="d">-  &lt;/ol&gt;
+</a><a href="#h0-0-16" id="h0-0-16" class="d">-  {% else %}
+</a><a href="#h0-0-17" id="h0-0-17" class="d">-    &lt;h2&gt;{{ gym.workout.title}}&lt;/h2&gt;
+</a><a href="#h0-0-18" id="h0-0-18" class="d">-    &lt;h4&gt;{{ gym.workout.created_at | w3Date }}&lt;/h4&gt;
+</a><a href="#h0-0-19" id="h0-0-19" class="d">-    {% for exercise in gym.workout.exercises %}
+</a><a href="#h0-0-20" id="h0-0-20" class="d">-    &lt;br /&gt;
+</a><a href="#h0-0-21" id="h0-0-21" class="d">-      &lt;table&gt;
+</a><a href="#h0-0-22" id="h0-0-22" class="d">-        &lt;caption&gt;{{exercise.title}}&lt;/caption&gt;
+</a><a href="#h0-0-23" id="h0-0-23" class="d">-        &lt;thead&gt;
+</a><a href="#h0-0-24" id="h0-0-24" class="d">-          &lt;tr&gt;
+</a><a href="#h0-0-25" id="h0-0-25" class="d">-            &lt;td&gt;Set Type&lt;/td&gt;
+</a><a href="#h0-0-26" id="h0-0-26" class="d">-            &lt;td&gt;Weight (kg)&lt;/td&gt;
+</a><a href="#h0-0-27" id="h0-0-27" class="d">-            &lt;td&gt;Reps&lt;/td&gt;
+</a><a href="#h0-0-28" id="h0-0-28" class="d">-            &lt;td&gt;Distance (m)&lt;/td&gt;
+</a><a href="#h0-0-29" id="h0-0-29" class="d">-            &lt;td&gt;Duration (s)&lt;/td&gt;
+</a><a href="#h0-0-30" id="h0-0-30" class="d">-          &lt;/tr&gt;
+</a><a href="#h0-0-31" id="h0-0-31" class="d">-        &lt;/thead&gt;
+</a><a href="#h0-0-32" id="h0-0-32" class="d">-        &lt;tbody&gt;
+</a><a href="#h0-0-33" id="h0-0-33" class="d">-          {% for set in exercise.sets%}
+</a><a href="#h0-0-34" id="h0-0-34" class="d">-          &lt;tr&gt;
+</a><a href="#h0-0-35" id="h0-0-35" class="d">-            &lt;td class=&quot;{{set.set_type}}&quot;&gt;{{ set.set_type }}&lt;/td&gt;
+</a><a href="#h0-0-36" id="h0-0-36" class="d">-            {% if set.weight_kg %}
+</a><a href="#h0-0-37" id="h0-0-37" class="d">-            &lt;td&gt;{{ set.weight_kg | round2f }}&lt;/td&gt;
+</a><a href="#h0-0-38" id="h0-0-38" class="d">-            {% else %}
+</a><a href="#h0-0-39" id="h0-0-39" class="d">-            &lt;td&gt;NAN&lt;/td&gt;
+</a><a href="#h0-0-40" id="h0-0-40" class="d">-            {% endif %}
+</a><a href="#h0-0-41" id="h0-0-41" class="d">-            {% if set.reps %}
+</a><a href="#h0-0-42" id="h0-0-42" class="d">-            &lt;td&gt;{{ set.reps }}&lt;/td&gt;
+</a><a href="#h0-0-43" id="h0-0-43" class="d">-            {% else %}
+</a><a href="#h0-0-44" id="h0-0-44" class="d">-            &lt;td&gt;NAN&lt;/td&gt;
+</a><a href="#h0-0-45" id="h0-0-45" class="d">-            {% endif %}
+</a><a href="#h0-0-46" id="h0-0-46" class="d">-            {% if set.distance_meters %}
+</a><a href="#h0-0-47" id="h0-0-47" class="d">-            &lt;td&gt;{{set.distance_meters}}&lt;/td&gt;
+</a><a href="#h0-0-48" id="h0-0-48" class="d">-            {% else %}
+</a><a href="#h0-0-49" id="h0-0-49" class="d">-            &lt;td&gt;NAN&lt;/td&gt;
+</a><a href="#h0-0-50" id="h0-0-50" class="d">-            {% endif %}
+</a><a href="#h0-0-51" id="h0-0-51" class="d">-            {% if set.duration_seconds %}
+</a><a href="#h0-0-52" id="h0-0-52" class="d">-            &lt;td&gt;{{ set.duration_seconds }}&lt;/td&gt;
+</a><a href="#h0-0-53" id="h0-0-53" class="d">-            {% else %}
+</a><a href="#h0-0-54" id="h0-0-54" class="d">-            &lt;td&gt;NAN&lt;/td&gt;
+</a><a href="#h0-0-55" id="h0-0-55" class="d">-            {% endif %}
+</a><a href="#h0-0-56" id="h0-0-56" class="d">-          &lt;/tr&gt;
+</a><a href="#h0-0-57" id="h0-0-57" class="d">-          {% endfor %}
+</a><a href="#h0-0-58" id="h0-0-58" class="d">-        &lt;/tbody&gt;
+</a><a href="#h0-0-59" id="h0-0-59" class="d">-      &lt;/table&gt;
+</a><a href="#h0-0-60" id="h0-0-60" class="d">-    {% endfor %}
+</a><a href="#h0-0-61" id="h0-0-61" class="d">-  {% endif %}
+</a><a href="#h0-0-62" id="h0-0-62" class="d">-{% endblock%}
+</a><b>diff --git a/<a id="h1" href="../file/src/log.md.html">src/log.md</a> b/<a href="../file/src/log.md.html">src/log.md</a></b>
+<a href="#h1-0" id="h1-0" class="h">@@ -1,12 +0,0 @@
+</a><a href="#h1-0-0" id="h1-0-0" class="d">----
+</a><a href="#h1-0-1" id="h1-0-1" class="d">-title: &#39;Gym Log&#39;
+</a><a href="#h1-0-2" id="h1-0-2" class="d">-eleventyNavigation:
+</a><a href="#h1-0-3" id="h1-0-3" class="d">-  key: &#39;gym log&#39;
+</a><a href="#h1-0-4" id="h1-0-4" class="d">-  order: 6
+</a><a href="#h1-0-5" id="h1-0-5" class="d">-layout: &#39;layouts/log.njk&#39;
+</a><a href="#h1-0-6" id="h1-0-6" class="d">-pageHeaderSummary: &#39;Do you even lift, bruh?&#39;
+</a><a href="#h1-0-7" id="h1-0-7" class="d">-showList: true
+</a><a href="#h1-0-8" id="h1-0-8" class="d">----
+</a><a href="#h1-0-9" id="h1-0-9" class="d">-
+</a><a href="#h1-0-10" id="h1-0-10" class="d">-This page serve as my tracking gym log for main exercises.\
+</a><a href="#h1-0-11" id="h1-0-11" class="d">-The data is collected by the Heavy app API.
+</a></pre>
+</div>
+</body>
+</html>
