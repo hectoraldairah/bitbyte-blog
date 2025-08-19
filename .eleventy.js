@@ -110,24 +110,20 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addTransform("inject-stagit-css", function(content, outputPath) {
-    // Only process HTML files in the stagit directory
+    //
+    console.log('Transform checking:', outputPath);
     if (outputPath && outputPath.includes('stagit') && outputPath.endsWith('.html')) {
-      // Read your custom CSS file
-      const cssPath = path.join(__dirname, 'src/scss/stagit/styles.css');
-      let customCSS = '';
 
-      try {
-        customCSS = fs.readFileSync(cssPath, 'utf8');
-      } catch (err) {
-        console.warn('Could not read stagit-custom.css:', err.message);
-        return content;
-      }
+      console.log('Processing stagit file:', outputPath);
+      // Inject CSS link before closing </head> tag
+      const cssInjection = '<link rel="stylesheet" type="text/css" href="https://bitbyte.blog/scss/stagit/styles.css" />\n</head>';
 
-      // Inject the CSS before closing </head> tag
-      const cssInjection = `<style>\n${customCSS}\n</style>\n</head>`;
-      return content.replace('</head>', cssInjection);
+      const newContent = content.replace('</head>', cssInjection);
+
+      console.log('CSS injected into:', outputPath);
+      return newContent;
+
     }
-
     return content;
   });
 

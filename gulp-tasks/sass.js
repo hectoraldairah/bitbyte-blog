@@ -4,6 +4,7 @@ import gulpSass from 'gulp-sass';
 import dartSass from 'sass';
 import postcssCustomProperties from 'postcss-custom-properties';
 import cssnano from 'cssnano';
+import replace from 'gulp-replace';
 
 const sassProcessor = gulpSass(dartSass);
 
@@ -45,4 +46,10 @@ export default function sass() {
       ])
     )
     .pipe(dest(calculateOutput, { sourcemaps: !isProduction }));
+}
+
+export function injectStagitCSS() {
+  return src('dist/stagit/**/*.html')
+    .pipe(replace('</head>', '<link rel="stylesheet" type="text/css" href="https://bitbyte.blog/scss/stagit/styles.css" />\n</head>'))
+    .pipe(dest('dist/stagit/'));
 }
