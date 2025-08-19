@@ -1,5 +1,23 @@
 [build]
-  command = "sudo apt-get update && sudo apt-get install -y stagit && mkdir -p stagit && cd stagit && stagit -l 100 .. && cd .. && npm run production"
+# Install stagit from source and run the complete build process
+  command = """
+    echo "Installing stagit from source..." &&
+    cd /tmp &&
+    git clone git://git.codemadness.org/stagit &&
+    cd stagit &&
+    make &&
+    mkdir -p $HOME/bin &&
+    cp stagit $HOME/bin/ &&
+    export PATH=$HOME/bin:$PATH &&
+    cd $OLDPWD &&
+    echo "Generating stagit files..." &&
+    mkdir -p stagit &&
+    cd stagit &&
+    $HOME/bin/stagit -l 100 .. &&
+    cd .. &&
+    echo "Running production build..." &&
+    npm run production
+  """
   publish = "dist"
 
 [build.environment]
