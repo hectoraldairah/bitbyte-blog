@@ -16,7 +16,7 @@
 <a href="../../log.html">Log</a> | <a href="../../files.html">Files</a> | <a href="../../refs.html">Refs</a> | <a href="../../file/LICENSE.html">LICENSE</a></td></tr></table>
 <hr/>
 <div id="content">
-<p> sass.js (1419B)</p><hr/><pre id="blob">
+<p> sass.js (1509B)</p><hr/><pre id="blob">
 <a href="#l1" class="line" id="l1">      1</a> import { src, dest } from &#39;gulp&#39;;
 <a href="#l2" class="line" id="l2">      2</a> import postCSS from &#39;gulp-postcss&#39;;
 <a href="#l3" class="line" id="l3">      3</a> import gulpSass from &#39;gulp-sass&#39;;
@@ -70,8 +70,9 @@
 <a href="#l51" class="line" id="l51">     51</a> export function injectStagitCSS() {
 <a href="#l52" class="line" id="l52">     52</a>   return src(&#39;dist/stagit/**/*.html&#39;)
 <a href="#l53" class="line" id="l53">     53</a>     .pipe(replace(&#39;&lt;/head&gt;&#39;, &#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://bitbyte.blog/scss/stagit/styles.css&quot; /&gt;\n&lt;/head&gt;&#39;))
-<a href="#l54" class="line" id="l54">     54</a>     .pipe(dest(&#39;dist/stagit/&#39;));
-<a href="#l55" class="line" id="l55">     55</a> }
+<a href="#l54" class="line" id="l54">     54</a>     .pipe(replace(&#39;src=&quot;logo.png&quot;&#39;, &#39;src=&quot;https://bitbyte.blog/assets/images/ball.gif&quot;&#39;))
+<a href="#l55" class="line" id="l55">     55</a>     .pipe(dest(&#39;dist/stagit/&#39;));
+<a href="#l56" class="line" id="l56">     56</a> }
 </pre>
 </div>
 </body>

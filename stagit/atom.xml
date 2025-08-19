@@ -4,6 +4,25 @@
 <subtitle>my little corner on the web
 </subtitle>
 <entry>
+<id>ea1b212c3c12d6278935280be7496337bef6353f</id>
+<published>2025-08-19T23:00:30Z</published>
+<updated>2025-08-19T23:00:30Z</updated>
+<title>change logo for stagit</title>
+<link rel="alternate" type="text/html" href="commit/ea1b212c3c12d6278935280be7496337bef6353f.html" />
+<author>
+<name>hectoraldairah</name>
+<email>hectoraldairah@protonmail.com</email>
+</author>
+<content>commit ea1b212c3c12d6278935280be7496337bef6353f
+parent 2d8601c072ca92f253acc7c8ab5383a339ba75c4
+Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
+Date:   Tue, 19 Aug 2025 17:00:30 -0600
+
+change logo for stagit
+
+</content>
+</entry>
+<entry>
 <id>2d8601c072ca92f253acc7c8ab5383a339ba75c4</id>
 <published>2025-08-19T22:35:53Z</published>
 <updated>2025-08-19T22:35:53Z</updated>
@@ -1881,25 +1900,6 @@ Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
 Date:   Wed, 13 Dec 2023 18:29:10 -0600
 
 fix typo
-
-</content>
-</entry>
-<entry>
-<id>1d4717a181cecde4b282459d287ee0b88700f51c</id>
-<published>2023-07-20T00:14:55Z</published>
-<updated>2023-07-20T00:14:55Z</updated>
-<title>remove mastodon link</title>
-<link rel="alternate" type="text/html" href="commit/1d4717a181cecde4b282459d287ee0b88700f51c.html" />
-<author>
-<name>hectoraldairah</name>
-<email>hectoraldairah@protonmail.com</email>
-</author>
-<content>commit 1d4717a181cecde4b282459d287ee0b88700f51c
-parent a6c3c68684e9d3936d12cb0698b0f52559cacde8
-Author: hectoraldairah &lt;hectoraldairah@protonmail.com&gt;
-Date:   Wed, 19 Jul 2023 18:14:55 -0600
-
-remove mastodon link
 
 </content>
 </entry>
