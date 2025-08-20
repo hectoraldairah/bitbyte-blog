@@ -24,6 +24,8 @@ command = """
     export PATH=$HOME/bin:$PATH &&
     echo "Going back to build directory..." &&
     cd $BUILD_DIR &&
+    echo "Setting up repository name and description..." &&
+    echo "my little corner on the web" > .git/description &&
     echo "Checking git repository..." &&
     ls -a &&
     pwd &&
