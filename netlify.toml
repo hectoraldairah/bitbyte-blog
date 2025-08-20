@@ -26,6 +26,7 @@ command = """
     cd $BUILD_DIR &&
     echo "Setting up repository name and description..." &&
     echo "my little corner on the web" > .git/description &&
+    git config --local stagit.name "bitbyte-blog" &&
     echo "Checking git repository..." &&
     ls -a &&
     pwd &&
