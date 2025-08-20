@@ -106,5 +106,20 @@ a:focus {
 }
 
 pre {
-  font-family: "FreePixel", monospace;
+  font-family: 'FreePixel', monospace;
 }
+
+body > table > tbody > tr > td:first-child {
+  display: none;
+}
+
+body > table > tbody > tr > td > h1{
+  margin-left: 10px;
+}
+
+body > table > tbody > tr > td > span{
+  margin-left: 15px;
+}
+
+
+
