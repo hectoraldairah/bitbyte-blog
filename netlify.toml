@@ -26,7 +26,10 @@ command = """
     cd $BUILD_DIR &&
     echo "Setting up repository name and description..." &&
     echo "my little corner on the web" > .git/description &&
-    git config --local stagit.name "bitbyte-blog" &&
+    echo "Creating symlink with proper name..." &&
+    cd .. &&
+    ln -s $(basename $BUILD_DIR) bitbyte-blog &&
+    cd bitbyte-blog &&
     echo "Checking git repository..." &&
     ls -a &&
     pwd &&
