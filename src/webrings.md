@@ -13,5 +13,10 @@ pageHeaderSummary: "not 1 ring 2 rule 'em all"
 - [Meta Ring](https://meta-ring.hedy.dev/): "This is a webring for anyone who enjoys tinkering and experimenting with their personal websites"
   - [← Previus](https://meta-ring.hedy.dev/previous) [Next →](https://meta-ring.hedy.dev/next)
 
+- [Dither Ring](https://meta-ring.hedy.dev/): Uncomming...
+  - [← Previus](https://api.ditherring.site/next) [Next →](https://api.ditherring.site/next)
+
+
+
 
 

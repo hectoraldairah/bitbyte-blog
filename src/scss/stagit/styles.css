@@ -113,13 +113,10 @@ body > table > tbody > tr > td:first-child {
   display: none;
 }
 
-body > table > tbody > tr > td > h1{
+body > table > tbody > tr > td > h1 {
   margin-left: 10px;
 }
 
-body > table > tbody > tr > td > span{
+body > table > tbody > tr > td > span {
   margin-left: 15px;
 }
-
-
-
