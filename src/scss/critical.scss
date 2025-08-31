@@ -48,6 +48,8 @@ body {
   margin: 0;
   margin-bottom: 20px;
   filter: url('#advanced-dither-global');
+
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-text) 50%, transparent);
 }
 
 html,

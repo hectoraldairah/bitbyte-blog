@@ -126,6 +126,7 @@
     {% endfor %} {% endif %}
   </head>
   <body>
+    <div class="filter"></div>
     <svg style="display: none">
       <filter id="advanced-dither-global">
         <feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="1" />
@@ -141,7 +142,7 @@
           id="turbulence"
           in="SourceGraphic"
           in2="turbulence"
-          scale="1"
+          scale="1000"
         >
           <animate
             id="displacement-anim"
@@ -155,6 +156,9 @@
           />
         </feDisplacementMap>
         <feGaussianBlur stdDeviation="0.1" />
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.2" />
+        </feComponentTransfer>
         <feBlend mode="normal" in2="SourceGraphic" />
       </filter>
     </svg>
@@ -235,14 +239,13 @@
       });
     </script>
     <script>
-      const dustBtn = document.querySelector('#dust');
-      const animation = document.querySelector('#turbulence');
+      document.addEventListener('DOMContentLoaded', () => {
+        const dustBtn = document.querySelector('#dust');
+        const animation = document.querySelector('#turbulence');
 
-      dustBtn.addEventListener('click', () => {
-        console.log("click")
-        const keyframes = [1, 50, 200, 500, 200, 50, 1];
-        const duration = 20000; // 2 seconds
-        const startTime = Date.now();
+        const keyframes = [1000, 1100, 1200, 1300, 1400, 1500];
+        const duration = 2000; // 2 seconds
+        let startTime = Date.now();
 
         function animate() {
           const elapsed = Date.now() - startTime;
@@ -262,6 +265,10 @@
           animation.setAttribute('scale', currentValue);
 
           if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            // Reiniciar cuando termine
+            startTime = Date.now();
             requestAnimationFrame(animate);
           }
         }
