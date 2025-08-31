@@ -15,7 +15,7 @@ eleventyNavigation:
 
 # Why Go?
 
-As I mentioned before here on my blog, one of my goals of new years eve is to learn more about back-end development to [[Be a better Front-End Dev]].
+As I mentioned before here on my blog, one of my goals of new years eve is to learn more about back-end development to __Be a better Front-End Dev__.
 
 At my job, I already tried some back-end stuff with some languages:
 
@@ -23,7 +23,7 @@ At my job, I already tried some back-end stuff with some languages:
 2. Python
 3. Java... ewww
 
-The first path that I take was using Node.js, the decision was very easy to me. I already knew [[Javascript]], so touching some AWS Lambdas and Micro-Services at my Job wasn't every hard to follow and to commit something to production.
+The first path that I take was using Node.js, the decision was very easy to me. I already knew __Javascript__, so touching some AWS Lambdas and Micro-Services at my Job wasn't every hard to follow and to commit something to production.
 
 It is fine (I guess) but I wanted to learn other thing more that Javascript to expand my horizons.
 

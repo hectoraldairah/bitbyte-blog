@@ -1,6 +1,5 @@
 import Image from '@11ty/eleventy-img';
 import path from 'node:path';
-import EleventyFetch from "@11ty/eleventy-fetch";
 
 export async function image(
   src,

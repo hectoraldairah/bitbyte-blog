@@ -1,5 +1,6 @@
 .page-content {
   font-size: get-size('400') !important;
+  max-width: 80ch;
 
   &__post-title {
     font-size: get-size('900') !important;
@@ -19,7 +20,12 @@
   }
 
   h1 {
-    color: var(--feature-post-color);
+    color: var(--color-links);
+
+    & .header-anchor {
+      visibility: visible;
+    }
+
   }
 
   h2,
@@ -28,8 +34,15 @@
   h5,
   h6 {
     position: relative;
-    font-weight: normal;
+    font-weight: bold;
     text-indent: -3px;
+    color: var(--color-links);
+
+    & .header-anchor {
+      visibility: visible;
+    }
+
+
   }
 
   h2 {
@@ -45,7 +58,7 @@
     padding-inline-start: 1.7rem;
   }
 
-  li + li {
+  li+li {
     margin-top: get-size('300');
   }
 
@@ -59,8 +72,8 @@
   }
 
   // Add tighter flow for elements that follow a heading
-  h2 + *,
-  h3 + * {
+  h2+*,
+  h3+* {
     --flow-space: #{get-size('300')};
   }
 
@@ -87,7 +100,13 @@
     }
   }
 
+  strong {
+    background-color: var(--color-links);
+    color: var(--color-bg);
+  }
+
   @media screen and (hover: hover) {
+
     h2:hover,
     h2:focus,
     h3:focus,

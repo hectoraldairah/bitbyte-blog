@@ -6,7 +6,8 @@
 
 .constrained {
   position: relative;
-  max-width: 60ch;
+  max-width: 80ch;
+  text-wrap: pretty;
 }
 
 .loose {

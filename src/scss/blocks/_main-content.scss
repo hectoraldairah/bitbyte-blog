@@ -8,9 +8,10 @@
     flex-direction: column;
     background-color: var(--color-title-content-bg);
     color: var(--color-title-content);
-    border-bottom: 2px solid var(--title-content-border-color);
-    margin-top: 10px;
-    padding: 0.7rem;
+    border-bottom: 1px dotted var(--color-text);
+    margin-top: 2rem;
+    padding: 0.7rem 0;
+    max-width: 80ch;
 
     &[data-layout="row"] {
       flex-direction: row;
@@ -50,9 +51,7 @@
       }
     }
   }
-
   .content {
-    padding: 1rem;
-
+    margin-top: 1rem;
   }
 }

@@ -1,61 +1,57 @@
 {% extends "layouts/base.njk" %} {% set pageCriticalStyles = ['css/about.css']
 %} {% block content %}
 <section class="about">
-  <div class="wrapper">
-    <div class="about__section">
-      <div class="about__section__image">
-        {% image "src/assets/images/me.webp", "photo of me", "responsive-image"
-        %}
-      </div>
+  <div class="about__section">
+    <div class="about__section__image">
+      {% image "src/assets/images/me.webp", "photo of me", "responsive-image" %}
+    </div>
 
-      <div class="[ stack ] [ about__section__description ] [ constrained ]">
-        <div class="stack">
-          <h2>{{greet}}</h2>
-          <p>
-            My name is Héctor Aldair Aguilar. I'm a front-end developer who
-            enjoys making websites. I love the web with all its weirdness and I
-            see software development as craft.
-          </p>
-          <p>
-            Here is little corner on the web, where I post some stuff that I
-            learn over the years, books reviews, and logs from the gym
-            exercises.
-          </p>
-          <p>
-            This website will be constantly changing over time and that's funny.
-            <i
-              >some links could be broken, sorry, the price of
-              experimentantion.</i
-            >
-          </p>
-          <p>
-            Right now, I'm working with Design Systems,making the web
-            accessible, creating TUI's and CLI's.
-          </p>
-          <p>
-            I work at
-            <a href="https://www.openbank.mx/" class="link">Openbank</a> as a
-            software engineer.
-          </p>
-        </div>
-        <div>
-          <h2>Offline</h2>
-          <p>
-            When I'm not writing code, I enjoy going to the gym, cooking and
-            learning about gastronomy. Recently, I started to get in to
-            <a href="/pixelart" class="link">pixel art.</a>
-          </p>
-        </div>
-        <div>
-          <h2>Let's get in touch 👋</h2>
-          <ul>
-            {% for item in social.items %}
-            <li>
-              <a href="{{item.url}}" class="link">{{item.text}}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
+    <div class="[ stack ] [ about__section__description ] [ constrained ]">
+      <div class="stack">
+        <h2>{{greet}}</h2>
+        <p>
+          My name is Héctor Aldair Aguilar. I'm a front-end developer who enjoys
+          making websites. I love the web with all its weirdness and I see
+          software development as craft.
+        </p>
+        <p>
+          Here is little corner on the web, where I post some stuff that I learn
+          over the years, books reviews, and logs from the gym exercises.
+        </p>
+        <p>
+          This website will be constantly changing over time and that's funny.
+          <i
+            >some links could be broken, sorry, the price of
+            experimentantion.</i
+          >
+        </p>
+        <p>
+          Right now, I'm working with Design Systems,making the web accessible,
+          creating TUI's and CLI's.
+        </p>
+        <p>
+          I work at
+          <a href="https://www.openbank.mx/" class="link">Openbank</a> as a
+          software engineer.
+        </p>
+      </div>
+      <div>
+        <h2>Offline</h2>
+        <p>
+          When I'm not writing code, I enjoy going to the gym, cooking and
+          learning about gastronomy. Recently, I started to get in to
+          <a href="/pixelart" class="link">pixel art.</a>
+        </p>
+      </div>
+      <div>
+        <h2>Let's get in touch 👋</h2>
+        <ul>
+          {% for item in social.items %}
+          <li>
+            <a href="{{item.url}}" class="link">{{item.text}}</a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

@@ -4,9 +4,11 @@
   width: 100%;
   background-color: var(--color-space);
   flex-direction: column;
-  margin-top: 1rem;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px dashed var(--color-text);
+  max-width: 80ch;
 
   &__links {
     display: flex;

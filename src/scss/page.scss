@@ -16,10 +16,5 @@ $generate-utility-classes: false;
 
 html {
   background-color: var(--color-bg);
-  background-image: url('../../assets/images/bg-sample.png');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  background-blend-mode: luminosity;
   image-rendering: pixelated;
 }

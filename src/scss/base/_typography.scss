@@ -22,11 +22,17 @@ p {
 
 a {
   transition: 0.3s;
-  color: var(--color-links);
-  text-decoration: underline;
+  color: var(--color-links) !important;
 
   &:hover {
-    background-color: var(--color-links);
-    color: var(--color-space)
+    background-color: var(--color-links-hover-bg) !important;
+    color: var(--color-links-hover) !important;
+  }
+
+  &:visited {
+    color: var(--color-links-visited) !important;
+    &:hover {
+      color: var(--color-links-hover) !important;
+    }
   }
 }

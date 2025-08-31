@@ -1,34 +1,38 @@
 [data-theme="default"] {
-  --color-bg: #{get-color('Crust')};
+  --color-bg: #{get-color('Base')};
   --color-space: #{get-color('Base')};
   --color-text: #{get-color('Text')};
   --color-links: #{get-color('Rosewater')};
+  --color-links-hover: #{get-color('Base')};
+  --color-links-hover-bg: #{get-color('Rosewater')};
   --color-links-visited: #{get-color('Mauve')};
   --color-topbar: #{get-color("Mauve")};
-  --color-header: white;
+  --color-header: #{get-color('Text')};
   --color-title-content-bg: #{get-color('Base')};
   --title-content-border-color: #{get-color("Rosewater")};
   --color-links-dark: #{darken(get-color('Rosewater'), 10%)};
   --color-links-outline: #{darken(get-color('Rosewater'), 50%)};
   --color-blockquote: #{get-color('Mauve')};
-  --color-blockquote-bg: #{get-color('Crust')};
+  --color-blockquote-bg: #{get-color('Base')};
 
 }
 
 [data-theme="gameboy"] {
-  --color-bg: #{get-color('Deep-Teal')};
-  --color-space: #{get-color('Sandstone')};
-  --color-text: #{get-color('Midnight')};
-  --color-links: #{get-color('Midnight')};
-  --color-links-visited: #{get-color('Deep-Teal')};
-  --color-links-dark: #{darken(get-color('Verdant'), 10%)};
-  --color-links-outline: #{darken(get-color('Verdant'), 50%)};
+  --color-bg: #{get-color('Midnight')};
+  --color-space: #{get-color('Midnight')};
+  --color-text: #{get-color('Sandstone')};
+  --color-links: #{get-color('Verdant')};
+  --color-links-hover: #{get-color('Midnight')};
+  --color-links-hover-bg: #{get-color('Verdant')};
+  --color-links-visited: #{get-color('Pine')};
+  --color-links-dark: #{darken(get-color('Pine'), 10%)};
+  --color-links-outline: #{darken(get-color('Pine'), 50%)};
   --color-topbar: #{get-color("Sandstone")};
   --color-header: #{get-color('Sandstone')};
   --color-blockquote: #{get-color('Verdant')};
   --color-blockquote-bg: #{get-color('Midnight')};
   --title-content-border-color: #{get-color("Sandstone")};
-  --color-title-content-bg: #{get-color('Sandstone')};
+  --color-title-content-bg: #{get-color('Midnight')};
   --title-content-border-color: #{get-color("Midnight")};
 }
 
@@ -37,18 +41,20 @@
 }
 
 [data-theme="sadness"] {
-  --color-bg: #{get-color('Inkstone')};
-  --color-space: #{get-color('Steel-Blue')};
-  --color-text: #{get-color('Snow')};
-  --color-links: #{get-color('Lavender-Mist')};
-  --color-links-visited: #{get-color('Lavender-Mist')};
+  --color-bg: #{get-color('Snow')};
+  --color-space: #{get-color('Snow')};
+  --color-text: #{get-color('Cornflower')};
+  --color-links: #{get-color('Steel-Blue')};
+  --color-links-hover: #{get-color('Cornflower')};
+  --color-links-hover-bg: #{get-color('Steel-Blue')};
+  --color-links-visited: #{get-color('Cornflower')};
   --color-links-dark: #{darken(get-color('Lavender-Mist'), 10%)};
   --color-links-outline: #{darken(get-color('Lavender-Mist'), 50%)};
   --color-topbar: #{get-color("Cornflower")};
-  --color-header: #{get-color('Lavender-Mist')};
+  --color-header: #{get-color('Cornflower')};
   --color-blockquote: #{get-color('Snow')};
   --color-blockquote-bg: #{get-color('Inkstone')};
-  --color-title-content-bg: #{get-color('Steel-Blue')};
+  --color-title-content-bg: #{get-color('Snow')};
   --title-content-border-color: #{get-color("Lavender-Mist")};
 }
 
@@ -57,7 +63,7 @@
 }
 
 [data-theme="grue"] {
-  --color-bg: #{get-color('Slate-Mist')};
+  --color-bg: #{get-color('Fog')};
   --color-space: #{get-color('Fog')};
   --color-text: #{get-color('Void')};
   --color-links: #{get-color('Ash-Blue')};

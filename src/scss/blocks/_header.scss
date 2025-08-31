@@ -2,7 +2,7 @@
   grid-area: header;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
   background-size: 100vw;
   margin-top: -7px;
@@ -10,4 +10,7 @@
   margin-top: 10px;
   text-shadow: 1px 20px 1px var(--color-bg);
   color: var(--color-header);
+  image-rendering: pixelated;
+  margin-left: -35px;
+  filter: url('#advanced-dither-global-2');
 }

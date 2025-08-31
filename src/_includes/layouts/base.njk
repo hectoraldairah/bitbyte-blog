@@ -126,14 +126,58 @@
     {% endfor %} {% endif %}
   </head>
   <body>
+    <svg style="display: none">
+      <filter id="advanced-dither-global">
+        <feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="1" />
+        <feColorMatrix
+          in="turbulence"
+          type="matrix"
+          values="10 0 0 0 -5
+          10 0 0 0 -5
+          10 0 0 0 -5
+          0 0 0 1 0"
+        />
+        <feDisplacementMap
+          id="turbulence"
+          in="SourceGraphic"
+          in2="turbulence"
+          scale="1"
+        >
+          <animate
+            id="displacement-anim"
+            attributeName="scale"
+            attributeType="XML"
+            begin="indefinite"
+            dur="2s"
+            values="1;50;200;500;200;50;1"
+            keyTimes="0;0.2;0.4;0.6;0.8;0.9;1"
+            fill="freeze"
+          />
+        </feDisplacementMap>
+        <feGaussianBlur stdDeviation="0.1" />
+        <feBlend mode="normal" in2="SourceGraphic" />
+      </filter>
+    </svg>
+    <svg style="display: none">
+      <filter id="advanced-dither-global-2">
+        <feTurbulence type="fractalNoise" baseFrequency="5" numOctaves="1" />
+        <feColorMatrix
+          in="turbulence"
+          type="matrix"
+          values="10 0 0 0 -5
+          10 0 0 0 -5
+          10 0 0 0 -5
+          0 0 0 1 0"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="20" />
+        <feGaussianBlur stdDeviation="0.1" />
+        <feBlend mode="multiply" in2="SourceGraphic" />
+      </filter>
+    </svg>
+
     <div class="layout">
-      {% include "partials/topbar.njk" %} {% include "partials/header.njk" %} {%
-      include "partials/site-nav.njk" %}
-      <main
-        tabindex="-1"
-        id="main-content"
-        class="[ main-content pixelBorder--2 ]"
-      >
+      {% include "partials/header.njk" %} {% include "partials/site-nav.njk" %}
+      <main tabindex="-1" id="main-content" class="[ main-content ]">
         {% set pageHeaderTitle = title %} {% set summary = pageHeaderSummary or
         description %} {% if pageHeaderTitle %}
         <div
@@ -188,6 +232,41 @@
         const theme = event.target.value;
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
+      });
+    </script>
+    <script>
+      const dustBtn = document.querySelector('#dust');
+      const animation = document.querySelector('#turbulence');
+
+      dustBtn.addEventListener('click', () => {
+        console.log("click")
+        const keyframes = [1, 50, 200, 500, 200, 50, 1];
+        const duration = 20000; // 2 seconds
+        const startTime = Date.now();
+
+        function animate() {
+          const elapsed = Date.now() - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          // Calculate current keyframe
+          const keyframeIndex = progress * (keyframes.length - 1);
+          const lowerIndex = Math.floor(keyframeIndex);
+          const upperIndex = Math.ceil(keyframeIndex);
+          const fraction = keyframeIndex - lowerIndex * 2;
+
+          // Interpolate between keyframes
+          const currentValue =
+            keyframes[lowerIndex] +
+            (keyframes[upperIndex] - keyframes[lowerIndex]) * fraction;
+
+          animation.setAttribute('scale', currentValue);
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        }
+
+        animate();
       });
     </script>
   </body>

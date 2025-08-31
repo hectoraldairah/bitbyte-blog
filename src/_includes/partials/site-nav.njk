@@ -1,41 +1,38 @@
-{% macro renderNav(items, currentUrl, isChild = false) %}
-{% set listClass = 'nav__list' %}
-{% if isChild %}
-  {% set listClass = listClass + " nav__list__children" %}
-  {% set childAnchor = "child" %}
-{% endif %}
+{% macro renderNav(items, currentUrl, isChild = false) %} {% set listClass =
+'nav__list' %} {% if isChild %} {% set listClass = listClass + "
+nav__list__children" %} {% set childAnchor = "child" %} {% endif %}
 <ul class="{{ listClass }}">
-    {% for item in items %}
-      <li>
-        <a href="{{ item.url }}" class="{{ childAnchor }}"
-          {{ helpers.getLinkActiveState(item.url, currentUrl) | safe }}>
-          {{ item.title }}
-        </a>
-        {% if item.children and item.children | length > 0 %}
-          {% set sortedChildren = item.children | sort(attribute='date') | reverse %}
-
-          {% if item.parentKey == 'blog' and item.parentKey == 'pixel art' and item.parentKey == 'books' %}
-            {{ renderNav(sortedChildren | slice(0, 5), currentUrl, true) }}
-          {% else %}
-          {{ renderNav(sortedChildren, currentUrl, true) }}
-          {% endif %}
-        {% endif %}
-      </li>
-    {% endfor %}
-    {% if isChild == false %}
-      <li>
-        <a href="../../assets/files/resume.pdf" target="_blank">resume</a>
-      </li>
-    {% endif %}
-
-  </ul>
+  {% for item in items %}
+  <li>
+    <a
+      href="{{ item.url }}"
+      class="{{ childAnchor }}"
+      {{
+      helpers.getLinkActiveState(item.url,
+      currentUrl)
+      |
+      safe
+      }}
+    >
+      {{ item.title }}
+    </a>
+  </li>
+  {% endfor %} {% if isChild == false %}
+  <li>
+    <a href="../../assets/files/resume.pdf" target="_blank">resume</a>
+  </li>
+  {% endif %}
+</ul>
 {% endmacro %}
 
 <aside class="[ site-nav ]">
-  <nav class="[ nav pixelBorder--2 ]" aria-label="Primary">
-    {% set nav = collections.all | eleventyNavigation %}
-    {{ renderNav(nav, page.url) }}
+  <nav class="[ nav ]" aria-label="Primary">
+    {% set nav = collections.all | eleventyNavigation %} {{ renderNav(nav,
+    page.url) }}
   </nav>
-{% include "partials/status-cafe.njk" %}
-{% include "partials/theme-picker.njk" %}
+  <div>
+    {% include "partials/status-cafe.njk" %} {% include
+    "partials/theme-picker.njk" %}
+    <button id="dust" style="position: absolute; top: 0; right: 0; font-size:5px;">dust</button>
+  </div>
 </aside>
