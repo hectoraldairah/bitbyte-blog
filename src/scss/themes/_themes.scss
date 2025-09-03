@@ -63,22 +63,21 @@
 }
 
 [data-theme="grue"] {
-  --color-bg: #{get-color('Fog')};
-  --color-space: #{get-color('Fog')};
-  --color-text: #{get-color('Void')};
+  --color-bg: #{get-color('Void')};
+  --color-space: #{get-color('Void')};
+  --color-text: #{get-color('Slate-Mist')};
   --color-links: #{get-color('Ash-Blue')};
   --color-links-visited: #{get-color('Ash-Blue')};
-  --color-links-dark: #{darken(get-color('Ash-Blue'), 15%)};
-  --color-links-outline: #{darken(get-color('Fog'), 5%)};
-  --color-topbar: #{get-color("Fog")};
-  --color-header: #{get-color('Void')};
-  --color-blockquote: #{get-color('Void')};
-  --color-blockquote-bg: #{get-color('Slate-Mist')};
+  --color-topbar: #{get-color("Graphite")};
+  --color-header: #{get-color('Slate-Mist')};
+  --color-blockquote: #{get-color('Ash-Blue')};
+  --color-blockquote-bg: #{get-color('Graphite')};
   --color-title-content: #{get-color('Ash-Blue')};
-  --color-title-content-bg: #{get-color('Fog')};
+  --color-title-content-bg: #{get-color('Void')};
   --title-content-border-color: #{get-color("Ash-Blue")};
 }
 
 [data-theme="grue"] img {
-  filter: grayscale(0.9) contrast(1.2) brightness(0.95);
+  filter: grayscale(0.6) contrast(0.8) brightness(1.2) sepia(0.5) hue-rotate(-15deg);
+
 }

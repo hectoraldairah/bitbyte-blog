@@ -48,16 +48,21 @@ body {
   margin: 0;
   margin-bottom: 20px;
   filter: url('#advanced-dither-global');
-
-  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-text) 50%, transparent);
 }
 
-html,
-body {
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transform: translateZ(0);
+  transform: translate3d(0, 0, 0);
 }
 
 .layout {
