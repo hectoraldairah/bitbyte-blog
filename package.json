@@ -18,7 +18,7 @@
   "scripts": {
     "start": "gulp && eleventy && concurrently \"gulp watcher\" \"eleventy --serve\"",
 
-    "production": "NODE_ENV=production gulp && NODE_ENV=production eleventy && NODE_ENV=production gulp injectStagitCSS",
+    "production": "NODE_ENV=production gulp && NODE_ENV=production eleventy && NODE_ENV=production",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check .",
     "eslint": "npx eslint .",
