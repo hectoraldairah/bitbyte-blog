@@ -7,7 +7,7 @@ layout: 'layouts/uses.njk'
 pageHeaderSummary: "not 1 ring 2 rule 'em all"
 ---
 
-- [Dither Ring](https://ditherring.site/): "Love dithering? Join the webring and make it better for old monitors"
+- [Ditherring](https://ditherring.site/): "Love dithering? Join the webring and make it better for old monitors"
   - [← Previus](https://ditherring.site/previous) [Next →](https://ditherring.site/next)
 
 - [An Indie Webring](https://xn--sr8hvo.ws/): "Folks adding IndieWeb building blocks to their personal websites to find (and be found by) other folks with IndieWeb building blocks on their sites!"
