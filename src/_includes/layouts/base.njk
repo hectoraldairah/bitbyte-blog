@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{title}}</title>
+    <title> | {{title}} | ░░░ bitbyte.blog ░░░ </title>
     <style>
       {% include "css/critical.css" %}
     </style>
@@ -208,6 +208,20 @@
     <script>
       let stats = document.querySelector('#stats');
       window.goatcounter.visit_count({ append: stats });
+    </script>
+    <script>
+      (function() {
+        const titleText = document.title;
+        let position = 0;
+
+        function animateTitle() {
+          const scrolledTitle = titleText.substring(position) + ' ' + titleText.substring(0, position);
+          document.title = scrolledTitle;
+          position = (position + 1) % titleText.length;
+        }
+
+        setInterval(animateTitle, 200);
+      })();
     </script>
 
     <script
