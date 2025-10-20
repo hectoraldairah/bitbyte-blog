@@ -8,7 +8,7 @@ pageHeaderSummary: 'check it out now!'
 meSites:
   - name: 'bitbyte'
     url: 'https://bitbyte.blog/'
-    image: '/assets/banners/bitbyte.png'
+    image: '/assets/banners/bitbyte.gif'
   - name: 'bitbyte'
     url: 'https://bitbyte.blog/'
     image: '/assets/banners/bitbyte2.webp'
