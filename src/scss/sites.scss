@@ -1,0 +1,13 @@
+@import 'config';
+
+$generate-utility-classes: false;
+
+@import '../../node_modules/gorko/gorko.scss';
+
+@import 'blocks/page-content';
+@import 'blocks/site-banners';
+
+html {
+  background-color: var(--color-bg);
+  image-rendering: pixelated;
+}

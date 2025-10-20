@@ -238,8 +238,10 @@
         const animation = document.querySelector('#turbulence');
         const noiseCheckbox = document.querySelector('#noiseCheckbox');
         const savedState = localStorage.getItem('noiseEnabled');
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const defaultNoiseState = isMobile ? true : false;
         const noiseEnabled =
-          savedState !== null ? JSON.parse(savedState) : true;
+          savedState !== null ? JSON.parse(savedState) : defaultNoiseState;
 
         const keyframes = [1000, 1500, 2000, 2500, 3000, 2500, 2000, 1500];
         const duration = 10000;

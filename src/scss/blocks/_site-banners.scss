@@ -1,0 +1,24 @@
+.site-banners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: get-size('200');
+  align-items: center;
+  margin-top: get-size('300');
+}
+
+.site-banners__item {
+  display: block;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  > img {
+    display: block;
+    image-rendering: pixelated;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}

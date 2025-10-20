@@ -1,0 +1,43 @@
+{% extends "layouts/base.njk" %}
+{% set pageCriticalStyles = ['css/sites.css'] %}
+
+{% block content %}
+  <section class="[ page-content ]">
+    <div class="[ wrapper ] [ flow ]">
+      {% if friendsSites %}
+        <h3>awesome sites</h3>
+        <div class="[ site-banners ]">
+          {% for site in friendsSites %}
+            <a href="{{ site.url }}" target="_blank" rel="noopener noreferrer" class="[ site-banners__item ]">
+              <img src="{{ site.image | url }}" alt="{{ site.name }}" width="88" height="31">
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if communitiesSites %}
+        <h3>Communities</h3>
+        <div class="[ site-banners ]">
+          {% for site in communitiesSites %}
+            <a href="{{ site.url }}" target="_blank" rel="noopener noreferrer" class="[ site-banners__item ]">
+              <img src="{{ site.image | url }}" alt="{{ site.name }}" width="88" height="31">
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if meSites %}
+        <h3>me</h3>
+        <div class="[ site-banners ]">
+          {% for site in meSites %}
+            <a href="{{ site.url }}" target="_blank" rel="noopener noreferrer" class="[ site-banners__item ]">
+              <img src="{{ site.image | url }}" alt="{{ site.name }}" width="88" height="31">
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+
+    </div>
+  </section>
+{% endblock %}
