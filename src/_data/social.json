@@ -13,16 +13,14 @@
       "svg": "github.png"
     },
     {
-      "url": "https://www.linkedin.com/in/hectoraldairaguilar",
-      "text": "LinkedIn",
-      "rel": "me",
-      "svg": "linkedin.png"
-    },
-    {
       "url": "https://indieweb.social/home",
       "text": "Mastodon",
       "rel": "me"
+    },
+    {
+      "url": "https://codeberg.org/bitbyte",
+      "text": "Codeberg",
+      "rel": "me"
     }
-
   ]
 }

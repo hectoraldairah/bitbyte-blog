@@ -27,7 +27,7 @@
   <ul>
     {% for item in social.items %}
     <li>
-      <a href="{{item.url}}" class="link" target="__blank" rel="noreferrer"
+      <a href="{{item.url}}" class="link" target="__blank" rel="{% if item.rel %}{{item.rel}}{% else %}noreferrer{% endif %}"
         >{{item.text}}</a
       >
     </li>
