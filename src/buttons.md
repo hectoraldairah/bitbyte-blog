@@ -13,9 +13,6 @@ meSites:
     url: 'https://bitbyte.blog/'
     image: '/assets/banners/bitbyte2.webp'
 friendsSites:
-  - name: 'mitad punketo'
-    url: 'https://mitadpunketo.nekoweb.org/'
-    image: '/assets/banners/mitadpunketobanner2.webp'
   - name: 'daiko'
     url: 'https://daikonet.neocities.org/home'
     image: '/assets/banners/daiko.gif'
