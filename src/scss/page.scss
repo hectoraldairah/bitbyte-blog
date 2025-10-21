@@ -18,3 +18,42 @@ html {
   background-color: var(--color-bg);
   image-rendering: pixelated;
 }
+
+code {
+  font-family: 'FreePixel';
+  background-color: var(--color-blockquote-bg);
+  color: var(--color-text);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre code {
+  display: block;
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+  border: 2px solid var(--color-text);
+  box-shadow: 3px 3px var(--color-text);
+}
+
+kbd {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: 2px solid var(--color-text);
+  border-radius: 4px;
+  box-shadow: 0 2px 0 var(--color-text), inset 0 -2px 0 var(--color-bg);
+  padding: 0.2rem 0.5rem;
+  font-family: 'FreePixel';
+  font-size: 0.9rem;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+ruby {
+  font-size: 1.5rem;
+}
+
+rt {
+  font-size: 0.8rem;
+}

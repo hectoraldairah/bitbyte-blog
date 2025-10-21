@@ -25,7 +25,6 @@
     & .header-anchor {
       visibility: visible;
     }
-
   }
 
   h2,
@@ -41,8 +40,6 @@
     & .header-anchor {
       visibility: visible;
     }
-
-
   }
 
   h2 {
@@ -58,7 +55,7 @@
     padding-inline-start: 1.7rem;
   }
 
-  li+li {
+  li + li {
     margin-top: get-size('300');
   }
 
@@ -72,8 +69,8 @@
   }
 
   // Add tighter flow for elements that follow a heading
-  h2+*,
-  h3+* {
+  h2 + *,
+  h3 + * {
     --flow-space: #{get-size('300')};
   }
 
@@ -105,8 +102,14 @@
     color: var(--color-bg);
   }
 
-  @media screen and (hover: hover) {
+  mark {
+    background-color: var(--color-links);
+    color: var(--color-bg);
+    padding: 0.2rem 0.4rem;
+    border: 2px solid var(--color-text);
+  }
 
+  @media screen and (hover: hover) {
     h2:hover,
     h2:focus,
     h3:focus,
