@@ -17,7 +17,13 @@ nav__list__children" %} {% set childAnchor = "child" %} {% endif %}
       {{ item.title }}
     </a>
   </li>
-  {% endfor %} {% if isChild == false %}
+  {% endfor %}
+  {% if isChild == false %}
+  <li>
+    <a href="https://bitbyte.atabook.org/" target="_blank" rel="noopener noreferrer">guestbook</a>
+  </li>
+  {% endif %}
+  {% if isChild == false %}
   {% endif %}
 </ul>
 {% endmacro %}
