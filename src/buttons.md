@@ -19,6 +19,9 @@ friendsSites:
   - name: 'delovely'
     url: 'https://delovely.neocities.org/'
     image: '/assets/banners/delovely.png'
+  - name: 'juglone'
+    url: 'https://juglone.neocities.org/'
+    image: '/assets/banners/juglone.gif'
 communitiesSites:
   - name: '32-bit cafe'
     url: 'https://32bit.cafe/'
