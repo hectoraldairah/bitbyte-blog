@@ -58,6 +58,9 @@ U can check all [here](https://www.bitbyte.blog/webrings).
 ### █▓▒▒░░░ Changelog ░░░▒▒▓█
 
 #### 2025
+
+- Added a guestbook
+- Buttons page created
 - Webring page created
 - Meta page created
 - New color-schemes added
