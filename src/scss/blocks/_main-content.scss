@@ -13,7 +13,7 @@
     padding: 0.7rem 0;
     max-width: 40ch;
 
-    @include media-query("md") {
+    @include media-query('md') {
       max-width: 80ch;
     }
 
@@ -22,9 +22,8 @@
       align-items: baseline;
       justify-content: space-between;
 
-      @include media-query("md") {
+      @include media-query('md') {
         flex-direction: row;
-
       }
     }
 
@@ -64,6 +63,6 @@
 
   .content {
     margin-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
   }
 }
