@@ -239,7 +239,7 @@
         const noiseCheckbox = document.querySelector('#noiseCheckbox');
         const savedState = localStorage.getItem('noiseEnabled');
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        const defaultNoiseState = isMobile ? true : false;
+        const defaultNoiseState = isMobile ? false : true;
         const noiseEnabled =
           savedState !== null ? JSON.parse(savedState) : defaultNoiseState;
 
@@ -303,17 +303,17 @@
             localStorage.setItem('noiseEnabled', JSON.stringify(isChecked));
 
             if (isChecked) {
-              stopAnimation();
-            } else {
               startAnimation();
+            } else {
+              stopAnimation();
             }
           });
 
           // Start animation if checkbox is initially checked
           if (noiseEnabled) {
-            stopAnimation();
-          } else {
             startAnimation();
+          } else {
+            stopAnimation();
           }
         } else {
           startAnimation();

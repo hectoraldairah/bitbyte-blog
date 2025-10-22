@@ -8,7 +8,7 @@ date: 2025-10-21
 tags: ['HTML']
 ---
 
-Some time ago, while i was searching for how to use the `<details>` tag, I found website called [justfuckingusehtml](https://justfuckingusehtml.com/). It's a really good reminder that you can do many things natively with HTML elements that people (myself included) usually handle with other tools or frameworks.
+Some time ago, while i was searching for how to use the `<details>` tag, I found a website called [justfuckingusehtml](https://justfuckingusehtml.com/). It's a really good reminder that you can do many things natively with HTML elements that people (myself included) usually handle with other tools or frameworks.
 
 I was surprised by how many HTML tags exists that I didn't even know about. Even though I work as a front-end dev, I barely use them at work.
 
@@ -133,7 +133,10 @@ Let's see this example i grabbed from [w3schools](https://www.w3schools.com/tags
 
 This is a simple img tag, but you can click on certain elements inside. Try to click on the computer, phone or the cup of coffee.
 
-<img src="/assets/images/workplace.jpg" alt="Workplace" usemap="#workmap" style="max-width: 400px; height: auto;">
+<figure>
+<img src="/assets/images/workplace.jpg" alt="Workplace" usemap="#workmap">
+<figcaption>A simple image of a workplace</figcaption>
+</figure>
 
 <map name="workmap">
   <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="alert('Computer'); return false;" style="cursor: pointer;">

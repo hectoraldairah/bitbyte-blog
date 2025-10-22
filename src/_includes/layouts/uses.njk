@@ -1,7 +1,9 @@
-{% extends "layouts/base.njk" %}  
+{% extends "layouts/base.njk" %}
 {% set pageCriticalStyles = ['css/page.css'] %}
-{% set pageHeaderTitle = title %} 
+{% set pageHeaderTitle = title %}
 
 {% block content %}
-  <div class="[ page-content ]">{{ content | safe }}</div>
+  <article class="constrained">
+    <div class="[ page-content ]">{{ content | safe }}</div>
+  </article>
 {% endblock%}

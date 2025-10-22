@@ -1,7 +1,4 @@
 .page-content {
-  font-size: get-size('400') !important;
-  max-width: 80ch;
-
   &__post-title {
     font-size: get-size('900') !important;
   }
@@ -23,6 +20,11 @@
     color: var(--color-links);
 
     & .header-anchor {
+      visibility: hidden;
+    }
+
+    &:focus .header-anchor,
+    &:focus-within .header-anchor {
       visibility: visible;
     }
   }
@@ -38,6 +40,11 @@
     color: var(--color-links);
 
     & .header-anchor {
+      visibility: hidden;
+    }
+
+    &:focus .header-anchor,
+    &:focus-within .header-anchor {
       visibility: visible;
     }
   }
@@ -55,7 +62,7 @@
     padding-inline-start: 1.7rem;
   }
 
-  li + li {
+  li+li {
     margin-top: get-size('300');
   }
 
@@ -69,8 +76,8 @@
   }
 
   // Add tighter flow for elements that follow a heading
-  h2 + *,
-  h3 + * {
+  h2+*,
+  h3+* {
     --flow-space: #{get-size('300')};
   }
 
@@ -80,15 +87,30 @@
     line-height: 1.5;
   }
 
-  .header-anchor {
-    visibility: hidden;
+  figure {
+    padding: 0.5rem;
+    max-width: 350px;
+
+    @include media-query('md') {
+      padding: 0;
+      max-width: 100%;
+    }
+
+    figcaption {
+      text-align: center;
+      padding: 0.2rem 0;
+      font-size: get-size('400');
+      background-color: var(--color-bg);
+      color: var(--color-text);
+
+      @include media-query("md") {
+        text-align: left;
+      }
+    }
   }
 
-  figcaption {
-    text-align: center;
-    font-size: get-size('400');
-    padding: 0.2rem 0;
-    background-color: var(--color-bg);
+  .header-anchor {
+    visibility: hidden;
   }
 
   li {
@@ -110,6 +132,7 @@
   }
 
   @media screen and (hover: hover) {
+
     h2:hover,
     h2:focus,
     h3:focus,
