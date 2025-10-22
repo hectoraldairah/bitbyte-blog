@@ -67,7 +67,7 @@ The `<kbd>` tag represents the keyboard input, simple as that. It's typically re
 the browser default's monospace font.
 
 <p>
-  Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to start start a new game
+  Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to start a new game
 </p>
 
 <p>
