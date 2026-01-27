@@ -48,14 +48,6 @@ body {
   filter: url('#advanced-dither-global');
   overflow-x: hidden;
   width: 100%;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-image-source: url(https://i.ibb.co/wF88BfS4/beelzebabe-framefirst.png);
-  border-image-slice: 128 fill;
-  border-image-repeat: repeat;
-
 }
 
 .layout {
