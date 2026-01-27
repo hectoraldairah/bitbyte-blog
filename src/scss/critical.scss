@@ -48,6 +48,14 @@ body {
   filter: url('#advanced-dither-global');
   overflow-x: hidden;
   width: 100%;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-image-source: url(https://i.ibb.co/wF88BfS4/beelzebabe-framefirst.png);
+  border-image-slice: 128 fill;
+  border-image-repeat: repeat;
+
 }
 
 .layout {
@@ -56,6 +64,7 @@ body {
   display: grid;
   gap: 1rem;
   max-width: 1200px;
+
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas:
@@ -79,6 +88,7 @@ body {
   line-height: 1;
   color: var(--color-header);
   overflow-x: hidden;
+  overflow-y: hidden;
 
   @include media-query('md') {
     font-size: 12px;
