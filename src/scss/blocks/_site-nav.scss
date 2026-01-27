@@ -53,12 +53,15 @@
 
 .site-nav {
   grid-area: aside;
-  position: sticky;
-  top: 1rem;
   color: var(--color-text);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  z-index: 1000;
   align-self: start;
+
+  @include media-query('md') {
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+  }
 }

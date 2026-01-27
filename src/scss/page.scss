@@ -66,3 +66,83 @@ rt {
     object-fit: contain;
   }
 }
+
+// Post layout with TOC
+.post-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+
+  @include media-query('md') {
+    grid-template-columns: 1fr 250px;
+  }
+}
+
+// Table of Contents
+.toc {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  display: none;
+
+  @include media-query('md') {
+    display: block;
+    margin-top: -1.06rem;
+    margin-left: 2rem;
+  }
+
+  &__nav {
+    background-color: var(--color-bg);
+    border-top: 1px dotted var(--color-text);
+    padding: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+
+  &__title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    border-bottom: 1px dotted var(--color-text);
+    padding-bottom: 0.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 0.5rem;
+
+    &--level-1 {
+      margin-left: 0;
+    }
+
+    &--level-2 {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+
+    &--level-3 {
+      margin-left: 2rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  &__link {
+    color: var(--color-links);
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 0;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--color-links-hover);
+      background-color: var(--color-links-hover-bg);
+      padding-left: 0.5rem;
+    }
+  }
+}

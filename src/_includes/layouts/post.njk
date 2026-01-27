@@ -3,7 +3,25 @@
 {% set pageCriticalStyles = ['css/page.css'] %}
 
 {% block content %}
-<article class="constrained">
-  <div class="[ page-content ]">{{ content | safe }}</div>
-</article>
+<div class="post-layout">
+  <article class="constrained">
+    <div class="[ page-content ]">{{ content | safe }}</div>
+  </article>
+
+  {% set headings = content | toc %}
+  {% if headings and headings.length %}
+  <aside class="toc">
+    <nav class="toc__nav">
+      <h2 class="toc__title">Table of Contents</h2>
+      <ul class="toc__list">
+        {% for heading in headings %}
+        <li class="toc__item toc__item--level-{{ heading.level }}">
+          <a href="#{{ heading.id }}" class="toc__link">{{ heading.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+  {% endif %}
+</div>
 {% endblock %}

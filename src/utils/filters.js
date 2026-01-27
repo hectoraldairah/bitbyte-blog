@@ -32,3 +32,28 @@ export function round2f(val) {
   }
   return '';
 }
+
+export function toc(content) {
+  if (!content) return [];
+
+  const headingRegex = /<h([123])[^>]*?\sid="([^"]*)"[^>]*?>(.*?)<a\s+class="header-anchor"/gis;
+  const headings = [];
+  let match;
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const level = parseInt(match[1]);
+    const id = match[2];
+    // Extract just the text before the anchor link
+    let text = match[3].replace(/<[^>]*>/g, '').trim();
+
+    if (text) {
+      headings.push({
+        level,
+        id,
+        text
+      });
+    }
+  }
+
+  return headings;
+}
