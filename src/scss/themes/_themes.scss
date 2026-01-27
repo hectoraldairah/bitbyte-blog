@@ -1,4 +1,4 @@
-[data-theme="default"] {
+[data-theme='default'] {
   --color-bg: #{get-color('Base')};
   --color-space: #{get-color('Base')};
   --color-text: #{get-color('Text')};
@@ -6,18 +6,17 @@
   --color-links-hover: #{get-color('Base')};
   --color-links-hover-bg: #{get-color('Rosewater')};
   --color-links-visited: #{get-color('Mauve')};
-  --color-topbar: #{get-color("Mauve")};
+  --color-topbar: #{get-color('Mauve')};
   --color-header: #{get-color('Text')};
   --color-title-content-bg: #{get-color('Base')};
-  --title-content-border-color: #{get-color("Rosewater")};
+  --title-content-border-color: #{get-color('Rosewater')};
   --color-links-dark: #{darken(get-color('Rosewater'), 10%)};
   --color-links-outline: #{darken(get-color('Rosewater'), 50%)};
   --color-blockquote: #{get-color('Mauve')};
   --color-blockquote-bg: #{get-color('Base')};
-
 }
 
-[data-theme="gameboy"] {
+[data-theme='gameboy'] {
   --color-bg: #{get-color('Midnight')};
   --color-space: #{get-color('Midnight')};
   --color-text: #{get-color('Sandstone')};
@@ -27,20 +26,20 @@
   --color-links-visited: #{get-color('Pine')};
   --color-links-dark: #{darken(get-color('Pine'), 10%)};
   --color-links-outline: #{darken(get-color('Pine'), 50%)};
-  --color-topbar: #{get-color("Sandstone")};
+  --color-topbar: #{get-color('Sandstone')};
   --color-header: #{get-color('Sandstone')};
   --color-blockquote: #{get-color('Verdant')};
   --color-blockquote-bg: #{get-color('Midnight')};
-  --title-content-border-color: #{get-color("Sandstone")};
+  --title-content-border-color: #{get-color('Sandstone')};
   --color-title-content-bg: #{get-color('Midnight')};
-  --title-content-border-color: #{get-color("Midnight")};
+  --title-content-border-color: #{get-color('Midnight')};
 }
 
 [data-theme='gameboy'] img {
   filter: sepia(0.4) brightness(1.05) hue-rotate(30deg) saturate(1.2);
 }
 
-[data-theme="sadness"] {
+[data-theme='sadness'] {
   --color-bg: #{get-color('Snow')};
   --color-space: #{get-color('Snow')};
   --color-text: #{get-color('Cornflower')};
@@ -50,34 +49,56 @@
   --color-links-visited: #{get-color('Cornflower')};
   --color-links-dark: #{darken(get-color('Lavender-Mist'), 10%)};
   --color-links-outline: #{darken(get-color('Lavender-Mist'), 50%)};
-  --color-topbar: #{get-color("Cornflower")};
+  --color-topbar: #{get-color('Cornflower')};
   --color-header: #{get-color('Cornflower')};
   --color-blockquote: #{get-color('Snow')};
   --color-blockquote-bg: #{get-color('Inkstone')};
   --color-title-content-bg: #{get-color('Snow')};
-  --title-content-border-color: #{get-color("Lavender-Mist")};
+  --title-content-border-color: #{get-color('Lavender-Mist')};
 }
 
-[data-theme="sadness"] img {
+[data-theme='sadness'] img {
   filter: brightness(0.8) contrast(1.2) hue-rotate(210deg);
 }
 
-[data-theme="grue"] {
+[data-theme='grue'] {
   --color-bg: #{get-color('Void')};
   --color-space: #{get-color('Void')};
   --color-text: #{get-color('Slate-Mist')};
   --color-links: #{get-color('Ash-Blue')};
   --color-links-visited: #{get-color('Ash-Blue')};
-  --color-topbar: #{get-color("Graphite")};
+  --color-topbar: #{get-color('Graphite')};
   --color-header: #{get-color('Slate-Mist')};
   --color-blockquote: #{get-color('Ash-Blue')};
   --color-blockquote-bg: #{get-color('Graphite')};
   --color-title-content: #{get-color('Ash-Blue')};
   --color-title-content-bg: #{get-color('Void')};
-  --title-content-border-color: #{get-color("Ash-Blue")};
+  --title-content-border-color: #{get-color('Ash-Blue')};
 }
 
-[data-theme="grue"] img {
-  filter: grayscale(0.6) contrast(0.8) brightness(1.2) sepia(0.5) hue-rotate(-15deg);
+[data-theme='grue'] img {
+  filter: grayscale(0.6) contrast(0.8) brightness(1.2) sepia(0.5)
+    hue-rotate(-15deg);
+}
 
+[data-theme='halloween'] {
+  --color-bg: #{get-color('Deep-Space')};
+  --color-space: #{get-color('Deep-Space')};
+  --color-text: #{get-color('Golden-Honey')};
+  --color-links: #{get-color('Sunset-Glow')};
+  --color-links-hover: #{get-color('Deep-Space')};
+  --color-links-hover-bg: #{get-color('Coral-Burst')};
+  --color-links-visited: #{get-color('Coral-Burst')};
+  --color-links-dark: #{darken(get-color('Sunset-Glow'), 10%)};
+  --color-links-outline: #{darken(get-color('Crimson-Flame'), 50%)};
+  --color-topbar: #{get-color('Magenta-Core')};
+  --color-header: #{get-color('Golden-Honey')};
+  --color-blockquote: #{get-color('Coral-Burst')};
+  --color-blockquote-bg: #{get-color('Nebula')};
+  --color-title-content-bg: #{get-color('Deep-Space')};
+  --title-content-border-color: #{get-color('Violet-Haze')};
+}
+
+[data-theme='halloween'] img {
+  filter: contrast(1.1) saturate(1.3) hue-rotate(-5deg);
 }
