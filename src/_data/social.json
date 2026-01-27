@@ -21,6 +21,11 @@
       "url": "https://codeberg.org/bitbyte",
       "text": "Codeberg",
       "rel": "me"
+    },
+    {
+      "url": "https://mx.pinterest.com/bbitbytee/",
+      "text": "Pinterest",
+      "rel": "me"
     }
   ]
 }
