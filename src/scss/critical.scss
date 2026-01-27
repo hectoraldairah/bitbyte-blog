@@ -57,20 +57,20 @@ body {
   gap: 1rem;
   max-width: 1200px;
 
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
-    'header'
-    'navigation'
-    'content';
+    'header aside'
+    'navigation aside'
+    'content aside';
 
   @include media-query('md') {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-      'header header'
-      'navigation'
-      'content';
+      'header aside'
+      'navigation aside'
+      'content aside';
   }
 }
 

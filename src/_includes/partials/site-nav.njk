@@ -28,11 +28,12 @@ nav__list__children" %} {% set childAnchor = "child" %} {% endif %}
 </ul>
 {% endmacro %}
 
+<nav class="[ nav ]" aria-label="Primary">
+  {% set nav = collections.all | eleventyNavigation %} {{ renderNav(nav,
+  page.url) }}
+</nav>
+
 <aside class="[ site-nav ]">
-  <nav class="[ nav ]" aria-label="Primary">
-    {% set nav = collections.all | eleventyNavigation %} {{ renderNav(nav,
-    page.url) }}
-  </nav>
   <div>
     {% include "partials/theme-picker.njk" %}
     {% include "partials/noise.njk" %}
