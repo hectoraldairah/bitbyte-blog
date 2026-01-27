@@ -57,6 +57,12 @@ U can check all [here](https://www.bitbyte.blog/webrings).
 
 ### █▓▒▒░░░ Changelog ░░░▒▒▓█
 
+#### 2026
+
+- New Halloween color-scheme
+- New ascii image for 404 route
+- TOC for post and content base pages
+
 #### 2025
 
 - Added a guestbook
