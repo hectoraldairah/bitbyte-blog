@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-pageHeaderSummary: 'sweet home'
+pageHeaderSummary: 'サイトへようこそ〜！'
 layout: 'layouts/home'
 eleventyNavigation:
   key: home
