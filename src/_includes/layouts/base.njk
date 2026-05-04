@@ -125,7 +125,7 @@
     />
     {% endfor %} {% endif %}
   </head>
-  <body>
+  <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
     <div class="filter"></div>
     <svg style="display: none">
       <filter id="advanced-dither-global">
@@ -234,89 +234,105 @@
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const dustBtn = document.querySelector('#dust');
-        const animation = document.querySelector('#turbulence');
         const noiseCheckbox = document.querySelector('#noiseCheckbox');
-        const savedState = localStorage.getItem('noiseEnabled');
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        const defaultNoiseState = isMobile ? false : true;
-        const noiseEnabled =
-          savedState !== null ? JSON.parse(savedState) : defaultNoiseState;
+        const savedState = localStorage.getItem('noiseEnabled');
+        const noiseEnabled = isMobile
+          ? false
+          : savedState !== null ? JSON.parse(savedState) : true;
 
-        const keyframes = [1000, 1500, 2000, 2500, 3000, 2500, 2000, 1500];
-        const duration = 10000;
-        let startTime = Date.now();
-        let animationId = null;
-        let isAnimating = false;
+        const canvas = document.createElement('canvas');
+        canvas.id = 'dither-canvas';
+        document.body.prepend(canvas);
+        const ctx = canvas.getContext('2d');
 
-        function animate() {
-          if (!isAnimating) return;
+        const CELL = 24;
+        const CHARS = [' ', ' ', ' ', ' ', '░', '░', '▒', '▓'];
+        let cols, rows, animId, t = 0, running = false;
 
-          const elapsed = Date.now() - startTime;
-          const progress = Math.min(elapsed / duration, 1);
+        function resize() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          cols = Math.ceil(canvas.width / (CELL * 0.56));
+          rows = Math.ceil(canvas.height / CELL);
+        }
 
-          // Calculate current keyframe
-          const keyframeIndex = progress * (keyframes.length - 1);
-          const lowerIndex = Math.floor(keyframeIndex);
-          const upperIndex = Math.ceil(keyframeIndex);
-          const fraction = keyframeIndex - lowerIndex;
+        function hexLuminance(hex) {
+          const c = hex.replace('#', '');
+          const r = parseInt(c.slice(0, 2), 16) / 255;
+          const g = parseInt(c.slice(2, 4), 16) / 255;
+          const b = parseInt(c.slice(4, 6), 16) / 255;
+          return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        }
 
-          // Interpolate between keyframes
-          const currentValue =
-            keyframes[lowerIndex] +
-            (keyframes[upperIndex] - keyframes[lowerIndex]) * fraction;
+        function updateTheme() {
+          const styles = getComputedStyle(document.documentElement);
+          currentColor = styles.getPropertyValue('--color-links').trim() || '#cba6f7';
+          const bg = styles.getPropertyValue('--color-bg').trim() || '#1e1e2e';
+          const lum = hexLuminance(bg);
+          // darker bg → higher opacity so characters stay visible
+          const opacity = lum < 0.05 ? 0.32 : lum < 0.15 ? 0.22 : 0.14;
+          document.documentElement.style.setProperty('--dither-opacity', opacity);
+        }
 
-          animation.setAttribute('scale', currentValue);
+        let currentColor = '';
+        updateTheme();
 
-          if (progress < 1) {
-            requestAnimationFrame(animate);
-          } else {
-            // Reiniciar cuando termine
-            startTime = Date.now();
-            requestAnimationFrame(animate);
+        new MutationObserver(updateTheme)
+          .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+        function draw() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.font = CELL + 'px monospace';
+          ctx.fillStyle = currentColor;
+
+          for (let y = 0; y < rows; y++) {
+            for (let x = 0; x < cols; x++) {
+              const n =
+                Math.sin(x * 0.10 + t * 1.4) +
+                Math.sin(y * 0.08 + t * 1.0) +
+                Math.sin((x + y) * 0.05 + t * 0.7);
+
+              const idx = Math.floor(((n + 3) / 6) * CHARS.length);
+              const ch = CHARS[Math.min(idx, CHARS.length - 1)];
+              if (ch !== ' ') {
+                ctx.fillText(ch, x * (CELL * 0.56), (y + 1) * CELL);
+              }
+            }
+          }
+
+          t += 0.008;
+          animId = requestAnimationFrame(draw);
+        }
+
+        function start() {
+          if (!running) {
+            running = true;
+            canvas.style.display = 'block';
+            draw();
           }
         }
 
-        function startAnimation() {
-          if (!isAnimating) {
-            isAnimating = true;
-            startTime = Date.now();
-            animate();
-          }
+        function stop() {
+          running = false;
+          if (animId) cancelAnimationFrame(animId);
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          canvas.style.display = 'none';
         }
 
-        function stopAnimation() {
-          isAnimating = false;
-          if (animationId) {
-            cancelAnimationFrame(animationId);
-            animationId = null;
-          }
-          // Reset to initial state
-          animation.setAttribute('scale', keyframes[0]);
-          animation.setAttribute('scale', '0');
-        }
+        resize();
+        window.addEventListener('resize', resize);
 
         if (noiseCheckbox) {
           noiseCheckbox.checked = noiseEnabled;
           noiseCheckbox.addEventListener('change', (e) => {
-            const isChecked = e.target.checked;
-            localStorage.setItem('noiseEnabled', JSON.stringify(isChecked));
-
-            if (isChecked) {
-              startAnimation();
-            } else {
-              stopAnimation();
-            }
+            const on = e.target.checked;
+            localStorage.setItem('noiseEnabled', JSON.stringify(on));
+            on ? start() : stop();
           });
-
-          // Start animation if checkbox is initially checked
-          if (noiseEnabled) {
-            startAnimation();
-          } else {
-            stopAnimation();
-          }
+          noiseEnabled ? start() : stop();
         } else {
-          startAnimation();
+          start();
         }
       });
     </script>

@@ -54,11 +54,13 @@ Hosted on [Netlify](https://www.netlify.com), which is a very good option for st
 This site is part of some cool [web-rings](https://en.wikipedia.org/wiki/Webring).
 U can check all [here](https://www.bitbyte.blog/webrings).
 
+<br><br><br><br><br>
 
-### █▓▒▒░░░ Changelog ░░░▒▒▓█
+### Changelog
 
 #### 2026
 
+- Radios page created
 - New Halloween color-scheme
 - New ascii image for 404 route
 - TOC for post and content base pages

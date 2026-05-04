@@ -4,19 +4,30 @@
   align-items: center;
   justify-content: start;
   width: fit-content;
-  text-shadow: 1px 20px 1px var(--color-bg);
   color: var(--color-header);
-  image-rendering: pixelated;
-  filter: url('#advanced-dither-global-2');
+  padding-top: 3rem;
+
+  @include media-query('md') {
+    font-size: 12px;
+    padding-top: unset;
+
+  }
+
+
+  &__logo {
+    display: block;
+    width: auto;
+    height: auto;
+    mix-blend-mode: screen;
+  }
 
   &__ascii {
-    font-family: monospace, 'Courier New', Courier;
-    font-size: 10px;
-    line-height: 1;
-    color: var(--color-header);
-
-    @include media-query('md') {
-      font-size: 12px;
-    }
+    white-space: pre;
+    font-family: monospace;
+    font-size: 5px;
+    line-height: 5px;
+    letter-spacing: unset;
+    transform: unset;
+    overflow-y: hidden;
   }
 }

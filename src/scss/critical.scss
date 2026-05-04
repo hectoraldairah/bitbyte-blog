@@ -44,34 +44,53 @@ html {
 body {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
-  filter: url('#advanced-dither-global');
   overflow-x: hidden;
   width: 100%;
 }
 
+#dither-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--dither-opacity, 0.14);
+}
+
 .layout {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
   padding: 0.5rem;
+  padding-top: 4.5rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
   max-width: 1200px;
 
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto 1fr auto;
   grid-template-areas:
     'header'
     'navigation'
     'content'
-    'aside';
+    'aside'
+    '.'
+    'footer';
 
   @include media-query('md') {
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto;
+    padding: 0.5rem;
+    padding-top: 4.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
     grid-template-areas:
-      'header aside'
-      'navigation aside'
-      'content aside';
+      'header'
+      'navigation'
+      'content'
+      '.'
+      'footer';
   }
 }
 
@@ -82,6 +101,7 @@ body {
   color: var(--color-header);
   overflow-x: hidden;
   overflow-y: hidden;
+  line-height: 0;
 
   @include media-query('md') {
     font-size: 12px;

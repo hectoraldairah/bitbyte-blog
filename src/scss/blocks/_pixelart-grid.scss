@@ -23,11 +23,6 @@
 
   a {
     display: inline-block;
-    width: 100%;
-    text-align: center;
-    background-color: var(--color-bg);
-    &:hover {
-      color: inherit;
-    }
+    width: fit-content;
   }
 }

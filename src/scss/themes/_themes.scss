@@ -102,3 +102,26 @@
 [data-theme='halloween'] img {
   filter: contrast(1.1) saturate(1.3) hue-rotate(-5deg);
 }
+
+[data-theme='halloween'] body {
+  position: relative;
+}
+
+[data-theme='halloween'] body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 100px solid transparent;
+  border-image-source: url('/assets/images/frame-halloween.png');
+  border-image-slice: 128 fill;
+  border-image-repeat: repeat;
+  image-rendering: pixelated;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 9999;
+  filter: sepia(0.8) hue-rotate(-15deg) saturate(3) brightness(0.85);
+}
+
+.page-pixelart img {
+  filter: none !important;
+}
