@@ -64,15 +64,15 @@ body {
   z-index: 1;
   min-height: 100vh;
   padding: 0.5rem;
-  padding-top: 4.5rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
   max-width: 1200px;
 
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto 1fr auto;
+  grid-template-rows: auto auto auto auto auto 1fr auto;
   grid-template-areas:
+    'site-nav'
     'header'
     'navigation'
     'content'
@@ -82,10 +82,10 @@ body {
 
   @include media-query('md') {
     padding: 0.5rem;
-    padding-top: 4.5rem;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto 1fr auto;
     grid-template-areas:
+      'site-nav'
       'header'
       'navigation'
       'content'
