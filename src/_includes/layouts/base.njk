@@ -270,8 +270,10 @@
           currentColor = styles.getPropertyValue('--color-links').trim() || '#cba6f7';
           const bg = styles.getPropertyValue('--color-bg').trim() || '#1e1e2e';
           const lum = hexLuminance(bg);
-          // darker bg → higher opacity so characters stay visible
-          const opacity = lum < 0.05 ? 0.32 : lum < 0.15 ? 0.22 : 0.14;
+          const theme = document.documentElement.getAttribute('data-theme');
+          const opacity = theme === 'default'
+            ? 0.18
+            : lum < 0.05 ? 0.32 : lum < 0.15 ? 0.22 : 0.14;
           document.documentElement.style.setProperty('--dither-opacity', opacity);
         }
 
